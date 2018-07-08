@@ -249,6 +249,32 @@ input[type='submit'] {
   input[type='submit']:hover {
     text-decoration: underline; }
 
+.badge {
+  color: #fff;
+  background-color: #a6a6a6;
+  display: inline-block;
+  padding: .25em .4em;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  -ms-border-radius: 0.4rem;
+  -o-border-radius: 0.4rem;
+  border-radius: 0.4rem; }
+  .badge.rounded {
+    border-radius: 10em; }
+  .badge.info {
+    background-color: #3c8ec3; }
+  .badge.success {
+    background-color: #53a03c; }
+  .badge.error {
+    background-color: #d53434; }
+  .badge.white {
+    background-color: #fff;
+    color: #000; }
+
 blockquote,
 .blockquote {
   background-color: #f2f2f2;

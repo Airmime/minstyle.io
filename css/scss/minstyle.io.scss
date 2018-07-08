@@ -2,6 +2,7 @@ $color-info: #3c8ec3;
 $color_error: #d53434;
 $color_success: #53a03c;
 $color-gray: #f2f2f2;
+$color-gray-dark: darken(#f2f2f2, 30%);
 $margin: 1rem;
 $padding: 1.3rem;
 $default-border-radius: .4rem;
@@ -11,6 +12,7 @@ $default-border-radius: .4rem;
 
 @import "_grid.scss";
 @import "_button.scss";
+@import "badge.scss";
 @import "_blockquote.scss";
 @import "_alert.scss";
 @import "_list.scss";
