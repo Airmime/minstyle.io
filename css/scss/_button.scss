@@ -1,0 +1,122 @@
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+/* BASE */
+button, 
+.btn, 
+input[type='button'], 
+input[type='submit']{
+	 display: inline-block;
+	 background-color: $color-info;
+	 text-decoration: none;
+   text-transform: uppercase;
+   text-align: center;
+   font-size: .9rem;
+   color: #fff;
+   border: 0.1rem solid $color-info;
+   @include border-radius;
+   line-height: 2.2rem;
+   padding: 0 $padding;
+   margin: 0.3rem;
+   cursor: pointer;
+   white-space: normal;
+
+  &:focus{
+    outline: 0;
+  }
+
+  &.error{
+    background-color: $color_error;
+    border-color: $color_error;
+  }
+
+  &.success{
+    background-color: $color_success;
+    border-color: $color_success;
+  }
+
+  &.border{
+    background-color: transparent;
+    border: 0.1rem solid $color-info;
+    color: $color-info;
+
+    &.error{
+      border-color: $color_error;
+      color: $color_error;
+    }
+
+    &.success{
+      border-color: $color_success;
+      color: $color_success;
+    }
+  }
+
+  &.border-bottom{
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 0.1rem solid $color-info;
+    color: $color-info;
+
+    &.error{
+      border-color: $color_error;
+      color: $color_error;
+    }
+
+    &.success{
+      border-color: $color_success;
+      color: $color_success;
+    }
+  }
+
+
+  &.clear{
+    background-color: transparent;
+    border-color: transparent;
+    color: $color-info;
+
+    &.error{
+      color: $color_error;
+    }
+
+    &.success{
+      color: $color_success;
+    }
+  }
+
+
+  &.rounded{
+    border-radius: 10em;
+
+    &.error{
+      border-color: $color_error;
+    }
+
+    &.success{
+      border-color: $color_success;
+    }
+  }
+
+
+  &.border-rounded{
+    @include border-radius(10em);
+    background-color: transparent;
+    color: $color-info;
+
+    &.error{
+      border-color: $color_error;
+      color: $color_error;
+    }
+
+    &.success{
+      border-color: $color_success;
+      color: $color_success;
+    }
+  }
+
+
+  &:hover{
+    text-decoration: underline;
+  }
+}

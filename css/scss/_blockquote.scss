@@ -1,0 +1,42 @@
+$bg-color-block: #f2f2f2;
+
+@mixin borderColorBlock($pBorderColorBlock){
+	border-left: 0.2rem solid $pBorderColorBlock;
+}
+
+@mixin colorBlock(){
+	@include border-left-radius(0);
+	@include borderColorBlock(darken($bg-color-block, 15%));
+
+	&.info{
+		@include borderColorBlock($color-info);
+	}
+	
+	&.success{
+		@include borderColorBlock($color_success);
+	}
+
+	&.error{
+		@include borderColorBlock($color_error);
+	}
+}
+
+blockquote,
+.blockquote{
+	background-color: $bg-color-block;
+	@include border-radius;
+	color: darken( $bg-color-block, 55%);
+	text-align:justify;
+	line-height: 1.2em;
+	padding: $padding;
+	margin: $margin;
+
+	&.border-white{
+		@include colorBlock();
+		background-color: #fff;
+	}
+
+	&.border{
+		@include colorBlock();
+	}
+}

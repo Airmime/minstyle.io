@@ -1,0 +1,24 @@
+$color-info: #3c8ec3;
+$color_error: #d53434;
+$color_success: #53a03c;
+$color-gray: #f2f2f2;
+$margin: 1rem;
+$padding: 1.3rem;
+$default-border-radius: .4rem;
+
+@import "compass";
+@import "compass/reset";
+
+@import "_grid.scss";
+@import "_button.scss";
+@import "_blockquote.scss";
+@import "_alert.scss";
+@import "_list.scss";
+@import "_heading.scss";
+@import "_form.scss";
+@import "_table.scss";
+@import "_utility.scss";
+
+.shadow{
+	@include single-box-shadow($blur: 15px, $color: rgba(black, 0.3));
+}

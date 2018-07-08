@@ -1,0 +1,57 @@
+@mixin borderColorList($pBorderColorList){
+	border-left: 0.2rem solid $pBorderColorList;
+}
+
+ul,ol,dl{
+    list-style: circle inside;
+    margin: $margin;
+
+    &.none{
+    	list-style: none;
+    }
+
+    &.border{
+    	list-style: none;
+		border-left: 0.2rem solid $color-gray;
+		padding-left: 0.5rem;
+
+		&.error{
+			@include borderColorList($color-error);
+		}
+
+		&.success{
+			@include borderColorList($color-success);
+		}
+
+		&.info{
+			@include borderColorList($color-info);
+		}
+    }
+
+    &.boxed{
+    	list-style: none;
+		border: 0.1rem solid $color-gray;
+		@include border-radius;
+
+		& li, dt, dd{
+			padding: 0.7rem;
+			margin: 0;
+			border-bottom: 0.1rem solid $color-gray;
+		}
+
+		li:last-of-type {
+  			border: none;
+		}
+    }
+
+    & li, dt, dd{
+    	margin-bottom: 0.4em;
+
+    	&.active{
+    		background-color: $color-info;
+    		color: lighten($color-info, 80%);
+    		@include border-radius;
+    		padding: 0.7rem;
+    	}
+    }
+}

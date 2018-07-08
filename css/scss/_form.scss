@@ -1,0 +1,70 @@
+form{
+	margin: 1rem;
+}
+
+input[type='email'],
+input[type='number'],
+input[type='password'],
+input[type='search'],
+input[type='tel'],
+input[type='text'],
+input[type='url'],
+input[type='color'],
+input[type='date'],
+input[type='month'],
+input[type='week'],
+input[type='datetime'],
+input[type='range'],
+input[type='datetime-local'],
+input[type='file'],
+input:not([type]),
+textarea,
+select{
+
+	display: block;
+	width: 100%;
+	height: 2.5rem;
+	appearance: none;
+	background-color: transparent;
+	border: .1rem solid darken($color-gray, 10%);
+	color: darken( $color-gray, 70%);
+	@include border-radius;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box; 
+	box-shadow: none; 
+	font-size: 1rem;
+	padding: .6rem .8rem;
+	margin-bottom: 1.3rem;
+
+	&:focus{
+		outline: 0;
+		border: 0.1rem solid darken($color-gray, 40%);
+	}
+
+	&:disabled{
+		background-color: $color-gray;
+	}
+
+}
+
+input[type='file']{
+	border: none;
+	padding: .6rem 0;
+}
+
+input[type='checkbox'],
+input[type='radio']{
+	display: inline
+}
+
+textarea{
+	min-height: 6rem;
+	font-size: 1.3rem;
+}
+
+label,
+legend{
+	display: inline-block;
+	margin-bottom: .5rem;
+}

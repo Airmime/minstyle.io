@@ -1,0 +1,41 @@
+table{
+	width: 100%;
+	border-spacing: 0;
+	margin: $margin;
+
+	&.boxed{
+		@include border-radius;
+		border: .1rem solid darken($color-gray, 10%);
+	}
+}
+
+tr{
+	&.title{
+		td,
+		th{
+			font-weight: bold;
+			border-bottom: .2rem solid darken($color-gray, 10%);
+		}
+	}
+
+	&.fill{
+		background-color: lighten($color-gray, 1%);
+	}
+
+	&.disabled{
+		td,
+		th{
+			background-color: gray;
+		}
+	}
+
+	td,
+	th{
+		border-bottom: .1rem solid darken($color-gray, 10%);
+		padding: 1.0rem;
+		text-align: left;
+
+		
+	}
+}
+

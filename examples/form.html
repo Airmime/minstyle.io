@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Forms - Exemple</title>
+  <link rel="stylesheet" href="../css/minstyle.io.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+</head>
+<body>
+
+  <div class="container" style="maring-top: 20px;">
+
+    <form>
+      <fieldset>
+        <label for="radio">Radio</label>
+        <input type="radio" name="radio" id="exampleRadios1" value="option1" checked>
+        <input type="radio" name="radio" id="exampleRadios2" value="option2"><br/>
+
+        <label for="name">Name</label>
+        <input type="text" value="Tests" id="name" disabled>
+
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password" id="password">
+
+        <label for="file">File</label>
+        <input type="file" id="file">
+
+        <label for="number">Number</label>
+        <input type="number" placeholder="Number" id="number">
+
+        <label for="range">Range</label>
+        <select id="range">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+
+        <label for="comment">Comment</label>
+        <textarea placeholder="My comment..." id="comment"></textarea>
+
+        <div >
+          <input type="checkbox" disabled>
+          <label class="label-inline">Checkbox</label>
+        </div>
+
+        <input class="btn border success" type="submit" value="Send">
+        <a class="btn border-bottom error">Cancel</a>
+      </fieldset>
+    </form>
+
+  </div>
+</body>
+</html>

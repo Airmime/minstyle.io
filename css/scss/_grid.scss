@@ -1,0 +1,25 @@
+$columns-grid: 12;
+$width-grid: 100%;
+$max-width-grid: 1140px;
+
+.container{
+	max-width: $max-width-grid;
+	margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+@for $i from 1 to $columns-grid + 1{
+	.col-#{$i}{
+		float:left;
+		width: $i * $width-grid/ $columns-grid;
+	}
+}
+
+.no-margin {
+	margin: 0;
+}
