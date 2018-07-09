@@ -23,3 +23,7 @@ $default-border-radius: .4rem;
 .shadow{
 	@include single-box-shadow($blur: 15px, $color: rgba(black, 0.3));
 }
+
+a{
+	color: $color-info;
+}

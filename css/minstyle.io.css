@@ -482,7 +482,7 @@ blockquote.boxed.error,
   text-align: justify;
   line-height: 1rem;
   padding: 1rem;
-  margin: 1rem;
+  margin: 0.6rem;
 }
 
 .alert.info {
@@ -579,7 +579,7 @@ ul li.active, ul dt.active, ul dd.active, ol li.active, ol dt.active, ol dd.acti
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 10px;
+  margin: 0.6rem;
 }
 
 h1.highlighted, h2.highlighted, h3.highlighted, h4.highlighted, h5.highlighted, h6.highlighted {
@@ -845,4 +845,8 @@ tr th {
   -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+a {
+  color: #3c8ec3;
 }
