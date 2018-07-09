@@ -1,0 +1,37 @@
+.badge{
+	color: #fff;
+	background-color: $color-gray-dark;
+	display: inline-block;
+	padding: .3rem .5rem;
+	font-size: 70%;
+	line-height: 1;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: baseline;
+	position: relative;
+	top: -2px;
+	@include border-radius;
+
+	&.rounded{
+		border-radius: 10em;
+		padding: .3rem .7rem;
+	}
+
+	&.info{
+		background-color: $color-info;
+	}
+
+	&.success{
+		background-color: $color-success;
+	}
+
+	&.error{
+		background-color: $color-error;
+	}
+
+	&.white{
+		background-color: #fff;
+		color: #000;
+
+	}
+}

@@ -4,7 +4,7 @@
 
 ul,ol,dl{
     list-style: circle inside;
-    margin: $margin;
+    margin: 1rem;
 
     &.none{
     	list-style: none;
@@ -30,13 +30,13 @@ ul,ol,dl{
 
     &.boxed{
     	list-style: none;
-		border: 0.1rem solid $color-gray;
+		border: 0.1rem solid $color-gray-dark;
 		@include border-radius;
 
 		& li, dt, dd{
 			padding: 0.7rem;
 			margin: 0;
-			border-bottom: 0.1rem solid $color-gray;
+			border-bottom: 0.1rem solid $color-gray-dark;
 		}
 
 		li:last-of-type {
