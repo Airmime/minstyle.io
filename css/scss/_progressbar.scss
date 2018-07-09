@@ -1,0 +1,43 @@
+.progress{
+	width: 100%;
+	height: 1.2rem;
+	display: flex;
+	background-color: $color-gray;
+	@include border-radius;
+	overflow: hidden;
+	text-align: center;
+	margin: 1rem;
+
+	.progress-fill{
+		height: 1.2rem;
+		background-color: $color-gray-dark;
+		white-space: nowrap;
+		font-size: .75rem;
+		text-align: center;
+		line-height: 1.2rem;
+		color: #fff;
+		text-align: center;
+		font-weight: bold;
+
+		&.info{
+			background-color: $color-info;
+		}
+
+		&.success{
+			background-color: $color-success;
+		}
+
+		&.error{
+			background-color: $color-error;
+		}
+
+		&.striped{
+			background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+			background-size: 1rem 1rem;
+		}
+
+		&.rounded{
+			@include border-radius;
+		}
+	}
+}
