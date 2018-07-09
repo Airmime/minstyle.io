@@ -1,7 +1,7 @@
 table{
 	width: 100%;
 	border-spacing: 0;
-	margin: $margin;
+	margin: 1rem;
 
 	&.boxed{
 		@include border-radius;

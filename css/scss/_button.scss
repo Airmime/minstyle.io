@@ -10,14 +10,13 @@ input[type='submit']{
 	 display: inline-block;
 	 background-color: $color-info;
 	 text-decoration: none;
-   text-transform: uppercase;
    text-align: center;
    font-size: .9rem;
    color: #fff;
    border: 0.1rem solid $color-info;
    @include border-radius;
-   line-height: 2.2rem;
-   padding: 0 $padding;
+   line-height: 2.0rem;
+   padding: 0 1.1rem;
    margin: 0.3rem;
    cursor: pointer;
    white-space: normal;
@@ -118,5 +117,17 @@ input[type='submit']{
 
   &:hover{
     text-decoration: underline;
+  }
+
+  &.small{
+    line-height: 1.5rem;
+    padding: 0 .6rem;
+    font-size: 80%;
+  }
+
+  &.large{
+    line-height: 2.6rem;
+    padding: 0 1.6rem;
+    font-size: 130%;
   }
 }

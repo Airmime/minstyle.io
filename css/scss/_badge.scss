@@ -2,15 +2,19 @@
 	color: #fff;
 	background-color: $color-gray-dark;
 	display: inline-block;
-	padding: .25em .4em;
+	padding: .3rem .5rem;
+	font-size: 70%;
 	line-height: 1;
 	text-align: center;
 	white-space: nowrap;
 	vertical-align: baseline;
+	position: relative;
+	top: -2px;
 	@include border-radius;
 
 	&.rounded{
 		border-radius: 10em;
+		padding: .3rem .7rem;
 	}
 
 	&.info{

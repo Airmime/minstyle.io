@@ -4,6 +4,11 @@ $bg-color-block: #f2f2f2;
 	border-left: 0.2rem solid $pBorderColorBlock;
 }
 
+@mixin borderColorBlockBoxed($pBorderColorBlockBoxed){
+	border: 0.1rem solid lighten($pBorderColorBlockBoxed, 40%);
+	border-left: 0.2rem solid $pBorderColorBlockBoxed;
+}
+
 @mixin colorBlock(){
 	@include border-left-radius(0);
 	@include borderColorBlock(darken($bg-color-block, 15%));
@@ -21,6 +26,24 @@ $bg-color-block: #f2f2f2;
 	}
 }
 
+@mixin colorBlockBoxed(){
+	background-color: transparent;
+	@include border-radius;
+	@include borderColorBlockBoxed(darken($bg-color-block, 50%));
+
+	&.info{
+		@include borderColorBlockBoxed($color-info);
+	}
+	
+	&.success{
+		@include borderColorBlockBoxed($color_success);
+	}
+
+	&.error{
+		@include borderColorBlockBoxed($color_error);
+	}
+}
+
 blockquote,
 .blockquote{
 	background-color: $bg-color-block;
@@ -28,15 +51,19 @@ blockquote,
 	color: darken( $bg-color-block, 55%);
 	text-align:justify;
 	line-height: 1.2em;
-	padding: $padding;
-	margin: $margin;
+	padding: 1.3rem;
+	margin: 1rem;
 
 	&.border-white{
 		@include colorBlock();
-		background-color: #fff;
+		background-color: transparent;
 	}
 
 	&.border{
 		@include colorBlock();
+	}
+
+	&.boxed{
+		@include colorBlockBoxed();
 	}
 }
