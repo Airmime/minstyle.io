@@ -488,25 +488,25 @@ blockquote.boxed.error,
 .alert.info {
   background-color: #ecf4f9;
   border: 0.1rem solid #aac4d4;
-  color: #6694b2;
+  color: #446d88;
 }
 
 .alert.error {
   background-color: #fcf2f2;
   border: 0.1rem solid #dfa9a9;
-  color: #c35f5f;
+  color: #9c3a3a;
 }
 
 .alert.success {
   background-color: #d9efd3;
   border: 0.1rem solid #a3c299;
-  color: #6a9a5c;
+  color: #496a3f;
 }
 
 .alert.white {
   background-color: #fff;
   border: 0.1rem solid #cccccc;
-  color: #999999;
+  color: #737373;
   background-color: transparent;
 }
 
@@ -545,7 +545,7 @@ ul.border.info, ol.border.info, dl.border.info {
 
 ul.boxed, ol.boxed, dl.boxed {
   list-style: none;
-  border: 0.1rem solid #f2f2f2;
+  border: 0.1rem solid #a6a6a6;
   -webkit-border-radius: 0.4rem;
   -moz-border-radius: 0.4rem;
   -ms-border-radius: 0.4rem;
@@ -556,7 +556,7 @@ ul.boxed, ol.boxed, dl.boxed {
 ul.boxed li, ul.boxed dt, ul.boxed dd, ol.boxed li, ol.boxed dt, ol.boxed dd, dl.boxed li, dl.boxed dt, dl.boxed dd {
   padding: 0.7rem;
   margin: 0;
-  border-bottom: 0.1rem solid #f2f2f2;
+  border-bottom: 0.1rem solid #a6a6a6;
 }
 
 ul.boxed li:last-of-type, ol.boxed li:last-of-type, dl.boxed li:last-of-type {
@@ -831,6 +831,14 @@ tr th {
 
 .clearfix {
   clear: both;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
 }
 
 .shadow {

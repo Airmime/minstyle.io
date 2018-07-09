@@ -8,7 +8,7 @@ $color-info-alert : lighten($color-info, 45%);
 }
 
 @function textColorAlert($pTextColorAlert){
-	@return desaturate(darken($pTextColorAlert,40%), 20%)
+	@return desaturate(darken($pTextColorAlert,55%), 20%)
 }
 
 @mixin colorAlert($pAlertColorAlert){
