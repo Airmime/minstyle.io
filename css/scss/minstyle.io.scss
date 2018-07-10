@@ -1,13 +1,9 @@
-$color-info: #4593b3;
-$color_error: #d23f51;
-$color_success: #5ca745;
-$color-gray: #f2f2f2;
-$color-gray-dark: darken(#f2f2f2, 30%);
 $default-border-radius: .4rem;
 
 @import "compass";
 @import "compass/reset";
 
+@import "_color.scss";
 @import "_grid.scss";
 @import "_button.scss";
 @import "badge.scss";

@@ -1,61 +1,44 @@
-/** Source **
-Author : Grafikart
-https://www.grafikart.fr/tutoriels/html-css/grille-responsive-css-498 
-*/
+$columns-grid: 12;
+$large-width-grid: 1140px;
+$medium-width-grid: 9px;
+$small-width-grid: 576px;
+$width-grid: 100%;
 
-$grid-columns: 12!default;
-$grid-gutter: 20px!default;
-$grid-medium: 640px!default;
-$grid-large: 1024px!default;
-
-@mixin responsive-columns($suffix: ''){
-    @for $i from 0 through $grid-columns{
-        @if $i != 0 {
-            .col#{$suffix}-#{$i}{ width:$i / $grid-columns * 100%; }
-        }
-        .col#{$suffix}-center{ margin: 0 auto; float: none; }
-        .col#{$suffix}-push-#{$i}{ left:$i / $grid-columns * 100%; }
-        .col#{$suffix}-offset-#{$i}{ margin-left:$i / $grid-columns * 100%; }
-        .col#{$suffix}-pull-#{$i}{ left:$i / $grid-columns * 100%; }
-
-    }
-
-    &.no-padding{
-    	padding: 0;
-    }
+.container{
+	max-width: $large-width-grid;
+	margin: 0 auto;
 }
 
-%col{
-    float: left;
-    position: relative;
-    min-height: 1px;
-    padding:0 $grid-gutter * 0.5;
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
 }
 
-.row{
-    margin:0 $grid-gutter * -0.5;
-    @include clearfix;
+
+@mixin grid-col($grid-letter){
+	@for $i from 1 to $columns-grid + 1{
+		.col-#{$grid-letter}-#{$i}{
+			float:left;
+			width: $i * $width-grid/ $columns-grid;
+		}
+	}
+
+	&.col-#{$grid-letter}-center{
+		margin: 0 auto;
+		float:none;
+	}
 }
 
-@for $i from 1 through $grid-columns{
-    .col-s-#{$i}, .col-m-#{$i}, .col-l-#{$i}{ @extend %col; }
+
+@include grid-col(s);
+
+@media only screen and (min-width: $medium-width-grid){
+	@include grid-col(m);
 }
 
-.m-show{ display: none; }
-.l-show{ display: none; }
-
-@include responsive-columns('-s');
-
-@media only screen and (min-width: $grid-medium) {
-    @include responsive-columns('-m');
-    .m-hide{ display: none; }
-    .m-show{ display: block; }
-    .s-show{ display: none; }
+@media only screen and (min-width: $large-width-grid){
+	@include grid-col(l);
 }
 
-@media only screen and (min-width: $grid-large) {
-    @include responsive-columns('-l');
-    .l-hide{ display: none; }
-    .l-show{ display: block; }
-    .m-show{ display: none; }
-}
+
