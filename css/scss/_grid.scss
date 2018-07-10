@@ -1,25 +1,61 @@
-$columns-grid: 12;
-$width-grid: 100%;
-$max-width-grid: 1140px;
+/** Source **
+Author : Grafikart
+https://www.grafikart.fr/tutoriels/html-css/grille-responsive-css-498 
+*/
 
-.container{
-	max-width: $max-width-grid;
-	margin: 0 auto;
+$grid-columns: 12!default;
+$grid-gutter: 20px!default;
+$grid-medium: 640px!default;
+$grid-large: 1024px!default;
+
+@mixin responsive-columns($suffix: ''){
+    @for $i from 0 through $grid-columns{
+        @if $i != 0 {
+            .col#{$suffix}-#{$i}{ width:$i / $grid-columns * 100%; }
+        }
+        .col#{$suffix}-center{ margin: 0 auto; float: none; }
+        .col#{$suffix}-push-#{$i}{ left:$i / $grid-columns * 100%; }
+        .col#{$suffix}-offset-#{$i}{ margin-left:$i / $grid-columns * 100%; }
+        .col#{$suffix}-pull-#{$i}{ left:$i / $grid-columns * 100%; }
+
+    }
+
+    &.no-padding{
+    	padding: 0;
+    }
 }
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
+%col{
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding:0 $grid-gutter * 0.5;
 }
 
-@for $i from 1 to $columns-grid + 1{
-	.col-#{$i}{
-		float:left;
-		width: $i * $width-grid/ $columns-grid;
-	}
+.row{
+    margin:0 $grid-gutter * -0.5;
+    @include clearfix;
 }
 
-.no-margin {
-	margin: 0;
+@for $i from 1 through $grid-columns{
+    .col-s-#{$i}, .col-m-#{$i}, .col-l-#{$i}{ @extend %col; }
+}
+
+.m-show{ display: none; }
+.l-show{ display: none; }
+
+@include responsive-columns('-s');
+
+@media only screen and (min-width: $grid-medium) {
+    @include responsive-columns('-m');
+    .m-hide{ display: none; }
+    .m-show{ display: block; }
+    .s-show{ display: none; }
+}
+
+@media only screen and (min-width: $grid-large) {
+    @include responsive-columns('-l');
+    .l-hide{ display: none; }
+    .l-show{ display: block; }
+    .m-show{ display: none; }
 }

@@ -49,4 +49,14 @@ $color-info-alert : lighten($color-info, 45%);
 		border: none;
 		color: textColor(#fff);
 	}
+
+	&.small{
+		line-height: 0.7rem;
+		padding: 0.7rem;
+	}
+
+	&.large{
+		line-height: 1.3rem;
+		padding: 1.3rem;
+	}
 }

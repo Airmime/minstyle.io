@@ -35,6 +35,13 @@ input[type='submit']{
     border-color: $color_success;
   }
 
+  &.gradient{
+    padding: 0 1.3rem;
+    line-height: 2.2rem;
+    @include background-image(linear-gradient(to left top, #fd8157, #eb5a82));
+    border: none;
+  }
+
   &.border{
     background-color: transparent;
     border: 0.1rem solid $color-info;
