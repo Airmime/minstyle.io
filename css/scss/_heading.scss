@@ -3,7 +3,7 @@
 }
 
 h1,h2,h3,h4,h5,h6{
-	margin: 10px;
+	margin: 0.6rem;
 
 	&.highlighted{
 		@include highlightedHeanding(darken($color-gray, 15%));

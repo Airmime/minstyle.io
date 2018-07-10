@@ -7,7 +7,7 @@
 }
 
 .clearfix{
-	clear: both;
+	@include clearfix
 }
 
 .hide{

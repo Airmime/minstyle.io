@@ -30,13 +30,13 @@ ul,ol,dl{
 
     &.boxed{
     	list-style: none;
-		border: 0.1rem solid $color-gray-dark;
+		border: 0.1rem solid lighten($color-gray-dark, 20%);
 		@include border-radius;
 
 		& li, dt, dd{
 			padding: 0.7rem;
 			margin: 0;
-			border-bottom: 0.1rem solid $color-gray-dark;
+			border-bottom: 0.1rem solid lighten($color-gray-dark, 20%);
 		}
 
 		li:last-of-type {

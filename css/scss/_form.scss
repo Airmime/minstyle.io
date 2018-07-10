@@ -16,7 +16,6 @@ input[type='week'],
 input[type='datetime'],
 input[type='range'],
 input[type='datetime-local'],
-input[type='file'],
 input:not([type]),
 textarea,
 select{
@@ -46,11 +45,6 @@ select{
 		background-color: $color-gray;
 	}
 
-}
-
-input[type='file']{
-	border: none;
-	padding: .6rem 0;
 }
 
 input[type='checkbox'],

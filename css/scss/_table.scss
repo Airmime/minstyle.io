@@ -2,11 +2,6 @@ table{
 	width: 100%;
 	border-spacing: 0;
 	margin: 1rem;
-
-	&.boxed{
-		@include border-radius;
-		border: .1rem solid darken($color-gray, 10%);
-	}
 }
 
 tr{
