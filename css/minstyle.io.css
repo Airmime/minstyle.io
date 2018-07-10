@@ -69,61 +69,73 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .col-s-1 {
   float: left;
   width: 8.33333%;
+  min-height: 1px;
 }
 
 .col-s-2 {
   float: left;
   width: 16.66667%;
+  min-height: 1px;
 }
 
 .col-s-3 {
   float: left;
   width: 25%;
+  min-height: 1px;
 }
 
 .col-s-4 {
   float: left;
   width: 33.33333%;
+  min-height: 1px;
 }
 
 .col-s-5 {
   float: left;
   width: 41.66667%;
+  min-height: 1px;
 }
 
 .col-s-6 {
   float: left;
   width: 50%;
+  min-height: 1px;
 }
 
 .col-s-7 {
   float: left;
   width: 58.33333%;
+  min-height: 1px;
 }
 
 .col-s-8 {
   float: left;
   width: 66.66667%;
+  min-height: 1px;
 }
 
 .col-s-9 {
   float: left;
   width: 75%;
+  min-height: 1px;
 }
 
 .col-s-10 {
   float: left;
   width: 83.33333%;
+  min-height: 1px;
 }
 
 .col-s-11 {
   float: left;
   width: 91.66667%;
+  min-height: 1px;
 }
 
 .col-s-12 {
   float: left;
   width: 100%;
+  min-height: 1px;
 }
 
 .col-s-center {
@@ -135,50 +147,62 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   .col-m-1 {
     float: left;
     width: 8.33333%;
+    min-height: 1px;
   }
   .col-m-2 {
     float: left;
     width: 16.66667%;
+    min-height: 1px;
   }
   .col-m-3 {
     float: left;
     width: 25%;
+    min-height: 1px;
   }
   .col-m-4 {
     float: left;
     width: 33.33333%;
+    min-height: 1px;
   }
   .col-m-5 {
     float: left;
     width: 41.66667%;
+    min-height: 1px;
   }
   .col-m-6 {
     float: left;
     width: 50%;
+    min-height: 1px;
   }
   .col-m-7 {
     float: left;
     width: 58.33333%;
+    min-height: 1px;
   }
   .col-m-8 {
     float: left;
     width: 66.66667%;
+    min-height: 1px;
   }
   .col-m-9 {
     float: left;
     width: 75%;
+    min-height: 1px;
   }
   .col-m-10 {
     float: left;
     width: 83.33333%;
+    min-height: 1px;
   }
   .col-m-11 {
     float: left;
     width: 91.66667%;
+    min-height: 1px;
   }
   .col-m-12 {
     float: left;
     width: 100%;
+    min-height: 1px;
   }
   .col-m-center {
     margin: 0 auto;
@@ -190,50 +214,62 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   .col-l-1 {
     float: left;
     width: 8.33333%;
+    min-height: 1px;
   }
   .col-l-2 {
     float: left;
     width: 16.66667%;
+    min-height: 1px;
   }
   .col-l-3 {
     float: left;
     width: 25%;
+    min-height: 1px;
   }
   .col-l-4 {
     float: left;
     width: 33.33333%;
+    min-height: 1px;
   }
   .col-l-5 {
     float: left;
     width: 41.66667%;
+    min-height: 1px;
   }
   .col-l-6 {
     float: left;
     width: 50%;
+    min-height: 1px;
   }
   .col-l-7 {
     float: left;
     width: 58.33333%;
+    min-height: 1px;
   }
   .col-l-8 {
     float: left;
     width: 66.66667%;
+    min-height: 1px;
   }
   .col-l-9 {
     float: left;
     width: 75%;
+    min-height: 1px;
   }
   .col-l-10 {
     float: left;
     width: 83.33333%;
+    min-height: 1px;
   }
   .col-l-11 {
     float: left;
     width: 91.66667%;
+    min-height: 1px;
   }
   .col-l-12 {
     float: left;
     width: 100%;
+    min-height: 1px;
   }
   .col-l-center {
     margin: 0 auto;
@@ -264,7 +300,6 @@ input[type='submit'] {
   border-radius: 0.4rem;
   line-height: 2.0rem;
   padding: 0 1.1rem;
-  margin: 0.3rem;
   cursor: pointer;
   white-space: normal;
 }
@@ -713,13 +748,8 @@ ul li.active, ul dt.active, ul dd.active, ol li.active, ol dt.active, ol dd.acti
   padding: 0.7rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  margin: 0.6rem;
-}
-
 h1.highlighted, h2.highlighted, h3.highlighted, h4.highlighted, h5.highlighted, h6.highlighted {
   border-bottom: 0.2rem solid #cccccc;
-  padding-bottom: 10px;
 }
 
 h1.highlighted.error, h2.highlighted.error, h3.highlighted.error, h4.highlighted.error, h5.highlighted.error, h6.highlighted.error {
@@ -966,6 +996,53 @@ tr th {
 
 .show {
   display: block;
+}
+
+.card .pic img {
+  diplay: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.card .pic.rounded {
+  border-radius: 0.4rem;
+  overflow: hidden;
+}
+
+.card .title {
+  margin: 1rem 0 0 0;
+}
+
+.card .title.center {
+  text-align: center;
+}
+
+.card .text {
+  margin: 1rem 0 0 0;
+  text-align: justify;
+  line-height: 1.2em;
+}
+
+.card .action {
+  margin: 1rem 0 0 0;
+}
+
+.card .action.center {
+  text-align: center;
+}
+
+.card .action.right {
+  float: right;
+}
+
+.card.boxed {
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  -ms-border-radius: 0.4rem;
+  -o-border-radius: 0.4rem;
+  border-radius: 0.4rem;
+  border: 0.1rem solid #d9d9d9;
+  padding: 0.7rem;
 }
 
 .shadow {

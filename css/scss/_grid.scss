@@ -21,6 +21,7 @@ $width-grid: 100%;
 		.col-#{$grid-letter}-#{$i}{
 			float:left;
 			width: $i * $width-grid/ $columns-grid;
+			min-height: 1px;
 		}
 	}
 

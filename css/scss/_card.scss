@@ -1,0 +1,47 @@
+.card{
+
+	.pic{
+		img{
+			diplay: block;
+			margin: 0 auto;
+			max-width: 100%;
+		}
+
+		&.rounded{
+			border-radius: $default-border-radius;
+			overflow: hidden;
+		}
+	}
+
+	.title{
+		margin: 1rem 0 0 0;
+
+		&.center{
+			text-align: center;
+		}
+	}
+
+	.text{
+		margin: 1rem 0 0 0;
+		text-align: justify;
+		line-height: 1.2em;
+	}
+
+	.action{
+		margin: 1rem 0 0 0;
+
+		&.center{
+			text-align: center;
+		}
+
+		&.right{
+			float: right;
+		}
+	}
+
+	&.boxed{
+		@include border-radius;
+		border: 0.1rem solid lighten($color-gray-dark, 20%);
+		padding: 0.7rem;
+	}
+}

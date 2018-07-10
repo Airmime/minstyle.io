@@ -15,6 +15,7 @@ $default-border-radius: .4rem;
 @import "_table.scss";
 @import "_progressbar.scss";
 @import "_utility.scss";
+@import "_card.scss";
 
 .shadow{
 	@include single-box-shadow($blur: 15px, $color: rgba(black, 0.3));
