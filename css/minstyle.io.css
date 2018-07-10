@@ -545,7 +545,7 @@ ul.border.info, ol.border.info, dl.border.info {
 
 ul.boxed, ol.boxed, dl.boxed {
   list-style: none;
-  border: 0.1rem solid #a6a6a6;
+  border: 0.1rem solid #d9d9d9;
   -webkit-border-radius: 0.4rem;
   -moz-border-radius: 0.4rem;
   -ms-border-radius: 0.4rem;
@@ -556,7 +556,7 @@ ul.boxed, ol.boxed, dl.boxed {
 ul.boxed li, ul.boxed dt, ul.boxed dd, ol.boxed li, ol.boxed dt, ol.boxed dd, dl.boxed li, dl.boxed dt, dl.boxed dd {
   padding: 0.7rem;
   margin: 0;
-  border-bottom: 0.1rem solid #a6a6a6;
+  border-bottom: 0.1rem solid #d9d9d9;
 }
 
 ul.boxed li:last-of-type, ol.boxed li:last-of-type, dl.boxed li:last-of-type {
@@ -641,7 +641,6 @@ input[type='week'],
 input[type='datetime'],
 input[type='range'],
 input[type='datetime-local'],
-input[type='file'],
 input:not([type]),
 textarea,
 select {
@@ -682,7 +681,6 @@ input[type='week']:focus,
 input[type='datetime']:focus,
 input[type='range']:focus,
 input[type='datetime-local']:focus,
-input[type='file']:focus,
 input:not([type]):focus,
 textarea:focus,
 select:focus {
@@ -704,16 +702,10 @@ input[type='week']:disabled,
 input[type='datetime']:disabled,
 input[type='range']:disabled,
 input[type='datetime-local']:disabled,
-input[type='file']:disabled,
 input:not([type]):disabled,
 textarea:disabled,
 select:disabled {
   background-color: #f2f2f2;
-}
-
-input[type='file'] {
-  border: none;
-  padding: .6rem 0;
 }
 
 input[type='checkbox'],
