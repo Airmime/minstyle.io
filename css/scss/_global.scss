@@ -16,7 +16,7 @@ a{
 	color: $color-info;
 }
 
-.shadow{
+.ms-shadow{
 	@include single-box-shadow($blur: 15px, $color: rgba(black, 0.3));
 }
 

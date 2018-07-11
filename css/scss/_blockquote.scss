@@ -13,15 +13,15 @@ $bg-color-block: #f2f2f2;
 	@include border-left-radius(0);
 	@include borderColorBlock(darken($bg-color-block, 15%));
 
-	&.info{
+	&.ms-blue{
 		@include borderColorBlock($color-info);
 	}
 	
-	&.success{
+	&.ms-green{
 		@include borderColorBlock($color_success);
 	}
 
-	&.error{
+	&.ms-red{
 		@include borderColorBlock($color_error);
 	}
 }
@@ -31,21 +31,21 @@ $bg-color-block: #f2f2f2;
 	@include border-radius;
 	@include borderColorBlockBoxed(darken($bg-color-block, 50%));
 
-	&.info{
+	&.ms-blue{
 		@include borderColorBlockBoxed($color-info);
 	}
 	
-	&.success{
+	&.ms-green{
 		@include borderColorBlockBoxed($color_success);
 	}
 
-	&.error{
+	&.ms-red{
 		@include borderColorBlockBoxed($color_error);
 	}
 }
 
 blockquote,
-.blockquote{
+.ms-blockquote{
 	background-color: $bg-color-block;
 	@include border-radius;
 	color: darken( $bg-color-block, 55%);
@@ -54,16 +54,16 @@ blockquote,
 	padding: 1.3rem;
 	margin: 1rem;
 
-	&.border-white{
+	&.ms-border-white{
 		@include colorBlock();
 		background-color: transparent;
 	}
 
-	&.border{
+	&.ms-border{
 		@include colorBlock();
 	}
 
-	&.boxed{
+	&.ms-boxed{
 		@include colorBlockBoxed();
 	}
 }

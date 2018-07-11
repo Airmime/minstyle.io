@@ -5,7 +5,7 @@ table{
 }
 
 tr{
-	&.title{
+	&.ms-title{
 		td,
 		th{
 			font-weight: bold;
@@ -13,11 +13,11 @@ tr{
 		}
 	}
 
-	&.fill{
+	&.ms-fill{
 		background-color: lighten($color-gray, 1%);
 	}
 
-	&.disabled{
+	&.ms-disabled{
 		td,
 		th{
 			background-color: gray;

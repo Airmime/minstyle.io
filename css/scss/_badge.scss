@@ -1,4 +1,4 @@
-.badge{
+.ms-badge{
 	color: #fff;
 	background-color: $color-gray-dark;
 	display: inline-block;
@@ -12,24 +12,24 @@
 	top: -2px;
 	@include border-radius;
 
-	&.rounded{
+	&.ms-rounded{
 		border-radius: 10em;
 		padding: .3rem .7rem;
 	}
 
-	&.info{
+	&.ms-blue{
 		background-color: $color-info;
 	}
 
-	&.success{
+	&.ms-green{
 		background-color: $color-success;
 	}
 
-	&.error{
+	&.ms-red{
 		background-color: $color-error;
 	}
 
-	&.white{
+	&.ms-white{
 		background-color: #fff;
 		color: #000;
 

@@ -1,36 +1,36 @@
 @mixin cardElementPosition(){
-	&.center{
+	&.ms-center{
 		text-align: center;
 	}
 
-	&.right{
+	&.ms-right{
 		float: right;
 	}
 
-	&.left{
+	&.ms-left{
 		float: left;
 	}
 }
 
 @mixin cardTextPosition(){
-	&.center{
+	&.ms-center{
 		text-align: center;
 	}
 
-	&.right{
+	&.ms-right{
 		text-align: right;
 	}
 
-	&.left{
+	&.ms-left{
 		text-align: left;
 	}
 }
 
-.card{
+.ms-card{
 
 	margin-bottom: 1rem;
 
-	.pic{
+	.ms-pic{
 		img{
 			diplay: block;
 			margin: 0 auto;
@@ -43,24 +43,24 @@
 		}
 	}
 
-	.title{
+	.ms-title{
 		margin: 1rem 0 0 0;
 		@include cardTextPosition();
 	}
 
-	.text{
+	.ms-text{
 		margin: 1rem 0 0 0;
 		text-align: justify;
 		line-height: 1.2em;
 		@include cardTextPosition();
 	}
 
-	.action{
+	.ms-action{
 		margin: 1rem 0 0 0;
 		@include cardElementPosition();
 	}
 
-	&.boxed{
+	&.ms-boxed{
 		@include border-radius;
 		border: 1px solid lighten($color-gray-dark, 20%);
 		padding: 0.7rem;

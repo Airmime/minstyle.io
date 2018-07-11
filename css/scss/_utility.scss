@@ -1,19 +1,19 @@
-.float-left{
+.ms-float-left{
 	float: left;
 }
 
-.float-right{
+.ms-float-right{
 	float: right;
 }
 
-.clearfix{
+.ms-clearfix{
 	@include clearfix
 }
 
-.hide{
+.ms-hide{
 	display: none;
 }
 
-.show{
+.ms-show{
 	display: block;
 }
