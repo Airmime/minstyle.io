@@ -960,7 +960,7 @@ input[type='button'].ms-border,
 input[type='submit'].ms-border {
   background-color: transparent;
   border: 1px solid #d9d9d9;
-  color: #d9d9d9;
+  color: #000;
 }
 
 button.ms-border.ms-red,
@@ -995,7 +995,7 @@ input[type='submit'].ms-border-bottom {
   border: 0;
   border-radius: 0;
   border-bottom: 0.1rem solid #d9d9d9;
-  color: #d9d9d9;
+  color: #000;
 }
 
 button.ms-border-bottom.ms-red,
@@ -1028,7 +1028,7 @@ input[type='button'].ms-clear,
 input[type='submit'].ms-clear {
   background-color: transparent;
   border-color: transparent;
-  color: #d9d9d9;
+  color: #000;
 }
 
 button.ms-clear.ms-red,
@@ -1090,7 +1090,7 @@ input[type='submit'].ms-border-rounded {
   -o-border-radius: 10em;
   border-radius: 10em;
   background-color: transparent;
-  color: #d9d9d9;
+  color: #000;
 }
 
 button.ms-border-rounded.ms-red,

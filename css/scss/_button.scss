@@ -53,7 +53,7 @@ input[type='submit']{
   &.ms-border{
     background-color: transparent;
     border: 1px solid $color-gray-medium;
-    color: $color-gray-medium;
+    color: #000;
 
     &.ms-red{
       border-color: $color_error;
@@ -76,7 +76,7 @@ input[type='submit']{
     border: 0;
     border-radius: 0;
     border-bottom: 0.1rem solid $color-gray-medium;
-    color: $color-gray-medium;
+    color: #000;
 
     &.ms-red{
       border-color: $color_error;
@@ -98,7 +98,7 @@ input[type='submit']{
   &.ms-clear{
     background-color: transparent;
     border-color: transparent;
-    color: $color-gray-medium;
+    color: #000;
 
     &.ms-red{
       color: $color_error;
@@ -134,7 +134,7 @@ input[type='submit']{
   &.ms-border-rounded{
     @include border-radius(10em);
     background-color: transparent;
-    color: $color-gray-medium;
+    color: #000;
 
     &.ms-red{
       border-color: $color_error;
