@@ -1,0 +1,22 @@
+*,
+*:after,
+*:before{
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+b {
+	font-weight: bold;
+}
+
+a{
+	color: $color-info;
+}
+
+.shadow{
+	@include single-box-shadow($blur: 15px, $color: rgba(black, 0.3));
+}
+

@@ -1,12 +1,12 @@
 $bg-color-block: #f2f2f2;
 
 @mixin borderColorBlock($pBorderColorBlock){
-	border-left: 0.2rem solid $pBorderColorBlock;
+	border-left: 2px solid $pBorderColorBlock;
 }
 
 @mixin borderColorBlockBoxed($pBorderColorBlockBoxed){
-	border: 0.1rem solid lighten($pBorderColorBlockBoxed, 40%);
-	border-left: 0.2rem solid $pBorderColorBlockBoxed;
+	border: 1px solid $pBorderColorBlockBoxed;
+	border-left: 3px solid $pBorderColorBlockBoxed;
 }
 
 @mixin colorBlock(){
