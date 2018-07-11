@@ -6,29 +6,29 @@ ul,ol,dl{
     list-style: circle inside;
     margin: 1rem;
 
-    &.none{
+    &.ms-none{
     	list-style: none;
     }
 
-    &.border{
+    &.ms-border{
     	list-style: none;
 		border-left: 2px solid $color-gray;
 		padding-left: 0.5rem;
 
-		&.error{
+		&.ms-red{
 			@include borderColorList($color-error);
 		}
 
-		&.success{
+		&.ms-green{
 			@include borderColorList($color-success);
 		}
 
-		&.info{
+		&.ms-blue{
 			@include borderColorList($color-info);
 		}
     }
 
-    &.boxed{
+    &.ms-boxed{
     	list-style: none;
 		border: 1px solid lighten($color-gray-dark, 20%);
 		@include border-radius;
@@ -47,7 +47,7 @@ ul,ol,dl{
     & li, dt, dd{
     	margin-bottom: 0.4em;
 
-    	&.active{
+    	&.ms-active{
     		background-color: $color-info;
     		color: lighten($color-info, 80%);
     		@include border-radius;

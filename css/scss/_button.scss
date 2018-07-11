@@ -4,16 +4,16 @@ body{
 
 /* BASE */
 button, 
-.btn, 
+.ms-btn, 
 input[type='button'], 
 input[type='submit']{
 	 display: inline-block;
-	 background-color: $color-info;
+	 background-color: $color-gray-medium;
 	 text-decoration: none;
    text-align: center;
    font-size: .9rem;
-   color: #fff;
-   border: 1px solid $color-info;
+   color: #000;
+   border: 1px solid $color-gray-medium;
    @include border-radius;
    line-height: 2.0rem;
    padding: 0 1.1rem;
@@ -24,97 +24,129 @@ input[type='submit']{
     outline: 0;
   }
 
-  &.error{
+  &.ms-red{
     background-color: $color_error;
     border-color: $color_error;
+    color: #fff;
   }
 
-  &.success{
+  &.ms-green{
     background-color: $color_success;
     border-color: $color_success;
+    color: #fff;
   }
 
-  &.gradient{
+  &.ms-blue{
+    background-color: $color_info;
+    border-color: $color_info;
+    color: #fff;
+  }
+
+  &.ms-gradient{
     padding: 0 1.3rem;
     line-height: 2.2rem;
     @include background-image(linear-gradient(to left top, #fd8157, #eb5a82));
     border: none;
+    color: #fff;
   }
 
-  &.border{
+  &.ms-border{
     background-color: transparent;
-    border: 1px solid $color-info;
-    color: $color-info;
+    border: 1px solid $color-gray-medium;
+    color: $color-gray-medium;
 
-    &.error{
+    &.ms-red{
       border-color: $color_error;
       color: $color_error;
     }
 
-    &.success{
+    &.ms-green{
       border-color: $color_success;
       color: $color_success;
     }
+
+    &.ms-blue{
+      border-color: $color_info;
+      color: $color_info;
+    }
   }
 
-  &.border-bottom{
+  &.ms-border-bottom{
     background-color: transparent;
     border: 0;
     border-radius: 0;
-    border-bottom: 0.1rem solid $color-info;
-    color: $color-info;
+    border-bottom: 0.1rem solid $color-gray-medium;
+    color: $color-gray-medium;
 
-    &.error{
+    &.ms-red{
       border-color: $color_error;
       color: $color_error;
     }
 
-    &.success{
+    &.ms-green{
       border-color: $color_success;
       color: $color_success;
+    }
+
+    &.ms-blue{
+      border-color: $color_info;
+      color: $color_info;
     }
   }
 
 
-  &.clear{
+  &.ms-clear{
     background-color: transparent;
     border-color: transparent;
-    color: $color-info;
+    color: $color-gray-medium;
 
-    &.error{
+    &.ms-red{
       color: $color_error;
     }
 
-    &.success{
+    &.ms-green{
       color: $color_success;
     }
+
+    &.ms-blue{
+      color: $color_info;
+    }
   }
 
 
-  &.rounded{
+  &.ms-rounded{
     border-radius: 10em;
 
-    &.error{
+    &.ms-red{
       border-color: $color_error;
     }
 
-    &.success{
+    &.ms-green{
       border-color: $color_success;
+    }
+
+    &.ms-blue{
+      border-color: $color_info;
     }
   }
 
 
-  &.border-rounded{
+  &.ms-border-rounded{
     @include border-radius(10em);
     background-color: transparent;
-    color: $color-info;
+    color: $color-gray-medium;
 
-    &.error{
+    &.ms-red{
       border-color: $color_error;
       color: $color_error;
     }
 
-    &.success{
+    &.ms-blue{
+      border-color: $color_info;
+      color: $color_info;
+    }
+
+    &.ms-green{
       border-color: $color_success;
       color: $color_success;
     }
@@ -125,13 +157,13 @@ input[type='submit']{
     text-decoration: underline;
   }
 
-  &.small{
+  &.ms-small{
     line-height: 1.5rem;
     padding: 0 .6rem;
     font-size: 80%;
   }
 
-  &.large{
+  &.ms-large{
     line-height: 2.6rem;
     padding: 0 1.6rem;
     font-size: 120%;

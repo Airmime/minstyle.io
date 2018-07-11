@@ -17,7 +17,7 @@ $color-info-alert : lighten($color-info, 40%);
 	color: textColorAlert($pAlertColorAlert);
 }
 
-.alert{
+.ms-alert{
 	background-color: $bg-color-alert;
 	border: 1px solid borderColorAlert($bg-color-alert);
 	@include border-radius;
@@ -27,35 +27,35 @@ $color-info-alert : lighten($color-info, 40%);
 	padding: 1rem;
 	margin: 0.6rem;
 
-	&.info{
+	&.ms-blue{
 		@include colorAlert($color-info-alert);
 	}
 
-	&.error{
+	&.ms-red{
 		@include colorAlert($color_error-alert);
 	}
 
-	&.success{
+	&.ms-green{
 		@include colorAlert($color_success-alert);
 	}
 
-	&.white{
+	&.ms-white{
 		@include colorAlert(#fff);
 		background-color: transparent;
 	}
 
-	&.clear{
+	&.ms-clear{
 		background-color: transparent;
 		border: none;
 		color: textColor(#fff);
 	}
 
-	&.small{
+	&.ms-small{
 		line-height: 0.7rem;
 		padding: 0.7rem;
 	}
 
-	&.large{
+	&.ms-large{
 		line-height: 1.3rem;
 		padding: 1.3rem;
 	}
