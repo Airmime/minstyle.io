@@ -11,9 +11,10 @@
 		@include border-radius;
 	}
 
-	li.active{
+	li.ms-active{
 		background-color: $pMenuColor;
 		@include border-radius;
+
 		a{
 			color: #fff;
 		}

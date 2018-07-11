@@ -1722,7 +1722,7 @@ tr th {
   border-radius: 0.3rem;
 }
 
-.ms-menu.ms-blue li.active {
+.ms-menu.ms-blue li.ms-active {
   background-color: #4593b3;
   -webkit-border-radius: 0.3rem;
   -moz-border-radius: 0.3rem;
@@ -1731,7 +1731,7 @@ tr th {
   border-radius: 0.3rem;
 }
 
-.ms-menu.ms-blue li.active a {
+.ms-menu.ms-blue li.ms-active a {
   color: #fff;
 }
 
@@ -1755,7 +1755,7 @@ tr th {
   border-radius: 0.3rem;
 }
 
-.ms-menu.ms-green li.active {
+.ms-menu.ms-green li.ms-active {
   background-color: #5ca745;
   -webkit-border-radius: 0.3rem;
   -moz-border-radius: 0.3rem;
@@ -1764,7 +1764,7 @@ tr th {
   border-radius: 0.3rem;
 }
 
-.ms-menu.ms-green li.active a {
+.ms-menu.ms-green li.ms-active a {
   color: #fff;
 }
 
@@ -1788,7 +1788,7 @@ tr th {
   border-radius: 0.3rem;
 }
 
-.ms-menu.ms-red li.active {
+.ms-menu.ms-red li.ms-active {
   background-color: #d23f51;
   -webkit-border-radius: 0.3rem;
   -moz-border-radius: 0.3rem;
@@ -1797,6 +1797,6 @@ tr th {
   border-radius: 0.3rem;
 }
 
-.ms-menu.ms-red li.active a {
+.ms-menu.ms-red li.ms-active a {
   color: #fff;
 }
