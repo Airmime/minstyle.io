@@ -1,0 +1,71 @@
+@mixin menuColor($pMenuColor){
+	a:hover{
+		background-color: $pMenuColor;
+		color: #fff;
+		@include border-radius;
+	}
+
+	a:focus{
+		background-color: $pMenuColor;
+		color: #fff;
+		@include border-radius;
+	}
+
+	li.active{
+		background-color: $pMenuColor;
+		@include border-radius;
+		a{
+			color: #fff;
+		}
+	}
+}
+
+.ms-menu{
+
+	&.ms-vertical{
+		li{
+			clear: both;
+			margin: 0.5rem;
+		}
+	}
+	
+	ul{
+		list-style: none;
+
+		li{
+			float: left;
+			margin: 0 0.5rem;
+
+			a{
+				text-decoration: none;
+				padding: 0.5rem;
+				color: darken($color-gray, 50%);
+			}
+		}
+	}
+
+	&.ms-gray{
+		a:hover{
+			background-color: $color-gray;
+			@include border-radius;
+			color: #000;
+		}
+
+		a:focus{
+			background-color: $color-gray;
+			@include border-radius;
+		}
+	}
+
+	&.ms-blue{
+		@include menuColor($color-info);
+	}
+
+	&.ms-green{
+		@include menuColor($color-success);
+	}
+
+	&.ms-red{
+		@include menuColor($color-error);
+	}
+}

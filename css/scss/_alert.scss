@@ -1,25 +1,25 @@
 $bg-color-alert: #f2f2f2;
-$color_error-alert : lighten($color_error, 45%);
-$color_success-alert : lighten($color_success, 45%);
-$color-info-alert : lighten($color-info, 45%);
+$color_error-alert : lighten($color_error, 40%);
+$color_success-alert : lighten($color_success, 40%);
+$color-info-alert : lighten($color-info, 40%);
 
 @function borderColorAlert($pBorderColorAlert){
 	@return desaturate(darken($pBorderColorAlert,20%), 20%)
 }
 
 @function textColorAlert($pTextColorAlert){
-	@return desaturate(darken($pTextColorAlert,55%), 20%)
+	@return desaturate(darken($pTextColorAlert,60%), 20%)
 }
 
 @mixin colorAlert($pAlertColorAlert){
 	background-color: $pAlertColorAlert;
-	border: 0.1rem solid borderColorAlert($pAlertColorAlert);
+	border: 1px solid borderColorAlert($pAlertColorAlert);
 	color: textColorAlert($pAlertColorAlert);
 }
 
 .alert{
 	background-color: $bg-color-alert;
-	border: 0.1rem solid borderColorAlert($bg-color-alert);
+	border: 1px solid borderColorAlert($bg-color-alert);
 	@include border-radius;
 	color: darken( $bg-color-alert, 40%);
 	text-align:justify;

@@ -1,25 +1,20 @@
-$default-border-radius: .4rem;
+$default-border-radius: .3rem;
 
 @import "compass";
 @import "compass/reset";
 
 @import "_color.scss";
+@import "_global.scss";
+@import "_utility.scss";
 @import "_grid.scss";
+@import "_heading.scss";
 @import "_button.scss";
-@import "badge.scss";
+@import "_badge.scss";
 @import "_blockquote.scss";
 @import "_alert.scss";
 @import "_list.scss";
-@import "_heading.scss";
 @import "_form.scss";
 @import "_table.scss";
 @import "_progressbar.scss";
-@import "_utility.scss";
-
-.shadow{
-	@include single-box-shadow($blur: 15px, $color: rgba(black, 0.3));
-}
-
-a{
-	color: $color-info;
-}
+@import "_card.scss";
+@import "_menu.scss";

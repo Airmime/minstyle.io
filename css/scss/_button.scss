@@ -13,11 +13,10 @@ input[type='submit']{
    text-align: center;
    font-size: .9rem;
    color: #fff;
-   border: 0.1rem solid $color-info;
+   border: 1px solid $color-info;
    @include border-radius;
    line-height: 2.0rem;
    padding: 0 1.1rem;
-   margin: 0.3rem;
    cursor: pointer;
    white-space: normal;
 
@@ -44,7 +43,7 @@ input[type='submit']{
 
   &.border{
     background-color: transparent;
-    border: 0.1rem solid $color-info;
+    border: 1px solid $color-info;
     color: $color-info;
 
     &.error{
@@ -120,7 +119,7 @@ input[type='submit']{
       color: $color_success;
     }
   }
-
+  
 
   &:hover{
     text-decoration: underline;
@@ -135,6 +134,6 @@ input[type='submit']{
   &.large{
     line-height: 2.6rem;
     padding: 0 1.6rem;
-    font-size: 130%;
+    font-size: 120%;
   }
 }
