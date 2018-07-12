@@ -17,14 +17,12 @@ $large-width-grid: 1140px!default;
 @mixin responsive-columns($suffix: ''){
     @for $i from 0 through $columns{
         @if $i != 0 {
-            .col#{$suffix}-#{$i}{ width:$i / $columns * 100% - $gutter;}
+            .col#{$suffix}-#{$i}{ width:$i / $columns * 100%;}
 
         }
 
         .col#{$suffix}-center{ margin: 0 auto; float: none; }
-        .col#{$suffix}-push-#{$i}{ left:$i / $columns * 100%; }
         .col#{$suffix}-offset-#{$i}{ margin-left:$i / $columns * 100%; }
-        .col#{$suffix}-pull-#{$i}{ left:$i / $columns * 100%; }
     }
 }
 
@@ -33,7 +31,6 @@ $large-width-grid: 1140px!default;
     position: relative;
     min-height: 1px;
     padding:0 $gutter * 0.5;
-    display: flex;
 
     &.no-padding{
 		padding: 0;
@@ -41,7 +38,7 @@ $large-width-grid: 1140px!default;
 }
 
 .row{
-    margin:0 $gutter * -0.5;
+    margin: 1rem 0;
     @include clearfix;
 }
 

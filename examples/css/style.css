@@ -1,0 +1,26 @@
+body{
+	font-family: 'Nunito', sans-serif;
+}
+
+header,
+.header{
+	width: 100%;
+	height: 70px;
+	margin-bottom: 20px;
+	background: rgba(235,90,131,1);
+	background: -moz-linear-gradient(-45deg, rgba(235,90,131,1) 0%, rgba(253,129,87,1) 100%);
+	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(235,90,131,1)), color-stop(100%, rgba(253,129,87,1)));
+	background: -webkit-linear-gradient(-45deg, rgba(235,90,131,1) 0%, rgba(253,129,87,1) 100%);
+	background: -o-linear-gradient(-45deg, rgba(235,90,131,1) 0%, rgba(253,129,87,1) 100%);
+	background: -ms-linear-gradient(-45deg, rgba(235,90,131,1) 0%, rgba(253,129,87,1) 100%);
+	background: linear-gradient(135deg, rgba(235,90,131,1) 0%, rgba(253,129,87,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eb5a83', endColorstr='#fd8157', GradientType=1 );
+
+}
+
+header,
+.header .logo{
+	display: block;
+	margin: 0 auto;
+	padding: 6px;
+}

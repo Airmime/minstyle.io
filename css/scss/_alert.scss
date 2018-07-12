@@ -1,62 +1,85 @@
-$bg-color-alert: #f2f2f2;
-$color_error-alert : lighten($color_error, 40%);
-$color_success-alert : lighten($color_success, 40%);
-$color-info-alert : lighten($color-info, 40%);
-
-@function borderColorAlert($pBorderColorAlert){
-	@return desaturate(darken($pBorderColorAlert,20%), 20%)
-}
-
-@function textColorAlert($pTextColorAlert){
-	@return desaturate(darken($pTextColorAlert,60%), 20%)
-}
-
-@mixin colorAlert($pAlertColorAlert){
+@mixin alertBackground($pAlertColorAlert){
 	background-color: $pAlertColorAlert;
-	border: 1px solid borderColorAlert($pAlertColorAlert);
-	color: textColorAlert($pAlertColorAlert);
+	color: #fff;
+}
+
+@mixin alertTextColor($pAlertTextColor){
+	color: darken($pAlertTextColor, 30%)
 }
 
 .ms-alert{
-	background-color: $bg-color-alert;
-	border: 1px solid borderColorAlert($bg-color-alert);
+	background-color: $color-gray-dark;
 	@include border-radius;
-	color: darken( $bg-color-alert, 40%);
+	@include box-sizing(border-box);
+	color: #fff;
 	text-align:justify;
-	line-height: 1rem;
-	padding: 1rem;
+	line-height: 1.3rem;
+	padding: 1rem 1.25rem;
 	margin: 0.6rem;
 
+	h1,h2,h3,h4,h5,h6{
+		clear: both;
+		margin: 4px 0 15px 0;
+	}
+
+	a{
+		color: #fff;
+	}
+
+	.colored{
+		color: black;
+	}
+
 	&.ms-blue{
-		@include colorAlert($color-info-alert);
+		@include alertBackground($color-blue);
+
+		.colored{
+			@include alertTextColor($color-blue);
+		}
+		
 	}
 
 	&.ms-red{
-		@include colorAlert($color_error-alert);
+		@include alertBackground($color_red);
+
+		.colored{
+			@include alertTextColor($color_red);
+		}
 	}
 
 	&.ms-green{
-		@include colorAlert($color_success-alert);
+		@include alertBackground($color_green);
+
+		.colored{
+			@include alertTextColor($color_green);
+		}
 	}
 
 	&.ms-white{
-		@include colorAlert(#fff);
 		background-color: transparent;
+		border: 1px solid $color-gray-dark;
+		color: #000;
+
+		a{
+			color: #000;
+		}
 	}
 
 	&.ms-clear{
 		background-color: transparent;
 		border: none;
-		color: textColor(#fff);
+		color: #000;
+
+		a{
+			color: #000;
+		}
 	}
 
 	&.ms-small{
-		line-height: 0.7rem;
-		padding: 0.7rem;
+		padding: 0.75rem 1.25rem;
 	}
 
 	&.ms-large{
-		line-height: 1.3rem;
-		padding: 1.3rem;
+		padding: 1.75rem 2rem;
 	}
 }

@@ -3,42 +3,111 @@
 <head>
 	<meta charset="utf-8">
 	<title>Button - Exemple</title>
+	
 	<link rel="stylesheet" href="../css/minstyle.io.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="css/prism.css">
+	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 </head>
 <body>
+	<header class="header">
+		<img src="img/logo.png" alt="Logo" class="logo">
+	</header>
 
-	<div style="margin: 10px;">
-		<button class="ms-btn ms-red">My Button</button>
+	<div class="container">
+		<div class="row" style="margin-bottom: 20px;">
+			<h1>Button - Example</h1>
+		</div>
 
-		<button class="ms-btn ms-gradient ms-large ms-rounded">My Button</button>
+		<div class="row">
+			<div class="col-s-12">
+				<button class="ms-btn ms-blue">Button</button>
+				<button class="ms-btn ms-rounded ms-blue">Rounded</button>
+				<button class="ms-btn ms-border ms-blue">Border</button>
+				<button class="ms-btn ms-border-bottom ms-blue">Border Bottom</button>
+				<button class="ms-btn ms-clear ms-blue">Clear</button>
+			</div>
 
-		<button class="ms-btn ms-blue ms-small">My Button</button>
+			<div class="col-s-12">
+				<pre>
+<code class="language-html"><button class="ms-btn ms-blue">Button</button>
+<button class="ms-btn ms-rounded ms-blue">Rounded</button>
+<button class="ms-btn ms-border ms-blue">Border</button>
+<button class="ms-btn ms-border-bottom ms-blue">Border Bottom</button>
+<button class="ms-btn ms-clear ms-blue">Clear</button></code></pre>
+			</div>
+		</div>
 
-		<button class="ms-btn ms-blue ms-large">My Button</button>
-		
-		<a href="#" class="ms-btn ms-clear ms-shadow">My Button</a>
-		
-		<a href="#" class="ms-btn ms-clear ms-red">My Button</a>
-		
-		<input type="submit" class="ms-btn ms-border ms-blue" value="My Button">
-		
-		<input type="submit" class="ms-btn ms-border ms-green" value="My Button">
-		
-		<input type="submit" class="ms-btn ms-border-bottom" value="My Button">
-		
-		<input type="submit" class="ms-btn ms-border-bottom ms-green" value="My Button">
-		
-		<input type="submit" class="ms-btn ms-rounded" value="My Button">
-		
-		<input type="submit" class="btn rounded success small" value="My Button">
-		
-		<a href="#" class="ms-btn ms-green">My Button</a>
-		
-		<a href="#" class="ms-btn ms-border-rounded ms-green">My Button</a>
+		<div class="row">
+			<div class="col-s-12">
+				<button class="ms-btn">Gray</button>
+				<button class="ms-btn ms-rounded ms-red">Red</button>
+				<button class="ms-btn ms-border ms-blue">Blue</button>
+				<button class="ms-btn ms-border-bottom ms-green">Blue</button>
+				<button class="ms-btn ms-clear ms-gradient">Gradient</button>
+			</div>
 
-		<a href="#" class="ms-btn ms-border-rounded ms-blue ms-large">My Button</a>
+			<div class="col-s-12">
+				<pre>
+<code class="language-html"><button class="ms-btn">Gray</button>
+<button class="ms-btn ms-rounded ms-red">Red</button>
+<button class="ms-btn ms-border ms-blue">Blue</button>
+<button class="ms-btn ms-border-bottom ms-green">Blue</button>
+<button class="ms-btn ms-clear ms-gradient">Gradient</button></code></pre>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-s-12">
+				<button class="ms-btn ms-rounded ms-green ms-small">Small</button>
+				<button class="ms-btn ms-rounded ms-green">Normal</button>
+				<button class="ms-btn ms-rounded ms-green ms-large ">Large</button>
+			</div>
+
+			<div class="col-s-12">
+				<pre>
+<code class="language-html"><button class="ms-btn ms-rounded ms-green ms-small">Small</button>
+<button class="ms-btn ms-rounded ms-green">Normal</button>
+<button class="ms-btn ms-rounded ms-green ms-large">Large</button></code></pre>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-s-12">
+				<div class="col-l-5">
+					<button class="ms-btn ms-rounded ms-gradient ms-large ms-block">Block Button</button>
+				</div>
+			</div>
+
+			<div class="col-s-12">
+				<pre>
+<code class="language-html"><button class="ms-btn ms-rounded ms-gradient ms-large ms-block">Block Button</button></code></pre>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-s-12">
+				<button class="ms-btn ms-rounded ms-red"><i class="fas fa-laugh-wink"></i> Use icons</button>
+				<button class="ms-btn ms-rounded ms-green"><i class="fas fa-laugh-squint"></i> Use icons</button>
+			</div>
+
+			<div class="col-s-12">
+				<pre>
+<code class="language-html"><button class="ms-btn ms-rounded ms-red"><i class="fas fa-laugh-wink"></i> Use icons</button>
+<button class="ms-btn ms-rounded ms-green"><i class="fas fa-laugh-squint"></i> Use icons</button></code></pre>
+			</div>
+		</div>
 	</div>
 
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/prism.js"></script>
+	<script type="text/javascript">
+		$('code').each(function(){
+		var el = $(this);
+		el.text(el.html());
+		});
+	</script>
+	
 </body>
 </html>
