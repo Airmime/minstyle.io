@@ -1,69 +1,60 @@
-$bg-color-block: #f2f2f2;
-
-@mixin borderColorBlock($pBorderColorBlock){
-	border-left: 2px solid $pBorderColorBlock;
+@mixin blockquoteColor($pBlockquoteColor){
+	border-left:5px solid $pBlockquoteColor;
+	background-color: lighten($pBlockquoteColor, 40%);
+	color: darken( $pBlockquoteColor, 55%);
 }
 
-@mixin borderColorBlockBoxed($pBorderColorBlockBoxed){
-	border: 1px solid $pBorderColorBlockBoxed;
-	border-left: 3px solid $pBorderColorBlockBoxed;
-}
-
-@mixin colorBlock(){
-	@include border-left-radius(0);
-	@include borderColorBlock(darken($bg-color-block, 15%));
-
-	&.ms-blue{
-		@include borderColorBlock($color-info);
-	}
-	
-	&.ms-green{
-		@include borderColorBlock($color_success);
-	}
-
-	&.ms-red{
-		@include borderColorBlock($color_error);
-	}
-}
-
-@mixin colorBlockBoxed(){
-	background-color: transparent;
-	@include border-radius;
-	@include borderColorBlockBoxed(darken($bg-color-block, 50%));
-
-	&.ms-blue{
-		@include borderColorBlockBoxed($color-info);
-	}
-	
-	&.ms-green{
-		@include borderColorBlockBoxed($color_success);
-	}
-
-	&.ms-red{
-		@include borderColorBlockBoxed($color_error);
-	}
+@mixin blockquoteLinkcolor($pBlockquoteLinkcolor){
+	color: $pBlockquoteLinkcolor;
 }
 
 blockquote,
 .ms-blockquote{
-	background-color: $bg-color-block;
+	
 	@include border-radius;
-	color: darken( $bg-color-block, 55%);
+	@include blockquoteColor($color-gray);
+	background-color: $color-gray;
+	border-left:5px solid $color-gray-dark;
 	text-align:justify;
-	line-height: 1.2em;
-	padding: 1.3rem;
-	margin: 1rem;
+	font-style: italic;
+	line-height: 1.3em;
+	padding: 1.25rem;
+	margin: 0.5rem;
 
-	&.ms-border-white{
-		@include colorBlock();
+	a{
+		color: black;
+	}
+
+	h1,h2,h3,h4,h5,h6{
+		clear: both;
+		margin: 4px 0 15px 0;
+	}
+
+	&.ms-blue{
+		@include blockquoteColor($color-blue);
+
+		a{
+			@include blockquoteLinkcolor($color-blue);
+		}
+	}
+
+	&.ms-red{
+		@include blockquoteColor($color-red);
+
+		a{
+			@include blockquoteLinkcolor($color-red);
+		}
+	}
+
+	&.ms-green{
+		@include blockquoteColor($color-green);
+
+		a{
+			@include blockquoteLinkcolor($color-green);
+		}
+	}
+
+	&.ms-white{
 		background-color: transparent;
-	}
-
-	&.ms-border{
-		@include colorBlock();
-	}
-
-	&.ms-boxed{
-		@include colorBlockBoxed();
 	}
 }

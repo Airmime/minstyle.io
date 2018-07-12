@@ -8,14 +8,34 @@ header,
 	height: 70px;
 	margin-bottom: 20px;
 	background: rgba(235,90,131,1);
-	background: -moz-linear-gradient(-45deg, rgba(235,90,131,1) 0%, rgba(253,129,87,1) 100%);
-	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(235,90,131,1)), color-stop(100%, rgba(253,129,87,1)));
-	background: -webkit-linear-gradient(-45deg, rgba(235,90,131,1) 0%, rgba(253,129,87,1) 100%);
-	background: -o-linear-gradient(-45deg, rgba(235,90,131,1) 0%, rgba(253,129,87,1) 100%);
-	background: -ms-linear-gradient(-45deg, rgba(235,90,131,1) 0%, rgba(253,129,87,1) 100%);
-	background: linear-gradient(135deg, rgba(235,90,131,1) 0%, rgba(253,129,87,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eb5a83', endColorstr='#fd8157', GradientType=1 );
+	background: linear-gradient(323deg, #fd8157, #eb5a82);
+	background-size: 400% 400%;
 
+	-webkit-animation: AnimationName 4s ease infinite;
+	-moz-animation: AnimationName 4s ease infinite;
+	-o-animation: AnimationName 4s ease infinite;
+	animation: AnimationName 4s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:10% 0%}
+    50%{background-position:91% 100%}
+    100%{background-position:10% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:10% 0%}
+    50%{background-position:91% 100%}
+    100%{background-position:10% 0%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:10% 0%}
+    50%{background-position:91% 100%}
+    100%{background-position:10% 0%}
+}
+@keyframes AnimationName { 
+    0%{background-position:10% 0%}
+    50%{background-position:91% 100%}
+    100%{background-position:10% 0%}
 }
 
 header,
