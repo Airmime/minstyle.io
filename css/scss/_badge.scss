@@ -1,37 +1,67 @@
-.ms-badge{
+@mixin badgeBgColor($pbadgeBgColor){
+	background-color: $pbadgeBgColor;
+}
+
+@mixin badgeBorderColor($pbadgeBorderColor){
+	border: 1px solid $pbadgeBorderColor;
+	background: transparent;
+	color: $pbadgeBorderColor;
+}
+
+.ms-badge-title{
 	color: #fff;
 	background-color: $color-gray-dark;
 	display: inline-block;
-	padding: .3rem .5rem;
-	font-size: 70%;
+	padding: .3rem .3rem;
+	font-size: 60%;
 	line-height: 1;
 	text-align: center;
 	white-space: nowrap;
 	vertical-align: baseline;
 	position: relative;
-	top: -2px;
+	top: -0.2rem;
 	@include border-radius;
 
 	&.ms-rounded{
 		border-radius: 10em;
-		padding: .3rem .7rem;
+		padding: .3rem .5rem;
+	}
+
+	&.ms-border{
+		padding: .3rem .5rem;
+
+		&.ms-blue{
+			@include badgeBorderColor($color-info);
+		}
+
+		&.ms-green{
+			@include badgeBorderColor($color-success);
+		}
+
+		&.ms-red{
+			@include badgeBorderColor($color-error);
+		}
+
+		&.ms-white{
+			@include badgeBorderColor($color-gray-medium);
+			color: #000;
+		}
 	}
 
 	&.ms-blue{
-		background-color: $color-info;
+		@include badgeBgColor($color-info);
 	}
 
 	&.ms-green{
-		background-color: $color-success;
+		@include badgeBgColor($color-success);
 	}
 
 	&.ms-red{
-		background-color: $color-error;
+		@include badgeBgColor($color-error);
 	}
 
 	&.ms-white{
-		background-color: #fff;
+		@include badgeBgColor($color-gray-medium);
 		color: #000;
-
 	}
 }

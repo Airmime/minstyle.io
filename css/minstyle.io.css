@@ -963,18 +963,18 @@ input[type='submit'].ms-block {
   width: 100%;
 }
 
-.ms-badge {
+.ms-badge-title {
   color: #fff;
   background-color: #adb5bd;
   display: inline-block;
-  padding: .3rem .5rem;
-  font-size: 70%;
+  padding: .3rem .3rem;
+  font-size: 60%;
   line-height: 1;
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
   position: relative;
-  top: -2px;
+  top: -0.2rem;
   -webkit-border-radius: 0.3rem;
   -moz-border-radius: 0.3rem;
   -ms-border-radius: 0.3rem;
@@ -982,25 +982,54 @@ input[type='submit'].ms-block {
   border-radius: 0.3rem;
 }
 
-.ms-badge.ms-rounded {
+.ms-badge-title.ms-rounded {
   border-radius: 10em;
-  padding: .3rem .7rem;
+  padding: .3rem .5rem;
 }
 
-.ms-badge.ms-blue {
+.ms-badge-title.ms-border {
+  padding: .3rem .5rem;
+}
+
+.ms-badge-title.ms-border.ms-blue {
+  border: 1px solid #1dabe7;
+  background: transparent;
+  color: #1dabe7;
+}
+
+.ms-badge-title.ms-border.ms-green {
+  border: 1px solid #5ca745;
+  background: transparent;
+  color: #5ca745;
+}
+
+.ms-badge-title.ms-border.ms-red {
+  border: 1px solid #cb3030;
+  background: transparent;
+  color: #cb3030;
+}
+
+.ms-badge-title.ms-border.ms-white {
+  border: 1px solid #d9d9d9;
+  background: transparent;
+  color: #d9d9d9;
+  color: #000;
+}
+
+.ms-badge-title.ms-blue {
   background-color: #1dabe7;
 }
 
-.ms-badge.ms-green {
+.ms-badge-title.ms-green {
   background-color: #5ca745;
 }
 
-.ms-badge.ms-red {
+.ms-badge-title.ms-red {
   background-color: #cb3030;
 }
 
-.ms-badge.ms-white {
-  background-color: #fff;
+.ms-badge-title.ms-white {
+  background-color: #d9d9d9;
   color: #000;
 }
 
