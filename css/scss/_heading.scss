@@ -1,46 +1,56 @@
-@mixin highlightedHeanding($pHighlightedHeanding){
-	border-bottom: 0.2rem solid $pHighlightedHeanding;
+@mixin colorHeading($pHighlightedHeanding){
+	color: $pHighlightedHeanding;
 }
 
 h1,h2,h3,h4,h5,h6{
 
-	&.ms-highlighted{
-		@include highlightedHeanding(darken($color-gray, 15%));
+	&.ms-red{
+		@include colorHeading($color-red);
+	}
 
-		&.ms-red{
-			@include highlightedHeanding($color-error);
+	&.ms-green{
+		@include colorHeading($color-green);
+	}
+
+	&.ms-blue{
+		@include colorHeading($color-blue);
+	}
+
+	&.ms-gray{
+		@include colorHeading($color-gray-dark);
+	}
+
+	@for $i from 1 through 9{
+	
+		&.ms-fw-#{$i}00{
+			font-weight: #{$i}00;
+
 		}
 
-		&.ms-green{
-			@include highlightedHeanding($color-success);
-		}
-
-		&.ms-blue{
-			@include highlightedHeanding($color-info);
-		}
+		
 	}
 }
 
-h1{
+h1,.ms-h1{
 	font-size: 3rem;
 }
 
-h2{
+h2,.ms-h2{
 	font-size: 2.7rem;
 }
 
-h3{
+h3,.ms-h3{
 	font-size: 2.4rem;
 }
 
-h4{
+h4,.ms-h4{
 	font-size: 2.1rem;
 }
 
-h5{
+h5,.ms-h5{
 	font-size: 1.8rem;
 }
 
-h6{
+h6,.ms-h6{
 	font-size: 1.5rem;
 }
