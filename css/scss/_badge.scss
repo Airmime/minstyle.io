@@ -8,6 +8,29 @@
 	color: $pbadgeBorderColor;
 }
 
+@mixin badgeColor(){
+	&.ms-blue{
+		background-color: $color-blue;
+	}
+
+	&.ms-red{
+		background-color: $color-red;
+	}
+
+	&.ms-green{
+		background-color: $color-green;
+	}
+
+	&.ms-gradient{
+		@include background-image(linear-gradient(to left top, #fd8157, #eb5a82));
+	}
+
+	&.ms-white{
+		@include badgeBgColor($color-gray-medium);
+		color: #000;
+	}
+}
+
 .ms-badge-title{
 	color: #fff;
 	background-color: $color-gray-dark;
@@ -48,20 +71,78 @@
 		}
 	}
 
-	&.ms-blue{
-		@include badgeBgColor($color-info);
+	@include badgeColor();
+}
+
+.ms-badge-gh{
+	background-color: $color-gray-font;
+	display:inline-block;
+	overflow: hidden;
+	@include border-radius;
+	
+
+	.ms-dark-side{
+		float:left;
+		color: #fff;
+		font-size: 0.9rem;
+		padding: 0.3rem 0.5rem;
 	}
 
-	&.ms-green{
-		@include badgeBgColor($color-success);
+	.ms-color-side{
+		background-color: $color-gray-dark;
+		float:left;
+		color: #fff;
+		font-size: 0.9rem;
+		padding: 0.3rem 0.5rem;
+		
+		@include badgeColor();
+	}
+}
+
+.ms-badge{
+	background-color: $color-gray-font;
+	color: #fff;
+	display:inline-block;
+	overflow: hidden;
+	@include border-radius;
+	padding: 0.6rem 0.8rem;
+
+	@include badgeColor();
+
+	&.ms-rounded{
+		border-radius: 10rem;
 	}
 
-	&.ms-red{
-		@include badgeBgColor($color-error);
+	&.ms-border{
+		&.ms-blue{
+			@include badgeBorderColor($color-info);
+		}
+
+		&.ms-green{
+			@include badgeBorderColor($color-success);
+		}
+
+		&.ms-red{
+			@include badgeBorderColor($color-error);
+		}
+
+		&.ms-white{
+			@include badgeBorderColor($color-gray-medium);
+			color: #000;
+		}
 	}
 
-	&.ms-white{
-		@include badgeBgColor($color-gray-medium);
-		color: #000;
+	&.ms-small{
+		padding: 0.3rem 0.5rem;
+		font-size: 0.8rem;
 	}
+	&.ms-large{
+		padding: 0.9rem 1.1rem;
+		font-size: 1.2rem;
+	}
+
+}
+
+a.ms-badge{
+	text-decoration: none;
 }
