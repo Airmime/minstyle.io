@@ -1,0 +1,34 @@
+{
+  "name": "minstyle.io",
+  "version": "0.1.0",
+  "description": "A simple CSS Framework !",
+  "homepage": "https://milligram.github.io",
+  "main": "css/minstyle.io.css",
+  "author": "Rémi MARION",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Airmime/minstyle.io.git"
+  },
+  "keywords": [
+    "minstyle",
+    "minstyle.io",
+    "css",
+    "framework",
+    "css",
+    "simple",
+    "design",
+    "html",
+    "interface",
+    "front-end",
+    "responsive",
+    "sass",
+		"scss",
+		"html",
+		"html5"
+  ],
+  "bugs": {
+    "url": "https://github.com/Airmime/minstyle.io/issues"
+  },
+  "homepage": "https://github.com/Airmime/minstyle.io#readme"
+}
