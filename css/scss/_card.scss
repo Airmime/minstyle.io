@@ -37,7 +37,11 @@
 			max-width: 100%;
 		}
 
-		&.rounded{
+		p{
+			text-align:center;
+		}
+
+		&.ms-rounded{
 			border-radius: $default-border-radius;
 			overflow: hidden;
 		}

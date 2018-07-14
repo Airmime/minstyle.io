@@ -190,4 +190,8 @@ input[type='submit']{
     display: block;
     width: 100%;
   }
+
+  &.no-margin{
+    margin: 0;
+  }
 }

@@ -1,0 +1,21 @@
+
+@for $i from 1 through 9{
+
+	.ms-text-size-#{$i}{
+		font-size: #{$i}rem;
+	}
+}
+
+.ms-text-blue{
+	color: $color-blue;
+}
+
+.ms-text-red{
+	color: $color-red;
+}
+.ms-text-green{
+	color: $color-green;
+}
+.ms-text-gray-font{
+	color: $color-gray-font;
+}

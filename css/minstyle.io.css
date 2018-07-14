@@ -724,6 +724,11 @@ input[type='submit'] {
   input[type='submit'].ms-block {
     display: block;
     width: 100%; }
+  button.no-margin,
+  .ms-btn.no-margin,
+  input[type='button'].no-margin,
+  input[type='submit'].no-margin {
+    margin: 0; }
 
 .ms-badge-title {
   color: #fff;
@@ -1300,7 +1305,9 @@ tr th {
     diplay: block;
     margin: 0 auto;
     max-width: 100%; }
-  .ms-card .ms-pic.rounded {
+  .ms-card .ms-pic p {
+    text-align: center; }
+  .ms-card .ms-pic.ms-rounded {
     border-radius: 0.3rem;
     overflow: hidden; }
   .ms-card .ms-title {
@@ -1452,3 +1459,42 @@ tr th {
   border-radius: 0.3rem; }
   .ms-menu.ms-red li.ms-active a {
     color: #fff; }
+
+.ms-text-size-1 {
+  font-size: 1rem; }
+
+.ms-text-size-2 {
+  font-size: 2rem; }
+
+.ms-text-size-3 {
+  font-size: 3rem; }
+
+.ms-text-size-4 {
+  font-size: 4rem; }
+
+.ms-text-size-5 {
+  font-size: 5rem; }
+
+.ms-text-size-6 {
+  font-size: 6rem; }
+
+.ms-text-size-7 {
+  font-size: 7rem; }
+
+.ms-text-size-8 {
+  font-size: 8rem; }
+
+.ms-text-size-9 {
+  font-size: 9rem; }
+
+.ms-text-blue {
+  color: #1dabe7; }
+
+.ms-text-red {
+  color: #e04540; }
+
+.ms-text-green {
+  color: #5ca745; }
+
+.ms-text-gray-font {
+  color: #696B6C; }
