@@ -1,7 +1,3 @@
-body{
-	font-family: 'Roboto', sans-serif;
-}
-
 /* BASE */
 button, 
 .ms-btn, 
@@ -12,13 +8,14 @@ input[type='submit']{
 	 text-decoration: none;
    text-align: center;
    font-size: .9rem;
+   white-space:nowrap;
    color: #000;
    border: 1px solid $color-gray-medium;
    @include border-radius;
    line-height: 2.0rem;
    padding: 0 1.1rem;
+   margin: 0.2rem;
    cursor: pointer;
-   white-space: normal;
 
   &:focus{
     outline: 0;
@@ -69,6 +66,10 @@ input[type='submit']{
       border-color: $color_info;
       color: $color_info;
     }
+
+    &.ms-gradient{
+      color: #fff;
+    }
   }
 
   &.ms-border-bottom{
@@ -92,6 +93,10 @@ input[type='submit']{
       border-color: $color_info;
       color: $color_info;
     }
+
+    &.ms-gradient{
+      color: #fff;
+    }
   }
 
 
@@ -111,6 +116,10 @@ input[type='submit']{
     &.ms-blue{
       color: $color_info;
     }
+
+    &.ms-gradient{
+      color: #fff;
+    }
   }
 
 
@@ -127,6 +136,10 @@ input[type='submit']{
 
     &.ms-blue{
       border-color: $color_info;
+    }
+
+    &.ms-gradient{
+      color: #fff;
     }
   }
 
@@ -150,6 +163,10 @@ input[type='submit']{
       border-color: $color_success;
       color: $color_success;
     }
+
+    &.ms-gradient{
+      color: #fff;
+    }
   }
   
 
@@ -167,5 +184,14 @@ input[type='submit']{
     line-height: 2.6rem;
     padding: 0 1.6rem;
     font-size: 120%;
+  }
+
+  &.ms-block{
+    display: block;
+    width: 100%;
+  }
+
+  &.no-margin{
+    margin: 0;
   }
 }

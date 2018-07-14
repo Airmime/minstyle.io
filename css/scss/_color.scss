@@ -1,6 +1,13 @@
-$color-info: #4593b3;
-$color_error: #d23f51;
+/* Last color name */
+$color-info: #1dabe7;
+$color_error: #cb3030;
 $color_success: #5ca745;
+
+/* New color name */
+$color-blue: #1dabe7;
+$color_red: #e04540;
+$color_green: #5ca745;
 $color-gray: #f2f2f2;
-$color-gray-dark: darken(#f2f2f2, 30%);
-$color-gray-medium: darken(#f2f2f2, 10%);
+$color-gray-dark: #adb5bd;
+$color-gray-medium: darken($color-gray, 10%);
+$color-gray-font: #696B6C;

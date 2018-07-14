@@ -1,42 +1,33 @@
-@mixin borderColorList($pBorderColorList){
-	border-left: 2px solid $pBorderColorList;
-}
-
-ul,ol,dl{
+ul.ms-list,
+ol.ms-list,
+dl.ms-list{
     list-style: circle inside;
-    margin: 1rem;
-
-    &.ms-none{
-    	list-style: none;
-    }
-
-    &.ms-border{
-    	list-style: none;
-		border-left: 2px solid $color-gray;
-		padding-left: 0.5rem;
-
-		&.ms-red{
-			@include borderColorList($color-error);
-		}
-
-		&.ms-green{
-			@include borderColorList($color-success);
-		}
-
-		&.ms-blue{
-			@include borderColorList($color-info);
-		}
-    }
+    margin: 0.6rem;
 
     &.ms-boxed{
     	list-style: none;
-		border: 1px solid lighten($color-gray-dark, 20%);
+		border: 1px solid $color-gray-medium;
 		@include border-radius;
 
 		& li, dt, dd{
 			padding: 0.7rem;
 			margin: 0;
-			border-bottom: 1px solid lighten($color-gray-dark, 20%);
+			border-bottom: 1px solid $color-gray-medium;
+		}
+
+		li:last-of-type {
+  			border: none;
+		}
+    }
+
+    &.ms-border{
+    	list-style: none;
+		border-bottom: 1px solid $color-gray-medium;
+
+		& li, dt, dd{
+			padding: 0.7rem 0.2rem;
+			margin: 0;
+			border-bottom: 1px solid $color-gray-medium;
 		}
 
 		li:last-of-type {
@@ -45,13 +36,15 @@ ul,ol,dl{
     }
 
     & li, dt, dd{
-    	margin-bottom: 0.4em;
+    	margin: 0.6em 0;
 
     	&.ms-active{
-    		background-color: $color-info;
-    		color: lighten($color-info, 80%);
+    		background-color: $color-gray;
     		@include border-radius;
-    		padding: 0.7rem;
     	}
+    }
+
+    &.ms-list-none{
+    	list-style: none;
     }
 }

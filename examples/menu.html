@@ -1,55 +1,140 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Menu - Exemple</title>
-    <link rel="stylesheet" href="../css/minstyle.io.css">
-    <link href="https://fonts.googleapis.com/css?family=nunito" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	<meta charset="utf-8">
+	<title>Menu - Exemple</title>
+	<link rel="icon" href="img/favicon.ico" />
+
+	<link rel="stylesheet" href="../css/minstyle.io.css">
+	<link rel="stylesheet" href="css/prism.css">
+	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 </head>
 <body>
+	<header class="header">
+		<img src="img/logo.png" alt="Logo" class="logo">
+	</header>
 
-    <div class="container" style="margin-top: 20px">
-      <div class="ms-menu">
-          <ul>
-              <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
-              <li><a href="#">Doc</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Live</a></li>
-              <li><a href="#">Contact</a></li>
-          </ul>
-      </div>
-      <br/>
-      <div class="ms-menu ms-gray">
-          <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Doc</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Live</a></li>
-              <li><a href="#">Contact</a></li>
-          </ul>
-      </div>
-      <br/>
-      <div class="ms-menu ms-blue">
-          <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Doc</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Live</a></li>
-              <li><a href="#">Contact</a></li>
-          </ul>
-      </div>
-      <br/>
-      <div class="ms-menu ms-green ms-vertical">
-          <ul>
-              <li class="ms-active"><a href="#"><i class="fas fa-h-square"></i> Home</a></li>
-              <li><a href="#">Doc</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Live</a></li>
-              <li><a href="#">Contact</a></li>
-          </ul>
-      </div>
-    </div>
+	<div class="container">
+		<div class="row" style="margin-bottom: 20px;">
+			<h1><a href="../" class="btn"><i class="fas fa-chevron-circle-left"></i></a> Menu - Example</h1>
+		</div>
+
+		<div class="row">
+			<div class="col-s-12">
+				<div class="ms-menu">
+					<nav>
+						<li><a href="#" class="ms-active"><i class="fas fa-home"></i> Home</a></li>
+						<li><a href="#">Doc</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Live</a></li>
+						<li><a href="#">Contact</a></li>
+					</nav>
+				</div>
+			</div>
+
+			<div class="col-s-12">
+				<pre><code class="language-html"><div class="ms-menu">
+	<nav>
+		<li><a href="#" class="ms-active"><i class="fas fa-home"></i> Home</a></li>
+		<li><a href="#">Doc</a></li>
+		<li><a href="#">Blog</a></li>
+		<li><a href="#">Live</a></li>
+		<li><a href="#">Contact</a></li>
+	</nav>
+</div></code></pre>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-s-12">
+				<div class="ms-menu ms-blue">
+					<nav>
+						<li><a href="#" class="ms-active"><i class="fas fa-home"></i> Home</a></li>
+						<li><a href="#">Doc</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Live</a></li>
+						<li><a href="#">Contact</a></li>
+					</nav>
+				</div>
+			</div>
+
+			<div class="col-s-12">
+				<pre><code class="language-html"><div class="ms-menu ms-blue">
+	<nav>
+		<li><a href="#" class="ms-active"><i class="fas fa-home"></i> Home</a></li>
+		<li><a href="#">Doc</a></li>
+		<li><a href="#">Blog</a></li>
+		<li><a href="#">Live</a></li>
+		<li><a href="#">Contact</a></li>
+	</nav>
+</div></code></pre>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-s-12">
+				<div class="ms-menu ms-green">
+					<nav>
+						<li><a href="#" class="ms-active"><i class="fas fa-home"></i> Home</a></li>
+						<li><a href="#">Doc</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Live</a></li>
+						<li><a href="#">Contact</a></li>
+					</nav>
+				</div>
+			</div>
+
+			<div class="col-s-12">
+				<pre><code class="language-html"><div class="ms-menu ms-green">
+	<nav>
+		<li><a href="#" class="ms-active"><i class="fas fa-home"></i> Home</a></li>
+		<li><a href="#">Doc</a></li>
+		<li><a href="#">Blog</a></li>
+		<li><a href="#">Live</a></li>
+		<li><a href="#">Contact</a></li>
+	</nav>
+</div></code></pre>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-s-12">
+				<div class="ms-menu ms-red">
+					<nav>
+						<li><a href="#" class="ms-active"><i class="fas fa-home"></i> Home</a></li>
+						<li><a href="#">Doc</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Live</a></li>
+						<li><a href="#">Contact</a></li>
+					</nav>
+				</div>
+			</div>
+
+			<div class="col-s-12">
+				<pre><code class="language-html"><div class="ms-menu ms-red">
+	<nav>
+		<li><a href="#" class="ms-active"><i class="fas fa-home"></i> Home</a></li>
+		<li><a href="#">Doc</a></li>
+		<li><a href="#">Blog</a></li>
+		<li><a href="#">Live</a></li>
+		<li><a href="#">Contact</a></li>
+	</nav>
+</div></code></pre>
+			</div>
+		</div>
+
+	</div><!-- /container -->
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/prism.js"></script>
+	<script type="text/javascript">
+		$('code').each(function(){
+			var el = $(this);
+			el.text(el.html());
+		});
+	</script>
 
 </body>
 </html>

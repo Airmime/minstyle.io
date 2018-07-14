@@ -3,65 +3,163 @@
 <head>
   <meta charset="utf-8">
   <title>Table - Exemple</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <link rel="stylesheet" href="../css/minstyle.io.css">
-  
-  <style type="text/css">
-  body{
-    color: #606c76;
-  }
-</style>
+  <link rel="icon" href="img/favicon.ico" />
 
+  <link rel="stylesheet" href="../css/minstyle.io.css">
+  <link rel="stylesheet" href="css/prism.css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 </head>
 <body>
+  <header class="header">
+    <img src="img/logo.png" alt="Logo" class="logo">
+  </header>
 
-  <div class="container" style="maring-top: 20px;">
+  <div class="container">
+    <div class="row" style="margin-bottom: 20px;">
+      <h1><a href="../" class="btn"><i class="fas fa-chevron-circle-left"></i></a> Table - Example</h1>
+    </div>
 
-    <table>
-      <tr class="ms-title">
-        <th>Entry Header 1</th>
-        <th>Entry Header 2</th>
-        <th>Entry Header 3</th>
-        <th>Entry Header 4</th>
-      </tr>
-      <tr class="ms-fill">
-        <td>Entry First Line 1</td>
-        <td>Entry First Line 2</td>
-        <td>Entry First Line 3</td>
-        <td>Entry First Line 4</td>
-      </tr>
-      <tr>
-        <td>Entry Line 1</td>
-        <td>Entry Line 2</td>
-        <td>Entry Line 3</td>
-        <td>Entry Line 4</td>
-      </tr>
-      <tr class="ms-fill">
-        <td>Entry Last Line 1</td>
-        <td>Entry Last Line 2</td>
-        <td>Entry Last Line 3</td>
-        <td>Entry Last Line 4</td>
-      </tr>
-    </table>
+    <div class="row">
+      <div class="col-s-12">
+        <table>
+          <tr class="ms-title">
+            <th>Header</th>
+            <th>Header</th>
+            <th>Header</th>
+          </tr>
+          <tr class="ms-gray">
+            <td>Line 1</td>
+            <td>Line 1</td>
+            <td>Line 1</td>
+          </tr>
+          <tr>
+            <td>Line 2</td>
+            <td>Line 2</td>
+            <td>Line 2</td>
+          </tr>
+          <tr class="ms-blue">
+            <td>Line 3</td>
+            <td>Line 3</td>
+            <td>Line 3</td>
+          </tr>
+          <tr class="ms-red">
+            <td>Line 4</td>
+            <td>Line 4</td>
+            <td>Line 4</td>
+          </tr>
+          <tr class="ms-green">
+            <td>Line 4</td>
+            <td>Line 4</td>
+            <td>Line 4</td>
+          </tr>
+          <tr>
+            <td>Line 5</td>
+            <td>Line 5</td>
+            <td>Line 5</td>
+          </tr>
+          <tr>
+            <td>Line 6</td>
+            <td>Line 6</td>
+            <td>Line 6</td>
+          </tr>
+        </table>
+      </div>
 
-    <table>
-      <tr class="ms-title">
-        <th>Firstname</th>
-        <th>Lastname</th> 
-        <th>Age</th>
-      </tr>
-      <tr>
-        <td>Jill</td>
-        <td>Smith</td> 
-        <td>50</td>
-      </tr>
-      <tr>
-        <td>Eve</td>
-        <td>Jackson</td> 
-        <td>94</td>
-      </tr>
-    </table>
+      <div class="col-s-12">
+        <pre><code class="language-html"><table>
+<tr class="ms-title">
+  <th>Header</th>
+  <th>Header</th>
+  <th>Header</th>
+</tr>
+<tr class="ms-gray">
+  <td>Line 1</td>
+  <td>Line 1</td>
+  <td>Line 1</td>
+</tr>
+<tr>
+  <td>Line 2</td>
+  <td>Line 2</td>
+  <td>Line 2</td>
+</tr>
+<tr class="ms-blue">
+  <td>Line 3</td>
+  <td>Line 3</td>
+  <td>Line 3</td>
+</tr>
+<tr class="ms-red">
+  <td>Line 4</td>
+  <td>Line 4</td>
+  <td>Line 4</td>
+</tr>
+<tr class="ms-green">
+  <td>Line 4</td>
+  <td>Line 4</td>
+  <td>Line 4</td>
+</tr>
+<tr>
+  <td>Line 2</td>
+  <td>Line 2</td>
+  <td>Line 2</td>
+</tr>
+</table></code></pre>
+      </div>
+    </div>
 
-  </div>
+    <div class="row">
+      <div class="col-s-12">
+        <table class="ms-boxed">
+          <tr class="ms-title">
+            <th>Firstname</th>
+            <th>Lastname</th> 
+            <th>Age</th>
+          </tr>
+          <tr>
+            <td>Jill</td>
+            <td>Smith</td> 
+            <td>50</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="col-s-12">
+        <pre><code class="language-html"><table class="ms-boxed"></table></code></pre>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-s-12">
+        <table class="ms-boxed ms-triped">
+          <tr class="ms-title">
+            <th>Firstname</th>
+            <th>Lastname</th> 
+            <th>Age</th>
+          </tr>
+          <tr>
+            <td>Jill</td>
+            <td>Smith</td> 
+            <td>50</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="col-s-12">
+        <pre><code class="language-html"><table class="ms-boxed ms-triped"></table></code></pre>
+      </div>
+    </div>
+
+  </div><!-- /container -->
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/prism.js"></script>
+  <script type="text/javascript">
+    $('code').each(function(){
+      var el = $(this);
+      el.text(el.html());
+    });
+  </script>
+
 </body>
 </html>

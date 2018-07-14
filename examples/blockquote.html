@@ -3,52 +3,108 @@
 <head>
 	<meta charset="utf-8">
 	<title>Blockquote - Exemple</title>
+	<link rel="icon" href="img/favicon.ico" />
+
 	<link rel="stylesheet" href="../css/minstyle.io.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="css/prism.css">
+	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 </head>
 <body>
+	<header class="header">
+		<img src="img/logo.png" alt="Logo" class="logo">
+	</header>
 
-	<div class="container" style="margin-top: 20px">
-		<blockquote>
-		  <p><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo laudantium consectetur fugit, dolore similique excepturi tenetur rem ex harum impedit accusamus veniam, facilis cumque obcaecati ducimus aut tempore quasi praesentium.</em></p>
-		</blockquote>
+	<div class="container">
+		<div class="row" style="margin-bottom: 20px;">
+			<h1><a href="../" class="btn"><i class="fas fa-chevron-circle-left"></i></a> Blockquote - Example</h1>
+		</div>
 
-		<blockquote class="ms-border">
-		  <p><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis vel nobis ex, ullam incidunt, id esse quo! Odit nobis facilis animi, quia laudantium consequatur sint quam excepturi distinctio consequuntur. Vero.</em></p>
-		</blockquote>
+		<div class="row">
+			<div class="col-s-12">
+				<blockquote class="ms-blockquote">
+					<h5>"Lorem ipsum dolor sit amet"</h5>
+				  	<p><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis vel nobis ex, ullam incidunt, id esse quo! <a href="">Odit nobis facilis animi</a>, quia laudantium consequatur sint quam excepturi distinctio consequuntur. Vero.</em></p>
+				</blockquote>
+			</div>
 
-		<blockquote class="ms-border ms-red">
-		  <p><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas ex, blanditiis consectetur asperiores nam assumenda eligendi totam incidunt minus, nobis corporis! Atque adipisci mollitia necessitatibus distinctio consequuntur eos inventore dicta.</em></p>
-		</blockquote>
+			<div class="col-s-12">
+				<pre><code class="language-html"><blockquote class="ms-blockquote">
+	<h5>"Lorem ipsum dolor sit amet"</h5>
+	<p><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</em></p>
+</blockquote></code></pre>
+			</div>
+		</div>
 
-		<blockquote class="ms-boxed ms-green">
-		  <p><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci eveniet error molestias itaque tempore ratione aspernatur rerum inventore ut eligendi at vitae in, minima, tempora excepturi et, facilis rem! Boxed</em></p>
-		</blockquote>
+		<div class="row">
+			<div class="col-s-12">
+				<blockquote class="ms-blockquote ms-blue">
+				  	<p><em><code>body{font-family: 'Nunito', sans-serif;}</code></em></p>
+				</blockquote>
+			</div>
 
-		<blockquote class="ms-boxed">
-		  <p><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci eveniet error molestias itaque tempore ratione aspernatur rerum inventore ut eligendi at vitae in, minima, tempora excepturi et, facilis rem! Boxed</em></p>
-		</blockquote>
+			<div class="col-s-12">
+				<pre><code class="language-html"><blockquote class="ms-blockquote ms-blue">
+	<p><em><code>body{font-family: 'Nunito', sans-serif;}</code></em></p>
+</blockquote></code></pre>
+			</div>
+		</div>
 
-		<blockquote class="ms-border ms-green">
-		  <p><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci eveniet error molestias itaque tempore ratione aspernatur rerum inventore ut eligendi at vitae in, minima, tempora excepturi et, facilis rem!</em></p>
-		</blockquote>
+		<div class="row">
+			<div class="col-s-12">
+				<blockquote class="ms-blockquote ms-red">
+				  	<p><em>Lorem ipsum dolor sit amet, <a href="">consectetur</a> adipisicing elit. Facilis vel nobis ex, ullam incidunt, id esse quo! Odit nobis facilis animi, quia laudantium consequatur sint quam excepturi distinctio consequuntur. Vero.</em></p>
+				</blockquote>
+			</div>
 
-		<blockquote class="ms-border-white">
-		  <p><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci eveniet error molestias itaque tempore ratione aspernatur rerum inventore ut eligendi at vitae in, minima, tempora excepturi et, facilis rem!</em></p>
-		</blockquote>
+			<div class="col-s-12">
+				<pre><code class="language-html"><blockquote class="ms-blockquote ms-red">
+	<p><em>Lorem ipsum dolor sit amet, <a href="">consectetur</a> adipisicing elit. Facilis...</em></p>
+</blockquote></code></pre>
+			</div>
+		</div>
 
-		<blockquote class="ms-border-white ms-green">
-		  <p><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci eveniet error molestias itaque tempore ratione aspernatur rerum inventore ut eligendi at vitae in, minima, tempora excepturi et, facilis rem!</em></p>
-		</blockquote>
+		<div class="row">
+			<div class="col-s-12">
+				<blockquote class="ms-blockquote ms-green">
+				  	<p><em><code>
+					var fruits = ['Apple', 'Banana'];
+					</code></em></p>
+				</blockquote>
+			</div>
 
-		<blockquote class="ms-border-white ms-blue">
-		  <p><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci eveniet error molestias itaque tempore ratione aspernatur rerum inventore ut eligendi at vitae in, minima, tempora excepturi et, facilis rem!</em></p>
-		</blockquote>
+			<div class="col-s-12">
+				<pre><code class="language-html"><blockquote class="ms-blockquote ms-green">
+	<p><em><code><b>var</b> fruits = ['Apple', 'Banana'];</code></em></p>
+</blockquote></code></pre>
+			</div>
+		</div>
 
-		<blockquote class="ms-border-white ms-red ms-shadow">
-		  <p><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci eveniet error molestias itaque tempore ratione aspernatur rerum inventore ut eligendi at vitae in, minima, tempora excepturi et, facilis rem!</em></p>
-		</blockquote>
-	</div>
+		<div class="row">
+			<div class="col-s-12">
+				<blockquote class="ms-blockquote ms-white">
+				  	<p><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis vel nobis ex, ullam incidunt, id esse quo! <a href="">Odit nobis facilis animi,</a> quia laudantium consequatur sint quam excepturi distinctio consequuntur. Vero.</em></p>
+				</blockquote>
+			</div>
+
+			<div class="col-s-12">
+				<pre><code class="language-html"><blockquote class="ms-blockquote ms-white">
+	<p><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</em></p>
+</blockquote></code></pre>
+			</div>
+		</div>
+
+	</div><!-- /container -->
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/prism.js"></script>
+	<script type="text/javascript">
+		$('code').each(function(){
+		var el = $(this);
+		el.text(el.html());
+		});
+	</script>
 
 </body>
 </html>

@@ -2,59 +2,125 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Lists - Exemple</title>
+	<title>List - Exemple</title>
+	<link rel="icon" href="img/favicon.ico" />
+
 	<link rel="stylesheet" href="../css/minstyle.io.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-	<style type="text/css">
-		body{
-			color: #606c76;
-		}
-	</style>
+	<link rel="stylesheet" href="css/prism.css">
+	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 </head>
 <body>
+	<header class="header">
+		<img src="img/logo.png" alt="Logo" class="logo">
+	</header>
 
 	<div class="container">
-		<ul style="margin-top: 20px;">
-			<li>Lorem ipsum sit amet !</li>
-			<li>Lorem dolor amet !</li>
-			<li>Lorem ipsum dolor sit amet !</li>
-		</ul>
+		<div class="row" style="margin-bottom: 20px;">
+			<h1><a href="../" class="btn"><i class="fas fa-chevron-circle-left"></i></a> List - Example</h1>
+		</div>
 
-		<ol class="ms-none" style="margin-top: 20px;">
-		  <li>Lorem ipsum sit amet !</li>
-		  <li>Lorem dolor amet !</li>
-		  <li>Lorem ipsum dolor sit amet !</li>
-		</ol>
+		<div class="row">
+			<div class="col-s-12">
+				<ul class="ms-list">
+					<li>Lorem ipsum sit amet !</li>
+					<li>Lorem dolor amet !</li>
+					<li>Lorem ipsum dolor sit amet !</li>
+				</ul>
+			</div>
 
-		<ol class="ms-border" style="margin-top: 20px;">
-		  <li>Lorem ipsum sit amet !</li>
-		  <li>Lorem dolor amet !</li>
-		  <li>Lorem ipsum dolor sit amet !</li>
-		</ol>
+			<div class="col-s-12">
+					<pre><code class="language-html"><ul class="ms-list">
+	<li>Lorem ipsum sit amet !</li>
+	<li>Lorem dolor amet !</li>
+	<li>Lorem ipsum dolor sit amet !</li>
+</ul></code></pre>
+			</div>
+		</div>
 
-		<ul class="ms-border ms-blue" style="margin-top: 20px;">
-			<li>Lorem ipsum sit amet !</li>
-			<li>Lorem dolor amet !</li>
-			<li>Lorem ipsum dolor sit amet !</li>
-		</ul>
+		<div class="row">
+			<div class="col-s-12">
+				<ol class="ms-list ms-list-none">
+				  <li>Lorem ipsum sit amet !</li>
+				  <li>Lorem dolor amet !</li>
+				  <li>Lorem ipsum dolor sit amet !</li>
+				</ol>
+			</div>
 
-		<ul class="ms-border ms-green" style="margin-top: 20px;">
-			<li>Lorem ipsum sit amet !</li>
-			<li>Lorem dolor amet !</li>
-			<li>Lorem ipsum dolor sit amet !</li>
-		</ul>
+			<div class="col-s-12">
+					<pre><code class="language-html"><ol class="ms-list ms-list-none">
+	<li>Lorem ipsum sit amet !</li>
+	<li>Lorem dolor amet !</li>
+	<li>Lorem ipsum dolor sit amet !</li>
+</ol></code></pre>
+			</div>
+		</div>
 
-		<ul class="ms-boxed" style="margin-top: 20px;">
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem dolor amet !</li>
-			<li>Lorem ipsum dolor sit amet !</li>
-		</ul>
+		<div class="row">
+			<div class="col-s-12">
+				<ol class="ms-list ms-border">
+				  <li>Lorem ipsum sit amet !</li>
+				  <li>Lorem dolor amet !</li>
+				  <li>Lorem ipsum dolor sit amet !</li>
+				</ol>
+			</div>
 
-		<ul class="ms-boxed" style="margin-top: 20px;">
-			<li class="ms-active">Lorem ipsum dolor sit amet</li>
-			<li>Lorem dolor amet !</li>
-			<li>Lorem ipsum dolor sit amet !</li>
-		</ul>
-	</div>
+			<div class="col-s-12">
+					<pre><code class="language-html"><ol class="ms-list ms-border">
+	<li>Lorem ipsum sit amet !</li>
+	<li>Lorem dolor amet !</li>
+	<li>Lorem ipsum dolor sit amet !</li>
+</ol></code></pre>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-s-12">
+				<ul class="ms-list ms-boxed">
+					<li>Lorem ipsum dolor sit amet</li>
+					<li>Lorem dolor amet !</li>
+					<li>Lorem ipsum dolor sit amet !</li>
+				</ul>
+			</div>
+
+			<div class="col-s-12">
+					<pre><code class="language-html"><ul class="ms-list ms-boxed">
+	<li>Lorem ipsum dolor sit amet</li>
+	<li>Lorem dolor amet !</li>
+	<li>Lorem ipsum dolor sit amet !</li>
+</ul></code></pre>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-s-12">
+				<ul class="ms-list ms-boxed">
+					<li>Lorem ipsum dolor sit amet</li>
+					<li>Lorem dolor amet !</li>
+					<li>Lorem ipsum dolor sit amet !</li>
+				</ul>
+			</div>
+
+			<div class="col-s-12">
+					<pre><code class="language-html"><ul class="ms-list ms-boxed">
+	<li>Lorem ipsum dolor sit amet</li>
+	<li>Lorem dolor amet !</li>
+	<li>Lorem ipsum dolor sit amet !</li>
+</ul></code></pre>
+			</div>
+		</div>
+
+	</div><!-- /container -->
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/prism.js"></script>
+	<script type="text/javascript">
+		$('code').each(function(){
+		var el = $(this);
+		el.text(el.html());
+		});
+	</script>
+
 </body>
 </html>

@@ -1,7 +1,24 @@
+@mixin tableBgColor($pTableBgColor){
+	background-color: $pTableBgColor;
+	color: #fff;
+	border-bottom: none;
+}
+
 table{
 	width: 100%;
 	border-spacing: 0;
-	margin: 1rem;
+	margin: 1rem 0;
+
+	&.ms-boxed{
+    	border: 1px solid $color-gray-medium;
+
+    	&.ms-triped{
+    		td,
+			th{
+				border: 1px solid $color-gray-medium;
+			}
+    	}
+	}
 }
 
 tr{
@@ -9,19 +26,24 @@ tr{
 		td,
 		th{
 			font-weight: bold;
-			border-bottom: .2rem solid darken($color-gray, 10%);
+			border-bottom: 3px solid $color-gray-medium;
 		}
 	}
 
-	&.ms-fill{
-		background-color: lighten($color-gray, 1%);
+	&.ms-gray{
+		background-color: $color-gray;
 	}
 
-	&.ms-disabled{
-		td,
-		th{
-			background-color: gray;
-		}
+	&.ms-blue{
+		@include tableBgColor($color-blue);
+	}
+
+	&.ms-red{
+		@include tableBgColor($color-red);
+	}
+
+	&.ms-green{
+		@include tableBgColor($color-green);
 	}
 
 	td,

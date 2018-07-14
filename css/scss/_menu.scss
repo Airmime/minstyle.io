@@ -11,26 +11,20 @@
 		@include border-radius;
 	}
 
-	li.ms-active{
+	a.ms-active{
 		background-color: $pMenuColor;
+		color: #fff;
 		@include border-radius;
-
-		a{
-			color: #fff;
-		}
 	}
 }
 
 .ms-menu{
+	display: flex;
+	margin: 1rem 0;
+	white-space: nowrap;
 
-	&.ms-vertical{
-		li{
-			clear: both;
-			margin: 0.5rem;
-		}
-	}
-	
-	ul{
+	nav,
+	.ms-nav{
 		list-style: none;
 
 		li{
@@ -40,7 +34,22 @@
 			a{
 				text-decoration: none;
 				padding: 0.5rem;
-				color: darken($color-gray, 50%);
+				color: #000;
+
+				&.ms-active{
+					background-color: $color-gray;
+					@include border-radius;
+				}
+			}
+
+			a:hover{
+				background-color: $color-gray;
+				@include border-radius;
+			}
+
+			a:focus{
+				background-color: $color-gray;
+				@include border-radius;
 			}
 		}
 	}

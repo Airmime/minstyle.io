@@ -10,10 +10,14 @@
 	@include clearfix
 }
 
-.ms-hide{
+.ms-none{
 	display: none;
 }
 
-.ms-show{
+.ms-block{
 	display: block;
+}
+
+.ms-block-inline{
+	display: block-inline;
 }
