@@ -6,10 +6,17 @@
 	}
 }
 
+@for $i from 1 through 9{
+
+	&.ms-fw-#{$i}00{
+		font-weight: #{$i}00;
+
+	}
+}
+
 .ms-text-blue{
 	color: $color-blue;
 }
-
 .ms-text-red{
 	color: $color-red;
 }
@@ -18,4 +25,18 @@
 }
 .ms-text-gray-font{
 	color: $color-gray-font;
+}
+
+.ms-text-center{
+	text-align:center;
+}
+.ms-text-right{
+	text-align:right;
+}
+.ms-text-left{
+	text-align:left;
+}
+
+.ms-shadow{
+	@include single-box-shadow($blur: 15px, $color: rgba(black, 0.3));
 }
