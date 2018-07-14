@@ -3,8 +3,11 @@
   "description": "A simple CSS Framework !",
   "main": "css/minstyle.io.css",
   "license": "MIT",
-  "version": "0.1.0",
-  "repository": "Airmime/minstyle.io",
+  "version": "0.1.1",
+ "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Airmime/minstyle.io.git"
+  },
   "authors": [
     "Rémi MARION"
   ],
