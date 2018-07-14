@@ -401,25 +401,25 @@ blockquote.ms-white, .ms-blockquote.ms-white { background-color: transparent; }
 
 .ms-alert.ms-large { padding: 1.75rem 2rem; }
 
-ul, ol, dl, .ms-list { list-style: circle inside; margin: 0.6rem; }
+ul.ms-list, ol.ms-list, dl.ms-list { list-style: circle inside; margin: 0.6rem; }
 
-ul.ms-boxed, ol.ms-boxed, dl.ms-boxed, .ms-list.ms-boxed { list-style: none; border: 1px solid #d9d9d9; -webkit-border-radius: 0.3rem; -moz-border-radius: 0.3rem; -ms-border-radius: 0.3rem; -o-border-radius: 0.3rem; border-radius: 0.3rem; }
+ul.ms-list.ms-boxed, ol.ms-list.ms-boxed, dl.ms-list.ms-boxed { list-style: none; border: 1px solid #d9d9d9; -webkit-border-radius: 0.3rem; -moz-border-radius: 0.3rem; -ms-border-radius: 0.3rem; -o-border-radius: 0.3rem; border-radius: 0.3rem; }
 
-ul.ms-boxed li, ul.ms-boxed dt, ul.ms-boxed dd, ol.ms-boxed li, ol.ms-boxed dt, ol.ms-boxed dd, dl.ms-boxed li, dl.ms-boxed dt, dl.ms-boxed dd, .ms-list.ms-boxed li, .ms-list.ms-boxed dt, .ms-list.ms-boxed dd { padding: 0.7rem; margin: 0; border-bottom: 1px solid #d9d9d9; }
+ul.ms-list.ms-boxed li, ul.ms-list.ms-boxed dt, ul.ms-list.ms-boxed dd, ol.ms-list.ms-boxed li, ol.ms-list.ms-boxed dt, ol.ms-list.ms-boxed dd, dl.ms-list.ms-boxed li, dl.ms-list.ms-boxed dt, dl.ms-list.ms-boxed dd { padding: 0.7rem; margin: 0; border-bottom: 1px solid #d9d9d9; }
 
-ul.ms-boxed li:last-of-type, ol.ms-boxed li:last-of-type, dl.ms-boxed li:last-of-type, .ms-list.ms-boxed li:last-of-type { border: none; }
+ul.ms-list.ms-boxed li:last-of-type, ol.ms-list.ms-boxed li:last-of-type, dl.ms-list.ms-boxed li:last-of-type { border: none; }
 
-ul.ms-border, ol.ms-border, dl.ms-border, .ms-list.ms-border { list-style: none; border-bottom: 1px solid #d9d9d9; }
+ul.ms-list.ms-border, ol.ms-list.ms-border, dl.ms-list.ms-border { list-style: none; border-bottom: 1px solid #d9d9d9; }
 
-ul.ms-border li, ul.ms-border dt, ul.ms-border dd, ol.ms-border li, ol.ms-border dt, ol.ms-border dd, dl.ms-border li, dl.ms-border dt, dl.ms-border dd, .ms-list.ms-border li, .ms-list.ms-border dt, .ms-list.ms-border dd { padding: 0.7rem 0.2rem; margin: 0; border-bottom: 1px solid #d9d9d9; }
+ul.ms-list.ms-border li, ul.ms-list.ms-border dt, ul.ms-list.ms-border dd, ol.ms-list.ms-border li, ol.ms-list.ms-border dt, ol.ms-list.ms-border dd, dl.ms-list.ms-border li, dl.ms-list.ms-border dt, dl.ms-list.ms-border dd { padding: 0.7rem 0.2rem; margin: 0; border-bottom: 1px solid #d9d9d9; }
 
-ul.ms-border li:last-of-type, ol.ms-border li:last-of-type, dl.ms-border li:last-of-type, .ms-list.ms-border li:last-of-type { border: none; }
+ul.ms-list.ms-border li:last-of-type, ol.ms-list.ms-border li:last-of-type, dl.ms-list.ms-border li:last-of-type { border: none; }
 
-ul li, ul dt, ul dd, ol li, ol dt, ol dd, dl li, dl dt, dl dd, .ms-list li, .ms-list dt, .ms-list dd { margin: 0.6em 0; }
+ul.ms-list li, ul.ms-list dt, ul.ms-list dd, ol.ms-list li, ol.ms-list dt, ol.ms-list dd, dl.ms-list li, dl.ms-list dt, dl.ms-list dd { margin: 0.6em 0; }
 
-ul li.ms-active, ul dt.ms-active, ul dd.ms-active, ol li.ms-active, ol dt.ms-active, ol dd.ms-active, dl li.ms-active, dl dt.ms-active, dl dd.ms-active, .ms-list li.ms-active, .ms-list dt.ms-active, .ms-list dd.ms-active { background-color: #f2f2f2; -webkit-border-radius: 0.3rem; -moz-border-radius: 0.3rem; -ms-border-radius: 0.3rem; -o-border-radius: 0.3rem; border-radius: 0.3rem; }
+ul.ms-list li.ms-active, ul.ms-list dt.ms-active, ul.ms-list dd.ms-active, ol.ms-list li.ms-active, ol.ms-list dt.ms-active, ol.ms-list dd.ms-active, dl.ms-list li.ms-active, dl.ms-list dt.ms-active, dl.ms-list dd.ms-active { background-color: #f2f2f2; -webkit-border-radius: 0.3rem; -moz-border-radius: 0.3rem; -ms-border-radius: 0.3rem; -o-border-radius: 0.3rem; border-radius: 0.3rem; }
 
-ul.ms-list-none, ol.ms-list-none, dl.ms-list-none, .ms-list.ms-list-none { list-style: none; }
+ul.ms-list.ms-list-none, ol.ms-list.ms-list-none, dl.ms-list.ms-list-none { list-style: none; }
 
 form { margin: 1rem; }
 
