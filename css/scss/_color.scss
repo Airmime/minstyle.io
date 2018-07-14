@@ -9,4 +9,5 @@ $color_red: #e04540;
 $color_green: #5ca745;
 $color-gray: #f2f2f2;
 $color-gray-dark: #adb5bd;
-$color-gray-medium: darken(#f2f2f2, 10%);
+$color-gray-medium: darken($color-gray, 10%);
+$color-gray-font: #696B6C;

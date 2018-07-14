@@ -1,3 +1,7 @@
+@mixin formBorderColor($pFormBorderColor){
+	border: 1px solid $pFormBorderColor;
+}
+
 form{
 	margin: 1rem;
 }
@@ -25,16 +29,16 @@ select{
 	height: 2.5rem;
 	appearance: none;
 	background-color: transparent;
-	border: .1rem solid darken($color-gray, 10%);
-	color: darken( $color-gray, 70%);
+	border: 1px solid darken($color-gray, 10%);
+	color: black;
 	@include border-radius;
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
 	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
 	box-sizing: border-box; 
 	box-shadow: none; 
 	font-size: 1rem;
-	padding: .6rem .8rem;
-	margin-bottom: 1.1rem;
+	padding: .5rem .7rem;
+	margin-bottom: 1rem;
 
 	&:focus{
 		outline: 0;
@@ -43,13 +47,54 @@ select{
 
 	&:disabled{
 		background-color: $color-gray;
+		color: $color-gray-dark;
+		cursor: not-allowed;
+	}
+
+	&.ms-rounded{
+		border-radius: 10em;
+	}
+
+	&.ms-small{
+		height: 2rem;
+	}
+
+	&.ms-large{
+		height: 3rem;
+	}
+
+	&.ms-green{
+		@include formBorderColor($color-green);
+		&:focus{
+			@include single-box-shadow($blur: 5px, $color: $color-green);
+		}
+	}
+
+	&.ms-red{
+		@include formBorderColor($color-red);
+		&:focus{
+			@include single-box-shadow($blur: 5px, $color: $color-red);
+		}
+	}
+
+	&.ms-blue{
+		@include formBorderColor($color-blue);
+		&:focus{
+			@include single-box-shadow($blur: 5px, $color: $color-blue);
+		}
 	}
 
 }
 
 input[type='checkbox'],
 input[type='radio']{
-	display: inline
+	display: inline;
+}
+
+select[multiple]{
+	&.ms-select-multiple{
+		min-height: 7rem;
+	}
 }
 
 textarea{
@@ -61,4 +106,13 @@ legend{
 	display: inline-block;
 	margin-bottom: .5rem;
 	font-size: 1rem;
+}
+
+.ms-form-text{
+	display: block;
+	line-height: 0.1rem;
+	color: $color-gray-font;
+	font-size: 0.9rem;
+	margin: 0 0 10px 0;
+	padding: 0;
 }
