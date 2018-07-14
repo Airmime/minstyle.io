@@ -1,5 +1,4 @@
 # Created by https://www.gitignore.io/api/node,linux,macos,windows
-
 ### Linux ###
 *~
 
@@ -143,5 +142,8 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# npm & bower
+/node_modules
+/bower_components
 
 # End of https://www.gitignore.io/api/node,linux,macos,windows
