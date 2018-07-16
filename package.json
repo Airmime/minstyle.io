@@ -4,6 +4,7 @@
   "description": "A simple CSS Framework !",
   "main": "css/minstyle.io.css",
   "author": "Rémi MARION",
+  "homepage": "https://minstyle.io",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -28,6 +29,5 @@
   ],
   "bugs": {
     "url": "https://github.com/Airmime/minstyle.io/issues"
-  },
-  "https://minstyle.io"
+  }
 }
