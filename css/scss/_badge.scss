@@ -84,7 +84,7 @@
 	.ms-dark-side{
 		float:left;
 		color: #fff;
-		font-size: 0.9rem;
+		font-size: 0.7rem;
 		padding: 0.3rem 0.5rem;
 	}
 
@@ -92,7 +92,7 @@
 		background-color: $color-gray-dark;
 		float:left;
 		color: #fff;
-		font-size: 0.9rem;
+		font-size: 0.7rem;
 		padding: 0.3rem 0.5rem;
 		
 		@include badgeColor();
