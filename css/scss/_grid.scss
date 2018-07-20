@@ -40,6 +40,10 @@ $large-width-grid: 1140px!default;
 .row{
     margin: 0.5rem 0;
     @include clearfix;
+
+    &.no-margin{
+        margin: 0;
+    }
 }
 
 @for $i from 1 through $columns{

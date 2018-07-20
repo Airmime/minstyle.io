@@ -100,6 +100,8 @@ a {
   margin: 0.5rem 0;
   overflow: hidden;
   *zoom: 1; }
+  .row.no-margin {
+    margin: 0; }
 
 .m-show {
   display: none; }
@@ -1469,22 +1471,6 @@ tr th {
           -ms-border-radius: 0.3rem;
           -o-border-radius: 0.3rem;
           border-radius: 0.3rem; }
-      .ms-menu nav li a:hover,
-      .ms-menu .ms-nav li a:hover {
-        background-color: #f2f2f2;
-        -webkit-border-radius: 0.3rem;
-        -moz-border-radius: 0.3rem;
-        -ms-border-radius: 0.3rem;
-        -o-border-radius: 0.3rem;
-        border-radius: 0.3rem; }
-      .ms-menu nav li a:focus,
-      .ms-menu .ms-nav li a:focus {
-        background-color: #f2f2f2;
-        -webkit-border-radius: 0.3rem;
-        -moz-border-radius: 0.3rem;
-        -ms-border-radius: 0.3rem;
-        -o-border-radius: 0.3rem;
-        border-radius: 0.3rem; }
   .ms-menu.ms-gray a:hover {
     background-color: #f2f2f2;
     -webkit-border-radius: 0.3rem;

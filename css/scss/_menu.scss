@@ -41,16 +41,6 @@
 					@include border-radius;
 				}
 			}
-
-			a:hover{
-				background-color: $color-gray;
-				@include border-radius;
-			}
-
-			a:focus{
-				background-color: $color-gray;
-				@include border-radius;
-			}
 		}
 	}
 
