@@ -513,7 +513,7 @@ input[type='submit'] {
   input[type='submit'].ms-yellow {
     background-color: #ffc748;
     border-color: #ffc748;
-    color: #fff; }
+    color: #263238; }
   button.ms-gradient,
   .ms-btn.ms-gradient,
   input[type='button'].ms-gradient,
@@ -657,7 +657,8 @@ input[type='submit'] {
     .ms-btn.ms-rounded.ms-yellow,
     input[type='button'].ms-rounded.ms-yellow,
     input[type='submit'].ms-rounded.ms-yellow {
-      border-color: #ffc748; }
+      border-color: #ffc748;
+      color: #263238; }
     button.ms-rounded.ms-gradient,
     .ms-btn.ms-rounded.ms-gradient,
     input[type='button'].ms-rounded.ms-gradient,
@@ -719,8 +720,8 @@ input[type='submit'] {
   .ms-btn.ms-large,
   input[type='button'].ms-large,
   input[type='submit'].ms-large {
-    line-height: 2.6rem;
-    padding: 0 1.6rem;
+    line-height: 3rem;
+    padding: 0 3rem;
     font-size: 120%; }
   button.ms-block,
   .ms-btn.ms-block,
@@ -1660,6 +1661,12 @@ tr th {
 .ms-text-gray-font {
   color: #696B6C; }
 
+.ms-text-yellow {
+  color: #ffc748; }
+
+.ms-text-white {
+  color: #fff; }
+
 .ms-text-center {
   text-align: center; }
 
@@ -1684,13 +1691,11 @@ tr th {
   .ms-box.ms-boxed {
     border: 1px solid #d9d9d9; }
   .ms-box .ms-header {
-    background-color: #f2f2f2;
     border-bottom: 1px solid #d9d9d9;
     padding: 0.5rem 1rem; }
   .ms-box .ms-content {
     padding: 1rem; }
     .ms-box .ms-content .ms-text p {
-      color: #696B6C;
       text-align: justify;
       line-height: 1.3rem; }
     .ms-box .ms-content .ms-title {

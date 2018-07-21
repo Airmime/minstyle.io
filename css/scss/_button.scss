@@ -42,7 +42,7 @@ input[type='submit']{
   &.ms-yellow{
     background-color: $color_yellow;
     border-color: $color_yellow;
-    color: #fff;
+    color: #263238;
   }
 
   &.ms-gradient{
@@ -160,6 +160,7 @@ input[type='submit']{
 
     &.ms-yellow{
       border-color: $color_yellow;
+      color: #263238;
     }
 
     &.ms-gradient{
@@ -210,8 +211,8 @@ input[type='submit']{
   }
 
   &.ms-large{
-    line-height: 2.6rem;
-    padding: 0 1.6rem;
+    line-height: 3rem;
+    padding: 0 3rem;
     font-size: 120%;
   }
 
