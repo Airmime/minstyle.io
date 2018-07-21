@@ -1696,7 +1696,6 @@ tr th {
   .ms-box .ms-content {
     padding: 1rem; }
     .ms-box .ms-content .ms-text p {
-      text-align: justify;
       line-height: 1.3rem; }
     .ms-box .ms-content .ms-title {
       margin-bottom: 1rem; }
