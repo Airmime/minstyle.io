@@ -55,7 +55,7 @@ input[type='submit']{
 
   &.ms-border{
     background-color: transparent;
-    border: 1px solid $color-gray-medium;
+    border: 2px solid $color-gray-medium;
     color: #000;
 
     &.ms-red{
@@ -75,7 +75,7 @@ input[type='submit']{
 
     &.ms-yellow{
       border-color: $color_yellow;
-      color: $color_yellow;
+      color: #263238;
     }
 
     &.ms-gradient{
