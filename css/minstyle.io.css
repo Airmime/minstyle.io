@@ -934,6 +934,14 @@ blockquote,
     blockquote.ms-green a,
     .ms-blockquote.ms-green a {
       color: #5ca745; }
+  blockquote.ms-yellow,
+  .ms-blockquote.ms-yellow {
+    border-left: 5px solid #ffc748;
+    background-color: white;
+    color: #2f2000; }
+    blockquote.ms-yellow a,
+    .ms-blockquote.ms-yellow a {
+      color: #ffc748; }
   blockquote.ms-white,
   .ms-blockquote.ms-white {
     background-color: transparent; }
@@ -975,6 +983,12 @@ blockquote,
     color: #fff; }
     .ms-alert.ms-green .colored {
       color: #203b18; }
+  .ms-alert.ms-yellow {
+    background-color: #ffc748;
+    color: #fff;
+    color: #263238; }
+    .ms-alert.ms-yellow .colored {
+      color: #ae7900; }
   .ms-alert.ms-white {
     background-color: transparent;
     border: 1px solid #adb5bd;
