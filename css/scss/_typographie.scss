@@ -42,7 +42,3 @@
 .ms-text-left{
 	text-align:left;
 }
-
-.ms-shadow{
-	@include single-box-shadow($blur: 15px, $color: rgba(black, 0.3));
-}

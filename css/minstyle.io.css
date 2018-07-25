@@ -80,6 +80,11 @@ a {
 .ms-block-inline {
   display: block-inline; }
 
+.ms-shadow {
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3); }
+
 /* 
 	Inspired by grafikart.fr
 	https://www.grafikart.fr/tutoriels/html-css/grille-responsive-css-498
@@ -429,17 +434,6 @@ a {
     display: block; }
   .m-show {
     display: none; } }
-
-h1, h2, h3, h4, h5, h6 {
-  padding: 0.5rem 0; }
-  h1.ms-red, h2.ms-red, h3.ms-red, h4.ms-red, h5.ms-red, h6.ms-red {
-    color: #e04540; }
-  h1.ms-green, h2.ms-green, h3.ms-green, h4.ms-green, h5.ms-green, h6.ms-green {
-    color: #5ca745; }
-  h1.ms-blue, h2.ms-blue, h3.ms-blue, h4.ms-blue, h5.ms-blue, h6.ms-blue {
-    color: #1dabe7; }
-  h1.ms-gray, h2.ms-gray, h3.ms-gray, h4.ms-gray, h5.ms-gray, h6.ms-gray {
-    color: #adb5bd; }
 
 h1, .ms-h1 {
   font-size: 3.1rem; }
@@ -1689,11 +1683,6 @@ tr th {
 
 .ms-text-left {
   text-align: left; }
-
-.ms-shadow {
-  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3); }
 
 .ms-box {
   -webkit-border-radius: 0.3rem;
