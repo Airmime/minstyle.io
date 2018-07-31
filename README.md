@@ -11,7 +11,7 @@
 ![minstyle.io](https://image.noelshack.com/fichiers/2018/30/1/1532343771-coding.gif)
 
 ## Informations
-minstyle.io is a simple CSS framework designed for build amazing user interfaces and websites! Full documentation will come soon, in the meantime you can consult the brief documentation on [minstyle.io](https://minstyle.io) 
+minstyle.io is a simple CSS framework designed for build amazing user interfaces and websites! Full documentation will come soon, in the meantime you can consult the brief documentation on [minstyle.io](https://minstyle.io) ([repository](https://github.com/Airmime/minstyle.io-Website))
 
 ## Download
 
