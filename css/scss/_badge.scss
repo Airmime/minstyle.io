@@ -21,6 +21,11 @@
 		background-color: $color-green;
 	}
 
+	&.ms-yellow{
+		background-color: $color-yellow;
+		color: #263238;
+	}
+
 	&.ms-gradient{
 		@include background-image(linear-gradient(to left top, #fd8157, #eb5a82));
 	}
@@ -63,6 +68,11 @@
 
 		&.ms-red{
 			@include badgeBorderColor($color-error);
+		}
+
+		&.ms-yellow{
+			@include badgeBorderColor($color-yellow);
+			color: #263238;
 		}
 
 		&.ms-white{
@@ -124,6 +134,11 @@
 
 		&.ms-red{
 			@include badgeBorderColor($color-error);
+		}
+
+		&.ms-yellow{
+			@include badgeBorderColor($color-yellow);
+			color: #263238;
 		}
 
 		&.ms-white{

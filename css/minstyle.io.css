@@ -763,6 +763,11 @@ input[type='submit'] {
       border: 1px solid #cb3030;
       background: transparent;
       color: #cb3030; }
+    .ms-badge-title.ms-border.ms-yellow {
+      border: 1px solid #ffc748;
+      background: transparent;
+      color: #ffc748;
+      color: #263238; }
     .ms-badge-title.ms-border.ms-white {
       border: 1px solid #d9d9d9;
       background: transparent;
@@ -774,6 +779,9 @@ input[type='submit'] {
     background-color: #e04540; }
   .ms-badge-title.ms-green {
     background-color: #5ca745; }
+  .ms-badge-title.ms-yellow {
+    background-color: #ffc748;
+    color: #263238; }
   .ms-badge-title.ms-gradient {
     background-image: -owg-linear-gradient(to left top, #fd8157, #eb5a82);
     background-image: -webkit-linear-gradient(to left top, #fd8157, #eb5a82);
@@ -810,6 +818,9 @@ input[type='submit'] {
       background-color: #e04540; }
     .ms-badge-gh .ms-color-side.ms-green {
       background-color: #5ca745; }
+    .ms-badge-gh .ms-color-side.ms-yellow {
+      background-color: #ffc748;
+      color: #263238; }
     .ms-badge-gh .ms-color-side.ms-gradient {
       background-image: -owg-linear-gradient(to left top, #fd8157, #eb5a82);
       background-image: -webkit-linear-gradient(to left top, #fd8157, #eb5a82);
@@ -837,6 +848,9 @@ input[type='submit'] {
     background-color: #e04540; }
   .ms-badge.ms-green {
     background-color: #5ca745; }
+  .ms-badge.ms-yellow {
+    background-color: #ffc748;
+    color: #263238; }
   .ms-badge.ms-gradient {
     background-image: -owg-linear-gradient(to left top, #fd8157, #eb5a82);
     background-image: -webkit-linear-gradient(to left top, #fd8157, #eb5a82);
@@ -860,6 +874,11 @@ input[type='submit'] {
     border: 1px solid #cb3030;
     background: transparent;
     color: #cb3030; }
+  .ms-badge.ms-border.ms-yellow {
+    border: 1px solid #ffc748;
+    background: transparent;
+    color: #ffc748;
+    color: #263238; }
   .ms-badge.ms-border.ms-white {
     border: 1px solid #d9d9d9;
     background: transparent;
