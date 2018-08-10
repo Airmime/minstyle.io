@@ -27,7 +27,7 @@
 	}
 
 	&.ms-gradient{
-		@include background-image(linear-gradient(to left top, #fd8157, #eb5a82));
+		@include background-image(linear-gradient(to left top, #2193b0, #6dd5ed));
 	}
 
 	&.ms-white{
@@ -35,55 +35,6 @@
 		color: #000;
 	}
 }
-
-.ms-badge-title{
-	color: #fff;
-	background-color: $color-gray-dark;
-	display: inline-block;
-	padding: .3rem .3rem;
-	font-size: 60%;
-	line-height: 1;
-	text-align: center;
-	white-space: nowrap;
-	vertical-align: baseline;
-	position: relative;
-	top: -0.2rem;
-	@include border-radius;
-
-	&.ms-rounded{
-		border-radius: 10rem;
-		padding: .3rem .5rem;
-	}
-
-	&.ms-border{
-		padding: .3rem .5rem;
-
-		&.ms-blue{
-			@include badgeBorderColor($color-info);
-		}
-
-		&.ms-green{
-			@include badgeBorderColor($color-success);
-		}
-
-		&.ms-red{
-			@include badgeBorderColor($color-error);
-		}
-
-		&.ms-yellow{
-			@include badgeBorderColor($color-yellow);
-			color: #263238;
-		}
-
-		&.ms-white{
-			@include badgeBorderColor($color-gray-medium);
-			color: #000;
-		}
-	}
-
-	@include badgeColor();
-}
-
 .ms-badge-gh{
 	background-color: $color-gray-font;
 	display:inline-block;

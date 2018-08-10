@@ -729,69 +729,6 @@ input[type='submit'] {
   input[type='submit'].no-margin {
     margin: 0; }
 
-.ms-badge-title {
-  color: #fff;
-  background-color: #adb5bd;
-  display: inline-block;
-  padding: .3rem .3rem;
-  font-size: 60%;
-  line-height: 1;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: baseline;
-  position: relative;
-  top: -0.2rem;
-  -webkit-border-radius: 0.3rem;
-  -moz-border-radius: 0.3rem;
-  -ms-border-radius: 0.3rem;
-  -o-border-radius: 0.3rem;
-  border-radius: 0.3rem; }
-  .ms-badge-title.ms-rounded {
-    border-radius: 10rem;
-    padding: .3rem .5rem; }
-  .ms-badge-title.ms-border {
-    padding: .3rem .5rem; }
-    .ms-badge-title.ms-border.ms-blue {
-      border: 1px solid #1dabe7;
-      background: transparent;
-      color: #1dabe7; }
-    .ms-badge-title.ms-border.ms-green {
-      border: 1px solid #5ca745;
-      background: transparent;
-      color: #5ca745; }
-    .ms-badge-title.ms-border.ms-red {
-      border: 1px solid #cb3030;
-      background: transparent;
-      color: #cb3030; }
-    .ms-badge-title.ms-border.ms-yellow {
-      border: 1px solid #ffc748;
-      background: transparent;
-      color: #ffc748;
-      color: #263238; }
-    .ms-badge-title.ms-border.ms-white {
-      border: 1px solid #d9d9d9;
-      background: transparent;
-      color: #d9d9d9;
-      color: #000; }
-  .ms-badge-title.ms-blue {
-    background-color: #1dabe7; }
-  .ms-badge-title.ms-red {
-    background-color: #e04540; }
-  .ms-badge-title.ms-green {
-    background-color: #5ca745; }
-  .ms-badge-title.ms-yellow {
-    background-color: #ffc748;
-    color: #263238; }
-  .ms-badge-title.ms-gradient {
-    background-image: -owg-linear-gradient(to left top, #fd8157, #eb5a82);
-    background-image: -webkit-linear-gradient(to left top, #fd8157, #eb5a82);
-    background-image: -moz-linear-gradient(to left top, #fd8157, #eb5a82);
-    background-image: -o-linear-gradient(to left top, #fd8157, #eb5a82);
-    background-image: linear-gradient(to left top, #fd8157, #eb5a82); }
-  .ms-badge-title.ms-white {
-    background-color: #d9d9d9;
-    color: #000; }
-
 .ms-badge-gh {
   background-color: #696B6C;
   display: inline-block;
@@ -822,11 +759,11 @@ input[type='submit'] {
       background-color: #ffc748;
       color: #263238; }
     .ms-badge-gh .ms-color-side.ms-gradient {
-      background-image: -owg-linear-gradient(to left top, #fd8157, #eb5a82);
-      background-image: -webkit-linear-gradient(to left top, #fd8157, #eb5a82);
-      background-image: -moz-linear-gradient(to left top, #fd8157, #eb5a82);
-      background-image: -o-linear-gradient(to left top, #fd8157, #eb5a82);
-      background-image: linear-gradient(to left top, #fd8157, #eb5a82); }
+      background-image: -owg-linear-gradient(to left top, #2193b0, #6dd5ed);
+      background-image: -webkit-linear-gradient(to left top, #2193b0, #6dd5ed);
+      background-image: -moz-linear-gradient(to left top, #2193b0, #6dd5ed);
+      background-image: -o-linear-gradient(to left top, #2193b0, #6dd5ed);
+      background-image: linear-gradient(to left top, #2193b0, #6dd5ed); }
     .ms-badge-gh .ms-color-side.ms-white {
       background-color: #d9d9d9;
       color: #000; }
@@ -852,11 +789,11 @@ input[type='submit'] {
     background-color: #ffc748;
     color: #263238; }
   .ms-badge.ms-gradient {
-    background-image: -owg-linear-gradient(to left top, #fd8157, #eb5a82);
-    background-image: -webkit-linear-gradient(to left top, #fd8157, #eb5a82);
-    background-image: -moz-linear-gradient(to left top, #fd8157, #eb5a82);
-    background-image: -o-linear-gradient(to left top, #fd8157, #eb5a82);
-    background-image: linear-gradient(to left top, #fd8157, #eb5a82); }
+    background-image: -owg-linear-gradient(to left top, #2193b0, #6dd5ed);
+    background-image: -webkit-linear-gradient(to left top, #2193b0, #6dd5ed);
+    background-image: -moz-linear-gradient(to left top, #2193b0, #6dd5ed);
+    background-image: -o-linear-gradient(to left top, #2193b0, #6dd5ed);
+    background-image: linear-gradient(to left top, #2193b0, #6dd5ed); }
   .ms-badge.ms-white {
     background-color: #d9d9d9;
     color: #000; }
