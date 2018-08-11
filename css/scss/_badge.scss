@@ -35,6 +35,37 @@
 		color: #000;
 	}
 }
+
+.ms-notification{
+	height: 25px;
+  	width: 25px;
+	color: #fff;
+	background-color: $color-gray-dark;
+	display: inline-block;
+	font-size: 1rem;
+	line-height: 25px;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	@include border-radius(100%);
+
+	@include badgeColor();
+
+	&.ms-small{
+		height: 20px;
+  		width: 20px;
+  		line-height: 20px;
+  		font-size: .7rem;
+	}
+
+	&.ms-large{
+		height: 35px;
+  		width: 35px;
+  		line-height: 35px;
+  		font-size: 1.3rem;
+	}
+}
+
 .ms-badge-gh{
 	background-color: $color-gray-font;
 	display:inline-block;

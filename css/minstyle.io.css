@@ -729,6 +729,51 @@ input[type='submit'] {
   input[type='submit'].no-margin {
     margin: 0; }
 
+.ms-notification {
+  height: 25px;
+  width: 25px;
+  color: #fff;
+  background-color: #adb5bd;
+  display: inline-block;
+  font-size: 1rem;
+  line-height: 25px;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%; }
+  .ms-notification.ms-blue {
+    background-color: #1dabe7; }
+  .ms-notification.ms-red {
+    background-color: #e04540; }
+  .ms-notification.ms-green {
+    background-color: #5ca745; }
+  .ms-notification.ms-yellow {
+    background-color: #ffc748;
+    color: #263238; }
+  .ms-notification.ms-gradient {
+    background-image: -owg-linear-gradient(to left top, #2193b0, #6dd5ed);
+    background-image: -webkit-linear-gradient(to left top, #2193b0, #6dd5ed);
+    background-image: -moz-linear-gradient(to left top, #2193b0, #6dd5ed);
+    background-image: -o-linear-gradient(to left top, #2193b0, #6dd5ed);
+    background-image: linear-gradient(to left top, #2193b0, #6dd5ed); }
+  .ms-notification.ms-white {
+    background-color: #d9d9d9;
+    color: #000; }
+  .ms-notification.ms-small {
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+    font-size: .7rem; }
+  .ms-notification.ms-large {
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    font-size: 1.3rem; }
+
 .ms-badge-gh {
   background-color: #696B6C;
   display: inline-block;
@@ -1333,6 +1378,11 @@ tr.ms-red {
 
 tr.ms-green {
   background-color: #5ca745;
+  color: #fff;
+  border-bottom: none; }
+
+tr.ms-yellow {
+  background-color: #ffc748;
   color: #fff;
   border-bottom: none; }
 
