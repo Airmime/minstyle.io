@@ -1323,6 +1323,44 @@ select {
       -webkit-box-shadow: 0px 0px 5px #1dabe7;
       -moz-box-shadow: 0px 0px 5px #1dabe7;
       box-shadow: 0px 0px 5px #1dabe7; }
+  input[type='email'].ms-yellow,
+  input[type='number'].ms-yellow,
+  input[type='password'].ms-yellow,
+  input[type='search'].ms-yellow,
+  input[type='tel'].ms-yellow,
+  input[type='text'].ms-yellow,
+  input[type='url'].ms-yellow,
+  input[type='color'].ms-yellow,
+  input[type='date'].ms-yellow,
+  input[type='month'].ms-yellow,
+  input[type='week'].ms-yellow,
+  input[type='datetime'].ms-yellow,
+  input[type='range'].ms-yellow,
+  input[type='datetime-local'].ms-yellow,
+  input:not([type]).ms-yellow,
+  textarea.ms-yellow,
+  select.ms-yellow {
+    border: 1px solid #ffc748; }
+    input[type='email'].ms-yellow:focus,
+    input[type='number'].ms-yellow:focus,
+    input[type='password'].ms-yellow:focus,
+    input[type='search'].ms-yellow:focus,
+    input[type='tel'].ms-yellow:focus,
+    input[type='text'].ms-yellow:focus,
+    input[type='url'].ms-yellow:focus,
+    input[type='color'].ms-yellow:focus,
+    input[type='date'].ms-yellow:focus,
+    input[type='month'].ms-yellow:focus,
+    input[type='week'].ms-yellow:focus,
+    input[type='datetime'].ms-yellow:focus,
+    input[type='range'].ms-yellow:focus,
+    input[type='datetime-local'].ms-yellow:focus,
+    input:not([type]).ms-yellow:focus,
+    textarea.ms-yellow:focus,
+    select.ms-yellow:focus {
+      -webkit-box-shadow: 0px 0px 5px #ffc748;
+      -moz-box-shadow: 0px 0px 5px #ffc748;
+      box-shadow: 0px 0px 5px #ffc748; }
 
 input[type='checkbox'],
 input[type='radio'] {
