@@ -1494,7 +1494,7 @@ tr th {
 .ms-card {
   margin-bottom: 1rem; }
   .ms-card .ms-pic img {
-    diplay: block;
+    display: block;
     margin: 0 auto;
     max-width: 100%; }
   .ms-card .ms-pic p {
