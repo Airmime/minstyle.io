@@ -1641,12 +1641,14 @@ tr th {
   -ms-border-radius: 0.3rem;
   -o-border-radius: 0.3rem;
   border-radius: 0.3rem;
+  border: 1px solid #d9d9d9;
   margin: 0.5rem; }
-  .ms-box.ms-boxed {
-    border: 1px solid #d9d9d9; }
   .ms-box .ms-header {
     border-bottom: 1px solid #d9d9d9;
-    padding: 0.5rem 1rem; }
+    padding: 0.8rem 1rem;
+    background-color: #f2f2f2; }
+  .ms-box.ms-boxed-none {
+    border: none; }
   .ms-box .ms-content {
     padding: 1rem; }
     .ms-box .ms-content .ms-text p {
