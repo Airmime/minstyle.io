@@ -22,49 +22,60 @@ input[type='submit']{
   }
 
   &.ms-red{
-    background-color: $color_error;
-    border-color: $color_error;
+    background-color: $color_red;
+    border-color: $color_red;
     color: #fff;
   }
 
   &.ms-green{
-    background-color: $color_success;
-    border-color: $color_success;
+    background-color: $color_green;
+    border-color: $color_green;
     color: #fff;
   }
 
   &.ms-blue{
-    background-color: $color_info;
-    border-color: $color_info;
+    background-color: $color_blue;
+    border-color: $color_blue;
     color: #fff;
+  }
+
+  &.ms-yellow{
+    background-color: $color_yellow;
+    border-color: $color_yellow;
+    color: #263238;
   }
 
   &.ms-gradient{
     padding: 0 1.3rem;
     line-height: 2.2rem;
-    @include background-image(linear-gradient(to left top, #fd8157, #eb5a82));
+    @include background-image(linear-gradient(to left top, #2193b0, #6dd5ed));
     border: none;
     color: #fff;
   }
 
   &.ms-border{
     background-color: transparent;
-    border: 1px solid $color-gray-medium;
+    border: 2px solid $color-gray-medium;
     color: #000;
 
     &.ms-red{
-      border-color: $color_error;
-      color: $color_error;
+      border-color: $color_red;
+      color: $color_red;
     }
 
     &.ms-green{
-      border-color: $color_success;
-      color: $color_success;
+      border-color: $color_green;
+      color: $color_green;
     }
 
     &.ms-blue{
-      border-color: $color_info;
-      color: $color_info;
+      border-color: $color_blue;
+      color: $color_blue;
+    }
+
+    &.ms-yellow{
+      border-color: $color_yellow;
+      color: $color-blue-dark;
     }
 
     &.ms-gradient{
@@ -80,18 +91,23 @@ input[type='submit']{
     color: #000;
 
     &.ms-red{
-      border-color: $color_error;
-      color: $color_error;
+      border-color: $color_red;
+      color: $color_red;
     }
 
     &.ms-green{
-      border-color: $color_success;
-      color: $color_success;
+      border-color: $color_green;
+      color: $color_green;
     }
 
     &.ms-blue{
-      border-color: $color_info;
-      color: $color_info;
+      border-color: $color_blue;
+      color: $color_blue;
+    }
+
+    &.ms-yellow{
+      border-color: $color_yellow;
+      color: $color_yellow;
     }
 
     &.ms-gradient{
@@ -106,15 +122,19 @@ input[type='submit']{
     color: #000;
 
     &.ms-red{
-      color: $color_error;
+      color: $color_red;
     }
 
     &.ms-green{
-      color: $color_success;
+      color: $color_green;
     }
 
     &.ms-blue{
-      color: $color_info;
+      color: $color_blue;
+    }
+
+    &.ms-yellow{
+      color: $color_yellow;
     }
 
     &.ms-gradient{
@@ -127,15 +147,20 @@ input[type='submit']{
     border-radius: 10em;
 
     &.ms-red{
-      border-color: $color_error;
+      border-color: $color_red;
     }
 
     &.ms-green{
-      border-color: $color_success;
+      border-color: $color_green;
     }
 
     &.ms-blue{
-      border-color: $color_info;
+      border-color: $color_blue;
+    }
+
+    &.ms-yellow{
+      border-color: $color_yellow;
+      color: $color-blue-dark;
     }
 
     &.ms-gradient{
@@ -150,18 +175,23 @@ input[type='submit']{
     color: #000;
 
     &.ms-red{
-      border-color: $color_error;
-      color: $color_error;
+      border-color: $color_red;
+      color: $color_red;
     }
 
     &.ms-blue{
-      border-color: $color_info;
-      color: $color_info;
+      border-color: $color_blue;
+      color: $color_blue;
     }
 
     &.ms-green{
-      border-color: $color_success;
-      color: $color_success;
+      border-color: $color_green;
+      color: $color_green;
+    }
+
+    &.ms-yellow{
+      border-color: $color_yellow;
+      color: $color_yellow;
     }
 
     &.ms-gradient{
@@ -181,8 +211,8 @@ input[type='submit']{
   }
 
   &.ms-large{
-    line-height: 2.6rem;
-    padding: 0 1.6rem;
+    line-height: 3rem;
+    padding: 0 3rem;
     font-size: 120%;
   }
 

@@ -84,6 +84,13 @@ select{
 		}
 	}
 
+	&.ms-yellow{
+		@include formBorderColor($color-yellow);
+		&:focus{
+			@include single-box-shadow($blur: 5px, $color: $color-yellow);
+		}
+	}
+
 }
 
 input[type='checkbox'],

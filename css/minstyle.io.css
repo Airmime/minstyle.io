@@ -80,6 +80,11 @@ a {
 .ms-block-inline {
   display: block-inline; }
 
+.ms-shadow {
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3); }
+
 /* 
 	Inspired by grafikart.fr
 	https://www.grafikart.fr/tutoriels/html-css/grille-responsive-css-498
@@ -100,6 +105,8 @@ a {
   margin: 0.5rem 0;
   overflow: hidden;
   *zoom: 1; }
+  .row.no-margin {
+    margin: 0; }
 
 .m-show {
   display: none; }
@@ -428,17 +435,6 @@ a {
   .m-show {
     display: none; } }
 
-h1, h2, h3, h4, h5, h6 {
-  padding: 0.5rem 0; }
-  h1.ms-red, h2.ms-red, h3.ms-red, h4.ms-red, h5.ms-red, h6.ms-red {
-    color: #e04540; }
-  h1.ms-green, h2.ms-green, h3.ms-green, h4.ms-green, h5.ms-green, h6.ms-green {
-    color: #5ca745; }
-  h1.ms-blue, h2.ms-blue, h3.ms-blue, h4.ms-blue, h5.ms-blue, h6.ms-blue {
-    color: #1dabe7; }
-  h1.ms-gray, h2.ms-gray, h3.ms-gray, h4.ms-gray, h5.ms-gray, h6.ms-gray {
-    color: #adb5bd; }
-
 h1, .ms-h1 {
   font-size: 3.1rem; }
 
@@ -488,8 +484,8 @@ input[type='submit'] {
   .ms-btn.ms-red,
   input[type='button'].ms-red,
   input[type='submit'].ms-red {
-    background-color: #cb3030;
-    border-color: #cb3030;
+    background-color: #e04540;
+    border-color: #e04540;
     color: #fff; }
   button.ms-green,
   .ms-btn.ms-green,
@@ -505,17 +501,24 @@ input[type='submit'] {
     background-color: #1dabe7;
     border-color: #1dabe7;
     color: #fff; }
+  button.ms-yellow,
+  .ms-btn.ms-yellow,
+  input[type='button'].ms-yellow,
+  input[type='submit'].ms-yellow {
+    background-color: #ffc748;
+    border-color: #ffc748;
+    color: #263238; }
   button.ms-gradient,
   .ms-btn.ms-gradient,
   input[type='button'].ms-gradient,
   input[type='submit'].ms-gradient {
     padding: 0 1.3rem;
     line-height: 2.2rem;
-    background-image: -owg-linear-gradient(to left top, #fd8157, #eb5a82);
-    background-image: -webkit-linear-gradient(to left top, #fd8157, #eb5a82);
-    background-image: -moz-linear-gradient(to left top, #fd8157, #eb5a82);
-    background-image: -o-linear-gradient(to left top, #fd8157, #eb5a82);
-    background-image: linear-gradient(to left top, #fd8157, #eb5a82);
+    background-image: -owg-linear-gradient(to left top, #2193b0, #6dd5ed);
+    background-image: -webkit-linear-gradient(to left top, #2193b0, #6dd5ed);
+    background-image: -moz-linear-gradient(to left top, #2193b0, #6dd5ed);
+    background-image: -o-linear-gradient(to left top, #2193b0, #6dd5ed);
+    background-image: linear-gradient(to left top, #2193b0, #6dd5ed);
     border: none;
     color: #fff; }
   button.ms-border,
@@ -523,14 +526,14 @@ input[type='submit'] {
   input[type='button'].ms-border,
   input[type='submit'].ms-border {
     background-color: transparent;
-    border: 1px solid #d9d9d9;
+    border: 2px solid #d9d9d9;
     color: #000; }
     button.ms-border.ms-red,
     .ms-btn.ms-border.ms-red,
     input[type='button'].ms-border.ms-red,
     input[type='submit'].ms-border.ms-red {
-      border-color: #cb3030;
-      color: #cb3030; }
+      border-color: #e04540;
+      color: #e04540; }
     button.ms-border.ms-green,
     .ms-btn.ms-border.ms-green,
     input[type='button'].ms-border.ms-green,
@@ -543,6 +546,12 @@ input[type='submit'] {
     input[type='submit'].ms-border.ms-blue {
       border-color: #1dabe7;
       color: #1dabe7; }
+    button.ms-border.ms-yellow,
+    .ms-btn.ms-border.ms-yellow,
+    input[type='button'].ms-border.ms-yellow,
+    input[type='submit'].ms-border.ms-yellow {
+      border-color: #ffc748;
+      color: #263238; }
     button.ms-border.ms-gradient,
     .ms-btn.ms-border.ms-gradient,
     input[type='button'].ms-border.ms-gradient,
@@ -561,8 +570,8 @@ input[type='submit'] {
     .ms-btn.ms-border-bottom.ms-red,
     input[type='button'].ms-border-bottom.ms-red,
     input[type='submit'].ms-border-bottom.ms-red {
-      border-color: #cb3030;
-      color: #cb3030; }
+      border-color: #e04540;
+      color: #e04540; }
     button.ms-border-bottom.ms-green,
     .ms-btn.ms-border-bottom.ms-green,
     input[type='button'].ms-border-bottom.ms-green,
@@ -575,6 +584,12 @@ input[type='submit'] {
     input[type='submit'].ms-border-bottom.ms-blue {
       border-color: #1dabe7;
       color: #1dabe7; }
+    button.ms-border-bottom.ms-yellow,
+    .ms-btn.ms-border-bottom.ms-yellow,
+    input[type='button'].ms-border-bottom.ms-yellow,
+    input[type='submit'].ms-border-bottom.ms-yellow {
+      border-color: #ffc748;
+      color: #ffc748; }
     button.ms-border-bottom.ms-gradient,
     .ms-btn.ms-border-bottom.ms-gradient,
     input[type='button'].ms-border-bottom.ms-gradient,
@@ -591,7 +606,7 @@ input[type='submit'] {
     .ms-btn.ms-clear.ms-red,
     input[type='button'].ms-clear.ms-red,
     input[type='submit'].ms-clear.ms-red {
-      color: #cb3030; }
+      color: #e04540; }
     button.ms-clear.ms-green,
     .ms-btn.ms-clear.ms-green,
     input[type='button'].ms-clear.ms-green,
@@ -602,6 +617,11 @@ input[type='submit'] {
     input[type='button'].ms-clear.ms-blue,
     input[type='submit'].ms-clear.ms-blue {
       color: #1dabe7; }
+    button.ms-clear.ms-yellow,
+    .ms-btn.ms-clear.ms-yellow,
+    input[type='button'].ms-clear.ms-yellow,
+    input[type='submit'].ms-clear.ms-yellow {
+      color: #ffc748; }
     button.ms-clear.ms-gradient,
     .ms-btn.ms-clear.ms-gradient,
     input[type='button'].ms-clear.ms-gradient,
@@ -616,7 +636,7 @@ input[type='submit'] {
     .ms-btn.ms-rounded.ms-red,
     input[type='button'].ms-rounded.ms-red,
     input[type='submit'].ms-rounded.ms-red {
-      border-color: #cb3030; }
+      border-color: #e04540; }
     button.ms-rounded.ms-green,
     .ms-btn.ms-rounded.ms-green,
     input[type='button'].ms-rounded.ms-green,
@@ -627,6 +647,12 @@ input[type='submit'] {
     input[type='button'].ms-rounded.ms-blue,
     input[type='submit'].ms-rounded.ms-blue {
       border-color: #1dabe7; }
+    button.ms-rounded.ms-yellow,
+    .ms-btn.ms-rounded.ms-yellow,
+    input[type='button'].ms-rounded.ms-yellow,
+    input[type='submit'].ms-rounded.ms-yellow {
+      border-color: #ffc748;
+      color: #263238; }
     button.ms-rounded.ms-gradient,
     .ms-btn.ms-rounded.ms-gradient,
     input[type='button'].ms-rounded.ms-gradient,
@@ -647,8 +673,8 @@ input[type='submit'] {
     .ms-btn.ms-border-rounded.ms-red,
     input[type='button'].ms-border-rounded.ms-red,
     input[type='submit'].ms-border-rounded.ms-red {
-      border-color: #cb3030;
-      color: #cb3030; }
+      border-color: #e04540;
+      color: #e04540; }
     button.ms-border-rounded.ms-blue,
     .ms-btn.ms-border-rounded.ms-blue,
     input[type='button'].ms-border-rounded.ms-blue,
@@ -661,6 +687,12 @@ input[type='submit'] {
     input[type='submit'].ms-border-rounded.ms-green {
       border-color: #5ca745;
       color: #5ca745; }
+    button.ms-border-rounded.ms-yellow,
+    .ms-btn.ms-border-rounded.ms-yellow,
+    input[type='button'].ms-border-rounded.ms-yellow,
+    input[type='submit'].ms-border-rounded.ms-yellow {
+      border-color: #ffc748;
+      color: #ffc748; }
     button.ms-border-rounded.ms-gradient,
     .ms-btn.ms-border-rounded.ms-gradient,
     input[type='button'].ms-border-rounded.ms-gradient,
@@ -682,8 +714,8 @@ input[type='submit'] {
   .ms-btn.ms-large,
   input[type='button'].ms-large,
   input[type='submit'].ms-large {
-    line-height: 2.6rem;
-    padding: 0 1.6rem;
+    line-height: 3rem;
+    padding: 0 3rem;
     font-size: 120%; }
   button.ms-block,
   .ms-btn.ms-block,
@@ -697,60 +729,50 @@ input[type='submit'] {
   input[type='submit'].no-margin {
     margin: 0; }
 
-.ms-badge-title {
+.ms-notification {
+  height: 25px;
+  width: 25px;
   color: #fff;
   background-color: #adb5bd;
   display: inline-block;
-  padding: .3rem .3rem;
-  font-size: 60%;
-  line-height: 1;
+  font-size: 1rem;
+  line-height: 25px;
   text-align: center;
   white-space: nowrap;
-  vertical-align: baseline;
-  position: relative;
-  top: -0.2rem;
-  -webkit-border-radius: 0.3rem;
-  -moz-border-radius: 0.3rem;
-  -ms-border-radius: 0.3rem;
-  -o-border-radius: 0.3rem;
-  border-radius: 0.3rem; }
-  .ms-badge-title.ms-rounded {
-    border-radius: 10rem;
-    padding: .3rem .5rem; }
-  .ms-badge-title.ms-border {
-    padding: .3rem .5rem; }
-    .ms-badge-title.ms-border.ms-blue {
-      border: 1px solid #1dabe7;
-      background: transparent;
-      color: #1dabe7; }
-    .ms-badge-title.ms-border.ms-green {
-      border: 1px solid #5ca745;
-      background: transparent;
-      color: #5ca745; }
-    .ms-badge-title.ms-border.ms-red {
-      border: 1px solid #cb3030;
-      background: transparent;
-      color: #cb3030; }
-    .ms-badge-title.ms-border.ms-white {
-      border: 1px solid #d9d9d9;
-      background: transparent;
-      color: #d9d9d9;
-      color: #000; }
-  .ms-badge-title.ms-blue {
+  vertical-align: middle;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%; }
+  .ms-notification.ms-blue {
     background-color: #1dabe7; }
-  .ms-badge-title.ms-red {
+  .ms-notification.ms-red {
     background-color: #e04540; }
-  .ms-badge-title.ms-green {
+  .ms-notification.ms-green {
     background-color: #5ca745; }
-  .ms-badge-title.ms-gradient {
-    background-image: -owg-linear-gradient(to left top, #fd8157, #eb5a82);
-    background-image: -webkit-linear-gradient(to left top, #fd8157, #eb5a82);
-    background-image: -moz-linear-gradient(to left top, #fd8157, #eb5a82);
-    background-image: -o-linear-gradient(to left top, #fd8157, #eb5a82);
-    background-image: linear-gradient(to left top, #fd8157, #eb5a82); }
-  .ms-badge-title.ms-white {
+  .ms-notification.ms-yellow {
+    background-color: #ffc748;
+    color: #263238; }
+  .ms-notification.ms-gradient {
+    background-image: -owg-linear-gradient(to left top, #2193b0, #6dd5ed);
+    background-image: -webkit-linear-gradient(to left top, #2193b0, #6dd5ed);
+    background-image: -moz-linear-gradient(to left top, #2193b0, #6dd5ed);
+    background-image: -o-linear-gradient(to left top, #2193b0, #6dd5ed);
+    background-image: linear-gradient(to left top, #2193b0, #6dd5ed); }
+  .ms-notification.ms-white {
     background-color: #d9d9d9;
     color: #000; }
+  .ms-notification.ms-small {
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+    font-size: .7rem; }
+  .ms-notification.ms-large {
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    font-size: 1.3rem; }
 
 .ms-badge-gh {
   background-color: #696B6C;
@@ -778,12 +800,15 @@ input[type='submit'] {
       background-color: #e04540; }
     .ms-badge-gh .ms-color-side.ms-green {
       background-color: #5ca745; }
+    .ms-badge-gh .ms-color-side.ms-yellow {
+      background-color: #ffc748;
+      color: #263238; }
     .ms-badge-gh .ms-color-side.ms-gradient {
-      background-image: -owg-linear-gradient(to left top, #fd8157, #eb5a82);
-      background-image: -webkit-linear-gradient(to left top, #fd8157, #eb5a82);
-      background-image: -moz-linear-gradient(to left top, #fd8157, #eb5a82);
-      background-image: -o-linear-gradient(to left top, #fd8157, #eb5a82);
-      background-image: linear-gradient(to left top, #fd8157, #eb5a82); }
+      background-image: -owg-linear-gradient(to left top, #2193b0, #6dd5ed);
+      background-image: -webkit-linear-gradient(to left top, #2193b0, #6dd5ed);
+      background-image: -moz-linear-gradient(to left top, #2193b0, #6dd5ed);
+      background-image: -o-linear-gradient(to left top, #2193b0, #6dd5ed);
+      background-image: linear-gradient(to left top, #2193b0, #6dd5ed); }
     .ms-badge-gh .ms-color-side.ms-white {
       background-color: #d9d9d9;
       color: #000; }
@@ -805,12 +830,15 @@ input[type='submit'] {
     background-color: #e04540; }
   .ms-badge.ms-green {
     background-color: #5ca745; }
+  .ms-badge.ms-yellow {
+    background-color: #ffc748;
+    color: #263238; }
   .ms-badge.ms-gradient {
-    background-image: -owg-linear-gradient(to left top, #fd8157, #eb5a82);
-    background-image: -webkit-linear-gradient(to left top, #fd8157, #eb5a82);
-    background-image: -moz-linear-gradient(to left top, #fd8157, #eb5a82);
-    background-image: -o-linear-gradient(to left top, #fd8157, #eb5a82);
-    background-image: linear-gradient(to left top, #fd8157, #eb5a82); }
+    background-image: -owg-linear-gradient(to left top, #2193b0, #6dd5ed);
+    background-image: -webkit-linear-gradient(to left top, #2193b0, #6dd5ed);
+    background-image: -moz-linear-gradient(to left top, #2193b0, #6dd5ed);
+    background-image: -o-linear-gradient(to left top, #2193b0, #6dd5ed);
+    background-image: linear-gradient(to left top, #2193b0, #6dd5ed); }
   .ms-badge.ms-white {
     background-color: #d9d9d9;
     color: #000; }
@@ -828,6 +856,11 @@ input[type='submit'] {
     border: 1px solid #cb3030;
     background: transparent;
     color: #cb3030; }
+  .ms-badge.ms-border.ms-yellow {
+    border: 1px solid #ffc748;
+    background: transparent;
+    color: #ffc748;
+    color: #263238; }
   .ms-badge.ms-border.ms-white {
     border: 1px solid #d9d9d9;
     background: transparent;
@@ -896,6 +929,14 @@ blockquote,
     blockquote.ms-green a,
     .ms-blockquote.ms-green a {
       color: #5ca745; }
+  blockquote.ms-yellow,
+  .ms-blockquote.ms-yellow {
+    border-left: 5px solid #ffc748;
+    background-color: white;
+    color: #2f2000; }
+    blockquote.ms-yellow a,
+    .ms-blockquote.ms-yellow a {
+      color: #ffc748; }
   blockquote.ms-white,
   .ms-blockquote.ms-white {
     background-color: transparent; }
@@ -937,6 +978,12 @@ blockquote,
     color: #fff; }
     .ms-alert.ms-green .colored {
       color: #203b18; }
+  .ms-alert.ms-yellow {
+    background-color: #ffc748;
+    color: #fff;
+    color: #263238; }
+    .ms-alert.ms-yellow .colored {
+      color: #ae7900; }
   .ms-alert.ms-white {
     background-color: transparent;
     border: 1px solid #adb5bd;
@@ -1276,6 +1323,44 @@ select {
       -webkit-box-shadow: 0px 0px 5px #1dabe7;
       -moz-box-shadow: 0px 0px 5px #1dabe7;
       box-shadow: 0px 0px 5px #1dabe7; }
+  input[type='email'].ms-yellow,
+  input[type='number'].ms-yellow,
+  input[type='password'].ms-yellow,
+  input[type='search'].ms-yellow,
+  input[type='tel'].ms-yellow,
+  input[type='text'].ms-yellow,
+  input[type='url'].ms-yellow,
+  input[type='color'].ms-yellow,
+  input[type='date'].ms-yellow,
+  input[type='month'].ms-yellow,
+  input[type='week'].ms-yellow,
+  input[type='datetime'].ms-yellow,
+  input[type='range'].ms-yellow,
+  input[type='datetime-local'].ms-yellow,
+  input:not([type]).ms-yellow,
+  textarea.ms-yellow,
+  select.ms-yellow {
+    border: 1px solid #ffc748; }
+    input[type='email'].ms-yellow:focus,
+    input[type='number'].ms-yellow:focus,
+    input[type='password'].ms-yellow:focus,
+    input[type='search'].ms-yellow:focus,
+    input[type='tel'].ms-yellow:focus,
+    input[type='text'].ms-yellow:focus,
+    input[type='url'].ms-yellow:focus,
+    input[type='color'].ms-yellow:focus,
+    input[type='date'].ms-yellow:focus,
+    input[type='month'].ms-yellow:focus,
+    input[type='week'].ms-yellow:focus,
+    input[type='datetime'].ms-yellow:focus,
+    input[type='range'].ms-yellow:focus,
+    input[type='datetime-local'].ms-yellow:focus,
+    input:not([type]).ms-yellow:focus,
+    textarea.ms-yellow:focus,
+    select.ms-yellow:focus {
+      -webkit-box-shadow: 0px 0px 5px #ffc748;
+      -moz-box-shadow: 0px 0px 5px #ffc748;
+      box-shadow: 0px 0px 5px #ffc748; }
 
 input[type='checkbox'],
 input[type='radio'] {
@@ -1334,6 +1419,11 @@ tr.ms-green {
   color: #fff;
   border-bottom: none; }
 
+tr.ms-yellow {
+  background-color: #ffc748;
+  color: #fff;
+  border-bottom: none; }
+
 tr td,
 tr th {
   border-bottom: 0.1rem solid #d9d9d9;
@@ -1368,13 +1458,15 @@ tr th {
     .ms-progress .ms-progress-fill.ms-green {
       background-color: #5ca745; }
     .ms-progress .ms-progress-fill.ms-red {
-      background-color: #cb3030; }
+      background-color: #e04540; }
+    .ms-progress .ms-progress-fill.ms-yellow {
+      background-color: #ffc748; }
     .ms-progress .ms-progress-fill.ms-gradient {
-      background-image: -owg-linear-gradient(to left top, #fd8157, #eb5a82);
-      background-image: -webkit-linear-gradient(to left top, #fd8157, #eb5a82);
-      background-image: -moz-linear-gradient(to left top, #fd8157, #eb5a82);
-      background-image: -o-linear-gradient(to left top, #fd8157, #eb5a82);
-      background-image: linear-gradient(to left top, #fd8157, #eb5a82); }
+      background-image: -owg-linear-gradient(to left top, #2193b0, #6dd5ed);
+      background-image: -webkit-linear-gradient(to left top, #2193b0, #6dd5ed);
+      background-image: -moz-linear-gradient(to left top, #2193b0, #6dd5ed);
+      background-image: -o-linear-gradient(to left top, #2193b0, #6dd5ed);
+      background-image: linear-gradient(to left top, #2193b0, #6dd5ed); }
     .ms-progress .ms-progress-fill.ms-striped {
       background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
       background-size: 1rem 1rem; }
@@ -1402,7 +1494,7 @@ tr th {
 .ms-card {
   margin-bottom: 1rem; }
   .ms-card .ms-pic img {
-    diplay: block;
+    display: block;
     margin: 0 auto;
     max-width: 100%; }
   .ms-card .ms-pic p {
@@ -1461,117 +1553,6 @@ tr th {
         text-decoration: none;
         padding: 0.5rem;
         color: #000; }
-        .ms-menu nav li a.ms-active,
-        .ms-menu .ms-nav li a.ms-active {
-          background-color: #f2f2f2;
-          -webkit-border-radius: 0.3rem;
-          -moz-border-radius: 0.3rem;
-          -ms-border-radius: 0.3rem;
-          -o-border-radius: 0.3rem;
-          border-radius: 0.3rem; }
-      .ms-menu nav li a:hover,
-      .ms-menu .ms-nav li a:hover {
-        background-color: #f2f2f2;
-        -webkit-border-radius: 0.3rem;
-        -moz-border-radius: 0.3rem;
-        -ms-border-radius: 0.3rem;
-        -o-border-radius: 0.3rem;
-        border-radius: 0.3rem; }
-      .ms-menu nav li a:focus,
-      .ms-menu .ms-nav li a:focus {
-        background-color: #f2f2f2;
-        -webkit-border-radius: 0.3rem;
-        -moz-border-radius: 0.3rem;
-        -ms-border-radius: 0.3rem;
-        -o-border-radius: 0.3rem;
-        border-radius: 0.3rem; }
-  .ms-menu.ms-gray a:hover {
-    background-color: #f2f2f2;
-    -webkit-border-radius: 0.3rem;
-    -moz-border-radius: 0.3rem;
-    -ms-border-radius: 0.3rem;
-    -o-border-radius: 0.3rem;
-    border-radius: 0.3rem;
-    color: #000; }
-  .ms-menu.ms-gray a:focus {
-    background-color: #f2f2f2;
-    -webkit-border-radius: 0.3rem;
-    -moz-border-radius: 0.3rem;
-    -ms-border-radius: 0.3rem;
-    -o-border-radius: 0.3rem;
-    border-radius: 0.3rem; }
-  .ms-menu.ms-blue a:hover {
-    background-color: #1dabe7;
-    color: #fff;
-    -webkit-border-radius: 0.3rem;
-    -moz-border-radius: 0.3rem;
-    -ms-border-radius: 0.3rem;
-    -o-border-radius: 0.3rem;
-    border-radius: 0.3rem; }
-  .ms-menu.ms-blue a:focus {
-    background-color: #1dabe7;
-    color: #fff;
-    -webkit-border-radius: 0.3rem;
-    -moz-border-radius: 0.3rem;
-    -ms-border-radius: 0.3rem;
-    -o-border-radius: 0.3rem;
-    border-radius: 0.3rem; }
-  .ms-menu.ms-blue a.ms-active {
-    background-color: #1dabe7;
-    color: #fff;
-    -webkit-border-radius: 0.3rem;
-    -moz-border-radius: 0.3rem;
-    -ms-border-radius: 0.3rem;
-    -o-border-radius: 0.3rem;
-    border-radius: 0.3rem; }
-  .ms-menu.ms-green a:hover {
-    background-color: #5ca745;
-    color: #fff;
-    -webkit-border-radius: 0.3rem;
-    -moz-border-radius: 0.3rem;
-    -ms-border-radius: 0.3rem;
-    -o-border-radius: 0.3rem;
-    border-radius: 0.3rem; }
-  .ms-menu.ms-green a:focus {
-    background-color: #5ca745;
-    color: #fff;
-    -webkit-border-radius: 0.3rem;
-    -moz-border-radius: 0.3rem;
-    -ms-border-radius: 0.3rem;
-    -o-border-radius: 0.3rem;
-    border-radius: 0.3rem; }
-  .ms-menu.ms-green a.ms-active {
-    background-color: #5ca745;
-    color: #fff;
-    -webkit-border-radius: 0.3rem;
-    -moz-border-radius: 0.3rem;
-    -ms-border-radius: 0.3rem;
-    -o-border-radius: 0.3rem;
-    border-radius: 0.3rem; }
-  .ms-menu.ms-red a:hover {
-    background-color: #cb3030;
-    color: #fff;
-    -webkit-border-radius: 0.3rem;
-    -moz-border-radius: 0.3rem;
-    -ms-border-radius: 0.3rem;
-    -o-border-radius: 0.3rem;
-    border-radius: 0.3rem; }
-  .ms-menu.ms-red a:focus {
-    background-color: #cb3030;
-    color: #fff;
-    -webkit-border-radius: 0.3rem;
-    -moz-border-radius: 0.3rem;
-    -ms-border-radius: 0.3rem;
-    -o-border-radius: 0.3rem;
-    border-radius: 0.3rem; }
-  .ms-menu.ms-red a.ms-active {
-    background-color: #cb3030;
-    color: #fff;
-    -webkit-border-radius: 0.3rem;
-    -moz-border-radius: 0.3rem;
-    -ms-border-radius: 0.3rem;
-    -o-border-radius: 0.3rem;
-    border-radius: 0.3rem; }
 
 .ms-text-size-1 {
   font-size: 1rem; }
@@ -1639,6 +1620,12 @@ tr th {
 .ms-text-gray-font {
   color: #696B6C; }
 
+.ms-text-yellow {
+  color: #ffc748; }
+
+.ms-text-white {
+  color: #fff; }
+
 .ms-text-center {
   text-align: center; }
 
@@ -1648,29 +1635,23 @@ tr th {
 .ms-text-left {
   text-align: left; }
 
-.ms-shadow {
-  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3); }
-
 .ms-box {
   -webkit-border-radius: 0.3rem;
   -moz-border-radius: 0.3rem;
   -ms-border-radius: 0.3rem;
   -o-border-radius: 0.3rem;
   border-radius: 0.3rem;
+  border: 1px solid #d9d9d9;
   margin: 0.5rem; }
-  .ms-box.ms-boxed {
-    border: 1px solid #d9d9d9; }
   .ms-box .ms-header {
-    background-color: #f2f2f2;
     border-bottom: 1px solid #d9d9d9;
-    padding: 0.5rem 1rem; }
+    padding: 0.8rem 1rem;
+    background-color: #f2f2f2; }
+  .ms-box.ms-boxed-none {
+    border: none; }
   .ms-box .ms-content {
     padding: 1rem; }
     .ms-box .ms-content .ms-text p {
-      color: #696B6C;
-      text-align: justify;
       line-height: 1.3rem; }
     .ms-box .ms-content .ms-title {
       margin-bottom: 1rem; }

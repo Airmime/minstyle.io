@@ -54,6 +54,14 @@ blockquote,
 		}
 	}
 
+	&.ms-yellow{
+		@include blockquoteColor($color-yellow);
+
+		a{
+			@include blockquoteLinkcolor($color-yellow);
+		}
+	}
+
 	&.ms-white{
 		background-color: transparent;
 	}

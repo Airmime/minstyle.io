@@ -21,8 +21,13 @@
 		background-color: $color-green;
 	}
 
+	&.ms-yellow{
+		background-color: $color-yellow;
+		color: #263238;
+	}
+
 	&.ms-gradient{
-		@include background-image(linear-gradient(to left top, #fd8157, #eb5a82));
+		@include background-image(linear-gradient(to left top, #2193b0, #6dd5ed));
 	}
 
 	&.ms-white{
@@ -31,47 +36,34 @@
 	}
 }
 
-.ms-badge-title{
+.ms-notification{
+	height: 25px;
+  	width: 25px;
 	color: #fff;
 	background-color: $color-gray-dark;
 	display: inline-block;
-	padding: .3rem .3rem;
-	font-size: 60%;
-	line-height: 1;
+	font-size: 1rem;
+	line-height: 25px;
 	text-align: center;
 	white-space: nowrap;
-	vertical-align: baseline;
-	position: relative;
-	top: -0.2rem;
-	@include border-radius;
-
-	&.ms-rounded{
-		border-radius: 10rem;
-		padding: .3rem .5rem;
-	}
-
-	&.ms-border{
-		padding: .3rem .5rem;
-
-		&.ms-blue{
-			@include badgeBorderColor($color-info);
-		}
-
-		&.ms-green{
-			@include badgeBorderColor($color-success);
-		}
-
-		&.ms-red{
-			@include badgeBorderColor($color-error);
-		}
-
-		&.ms-white{
-			@include badgeBorderColor($color-gray-medium);
-			color: #000;
-		}
-	}
+	vertical-align: middle;
+	@include border-radius(100%);
 
 	@include badgeColor();
+
+	&.ms-small{
+		height: 20px;
+  		width: 20px;
+  		line-height: 20px;
+  		font-size: .7rem;
+	}
+
+	&.ms-large{
+		height: 35px;
+  		width: 35px;
+  		line-height: 35px;
+  		font-size: 1.3rem;
+	}
 }
 
 .ms-badge-gh{
@@ -124,6 +116,11 @@
 
 		&.ms-red{
 			@include badgeBorderColor($color-error);
+		}
+
+		&.ms-yellow{
+			@include badgeBorderColor($color-yellow);
+			color: #263238;
 		}
 
 		&.ms-white{

@@ -2,27 +2,6 @@
 	color: $pHighlightedHeanding;
 }
 
-h1,h2,h3,h4,h5,h6{
-
-	padding: 0.5rem 0;
-
-	&.ms-red{
-		@include colorHeading($color-red);
-	}
-
-	&.ms-green{
-		@include colorHeading($color-green);
-	}
-
-	&.ms-blue{
-		@include colorHeading($color-blue);
-	}
-
-	&.ms-gray{
-		@include colorHeading($color-gray-dark);
-	}
-}
-
 h1,.ms-h1{
 	font-size: 3.1rem;
 }

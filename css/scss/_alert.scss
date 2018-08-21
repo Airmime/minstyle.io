@@ -55,6 +55,15 @@
 		}
 	}
 
+	&.ms-yellow{
+		@include alertBackground($color_yellow);
+		color: $color-blue-dark;
+
+		.colored{
+			@include alertTextColor($color_yellow);
+		}
+	}
+
 	&.ms-white{
 		background-color: transparent;
 		border: 1px solid $color-gray-dark;
