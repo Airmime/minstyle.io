@@ -11,9 +11,37 @@
 ![minstyle.io](https://image.noelshack.com/fichiers/2018/30/1/1532343771-coding.gif)
 
 ## Informations
-minstyle.io is a simple CSS framework designed for build amazing user interfaces and websites! Full documentation will come soon, in the meantime you can consult the brief documentation on [minstyle.io](https://minstyle.io) ([repository](https://github.com/Airmime/minstyle.io-Website))
+minstyle.io is a simple and light open source CSS framework. It integrates a set of pre-designed HTML elements, allowing the rapid and simple development of interfaces for all devices.
 
-## Download
+## Get Started
+
+The architecture of the framework is based on the concatenation of classes. For example, the ms-btn class allows to get the default design of a button, the ms-green class allows to color the button green, and the ms-rounded class allows to round the button angles :
+
+```html
+<button class="ms-btn">Button</button>
+<button class="ms-btn ms-green">Button</button>
+<button class="ms-btn ms-green ms-rounded">Button</button>
+```
+
+Get more information on [minstyle.io/doc](https://minstyle.io/doc) 
+
+## Install
+
+To install the css framework, three options are available :
+
+The first possibility is to download the CSS file, or all SCSS files :
+
+[CSS File](https://github.com/Airmime/minstyle.io/blob/master/css/minstyle.io.css)
+
+[SCSS Files](https://github.com/Airmime/minstyle.io/tree/master/css/scss)
+
+You also have the possibility to use the CDN by integrating the tag below between the head tags of your HTML page or project :
+
+```html
+<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/Airmime/minstyle.io/d2280724/css/minstyle.io.css">
+```
+
+Finally, minstyle.io is also available as an NPM package:
 
 **npm :**
 
@@ -32,6 +60,23 @@ $ bower install minstyle.io
 ```sh
 $ yarn add minstyle.io
 ```
+
+## How to use ?
+
+Full documentation is available on [minstyle.io](https://minstyle.io).
+
+* [Grid responsive](https://minstyle.io/doc/grid-responsive) 
+* [Buttons](https://minstyle.io/doc/buttons) 
+* [Blockquotes](https://minstyle.io/doc/blockquotes) 
+* [Tables](https://minstyle.io/doc/tables) 
+* [Alerts](https://minstyle.io/doc/alerts) 
+* [Lists](https://minstyle.io/doc/lists) 
+* [Forms](https://minstyle.io/doc/forms) 
+* [Badges](https://minstyle.io/doc/badges) 
+* [Progress-bar](https://minstyle.io/doc/progress-bar) 
+* [Cards](https://minstyle.io/doc/cards) 
+* [Menu](https://minstyle.io/doc/menu) 
+* [Box](https://minstyle.io/doc/box) 
 
 ## License
 
