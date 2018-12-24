@@ -3,7 +3,7 @@
   "description": "A simple CSS Framework !",
   "main": "css/minstyle.io.css",
   "license": "MIT",
-  "version": "0.2.2",
+  "version": "0.2.3",
  "repository": {
     "type": "git",
     "url": "git+https://github.com/Airmime/minstyle.io.git"

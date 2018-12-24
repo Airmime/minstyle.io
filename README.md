@@ -14,7 +14,7 @@
 minstyle.io is a simple and light open source CSS framework. It integrates a set of pre-designed HTML elements, allowing the rapid and simple development of interfaces for all devices.
 
 ## Version
-minstyle.io V0.2.2
+minstyle.io V0.2.3
 
 ## Get Started
 
