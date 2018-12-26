@@ -41,7 +41,7 @@ The first possibility is to download the CSS file, or all SCSS files :
 You also have the possibility to use the CDN by integrating the tag below between the head tags of your HTML page or project :
 
 ```html
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/minstyle.io">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/minstyle.io@0.2.2/css/minstyle.io.min.css">
 ```
 
 Finally, minstyle.io is also available as an NPM package:
