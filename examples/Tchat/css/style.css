@@ -14,14 +14,17 @@ input{
 }
 
 i{
-	color: #2b98d6;
+	color: #5ca745;
 }
 
 header{
-	background-color: #fff;
+	background-color: #5ca745;
 	height: 60px;
 	margin: 0;
 	padding: 22px 0 0 0;
+}
+.ms-menu nav li a, .ms-menu .ms-nav li a{
+	color: #fff;
 }
 
 .bloc{
