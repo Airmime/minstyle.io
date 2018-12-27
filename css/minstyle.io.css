@@ -471,7 +471,7 @@ input[type='submit'] {
   background-color: #d9d9d9;
   text-decoration: none;
   text-align: center;
-  font-size: .9rem;
+  font-size: 0.9rem;
   white-space: nowrap;
   color: #000;
   border: 1px solid #d9d9d9;
@@ -717,7 +717,7 @@ input[type='submit'] {
   input[type='button'].ms-small,
   input[type='submit'].ms-small {
     line-height: 1.5rem;
-    padding: 0 .6rem;
+    padding: 0 0.6rem;
     font-size: 80%; }
   button.ms-large,
   .ms-btn.ms-large,
@@ -776,7 +776,7 @@ input[type='submit'] {
     height: 20px;
     width: 20px;
     line-height: 20px;
-    font-size: .7rem; }
+    font-size: 0.7rem; }
   .ms-notification.ms-large {
     height: 35px;
     width: 35px;
@@ -1123,7 +1123,7 @@ select {
   box-sizing: border-box;
   box-shadow: none;
   font-size: 1rem;
-  padding: .5rem .7rem;
+  padding: 0.5rem 0.7rem;
   margin-bottom: 1rem; }
   input[type='email']:focus,
   input[type='number']:focus,
@@ -1436,7 +1436,7 @@ tr.ms-yellow {
 tr td,
 tr th {
   border-bottom: 0.1rem solid #d9d9d9;
-  padding: 1.0rem;
+  padding: 1rem;
   text-align: left; }
 
 .ms-progress {
@@ -1456,7 +1456,7 @@ tr th {
     height: 1.3rem;
     background-color: #696B6C;
     white-space: nowrap;
-    font-size: .75rem;
+    font-size: 0.75rem;
     text-align: center;
     line-height: 1.3rem;
     color: #fff;

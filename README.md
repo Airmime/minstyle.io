@@ -84,3 +84,10 @@ Full documentation is available on [minstyle.io](https://minstyle.io).
 ## License
 
 Designed by [Rémi MARION](https://remi-marion.fr). Licensed under [MIT License](https://github.com/Airmime/minstyle.io/blob/master/LICENSE).
+
+
+## Links
+
+* [Website / Documentation](https://minstyle.io/) 
+* [Website Repository](https://github.com/Airmime/minstyle.io-Website) 
+
