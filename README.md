@@ -14,7 +14,7 @@
 minstyle.io is a simple and light open source CSS framework. It integrates a set of pre-designed HTML elements, allowing the rapid and simple development of interfaces for all devices.
 
 ## Version
-minstyle.io V0.2.2
+minstyle.io V0.2.3
 
 ## Get Started
 
@@ -41,7 +41,7 @@ The first possibility is to download the CSS file, or all SCSS files :
 You also have the possibility to use the CDN by integrating the tag below between the head tags of your HTML page or project :
 
 ```html
-<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/Airmime/minstyle.io/d2280724/css/minstyle.io.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/minstyle.io@0.2.2/css/minstyle.io.min.css">
 ```
 
 Finally, minstyle.io is also available as an NPM package:
@@ -84,3 +84,10 @@ Full documentation is available on [minstyle.io](https://minstyle.io).
 ## License
 
 Designed by [Rémi MARION](https://remi-marion.fr). Licensed under [MIT License](https://github.com/Airmime/minstyle.io/blob/master/LICENSE).
+
+
+## Links
+
+* [Website / Documentation](https://minstyle.io/) 
+* [Website Repository](https://github.com/Airmime/minstyle.io-Website) 
+

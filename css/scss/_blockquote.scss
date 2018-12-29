@@ -14,7 +14,7 @@ blockquote,
 	@include border-radius;
 	@include blockquoteColor($color-gray);
 	background-color: $color-gray;
-	border-left:5px solid $color-gray-dark;
+	border-left: 5px solid $color-gray-dark;
 	text-align:justify;
 	font-style: italic;
 	line-height: 1.3em;

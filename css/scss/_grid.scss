@@ -20,7 +20,7 @@ $large-width-grid: 1140px!default;
             .col#{$suffix}-#{$i}{ width:$i / $columns * 100%;}
 
         }
-
+        
         .col#{$suffix}-center{ margin: 0 auto; float: none; }
         .col#{$suffix}-offset-#{$i}{ margin-left:$i / $columns * 100%; }
     }
@@ -30,7 +30,7 @@ $large-width-grid: 1140px!default;
     float: left;
     position: relative;
     min-height: 1px;
-    padding:0 $gutter * 0.5;
+    padding: 0 $gutter * 0.5;
 
     &.no-padding{
 		padding: 0;
