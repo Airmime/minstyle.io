@@ -1,7 +1,7 @@
 /* 
 * minstyle.io - A simple CSS Framework ! 
 * Repo : https://github.com/Airmime/minstyle.io
-* Version : v0.2.3
+* Version : v1.0.0
 * Website : https://minstyle.io
 */
 html, body, div, span, applet, object, iframe,
@@ -63,6 +63,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* Last color name */
 /* New color name */
+/* ############### NEW ############### */
 *,
 *:after,
 *:before {
@@ -621,28 +622,300 @@ h6, .ms-h6 {
   font-size: 1.6rem;
 }
 
+/* MIXINS */
 /* BASE */
 button,
 .ms-btn,
 input[type='button'],
 input[type='submit'] {
   display: inline-block;
-  background-color: #d9d9d9;
-  text-decoration: none;
+  color: #484848;
+  background-color: #ffffff;
+  border: 1px solid #ececec;
   text-align: center;
-  font-size: 0.9rem;
-  white-space: nowrap;
-  color: #000;
-  border: 1px solid #d9d9d9;
-  -webkit-border-radius: 0.3rem;
-  -moz-border-radius: 0.3rem;
-  -ms-border-radius: 0.3rem;
-  -o-border-radius: 0.3rem;
-  border-radius: 0.3rem;
-  line-height: 2.0rem;
-  padding: 0 1.1rem;
-  margin: 0.2rem;
+  text-decoration: none;
   cursor: pointer;
+  padding: 0.5em 1em;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  /* COLORS */
+  /* SIZES */
+  /* WIDTH */
+  /* GLOBAL */
+  /* EVENTS */
+}
+
+button.ms-info,
+.ms-btn.ms-info,
+input[type='button'].ms-info,
+input[type='submit'].ms-info {
+  color: #ffffff;
+  background-color: #1597ec;
+  border-color: transparent;
+}
+
+button.ms-info:hover,
+.ms-btn.ms-info:hover,
+input[type='button'].ms-info:hover,
+input[type='submit'].ms-info:hover {
+  border-color: transparent;
+  background-color: #128fe1;
+}
+
+button.ms-info:active,
+.ms-btn.ms-info:active,
+input[type='button'].ms-info:active,
+input[type='submit'].ms-info:active {
+  border-color: #0f87d6;
+  background-color: #0f87d6;
+}
+
+button.ms-outline-info,
+.ms-btn.ms-outline-info,
+input[type='button'].ms-outline-info,
+input[type='submit'].ms-outline-info {
+  color: #128fe1;
+  background-color: transparent;
+  border-color: #128fe1;
+}
+
+button.ms-outline-info:hover,
+.ms-btn.ms-outline-info:hover,
+input[type='button'].ms-outline-info:hover,
+input[type='submit'].ms-outline-info:hover {
+  border-color: #128fe1;
+  background-color: #128fe1;
+  color: #ffffff;
+}
+
+button.ms-outline-info:active,
+.ms-btn.ms-outline-info:active,
+input[type='button'].ms-outline-info:active,
+input[type='submit'].ms-outline-info:active {
+  border-color: #0f87d6;
+  background-color: #0f87d6;
+}
+
+button.ms-danger,
+.ms-btn.ms-danger,
+input[type='button'].ms-danger,
+input[type='submit'].ms-danger {
+  color: #ffffff;
+  background-color: #e04540;
+  border-color: transparent;
+}
+
+button.ms-danger:hover,
+.ms-btn.ms-danger:hover,
+input[type='button'].ms-danger:hover,
+input[type='submit'].ms-danger:hover {
+  border-color: transparent;
+  background-color: #d53e39;
+}
+
+button.ms-danger:active,
+.ms-btn.ms-danger:active,
+input[type='button'].ms-danger:active,
+input[type='submit'].ms-danger:active {
+  border-color: #ca332e;
+  background-color: #ca332e;
+}
+
+button.ms-outline-danger,
+.ms-btn.ms-outline-danger,
+input[type='button'].ms-outline-danger,
+input[type='submit'].ms-outline-danger {
+  color: #d53e39;
+  background-color: transparent;
+  border-color: #d53e39;
+}
+
+button.ms-outline-danger:hover,
+.ms-btn.ms-outline-danger:hover,
+input[type='button'].ms-outline-danger:hover,
+input[type='submit'].ms-outline-danger:hover {
+  border-color: #d53e39;
+  background-color: #d53e39;
+  color: #ffffff;
+}
+
+button.ms-outline-danger:active,
+.ms-btn.ms-outline-danger:active,
+input[type='button'].ms-outline-danger:active,
+input[type='submit'].ms-outline-danger:active {
+  border-color: #ca332e;
+  background-color: #ca332e;
+}
+
+button.ms-success,
+.ms-btn.ms-success,
+input[type='button'].ms-success,
+input[type='submit'].ms-success {
+  color: #ffffff;
+  background-color: #3ab656;
+  border-color: transparent;
+}
+
+button.ms-success:hover,
+.ms-btn.ms-success:hover,
+input[type='button'].ms-success:hover,
+input[type='submit'].ms-success:hover {
+  border-color: transparent;
+  background-color: #35ac50;
+}
+
+button.ms-success:active,
+.ms-btn.ms-success:active,
+input[type='button'].ms-success:active,
+input[type='submit'].ms-success:active {
+  border-color: #31a64b;
+  background-color: #31a64b;
+}
+
+button.ms-outline-success,
+.ms-btn.ms-outline-success,
+input[type='button'].ms-outline-success,
+input[type='submit'].ms-outline-success {
+  color: #35ac50;
+  background-color: transparent;
+  border-color: #35ac50;
+}
+
+button.ms-outline-success:hover,
+.ms-btn.ms-outline-success:hover,
+input[type='button'].ms-outline-success:hover,
+input[type='submit'].ms-outline-success:hover {
+  border-color: #35ac50;
+  background-color: #35ac50;
+  color: #ffffff;
+}
+
+button.ms-outline-success:active,
+.ms-btn.ms-outline-success:active,
+input[type='button'].ms-outline-success:active,
+input[type='submit'].ms-outline-success:active {
+  border-color: #31a64b;
+  background-color: #31a64b;
+}
+
+button.ms-warning,
+.ms-btn.ms-warning,
+input[type='button'].ms-warning,
+input[type='submit'].ms-warning {
+  color: #000000;
+  background-color: #f9bf10;
+  border-color: transparent;
+}
+
+button.ms-warning:hover,
+.ms-btn.ms-warning:hover,
+input[type='button'].ms-warning:hover,
+input[type='submit'].ms-warning:hover {
+  border-color: transparent;
+  background-color: #f1b90f;
+}
+
+button.ms-warning:active,
+.ms-btn.ms-warning:active,
+input[type='button'].ms-warning:active,
+input[type='submit'].ms-warning:active {
+  border-color: #e9b30f;
+  background-color: #e9b30f;
+}
+
+button.ms-outline-warning,
+.ms-btn.ms-outline-warning,
+input[type='button'].ms-outline-warning,
+input[type='submit'].ms-outline-warning {
+  color: #f1b90f;
+  background-color: transparent;
+  border-color: #f1b90f;
+}
+
+button.ms-outline-warning:hover,
+.ms-btn.ms-outline-warning:hover,
+input[type='button'].ms-outline-warning:hover,
+input[type='submit'].ms-outline-warning:hover {
+  border-color: #f1b90f;
+  background-color: #f1b90f;
+  color: #ffffff;
+}
+
+button.ms-outline-warning:active,
+.ms-btn.ms-outline-warning:active,
+input[type='button'].ms-outline-warning:active,
+input[type='submit'].ms-outline-warning:active {
+  border-color: #e9b30f;
+  background-color: #e9b30f;
+}
+
+button.ms-small,
+.ms-btn.ms-small,
+input[type='button'].ms-small,
+input[type='submit'].ms-small {
+  padding: 0.3em 0.9em;
+  font-size: 0.8em;
+}
+
+button.ms-medium,
+.ms-btn.ms-medium,
+input[type='button'].ms-medium,
+input[type='submit'].ms-medium {
+  padding: 0.6em 1.5em;
+  font-size: 0.95em;
+}
+
+button.ms-large,
+.ms-btn.ms-large,
+input[type='button'].ms-large,
+input[type='submit'].ms-large {
+  padding: 0.7em 1.8em;
+  font-size: 1.05em;
+}
+
+button.ms-fullwidth,
+.ms-btn.ms-fullwidth,
+input[type='button'].ms-fullwidth,
+input[type='submit'].ms-fullwidth {
+  display: block;
+  width: 100%;
+}
+
+button.ms-shadow,
+.ms-btn.ms-shadow,
+input[type='button'].ms-shadow,
+input[type='submit'].ms-shadow {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 4px 5px -4px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 4px 5px -4px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 4px 5px -4px;
+}
+
+button.ms-rounded,
+.ms-btn.ms-rounded,
+input[type='button'].ms-rounded,
+input[type='submit'].ms-rounded {
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  border-radius: 100px;
+}
+
+button:hover,
+.ms-btn:hover,
+input[type='button']:hover,
+input[type='submit']:hover {
+  border-color: #b1b1b1;
+}
+
+button:active,
+.ms-btn:active,
+input[type='button']:active,
+input[type='submit']:active {
+  border-color: #484848;
 }
 
 button:focus,
@@ -650,334 +923,6 @@ button:focus,
 input[type='button']:focus,
 input[type='submit']:focus {
   outline: 0;
-}
-
-button.ms-red,
-.ms-btn.ms-red,
-input[type='button'].ms-red,
-input[type='submit'].ms-red {
-  background-color: #e04540;
-  border-color: #e04540;
-  color: #fff;
-}
-
-button.ms-green,
-.ms-btn.ms-green,
-input[type='button'].ms-green,
-input[type='submit'].ms-green {
-  background-color: #5ca745;
-  border-color: #5ca745;
-  color: #fff;
-}
-
-button.ms-blue,
-.ms-btn.ms-blue,
-input[type='button'].ms-blue,
-input[type='submit'].ms-blue {
-  background-color: #1dabe7;
-  border-color: #1dabe7;
-  color: #fff;
-}
-
-button.ms-yellow,
-.ms-btn.ms-yellow,
-input[type='button'].ms-yellow,
-input[type='submit'].ms-yellow {
-  background-color: #ffc748;
-  border-color: #ffc748;
-  color: #263238;
-}
-
-button.ms-gradient,
-.ms-btn.ms-gradient,
-input[type='button'].ms-gradient,
-input[type='submit'].ms-gradient {
-  padding: 0 1.3rem;
-  line-height: 2.2rem;
-  background-image: -owg-linear-gradient(to left top, #2193b0, #6dd5ed);
-  background-image: -webkit-linear-gradient(to left top, #2193b0, #6dd5ed);
-  background-image: -moz-linear-gradient(to left top, #2193b0, #6dd5ed);
-  background-image: -o-linear-gradient(to left top, #2193b0, #6dd5ed);
-  background-image: linear-gradient(to left top, #2193b0, #6dd5ed);
-  border: none;
-  color: #fff;
-}
-
-button.ms-border,
-.ms-btn.ms-border,
-input[type='button'].ms-border,
-input[type='submit'].ms-border {
-  background-color: transparent;
-  border: 2px solid #d9d9d9;
-  color: #000;
-}
-
-button.ms-border.ms-red,
-.ms-btn.ms-border.ms-red,
-input[type='button'].ms-border.ms-red,
-input[type='submit'].ms-border.ms-red {
-  border-color: #e04540;
-  color: #e04540;
-}
-
-button.ms-border.ms-green,
-.ms-btn.ms-border.ms-green,
-input[type='button'].ms-border.ms-green,
-input[type='submit'].ms-border.ms-green {
-  border-color: #5ca745;
-  color: #5ca745;
-}
-
-button.ms-border.ms-blue,
-.ms-btn.ms-border.ms-blue,
-input[type='button'].ms-border.ms-blue,
-input[type='submit'].ms-border.ms-blue {
-  border-color: #1dabe7;
-  color: #1dabe7;
-}
-
-button.ms-border.ms-yellow,
-.ms-btn.ms-border.ms-yellow,
-input[type='button'].ms-border.ms-yellow,
-input[type='submit'].ms-border.ms-yellow {
-  border-color: #ffc748;
-  color: #263238;
-}
-
-button.ms-border.ms-gradient,
-.ms-btn.ms-border.ms-gradient,
-input[type='button'].ms-border.ms-gradient,
-input[type='submit'].ms-border.ms-gradient {
-  color: #fff;
-}
-
-button.ms-border-bottom,
-.ms-btn.ms-border-bottom,
-input[type='button'].ms-border-bottom,
-input[type='submit'].ms-border-bottom {
-  background-color: transparent;
-  border: 0;
-  border-radius: 0;
-  border-bottom: 0.1rem solid #d9d9d9;
-  color: #000;
-}
-
-button.ms-border-bottom.ms-red,
-.ms-btn.ms-border-bottom.ms-red,
-input[type='button'].ms-border-bottom.ms-red,
-input[type='submit'].ms-border-bottom.ms-red {
-  border-color: #e04540;
-  color: #e04540;
-}
-
-button.ms-border-bottom.ms-green,
-.ms-btn.ms-border-bottom.ms-green,
-input[type='button'].ms-border-bottom.ms-green,
-input[type='submit'].ms-border-bottom.ms-green {
-  border-color: #5ca745;
-  color: #5ca745;
-}
-
-button.ms-border-bottom.ms-blue,
-.ms-btn.ms-border-bottom.ms-blue,
-input[type='button'].ms-border-bottom.ms-blue,
-input[type='submit'].ms-border-bottom.ms-blue {
-  border-color: #1dabe7;
-  color: #1dabe7;
-}
-
-button.ms-border-bottom.ms-yellow,
-.ms-btn.ms-border-bottom.ms-yellow,
-input[type='button'].ms-border-bottom.ms-yellow,
-input[type='submit'].ms-border-bottom.ms-yellow {
-  border-color: #ffc748;
-  color: #ffc748;
-}
-
-button.ms-border-bottom.ms-gradient,
-.ms-btn.ms-border-bottom.ms-gradient,
-input[type='button'].ms-border-bottom.ms-gradient,
-input[type='submit'].ms-border-bottom.ms-gradient {
-  color: #fff;
-}
-
-button.ms-clear,
-.ms-btn.ms-clear,
-input[type='button'].ms-clear,
-input[type='submit'].ms-clear {
-  background-color: transparent;
-  border-color: transparent;
-  color: #000;
-}
-
-button.ms-clear.ms-red,
-.ms-btn.ms-clear.ms-red,
-input[type='button'].ms-clear.ms-red,
-input[type='submit'].ms-clear.ms-red {
-  color: #e04540;
-}
-
-button.ms-clear.ms-green,
-.ms-btn.ms-clear.ms-green,
-input[type='button'].ms-clear.ms-green,
-input[type='submit'].ms-clear.ms-green {
-  color: #5ca745;
-}
-
-button.ms-clear.ms-blue,
-.ms-btn.ms-clear.ms-blue,
-input[type='button'].ms-clear.ms-blue,
-input[type='submit'].ms-clear.ms-blue {
-  color: #1dabe7;
-}
-
-button.ms-clear.ms-yellow,
-.ms-btn.ms-clear.ms-yellow,
-input[type='button'].ms-clear.ms-yellow,
-input[type='submit'].ms-clear.ms-yellow {
-  color: #ffc748;
-}
-
-button.ms-clear.ms-gradient,
-.ms-btn.ms-clear.ms-gradient,
-input[type='button'].ms-clear.ms-gradient,
-input[type='submit'].ms-clear.ms-gradient {
-  color: #fff;
-}
-
-button.ms-rounded,
-.ms-btn.ms-rounded,
-input[type='button'].ms-rounded,
-input[type='submit'].ms-rounded {
-  border-radius: 10em;
-}
-
-button.ms-rounded.ms-red,
-.ms-btn.ms-rounded.ms-red,
-input[type='button'].ms-rounded.ms-red,
-input[type='submit'].ms-rounded.ms-red {
-  border-color: #e04540;
-}
-
-button.ms-rounded.ms-green,
-.ms-btn.ms-rounded.ms-green,
-input[type='button'].ms-rounded.ms-green,
-input[type='submit'].ms-rounded.ms-green {
-  border-color: #5ca745;
-}
-
-button.ms-rounded.ms-blue,
-.ms-btn.ms-rounded.ms-blue,
-input[type='button'].ms-rounded.ms-blue,
-input[type='submit'].ms-rounded.ms-blue {
-  border-color: #1dabe7;
-}
-
-button.ms-rounded.ms-yellow,
-.ms-btn.ms-rounded.ms-yellow,
-input[type='button'].ms-rounded.ms-yellow,
-input[type='submit'].ms-rounded.ms-yellow {
-  border-color: #ffc748;
-  color: #263238;
-}
-
-button.ms-rounded.ms-gradient,
-.ms-btn.ms-rounded.ms-gradient,
-input[type='button'].ms-rounded.ms-gradient,
-input[type='submit'].ms-rounded.ms-gradient {
-  color: #fff;
-}
-
-button.ms-border-rounded,
-.ms-btn.ms-border-rounded,
-input[type='button'].ms-border-rounded,
-input[type='submit'].ms-border-rounded {
-  -webkit-border-radius: 10em;
-  -moz-border-radius: 10em;
-  -ms-border-radius: 10em;
-  -o-border-radius: 10em;
-  border-radius: 10em;
-  background-color: transparent;
-  color: #000;
-}
-
-button.ms-border-rounded.ms-red,
-.ms-btn.ms-border-rounded.ms-red,
-input[type='button'].ms-border-rounded.ms-red,
-input[type='submit'].ms-border-rounded.ms-red {
-  border-color: #e04540;
-  color: #e04540;
-}
-
-button.ms-border-rounded.ms-blue,
-.ms-btn.ms-border-rounded.ms-blue,
-input[type='button'].ms-border-rounded.ms-blue,
-input[type='submit'].ms-border-rounded.ms-blue {
-  border-color: #1dabe7;
-  color: #1dabe7;
-}
-
-button.ms-border-rounded.ms-green,
-.ms-btn.ms-border-rounded.ms-green,
-input[type='button'].ms-border-rounded.ms-green,
-input[type='submit'].ms-border-rounded.ms-green {
-  border-color: #5ca745;
-  color: #5ca745;
-}
-
-button.ms-border-rounded.ms-yellow,
-.ms-btn.ms-border-rounded.ms-yellow,
-input[type='button'].ms-border-rounded.ms-yellow,
-input[type='submit'].ms-border-rounded.ms-yellow {
-  border-color: #ffc748;
-  color: #ffc748;
-}
-
-button.ms-border-rounded.ms-gradient,
-.ms-btn.ms-border-rounded.ms-gradient,
-input[type='button'].ms-border-rounded.ms-gradient,
-input[type='submit'].ms-border-rounded.ms-gradient {
-  color: #fff;
-}
-
-button:hover,
-.ms-btn:hover,
-input[type='button']:hover,
-input[type='submit']:hover {
-  text-decoration: underline;
-}
-
-button.ms-small,
-.ms-btn.ms-small,
-input[type='button'].ms-small,
-input[type='submit'].ms-small {
-  line-height: 1.5rem;
-  padding: 0 0.6rem;
-  font-size: 80%;
-}
-
-button.ms-large,
-.ms-btn.ms-large,
-input[type='button'].ms-large,
-input[type='submit'].ms-large {
-  line-height: 3rem;
-  padding: 0 3rem;
-  font-size: 120%;
-}
-
-button.ms-block,
-.ms-btn.ms-block,
-input[type='button'].ms-block,
-input[type='submit'].ms-block {
-  display: block;
-  width: 100%;
-}
-
-button.no-margin,
-.ms-btn.no-margin,
-input[type='button'].no-margin,
-input[type='submit'].no-margin {
-  margin: 0;
 }
 
 .ms-notification {

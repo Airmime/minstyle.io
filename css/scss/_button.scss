@@ -1,227 +1,109 @@
+/* MIXINS */
+@mixin btn($textColor,$primaryColor,$secondColor,$thirdColor){
+  color: $textColor;
+  background-color: $primaryColor;
+  border-color: transparent;
+  &:hover{border-color: transparent; background-color: $secondColor;}
+  &:active{border-color: $thirdColor; background-color: $thirdColor;}
+}
+
+@mixin btn-outline($textColor,$primaryColor,$secondColor){
+  color:$textColor;
+  background-color: transparent;
+  border-color: $primaryColor;
+  &:hover{border-color: $primaryColor; background-color: $primaryColor; color: #ffffff}
+  &:active{border-color: $secondColor; background-color: $secondColor;}
+}
+
 /* BASE */
 button, 
 .ms-btn, 
 input[type='button'], 
 input[type='submit']{
-	 display: inline-block;
-	 background-color: $color-gray-medium;
-	 text-decoration: none;
-   text-align: center;
-   font-size: 0.9rem;
-   white-space:nowrap;
-   color: #000;
-   border: 1px solid $color-gray-medium;
-   @include border-radius;
-   line-height: 2.0rem;
-   padding: 0 1.1rem;
-   margin: 0.2rem;
-   cursor: pointer;
-
-  &:focus{
-    outline: 0;
-  }
-
-  &.ms-red{
-    background-color: $color_red;
-    border-color: $color_red;
-    color: #fff;
-  }
-
-  &.ms-green{
-    background-color: $color_green;
-    border-color: $color_green;
-    color: #fff;
-  }
-
-  &.ms-blue{
-    background-color: $color_blue;
-    border-color: $color_blue;
-    color: #fff;
-  }
-
-  &.ms-yellow{
-    background-color: $color_yellow;
-    border-color: $color_yellow;
-    color: #263238;
-  }
-
-  &.ms-gradient{
-    padding: 0 1.3rem;
-    line-height: 2.2rem;
-    @include background-image(linear-gradient(to left top, #2193b0, #6dd5ed));
-    border: none;
-    color: #fff;
-  }
-
-  &.ms-border{
-    background-color: transparent;
-    border: 2px solid $color-gray-medium;
-    color: #000;
-
-    &.ms-red{
-      border-color: $color_red;
-      color: $color_red;
-    }
-
-    &.ms-green{
-      border-color: $color_green;
-      color: $color_green;
-    }
-
-    &.ms-blue{
-      border-color: $color_blue;
-      color: $color_blue;
-    }
-
-    &.ms-yellow{
-      border-color: $color_yellow;
-      color: $color-blue-dark;
-    }
-
-    &.ms-gradient{
-      color: #fff;
-    }
-  }
-
-  &.ms-border-bottom{
-    background-color: transparent;
-    border: 0;
-    border-radius: 0;
-    border-bottom: 0.1rem solid $color-gray-medium;
-    color: #000;
-
-    &.ms-red{
-      border-color: $color_red;
-      color: $color_red;
-    }
-
-    &.ms-green{
-      border-color: $color_green;
-      color: $color_green;
-    }
-
-    &.ms-blue{
-      border-color: $color_blue;
-      color: $color_blue;
-    }
-
-    &.ms-yellow{
-      border-color: $color_yellow;
-      color: $color_yellow;
-    }
-
-    &.ms-gradient{
-      color: #fff;
-    }
-  }
-
-
-  &.ms-clear{
-    background-color: transparent;
-    border-color: transparent;
-    color: #000;
-
-    &.ms-red{
-      color: $color_red;
-    }
-
-    &.ms-green{
-      color: $color_green;
-    }
-
-    &.ms-blue{
-      color: $color_blue;
-    }
-
-    &.ms-yellow{
-      color: $color_yellow;
-    }
-
-    &.ms-gradient{
-      color: #fff;
-    }
-  }
-
-
-  &.ms-rounded{
-    border-radius: 10em;
-
-    &.ms-red{
-      border-color: $color_red;
-    }
-
-    &.ms-green{
-      border-color: $color_green;
-    }
-
-    &.ms-blue{
-      border-color: $color_blue;
-    }
-
-    &.ms-yellow{
-      border-color: $color_yellow;
-      color: $color-blue-dark;
-    }
-
-    &.ms-gradient{
-      color: #fff;
-    }
-  }
-
-
-  &.ms-border-rounded{
-    @include border-radius(10em);
-    background-color: transparent;
-    color: #000;
-
-    &.ms-red{
-      border-color: $color_red;
-      color: $color_red;
-    }
-
-    &.ms-blue{
-      border-color: $color_blue;
-      color: $color_blue;
-    }
-
-    &.ms-green{
-      border-color: $color_green;
-      color: $color_green;
-    }
-
-    &.ms-yellow{
-      border-color: $color_yellow;
-      color: $color_yellow;
-    }
-
-    &.ms-gradient{
-      color: #fff;
-    }
+  display: inline-block;
+  color: $color-gray-3;
+  background-color: #ffffff;
+  border: 1px solid $color-gray-1;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0.5em 1em;
+  @include border-radius(3px);
+  
+  /* COLORS */
+  &.ms-info{
+    @include btn(#ffffff,$color-blue-1,$color-blue-2,$color-blue-3);
   }
   
-
-  &:hover{
-    text-decoration: underline;
+  &.ms-outline-info{
+    @include btn-outline($color-blue-2,$color-blue-2,$color-blue-3);
+  }
+  
+  &.ms-danger{
+    @include btn(#ffffff,$color-red-1,$color-red-2,$color-red-3);
+  }
+  
+  &.ms-outline-danger{
+    @include btn-outline($color-red-2,$color-red-2,$color-red-3);
+  }
+  
+  &.ms-success{
+    @include btn(#ffffff,$color-green-1,$color-green-2,$color-green-3);
+  }
+  
+  &.ms-outline-success{
+    @include btn-outline($color-green-2,$color-green-2,$color-green-3);
+  }
+  
+  &.ms-warning{
+    @include btn(#000000,$color-yellow-1,$color-yellow-2,$color-yellow-3);
   }
 
+  &.ms-outline-warning{
+    @include btn-outline($color-yellow-2,$color-yellow-2,$color-yellow-3);
+  }
+  
+  /* SIZES */
   &.ms-small{
-    line-height: 1.5rem;
-    padding: 0 0.6rem;
-    font-size: 80%;
+    padding: 0.3em 0.9em;
+    font-size: 0.8em;
   }
-
+  
+  &.ms-medium{
+    padding: 0.6em 1.5em;
+    font-size: 0.95em;
+  }
+  
   &.ms-large{
-    line-height: 3rem;
-    padding: 0 3rem;
-    font-size: 120%;
+    padding: 0.7em 1.8em;
+    font-size: 1.05em;
   }
-
-  &.ms-block{
+  
+  /* WIDTH */
+  &.ms-fullwidth{
     display: block;
     width: 100%;
   }
+  
+  /* GLOBAL */
+  &.ms-shadow{
+    @include box-shadow(rgba(black, 0.2) 0 4px 5px -4px);
+  }
 
-  &.no-margin{
-    margin: 0;
+  &.ms-rounded{
+    @include border-radius(100px);
+  }
+  
+  /* EVENTS */
+  &:hover{
+    border-color: $color-gray-2;
+  }
+  
+  &:active{
+    border-color: $color-gray-3;
+  }
+  
+  &:focus {
+    outline:0;
   }
 }
