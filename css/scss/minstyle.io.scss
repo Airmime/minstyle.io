@@ -5,23 +5,12 @@
 * Website : https://minstyle.io
 */
 
-$default-border-radius: .3rem;
-
 @import "compass";
 @import "compass/reset";
+@import "compass/css3";
 
 @import "_color";
 @import "_global";
-@import "_utility";
-@import "_grid";
-@import "_heading";
 @import "_button";
-@import "_badge";
-@import "_alert";
-@import "_list";
-@import "_form";
-@import "_table";
-@import "_progressbar";
-@import "_card";
-@import "_typographie";
-@import "_box";
+@import "_notification";
+

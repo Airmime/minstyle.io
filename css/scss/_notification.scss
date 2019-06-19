@@ -1,0 +1,92 @@
+@mixin notification($textColor,$primaryColor,$secondColor){
+    color: #ffffff;
+    background-color: $primaryColor;
+    border-color: $secondColor;
+    
+    .ms-close{
+        &:before, &:after {
+            background-color: #ffffff;
+        }
+    }
+}
+
+@mixin notification-outline($textColor,$primaryColor,$percentage){
+    color: $textColor;
+    background-color: tint($primaryColor, $percentage);
+    border-color: tint($primaryColor, $percentage - 25);
+    
+    .ms-close{
+        &:before, &:after {
+            background-color: $textColor;
+        }
+    }
+}
+
+/* BASE */
+.ms-notification{
+    width: 100%;
+    height: auto;
+    color: $color-gray-3;
+    border: 1px solid $color-gray-1;
+    position: relative;
+    margin: 0;
+    padding: 0.9em 1.2em;
+    @include border-radius(3px);
+    
+    /* COLORS */
+    &.ms-info{
+        @include notification(#ffffff,$color-blue-1,$color-blue-2)
+    }
+    
+    &.ms-outline-info{
+        @include notification-outline(shade($color-blue-3,30),$color-blue-1,85)
+    }
+    
+    &.ms-danger{
+        @include notification(#ffffff,$color-red-1,$color-red-3)
+    }
+    
+    &.ms-outline-danger{
+        @include notification-outline(shade($color-red-3,30),$color-red-1,85)
+    }
+    
+    &.ms-success{
+        @include notification(#ffffff,$color-green-1,$color-green-3)
+    }
+    
+    &.ms-outline-success{
+        @include notification-outline(shade($color-green-3,30),$color-green-1,85)
+    }
+    
+    &.ms-warning{
+        @include notification(#ffffff,$color-yellow-1,$color-yellow-3)
+    }
+    
+    &.ms-outline-warning{
+        @include notification-outline(shade($color-yellow-3,35),$color-yellow-1,85)
+    }
+    
+    .ms-close{
+        display: block;
+        position: absolute;
+        top: 5px;
+        right: 25px;
+        cursor: pointer;
+        
+        &:before, &:after {
+            position: absolute;
+            left: 15px;
+            content: ' ';
+            height: 10px;
+            width: 2px;
+            background-color: $color-gray-3;
+        }
+        
+        &:before {
+            transform: rotate(45deg);
+        }
+        &:after {
+            transform: rotate(-45deg);
+        }
+    }
+}
