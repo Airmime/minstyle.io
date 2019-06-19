@@ -93,7 +93,7 @@ input[type='submit']{
   &.ms-rounded{
     @include border-radius(100px);
   }
-  
+
   /* EVENTS */
   &:hover{
     border-color: $color-gray-2;
@@ -106,4 +106,9 @@ input[type='submit']{
   &:focus {
     outline:0;
   }
+}
+
+.ms-disabled, button[disabled]{
+  opacity: 0.5;
+  cursor: not-allowed;
 }

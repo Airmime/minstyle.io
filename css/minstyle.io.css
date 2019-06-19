@@ -925,6 +925,11 @@ input[type='submit']:focus {
   outline: 0;
 }
 
+.ms-disabled, button[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 .ms-notification {
   height: 25px;
   width: 25px;
