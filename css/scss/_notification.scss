@@ -14,7 +14,7 @@
     color: $textColor;
     background-color: tint($primaryColor, $percentage);
     border: none;
-    border-left: 3px solid $primaryColor;
+    border-left: 4px solid $primaryColor;
     
     .ms-close{
         &:before, &:after {
@@ -32,7 +32,7 @@
     position: relative;
     margin: 0;
     padding: 0.9em 1.2em;
-    @include border-radius(3px);
+    @include border-radius(4px);
     
     /* COLORS */
     &.ms-info{

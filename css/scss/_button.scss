@@ -29,7 +29,7 @@ input[type='submit']{
   cursor: pointer;
   margin: 0;
   padding: 0.5em 1em;
-  @include border-radius(3px);
+  @include border-radius(4px);
   
   /* COLORS */
   &.ms-info{

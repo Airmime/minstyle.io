@@ -101,11 +101,11 @@ input[type='submit'] {
   cursor: pointer;
   margin: 0;
   padding: 0.5em 1em;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
-  border-radius: 3px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
   /* COLORS */
   /* SIZES */
   /* WIDTH */
@@ -404,11 +404,11 @@ input[type='submit']:focus {
   position: relative;
   margin: 0;
   padding: 0.9em 1.2em;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
-  border-radius: 3px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
   /* COLORS */
 }
 
@@ -426,7 +426,7 @@ input[type='submit']:focus {
   color: #145f90;
   background-color: #def0fc;
   border: none;
-  border-left: 3px solid #219ced;
+  border-left: 4px solid #219ced;
 }
 
 .ms-notification.ms-outline-info .ms-close:before, .ms-notification.ms-outline-info .ms-close:after {
@@ -447,7 +447,7 @@ input[type='submit']:focus {
   color: #872a27;
   background-color: #fae3e2;
   border: none;
-  border-left: 3px solid #e04540;
+  border-left: 4px solid #e04540;
 }
 
 .ms-notification.ms-outline-danger .ms-close:before, .ms-notification.ms-outline-danger .ms-close:after {
@@ -468,7 +468,7 @@ input[type='submit']:focus {
   color: #236e34;
   background-color: #e1f4e6;
   border: none;
-  border-left: 3px solid #3ab656;
+  border-left: 4px solid #3ab656;
 }
 
 .ms-notification.ms-outline-success .ms-close:before, .ms-notification.ms-outline-success .ms-close:after {
@@ -489,7 +489,7 @@ input[type='submit']:focus {
   color: #8c6c09;
   background-color: #fef5db;
   border: none;
-  border-left: 3px solid #f9bf10;
+  border-left: 4px solid #f9bf10;
 }
 
 .ms-notification.ms-outline-warning .ms-close:before, .ms-notification.ms-outline-warning .ms-close:after {
