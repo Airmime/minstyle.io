@@ -1,7 +1,7 @@
 @mixin notification($textColor,$primaryColor,$secondColor){
     color: #ffffff;
-    background-color: $primaryColor;
-    border-color: $secondColor;
+    background-color: tint($primaryColor, 5);
+    border-color: transparent;
     
     .ms-close{
         &:before, &:after {
@@ -13,7 +13,8 @@
 @mixin notification-outline($textColor,$primaryColor,$percentage){
     color: $textColor;
     background-color: tint($primaryColor, $percentage);
-    border-color: tint($primaryColor, $percentage - 25);
+    border: none;
+    border-left: 3px solid $primaryColor;
     
     .ms-close{
         &:before, &:after {
