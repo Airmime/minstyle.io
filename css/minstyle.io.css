@@ -596,3 +596,21 @@ progress.ms-large .ms-progress-fill,
   height: 2rem;
   line-height: 2rem;
 }
+
+progress.ms-rounded,
+.ms-progress.ms-rounded {
+  -webkit-border-radius: 50rem;
+  -moz-border-radius: 50rem;
+  -ms-border-radius: 50rem;
+  -o-border-radius: 50rem;
+  border-radius: 50rem;
+}
+
+progress.ms-rounded .ms-rounded,
+.ms-progress.ms-rounded .ms-rounded {
+  -webkit-border-radius: 50rem;
+  -moz-border-radius: 50rem;
+  -ms-border-radius: 50rem;
+  -o-border-radius: 50rem;
+  border-radius: 50rem;
+}

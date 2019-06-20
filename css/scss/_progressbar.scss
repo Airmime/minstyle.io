@@ -51,4 +51,12 @@ progress,
 			line-height: 2rem;
 		}
 	}
+	
+	&.ms-rounded{
+		@include border-radius(50rem);
+		
+		.ms-rounded{
+			@include border-radius(50rem);
+		}
+	}
 }
