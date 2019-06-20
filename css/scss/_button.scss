@@ -28,7 +28,7 @@ input[type='submit']{
   text-decoration: none;
   cursor: pointer;
   margin: 0;
-  padding: 0.5em 1em;
+  padding: 0.5rem 1rem;
   @include border-radius(4px);
   
   /* COLORS */
@@ -66,18 +66,18 @@ input[type='submit']{
   
   /* SIZES */
   &.ms-small{
-    padding: 0.3em 0.9em;
-    font-size: 0.8em;
+    padding: 0.3rem 0.9rem;
+    font-size: 0.8rem;
   }
   
   &.ms-medium{
-    padding: 0.6em 1.5em;
-    font-size: 0.95em;
+    padding: 0.6rem 1.5rem;
+    font-size: 0.95rem;
   }
   
   &.ms-large{
-    padding: 0.7em 1.8em;
-    font-size: 1.05em;
+    padding: 0.7rem 1.8rem;
+    font-size: 1.05rem;
   }
   
   /* WIDTH */

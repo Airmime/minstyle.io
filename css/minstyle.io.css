@@ -61,8 +61,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* Last color name */
-/* New color name */
 /* ############### NEW ############### */
 *,
 *:after,
@@ -100,7 +98,7 @@ input[type='submit'] {
   text-decoration: none;
   cursor: pointer;
   margin: 0;
-  padding: 0.5em 1em;
+  padding: 0.5rem 1rem;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
@@ -321,24 +319,24 @@ button.ms-small,
 .ms-btn.ms-small,
 input[type='button'].ms-small,
 input[type='submit'].ms-small {
-  padding: 0.3em 0.9em;
-  font-size: 0.8em;
+  padding: 0.3rem 0.9rem;
+  font-size: 0.8rem;
 }
 
 button.ms-medium,
 .ms-btn.ms-medium,
 input[type='button'].ms-medium,
 input[type='submit'].ms-medium {
-  padding: 0.6em 1.5em;
-  font-size: 0.95em;
+  padding: 0.6rem 1.5rem;
+  font-size: 0.95rem;
 }
 
 button.ms-large,
 .ms-btn.ms-large,
 input[type='button'].ms-large,
 input[type='submit'].ms-large {
-  padding: 0.7em 1.8em;
-  font-size: 1.05em;
+  padding: 0.7rem 1.8rem;
+  font-size: 1.05rem;
 }
 
 button.ms-fullwidth,
@@ -403,13 +401,15 @@ input[type='submit']:focus {
   border: 1px solid #e1e1e1;
   position: relative;
   margin: 0;
-  padding: 0.9em 1.2em;
+  padding: 0.9rem 1.2rem;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
   border-radius: 4px;
   /* COLORS */
+  /* CLOSE ICON */
+  /* SIZES */
 }
 
 .ms-notification.ms-info {
@@ -519,4 +519,80 @@ input[type='submit']:focus {
 
 .ms-notification .ms-close:after {
   transform: rotate(-45deg);
+}
+
+.ms-notification.ms-medium {
+  padding: 1.4rem 1.7rem;
+}
+
+.ms-notification.ms-large {
+  padding: 1.7rem 2rem;
+}
+
+progress,
+.ms-progress {
+  width: 100%;
+  height: 1.3rem;
+  display: flex;
+  background-color: #e1e1e1;
+  text-align: center;
+  overflow: hidden;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+}
+
+progress .ms-progress-fill,
+.ms-progress .ms-progress-fill {
+  height: 1.3rem;
+  background-color: #b1b1b1;
+  font-size: 0.75rem;
+  text-align: center;
+  font-weight: bold;
+  line-height: 1.3rem;
+  color: #fff;
+}
+
+progress .ms-progress-fill.ms-info,
+.ms-progress .ms-progress-fill.ms-info {
+  background-color: #219ced;
+}
+
+progress .ms-progress-fill.ms-success,
+.ms-progress .ms-progress-fill.ms-success {
+  background-color: #3ab656;
+}
+
+progress .ms-progress-fill.ms-danger,
+.ms-progress .ms-progress-fill.ms-danger {
+  background-color: #e04540;
+}
+
+progress .ms-progress-fill.ms-warning,
+.ms-progress .ms-progress-fill.ms-warning {
+  background-color: #f9bf10;
+}
+
+progress.ms-medium,
+.ms-progress.ms-medium {
+  height: 1.7rem;
+}
+
+progress.ms-medium .ms-progress-fill,
+.ms-progress.ms-medium .ms-progress-fill {
+  height: 1.7rem;
+  line-height: 1.7rem;
+}
+
+progress.ms-large,
+.ms-progress.ms-large {
+  height: 2rem;
+}
+
+progress.ms-large .ms-progress-fill,
+.ms-progress.ms-large .ms-progress-fill {
+  height: 2rem;
+  line-height: 2rem;
 }

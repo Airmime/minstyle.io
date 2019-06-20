@@ -31,7 +31,7 @@
     border: 1px solid $color-gray-1;
     position: relative;
     margin: 0;
-    padding: 0.9em 1.2em;
+    padding: 0.9rem 1.2rem;
     @include border-radius(4px);
     
     /* COLORS */
@@ -66,7 +66,8 @@
     &.ms-outline-warning{
         @include notification-outline(shade($color-yellow-3,35),$color-yellow-1,85)
     }
-    
+
+    /* CLOSE ICON */
     .ms-close{
         display: block;
         position: absolute;
@@ -89,5 +90,14 @@
         &:after {
             transform: rotate(-45deg);
         }
+    }
+
+    /* SIZES */
+    &.ms-medium{
+        padding: 1.4rem 1.7rem;
+    }
+
+    &.ms-large{
+        padding: 1.7rem 2rem;
     }
 }
