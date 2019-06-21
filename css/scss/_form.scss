@@ -1,9 +1,19 @@
-@mixin formBorderColor($pFormBorderColor){
-	border: 1px solid $pFormBorderColor;
+/* MIXIN */
+@mixin input($primaryColor){
+	border: 1px solid $primaryColor;
+	
+	&:focus {
+		@include box-shadow($primaryColor 0 0 5px);
+	}
 }
 
-form{
-	margin: 1rem;
+/* BASE */
+.ms-form-group{
+	label, .label{
+		display: inline-block;
+		margin-bottom: .5rem;
+		font-size: 1rem;
+	}
 }
 
 input[type='email'],
@@ -23,103 +33,61 @@ input[type='datetime-local'],
 input:not([type]),
 textarea,
 select{
-
 	display: block;
 	width: 100%;
-	height: 2.5rem;
+	height: 2.3rem;
 	appearance: none;
 	background-color: transparent;
-	border: 1px solid darken($color-gray, 10%);
-	color: black;
-	@include border-radius;
-	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
-	box-sizing: border-box; 
-	box-shadow: none; 
+	border: 1px solid $color-gray-1;
 	font-size: 1rem;
-	padding: 0.5rem 0.7rem;
+	box-shadow: none;
 	margin-bottom: 1rem;
-
-	&:focus{
-		outline: 0;
-		border: 0.1rem solid darken($color-gray, 40%);
+	padding: 0.4rem 0.8rem;
+	@include box-sizing(border-box);
+	@include border-radius(4px);
+	
+	/* COLORS */
+	&.ms-info{
+		@include input($color-blue-1);
 	}
-
-	&:disabled{
-		background-color: $color-gray;
-		color: $color-gray-dark;
-		cursor: not-allowed;
+	
+	&.ms-success{
+		@include input($color-green-1);
 	}
-
+	
+	&.ms-danger{
+		@include input($color-red-1);
+	}
+	
+	&.ms-warning{
+		@include input($color-yellow-1);
+	}
+	
+	/* GLOBAL */
 	&.ms-rounded{
-		border-radius: 10em;
+		@include border-radius(100px);
 	}
 
+	/* SIZES */
 	&.ms-small{
-		height: 2rem;
-	}
-
-	&.ms-large{
-		height: 3rem;
-	}
-
-	&.ms-green{
-		@include formBorderColor($color-green);
-		&:focus{
-			@include single-box-shadow($blur: 5px, $color: $color-green);
-		}
-	}
-
-	&.ms-red{
-		@include formBorderColor($color-red);
-		&:focus{
-			@include single-box-shadow($blur: 5px, $color: $color-red);
-		}
-	}
-
-	&.ms-blue{
-		@include formBorderColor($color-blue);
-		&:focus{
-			@include single-box-shadow($blur: 5px, $color: $color-blue);
-		}
-	}
-
-	&.ms-yellow{
-		@include formBorderColor($color-yellow);
-		&:focus{
-			@include single-box-shadow($blur: 5px, $color: $color-yellow);
-		}
-	}
-
-}
-
-input[type='checkbox'],
-input[type='radio']{
-	display: inline;
-}
-
-select[multiple]{
-	&.ms-select-multiple{
-		min-height: 7rem;
+		height: 1.8rem;
+	  }
+	  
+	  &.ms-medium{
+		height: 2.7rem;
+	  }
+	  
+	  &.ms-large{
+		height: 3.2rem;
+	  }
+	
+	/* EVENTS */
+	&:focus {
+		outline:0;
+		@include box-shadow(rgba(black, 0.2) 0 0 5px);
 	}
 }
 
 textarea{
-	min-height: 6rem;
-}
-
-label,
-legend{
-	display: inline-block;
-	margin-bottom: .5rem;
-	font-size: 1rem;
-}
-
-.ms-form-text{
-	display: block;
-	line-height: 0.1rem;
-	color: $color-gray-font;
-	font-size: 0.9rem;
-	margin: 0 0 10px 0;
-	padding: 0;
+	height: inherit;
 }

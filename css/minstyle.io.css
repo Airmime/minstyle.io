@@ -61,7 +61,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* ############### NEW ############### */
+/* BASE */
 *,
 *:after,
 *:before {
@@ -388,11 +388,7 @@ input[type='submit']:focus {
   outline: 0;
 }
 
-.ms-disabled, button[disabled] {
-  opacity: 0.5;
-  cursor: not-allowed;
-}
-
+/* MIXIN */
 /* BASE */
 .ms-notification {
   width: 100%;
@@ -529,6 +525,7 @@ input[type='submit']:focus {
   padding: 1.7rem 2rem;
 }
 
+/* BASE */
 progress,
 .ms-progress {
   width: 100%;
@@ -542,6 +539,8 @@ progress,
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
   border-radius: 4px;
+  /* SIZES */
+  /* GLOBAL */
 }
 
 progress .ms-progress-fill,
@@ -553,6 +552,7 @@ progress .ms-progress-fill,
   font-weight: bold;
   line-height: 1.3rem;
   color: #fff;
+  /* COLORS */
 }
 
 progress .ms-progress-fill.ms-info,
@@ -613,4 +613,332 @@ progress.ms-rounded .ms-rounded,
   -ms-border-radius: 50rem;
   -o-border-radius: 50rem;
   border-radius: 50rem;
+}
+
+/* MIXIN */
+/* BASE */
+.ms-form-group label, .ms-form-group .label {
+  display: inline-block;
+  margin-bottom: .5rem;
+  font-size: 1rem;
+}
+
+input[type='email'],
+input[type='number'],
+input[type='password'],
+input[type='search'],
+input[type='tel'],
+input[type='text'],
+input[type='url'],
+input[type='color'],
+input[type='date'],
+input[type='month'],
+input[type='week'],
+input[type='datetime'],
+input[type='range'],
+input[type='datetime-local'],
+input:not([type]),
+textarea,
+select {
+  display: block;
+  width: 100%;
+  height: 2.3rem;
+  appearance: none;
+  background-color: transparent;
+  border: 1px solid #e1e1e1;
+  font-size: 1rem;
+  box-shadow: none;
+  margin-bottom: 1rem;
+  padding: 0.4rem 0.8rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  /* COLORS */
+  /* GLOBAL */
+  /* SIZES */
+  /* EVENTS */
+}
+
+input[type='email'].ms-info,
+input[type='number'].ms-info,
+input[type='password'].ms-info,
+input[type='search'].ms-info,
+input[type='tel'].ms-info,
+input[type='text'].ms-info,
+input[type='url'].ms-info,
+input[type='color'].ms-info,
+input[type='date'].ms-info,
+input[type='month'].ms-info,
+input[type='week'].ms-info,
+input[type='datetime'].ms-info,
+input[type='range'].ms-info,
+input[type='datetime-local'].ms-info,
+input:not([type]).ms-info,
+textarea.ms-info,
+select.ms-info {
+  border: 1px solid #219ced;
+}
+
+input[type='email'].ms-info:focus,
+input[type='number'].ms-info:focus,
+input[type='password'].ms-info:focus,
+input[type='search'].ms-info:focus,
+input[type='tel'].ms-info:focus,
+input[type='text'].ms-info:focus,
+input[type='url'].ms-info:focus,
+input[type='color'].ms-info:focus,
+input[type='date'].ms-info:focus,
+input[type='month'].ms-info:focus,
+input[type='week'].ms-info:focus,
+input[type='datetime'].ms-info:focus,
+input[type='range'].ms-info:focus,
+input[type='datetime-local'].ms-info:focus,
+input:not([type]).ms-info:focus,
+textarea.ms-info:focus,
+select.ms-info:focus {
+  -webkit-box-shadow: #219ced 0 0 5px;
+  -moz-box-shadow: #219ced 0 0 5px;
+  box-shadow: #219ced 0 0 5px;
+}
+
+input[type='email'].ms-success,
+input[type='number'].ms-success,
+input[type='password'].ms-success,
+input[type='search'].ms-success,
+input[type='tel'].ms-success,
+input[type='text'].ms-success,
+input[type='url'].ms-success,
+input[type='color'].ms-success,
+input[type='date'].ms-success,
+input[type='month'].ms-success,
+input[type='week'].ms-success,
+input[type='datetime'].ms-success,
+input[type='range'].ms-success,
+input[type='datetime-local'].ms-success,
+input:not([type]).ms-success,
+textarea.ms-success,
+select.ms-success {
+  border: 1px solid #3ab656;
+}
+
+input[type='email'].ms-success:focus,
+input[type='number'].ms-success:focus,
+input[type='password'].ms-success:focus,
+input[type='search'].ms-success:focus,
+input[type='tel'].ms-success:focus,
+input[type='text'].ms-success:focus,
+input[type='url'].ms-success:focus,
+input[type='color'].ms-success:focus,
+input[type='date'].ms-success:focus,
+input[type='month'].ms-success:focus,
+input[type='week'].ms-success:focus,
+input[type='datetime'].ms-success:focus,
+input[type='range'].ms-success:focus,
+input[type='datetime-local'].ms-success:focus,
+input:not([type]).ms-success:focus,
+textarea.ms-success:focus,
+select.ms-success:focus {
+  -webkit-box-shadow: #3ab656 0 0 5px;
+  -moz-box-shadow: #3ab656 0 0 5px;
+  box-shadow: #3ab656 0 0 5px;
+}
+
+input[type='email'].ms-danger,
+input[type='number'].ms-danger,
+input[type='password'].ms-danger,
+input[type='search'].ms-danger,
+input[type='tel'].ms-danger,
+input[type='text'].ms-danger,
+input[type='url'].ms-danger,
+input[type='color'].ms-danger,
+input[type='date'].ms-danger,
+input[type='month'].ms-danger,
+input[type='week'].ms-danger,
+input[type='datetime'].ms-danger,
+input[type='range'].ms-danger,
+input[type='datetime-local'].ms-danger,
+input:not([type]).ms-danger,
+textarea.ms-danger,
+select.ms-danger {
+  border: 1px solid #e04540;
+}
+
+input[type='email'].ms-danger:focus,
+input[type='number'].ms-danger:focus,
+input[type='password'].ms-danger:focus,
+input[type='search'].ms-danger:focus,
+input[type='tel'].ms-danger:focus,
+input[type='text'].ms-danger:focus,
+input[type='url'].ms-danger:focus,
+input[type='color'].ms-danger:focus,
+input[type='date'].ms-danger:focus,
+input[type='month'].ms-danger:focus,
+input[type='week'].ms-danger:focus,
+input[type='datetime'].ms-danger:focus,
+input[type='range'].ms-danger:focus,
+input[type='datetime-local'].ms-danger:focus,
+input:not([type]).ms-danger:focus,
+textarea.ms-danger:focus,
+select.ms-danger:focus {
+  -webkit-box-shadow: #e04540 0 0 5px;
+  -moz-box-shadow: #e04540 0 0 5px;
+  box-shadow: #e04540 0 0 5px;
+}
+
+input[type='email'].ms-warning,
+input[type='number'].ms-warning,
+input[type='password'].ms-warning,
+input[type='search'].ms-warning,
+input[type='tel'].ms-warning,
+input[type='text'].ms-warning,
+input[type='url'].ms-warning,
+input[type='color'].ms-warning,
+input[type='date'].ms-warning,
+input[type='month'].ms-warning,
+input[type='week'].ms-warning,
+input[type='datetime'].ms-warning,
+input[type='range'].ms-warning,
+input[type='datetime-local'].ms-warning,
+input:not([type]).ms-warning,
+textarea.ms-warning,
+select.ms-warning {
+  border: 1px solid #f9bf10;
+}
+
+input[type='email'].ms-warning:focus,
+input[type='number'].ms-warning:focus,
+input[type='password'].ms-warning:focus,
+input[type='search'].ms-warning:focus,
+input[type='tel'].ms-warning:focus,
+input[type='text'].ms-warning:focus,
+input[type='url'].ms-warning:focus,
+input[type='color'].ms-warning:focus,
+input[type='date'].ms-warning:focus,
+input[type='month'].ms-warning:focus,
+input[type='week'].ms-warning:focus,
+input[type='datetime'].ms-warning:focus,
+input[type='range'].ms-warning:focus,
+input[type='datetime-local'].ms-warning:focus,
+input:not([type]).ms-warning:focus,
+textarea.ms-warning:focus,
+select.ms-warning:focus {
+  -webkit-box-shadow: #f9bf10 0 0 5px;
+  -moz-box-shadow: #f9bf10 0 0 5px;
+  box-shadow: #f9bf10 0 0 5px;
+}
+
+input[type='email'].ms-rounded,
+input[type='number'].ms-rounded,
+input[type='password'].ms-rounded,
+input[type='search'].ms-rounded,
+input[type='tel'].ms-rounded,
+input[type='text'].ms-rounded,
+input[type='url'].ms-rounded,
+input[type='color'].ms-rounded,
+input[type='date'].ms-rounded,
+input[type='month'].ms-rounded,
+input[type='week'].ms-rounded,
+input[type='datetime'].ms-rounded,
+input[type='range'].ms-rounded,
+input[type='datetime-local'].ms-rounded,
+input:not([type]).ms-rounded,
+textarea.ms-rounded,
+select.ms-rounded {
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  border-radius: 100px;
+}
+
+input[type='email'].ms-small,
+input[type='number'].ms-small,
+input[type='password'].ms-small,
+input[type='search'].ms-small,
+input[type='tel'].ms-small,
+input[type='text'].ms-small,
+input[type='url'].ms-small,
+input[type='color'].ms-small,
+input[type='date'].ms-small,
+input[type='month'].ms-small,
+input[type='week'].ms-small,
+input[type='datetime'].ms-small,
+input[type='range'].ms-small,
+input[type='datetime-local'].ms-small,
+input:not([type]).ms-small,
+textarea.ms-small,
+select.ms-small {
+  height: 1.8rem;
+}
+
+input[type='email'].ms-medium,
+input[type='number'].ms-medium,
+input[type='password'].ms-medium,
+input[type='search'].ms-medium,
+input[type='tel'].ms-medium,
+input[type='text'].ms-medium,
+input[type='url'].ms-medium,
+input[type='color'].ms-medium,
+input[type='date'].ms-medium,
+input[type='month'].ms-medium,
+input[type='week'].ms-medium,
+input[type='datetime'].ms-medium,
+input[type='range'].ms-medium,
+input[type='datetime-local'].ms-medium,
+input:not([type]).ms-medium,
+textarea.ms-medium,
+select.ms-medium {
+  height: 2.7rem;
+}
+
+input[type='email'].ms-large,
+input[type='number'].ms-large,
+input[type='password'].ms-large,
+input[type='search'].ms-large,
+input[type='tel'].ms-large,
+input[type='text'].ms-large,
+input[type='url'].ms-large,
+input[type='color'].ms-large,
+input[type='date'].ms-large,
+input[type='month'].ms-large,
+input[type='week'].ms-large,
+input[type='datetime'].ms-large,
+input[type='range'].ms-large,
+input[type='datetime-local'].ms-large,
+input:not([type]).ms-large,
+textarea.ms-large,
+select.ms-large {
+  height: 3.2rem;
+}
+
+input[type='email']:focus,
+input[type='number']:focus,
+input[type='password']:focus,
+input[type='search']:focus,
+input[type='tel']:focus,
+input[type='text']:focus,
+input[type='url']:focus,
+input[type='color']:focus,
+input[type='date']:focus,
+input[type='month']:focus,
+input[type='week']:focus,
+input[type='datetime']:focus,
+input[type='range']:focus,
+input[type='datetime-local']:focus,
+input:not([type]):focus,
+textarea:focus,
+select:focus {
+  outline: 0;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 0 5px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 0 5px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 0 5px;
+}
+
+textarea {
+  height: inherit;
 }

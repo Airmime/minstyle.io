@@ -1,3 +1,4 @@
+/* MIXIN */
 @mixin notification($textColor,$primaryColor,$secondColor){
     color: #ffffff;
     background-color: tint($primaryColor, 5);
