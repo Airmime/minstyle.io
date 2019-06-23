@@ -1,0 +1,52 @@
+@mixin label($textColor,$primaryColor) {
+	background-color: $primaryColor;
+	color: $textColor;
+}
+
+/* BASE */
+.ms-label{
+	background-color: $color-gray-0;
+	color: $color-dark-1;
+	font-size: 0.8rem;
+	margin-right: 0.1rem;
+	padding: 0.2rem 0.5rem;
+	@include border-radius(3px);
+	
+	/* COLORS */
+	&.ms-info{
+		@include label(#ffffff, $color-blue-1)
+	}
+	
+	&.ms-success{
+		@include label(#ffffff, $color-green-1)
+	}
+	
+	&.ms-danger{
+		@include label(#ffffff, $color-red-1)
+	}
+	
+	&.ms-warning{
+		@include label(#000000, $color-yellow-1)
+	}
+	
+	/* SIZES */
+	&.ms-small{
+		padding: 0.15rem 0.6rem;
+		font-size: 0.7rem;
+	}
+	
+	&.ms-medium{
+		padding: 0.4rem 0.7rem;
+		font-size: 0.9rem;
+	}
+	
+	&.ms-large{
+		padding: 0.6rem 0.9rem;
+		font-size: 1rem;
+	}
+	
+	/* GLOBAL */
+	&.ms-rounded{
+		@include border-radius(100px);
+	}
+}
