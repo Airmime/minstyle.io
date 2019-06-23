@@ -1,18 +1,30 @@
-
-/* SIZES */
-@for $i from 1 through 9{
-
-	.ms-text-size-#{$i}{
-		font-size: #{$i}rem;
-	}
+/* MIXINS */
+@mixin mark($textColor,$primaryColor) {
+	background-color: $primaryColor;
+	color: $textColor;
 }
 
-@for $i from 1 through 9{
-
-	&.ms-fw-#{$i}00{
-		font-weight: #{$i}00;
-
-	}
+/* TITLES */
+h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6{
+	font-weight: 500;
+}
+h1,.h1 {
+  font-size: 2.2rem;
+}
+h2,.h2 {
+  font-size: 2rem;
+}
+h3,.h3 {
+  font-size: 1.8rem;
+}
+h4,.h4 {
+  font-size: 1.6rem;
+}
+h5,.h5 {
+  font-size: 1.4rem;
+}
+h6,.h6 {
+  font-size: 1.2rem;
 }
 
 /* COLORS */
@@ -28,8 +40,14 @@
 .ms-text-warning{
 	color: $color-yellow-1;
 }
+.ms-text-gray{
+	color: $color-gray-2;
+}
 .ms-text-white{
-	color: #fff;
+	color: #ffffff;
+}
+.ms-text-black{
+	color: #000000;
 }
 
 /* POSITIONS */
@@ -41,4 +59,23 @@
 }
 .ms-text-left{
 	text-align: left;
+}
+
+/* MARK */
+ mark,.ms-mark{
+	background-color: $color-yellow-1;
+	padding: 0.1rem 0.2rem;
+	@include border-radius(3px);
+
+	&.ms-info{
+		@include mark(#ffffff, $color-blue-1);
+	}
+
+	&.ms-success{
+		@include mark(#ffffff, $color-green-1);
+	}
+
+	&.ms-danger{
+		@include mark(#ffffff, $color-red-1);
+	}
 }

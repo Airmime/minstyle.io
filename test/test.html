@@ -24,6 +24,7 @@
 <body>
 	
 	<div style="width: 1200px; margin: 20px auto">
+		<!-- ################################ SPACER ################################-->
 		<div class="spacer">
 			<h2>Button</h2>
 		</div>
@@ -92,13 +93,16 @@
 		<button class="ms-btn ms-outline-danger ms-medium"><i class="fab fa-angular"></i> Button</button>
 		<button class="ms-btn ms-success ms-medium"><i class="fab fa-node-js"></i> Button</button><br/><br/>
 		
-		<a href="" class="ms-btn ms-fullwidth">Button</a><br/><br/>
+		<div style="width: 40%">
+			<a href="" class="ms-btn ms-success ms-medium ms-fullwidth"><i class="fas fa-check"></i> Button</a><br/><br/>
+		</div>
 		
 		<button class="ms-btn ms-info ms-small ms-rounded">Button</button>
 		<button class="ms-btn ms-danger ms-rounded">Button</button>
 		<a class="ms-btn ms-outline-success ms-medium ms-rounded">Button</a>
 		<button class="ms-btn ms-outline-warning ms-large ms-rounded">Button</button><br/><br/>
 		
+		<!-- ################################ SPACER ################################-->
 		<div class="spacer">
 			<h2>Notification</h2>
 		</div>
@@ -155,6 +159,7 @@
 			</div><br/>
 		</div>
 		
+		<!-- ################################ SPACER ################################-->
 		<div class="spacer">
 			<h2>Progress Bar</h2>
 		</div>
@@ -191,6 +196,7 @@
 			<div class="ms-progress-fill ms-warning" style="width: 60%;">60%</div>
 		</div><br/>
 		
+		<!-- ################################ SPACER ################################-->
 		<div class="spacer">
 			<h2>Form</h2>
 		</div>
@@ -219,14 +225,15 @@
 		<div style="width: 40%">
 			<div class="ms-form-group">
 				<label for="Email"><i class="far fa-envelope-open"></i> Email</label>
-				<input type="email" class="ms-success" id="Email">	
+				<input type="email" class="ms-success" id="Email" value="mail@minstyle.io">
+				<span class="ms-under-input ms-text-success">The email is valid.</span>
 			</div>
 		</div>
 		
 		<div style="width: 40%">
 			<div class="ms-form-group">
 				<label for="Email"><i class="far fa-envelope-open"></i> Email</label>
-				<input type="email" class="ms-danger" id="Email">
+				<input type="email" class="ms-danger" id="Email" value="mail...">
 				<span class="ms-under-input ms-text-danger">The email is invalid.</span>
 			</div>
 		</div>
@@ -256,6 +263,21 @@
 					<option value="4">4</option>
 					<option value="5">5</option>
 				</select>
+			</div>
+		</div>
+
+		<div style="width: 40%">
+			<div class="ms-form-group">
+				<label for="select">Select</label>
+				<select id="select" class="ms-danger">
+					<option value="0">0</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+				<span class="ms-under-input ms-text-danger">Please select your value.</span>
 			</div>
 		</div>
 		
@@ -300,8 +322,45 @@
 				<input type="file" id="File">	
 			</div>
 		</div>
+
+		<div style="width: 40%">
+			<div class="ms-form-group">
+				<label for="Text">Number</label>
+				<input type="text" placeholder="disabled..." id="Text" disabled>	
+			</div>
+		</div>
+		
+		<div style="width: 40%">
+			<div class="ms-form-group">
+				<label for="Text">Number</label>
+				<input type="text" placeholder="disabled..." id="Text" class="ms-disabled">	
+			</div>
+		</div>
+
+		<!-- ################################ SPACER ################################-->
+		<div class="spacer">
+			<h2>Typographie</h2>
+		</div>
+
+		<p>
+			Lorem ipsum dolor sit amet <span class="ms-text-info">ms-text-info</span> elit. Quibusdam aut vero eum, <span class="ms-text-success">ms-text-success</span> spa alias <span class="ms-text-black" style="background-color: gray">ms-text-black</span> accusamus <span class="ms-text-danger">ms-text-danger</span> officiis eligendi totam <span class="ms-text-white" style="background-color: black">ms-text-white</span>ipsa ratione deserunt <span class="ms-text-warning">ms-text-warning</span>, sit itaque numquam similique, cupiditate vitae <span class="ms-text-gray">ms-text-gray</span>.
+		</p><br>
+
+		<p class="ms-text-left">Lorem ipsum dolor - ms-text-left</p><br>
+		<p class="ms-text-center">Lorem ipsum dolor - ms-text-center</p><br>
+		<p class="ms-text-right">Lorem ipsum dolor - ms-text-right</p><br>
+
+		<h1>Title (35px)</h1><br>
+		<h2>Title (32px)</h2><br>
+		<h3>Title (29px)</h3><br>
+		<h4>Title (26px)</h4><br>
+		<h5>Title (22px)</h5><br>
+		<h6>Title (19px)</h6><br>
+
+		<p>
+			Lorem <mark>ipsum dolor</mark> sit amet <mark class="ms-info">mark ms-blue</mark>, impedit <mark class="ms-success">mark ms-success</mark> architecto <mark class="ms-danger">mark ms-danger</mark> incidunt ipsam obcaecati sunt delectus cupiditate, corporis debitis! Illo, amet impedit?
+		</p>
 	</div>
 	
-</div>
 </body>
 </html>

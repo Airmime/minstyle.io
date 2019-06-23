@@ -289,6 +289,12 @@ input[type='submit'] {
     -ms-border-radius: 100px;
     -o-border-radius: 100px;
     border-radius: 100px; }
+  button.ms-disabled,
+  .ms-btn.ms-disabled,
+  input[type='button'].ms-disabled,
+  input[type='submit'].ms-disabled {
+    cursor: not-allowed;
+    opacity: 0.55; }
   button:hover,
   .ms-btn:hover,
   input[type='button']:hover,
@@ -304,6 +310,10 @@ input[type='submit'] {
   input[type='button']:focus,
   input[type='submit']:focus {
     outline: 0; }
+
+button[disabled] {
+  cursor: not-allowed;
+  opacity: 0.55; }
 
 /* MIXIN */
 /* BASE */
@@ -492,7 +502,7 @@ input[type='file'],
 input:not([type]),
 textarea,
 select {
-  display: block;
+  display: inline-block;
   width: 100%;
   height: 2.3rem;
   appearance: none;
@@ -703,6 +713,27 @@ select {
     -ms-border-radius: 100px;
     -o-border-radius: 100px;
     border-radius: 100px; }
+  input[type='email'].ms-disabled,
+  input[type='number'].ms-disabled,
+  input[type='password'].ms-disabled,
+  input[type='search'].ms-disabled,
+  input[type='tel'].ms-disabled,
+  input[type='text'].ms-disabled,
+  input[type='url'].ms-disabled,
+  input[type='color'].ms-disabled,
+  input[type='date'].ms-disabled,
+  input[type='month'].ms-disabled,
+  input[type='week'].ms-disabled,
+  input[type='datetime'].ms-disabled,
+  input[type='range'].ms-disabled,
+  input[type='datetime-local'].ms-disabled,
+  input[type='file'].ms-disabled,
+  input:not([type]).ms-disabled,
+  textarea.ms-disabled,
+  select.ms-disabled {
+    cursor: not-allowed;
+    background-color: #f6f6f6;
+    border: 1px solid #e1e1e1; }
   input[type='email'].ms-small,
   input[type='number'].ms-small,
   input[type='password'].ms-small,
@@ -785,65 +816,40 @@ select {
 
 /* OVERDIDE */
 select {
+  min-width: 100px;
+  cursor: pointer;
   background: #ffffff url("data:image/svg+xml,%3Csvg aria-hidden='true' focusable='false' data-prefix='fas' data-icon='sort-down' class='svg-inline--fa fa-sort-down fa-w-10' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'%3E%3Cpath fill='currentColor' d='M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41z'%3E%3C/path%3E%3C/svg%3E") no-repeat right 0.5rem center/1rem 1rem; }
 
 textarea {
   height: inherit; }
 
-/* SIZES */
-.ms-text-size-1 {
-  font-size: 1rem; }
+input[disabled] {
+  cursor: not-allowed;
+  background-color: #f6f6f6;
+  border: 1px solid #e1e1e1; }
 
-.ms-text-size-2 {
-  font-size: 2rem; }
-
-.ms-text-size-3 {
-  font-size: 3rem; }
-
-.ms-text-size-4 {
-  font-size: 4rem; }
-
-.ms-text-size-5 {
-  font-size: 5rem; }
-
-.ms-text-size-6 {
-  font-size: 6rem; }
-
-.ms-text-size-7 {
-  font-size: 7rem; }
-
-.ms-text-size-8 {
-  font-size: 8rem; }
-
-.ms-text-size-9 {
-  font-size: 9rem; }
-
-.ms-fw-100 {
-  font-weight: 100; }
-
-.ms-fw-200 {
-  font-weight: 200; }
-
-.ms-fw-300 {
-  font-weight: 300; }
-
-.ms-fw-400 {
-  font-weight: 400; }
-
-.ms-fw-500 {
+/* MIXINS */
+/* TITLES */
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-weight: 500; }
 
-.ms-fw-600 {
-  font-weight: 600; }
+h1, .h1 {
+  font-size: 2.2rem; }
 
-.ms-fw-700 {
-  font-weight: 700; }
+h2, .h2 {
+  font-size: 2rem; }
 
-.ms-fw-800 {
-  font-weight: 800; }
+h3, .h3 {
+  font-size: 1.8rem; }
 
-.ms-fw-900 {
-  font-weight: 900; }
+h4, .h4 {
+  font-size: 1.6rem; }
+
+h5, .h5 {
+  font-size: 1.4rem; }
+
+h6, .h6 {
+  font-size: 1.2rem; }
 
 /* COLORS */
 .ms-text-info {
@@ -858,8 +864,14 @@ textarea {
 .ms-text-warning {
   color: #f9bf10; }
 
+.ms-text-gray {
+  color: #b1b1b1; }
+
 .ms-text-white {
-  color: #fff; }
+  color: #ffffff; }
+
+.ms-text-black {
+  color: #000000; }
 
 /* POSITIONS */
 .ms-text-center {
@@ -870,3 +882,22 @@ textarea {
 
 .ms-text-left {
   text-align: left; }
+
+/* MARK */
+mark, .ms-mark {
+  background-color: #f9bf10;
+  padding: 0.1rem 0.2rem;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px; }
+  mark.ms-info, .ms-mark.ms-info {
+    background-color: #219ced;
+    color: #ffffff; }
+  mark.ms-success, .ms-mark.ms-success {
+    background-color: #3ab656;
+    color: #ffffff; }
+  mark.ms-danger, .ms-mark.ms-danger {
+    background-color: #e04540;
+    color: #ffffff; }
