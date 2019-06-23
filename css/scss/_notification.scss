@@ -14,8 +14,7 @@
 @mixin notification-outline($textColor,$primaryColor,$percentage){
     color: $textColor;
     background-color: tint($primaryColor, $percentage);
-    border: none;
-    border-left: 4px solid $primaryColor;
+    border: 1px solid tint($primaryColor, 80);
     
     .ms-close{
         &:before, &:after {
@@ -30,10 +29,11 @@
     height: auto;
     color: $color-gray-3;
     border: 1px solid $color-gray-1;
+    font-size: 1rem;
     position: relative;
     margin: 0;
     padding: 0.9rem 1.2rem;
-    @include border-radius(4px);
+    @include border-radius(3px);
     
     /* COLORS */
     &.ms-info{
@@ -41,7 +41,7 @@
     }
     
     &.ms-outline-info{
-        @include notification-outline(shade($color-blue-3,30),$color-blue-1,85)
+        @include notification-outline(shade($color-blue-3,30),$color-blue-1,95)
     }
     
     &.ms-danger{
@@ -49,7 +49,7 @@
     }
     
     &.ms-outline-danger{
-        @include notification-outline(shade($color-red-3,30),$color-red-1,85)
+        @include notification-outline(shade($color-red-3,30),$color-red-1,95)
     }
     
     &.ms-success{
@@ -57,7 +57,7 @@
     }
     
     &.ms-outline-success{
-        @include notification-outline(shade($color-green-3,30),$color-green-1,85)
+        @include notification-outline(shade($color-green-3,30),$color-green-1,95)
     }
     
     &.ms-warning{
@@ -65,7 +65,7 @@
     }
     
     &.ms-outline-warning{
-        @include notification-outline(shade($color-yellow-3,35),$color-yellow-1,85)
+        @include notification-outline(shade($color-yellow-3,35),$color-yellow-1,95)
     }
 
     /* CLOSE ICON */

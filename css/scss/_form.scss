@@ -1,18 +1,27 @@
 /* MIXIN */
 @mixin input($primaryColor){
 	border: 1px solid $primaryColor;
+	background-color: tint($primaryColor, 97);
 	
 	&:focus {
-		@include box-shadow($primaryColor 0 0 5px);
+		@include box-shadow($primaryColor 0 0 3px);
 	}
 }
 
 /* BASE */
 .ms-form-group{
+	margin-bottom: 1rem;
+
 	label, .label{
-		display: inline-block;
-		margin-bottom: .5rem;
+		display: block;
+		margin-bottom: .6rem;
 		font-size: 1rem;
+	}
+
+	.ms-under-input{
+		display: block;
+		font-size: 0.9rem;
+		margin-top: 0.4rem;
 	}
 }
 
@@ -30,6 +39,7 @@ input[type='week'],
 input[type='datetime'],
 input[type='range'],
 input[type='datetime-local'],
+input[type='file'],
 input:not([type]),
 textarea,
 select{
@@ -37,14 +47,14 @@ select{
 	width: 100%;
 	height: 2.3rem;
 	appearance: none;
-	background-color: transparent;
+	background-color: #ffffff;
 	border: 1px solid $color-gray-1;
 	font-size: 1rem;
 	box-shadow: none;
-	margin-bottom: 1rem;
 	padding: 0.4rem 0.8rem;
 	@include box-sizing(border-box);
-	@include border-radius(4px);
+	@include border-radius(3px);
+	@include appearance('none');
 	
 	/* COLORS */
 	&.ms-info{
@@ -84,8 +94,14 @@ select{
 	/* EVENTS */
 	&:focus {
 		outline:0;
-		@include box-shadow(rgba(black, 0.2) 0 0 5px);
+		@include box-shadow($color-gray-2 0 0 3px);
 	}
+}
+
+/* OVERDIDE */
+
+select{
+	background: #ffffff url("data:image/svg+xml,%3Csvg aria-hidden='true' focusable='false' data-prefix='fas' data-icon='sort-down' class='svg-inline--fa fa-sort-down fa-w-10' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'%3E%3Cpath fill='currentColor' d='M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41z'%3E%3C/path%3E%3C/svg%3E") no-repeat right .5rem center/1rem 1rem;
 }
 
 textarea{

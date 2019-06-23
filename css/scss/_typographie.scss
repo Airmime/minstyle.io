@@ -1,4 +1,5 @@
 
+/* SIZES */
 @for $i from 1 through 9{
 
 	.ms-text-size-#{$i}{
@@ -14,25 +15,24 @@
 	}
 }
 
-.ms-text-blue{
-	color: $color-blue;
+/* COLORS */
+.ms-text-info{
+	color: $color-blue-1;
 }
-.ms-text-red{
-	color: $color-red;
+.ms-text-danger{
+	color: $color-red-1;
 }
-.ms-text-green{
-	color: $color-green;
+.ms-text-success{
+	color: $color-green-1;
 }
-.ms-text-gray-font{
-	color: $color-gray-font;
-}
-.ms-text-yellow{
-	color: $color-yellow;
+.ms-text-warning{
+	color: $color-yellow-1;
 }
 .ms-text-white{
 	color: #fff;
 }
 
+/* POSITIONS */
 .ms-text-center{
 	text-align: center;
 }
