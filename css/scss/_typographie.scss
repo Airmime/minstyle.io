@@ -64,7 +64,7 @@ h6,.h6 {
 /* MARK */
  mark,.ms-mark{
 	background-color: $color-yellow-1;
-	padding: 0.1rem 0.2rem;
+	padding: 0.1rem 0.15rem;
 	@include border-radius(3px);
 
 	&.ms-info{
@@ -78,4 +78,24 @@ h6,.h6 {
 	&.ms-danger{
 		@include mark(#ffffff, $color-red-1);
 	}
+}
+
+/* CODE */
+code,.ms-code{
+	background-color: tint($color-red-1, 92);
+	color: $color-red-1;
+	font-size: 90%;
+	font-family: Courier, monospace;
+	padding: 0.1rem 0.15rem;
+	@include border-radius(3px);
+}
+
+/* TERMINAL */
+terminal,.ms-terminal{
+	background-color: $color-dark-1;
+	color: #ffffff;
+	font-size: 90%;
+	font-family: Courier, monospace;
+	padding: 0.2rem 0.2rem;
+	@include border-radius(3px);
 }
