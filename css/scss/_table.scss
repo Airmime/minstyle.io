@@ -1,60 +1,36 @@
-@mixin tableBgColor($pTableBgColor){
-	background-color: $pTableBgColor;
-	color: #fff;
-	border-bottom: none;
-}
-
-table{
+/* BASE */
+table, .ms-table{
 	width: 100%;
 	border-spacing: 0;
-	margin: 1rem 0;
-
-	&.ms-boxed{
-    	border: 1px solid $color-gray-medium;
-
-    	&.ms-triped{
-    		td,
-			th{
-				border: 1px solid $color-gray-medium;
-			}
-    	}
+	border-collapse: collapse;
+	
+	thead{
+		border-bottom: 2px solid $color-gray-1;
 	}
-}
-
-tr{
-	&.ms-title{
-		td,
-		th{
-			font-weight: bold;
-			border-bottom: 3px solid $color-gray-medium;
+	
+	td,th{
+		padding: 0.7rem 0.4rem;
+		border-bottom: 1px solid $color-gray-1;
+	}
+	
+	th{
+		font-weight: bold;
+	}
+	
+	&.ms-striped {
+		tbody {
+			tr:nth-of-type(odd) {
+				background: $color-gray-0;
+			}
 		}
 	}
 
-	&.ms-gray{
-		background-color: $color-gray;
-	}
+	&.ms-boxed {
+		border: 1px solid $color-gray-1;
 
-	&.ms-blue{
-		@include tableBgColor($color-blue);
-	}
-
-	&.ms-red{
-		@include tableBgColor($color-red);
-	}
-
-	&.ms-green{
-		@include tableBgColor($color-green);
-	}
-
-	&.ms-yellow{
-		@include tableBgColor($color-yellow);
-	}
-
-	td,
-	th{
-		border-bottom: 0.1rem solid darken($color-gray, 10%);
-		padding: 1rem;
-		text-align: left;
+		td,th{
+			border-right: 1px solid $color-gray-1;
+		}
 	}
 }
 

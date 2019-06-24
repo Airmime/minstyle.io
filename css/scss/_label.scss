@@ -45,7 +45,7 @@
 	color: $color-dark-1;
 	font-size: 1rem;
 	margin-right: 0.1rem;
-	padding: 0.2rem 0.5rem;
+	padding: 0.2rem 0.4rem;
 	@include border-radius(3px);
 	
 	/* COLORS */
@@ -53,17 +53,17 @@
 	
 	/* SIZES */
 	&.ms-small{
-		padding: 0.1rem 0.3rem;
+		padding: 0.1rem 0.2rem;
 		font-size: 0.9rem;
 	}
 	
 	&.ms-medium{
-		padding: 0.4rem 0.7rem;
+		padding: 0.4rem 0.6rem;
 		font-size: 1.1rem;
 	}
 	
 	&.ms-large{
-		padding: 0.6rem 0.9rem;
+		padding: 0.6rem 0.8rem;
 		font-size: 1.2rem;
 	}
 	

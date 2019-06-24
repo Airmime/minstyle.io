@@ -61,6 +61,7 @@ html {
   box-sizing: border-box; }
 
 body {
+  color: #333333;
   font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",sans-serif; }
 
 b, strong {
@@ -924,7 +925,7 @@ code, .ms-code {
   border-radius: 3px; }
 
 /* TERMINAL */
-terminal, .ms-terminal {
+kbd, .ms-kbd {
   background-color: #2f2f2f;
   color: #ffffff;
   font-size: 90%;
@@ -943,7 +944,7 @@ terminal, .ms-terminal {
   color: #2f2f2f;
   font-size: 1rem;
   margin-right: 0.1rem;
-  padding: 0.2rem 0.5rem;
+  padding: 0.2rem 0.4rem;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
@@ -977,13 +978,13 @@ terminal, .ms-terminal {
     .ms-label.ms-warning:hover {
       background-color: #e8b20f; }
   .ms-label.ms-small {
-    padding: 0.1rem 0.3rem;
+    padding: 0.1rem 0.2rem;
     font-size: 0.9rem; }
   .ms-label.ms-medium {
-    padding: 0.4rem 0.7rem;
+    padding: 0.4rem 0.6rem;
     font-size: 1.1rem; }
   .ms-label.ms-large {
-    padding: 0.6rem 0.9rem;
+    padding: 0.6rem 0.8rem;
     font-size: 1.2rem; }
   .ms-label.ms-rounded {
     -webkit-border-radius: 100px;
@@ -991,3 +992,22 @@ terminal, .ms-terminal {
     -ms-border-radius: 100px;
     -o-border-radius: 100px;
     border-radius: 100px; }
+
+/* BASE */
+table, .ms-table {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse; }
+  table thead, .ms-table thead {
+    border-bottom: 2px solid #e1e1e1; }
+  table td, table th, .ms-table td, .ms-table th {
+    padding: 0.7rem 0.4rem;
+    border-bottom: 1px solid #e1e1e1; }
+  table th, .ms-table th {
+    font-weight: bold; }
+  table.ms-striped tbody tr:nth-of-type(odd), .ms-table.ms-striped tbody tr:nth-of-type(odd) {
+    background: #f6f6f6; }
+  table.ms-boxed, .ms-table.ms-boxed {
+    border: 1px solid #e1e1e1; }
+    table.ms-boxed td, table.ms-boxed th, .ms-table.ms-boxed td, .ms-table.ms-boxed th {
+      border-right: 1px solid #e1e1e1; }
