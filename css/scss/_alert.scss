@@ -1,5 +1,5 @@
 /* MIXIN */
-@mixin notification($textColor,$primaryColor,$secondColor){
+@mixin alert($textColor,$primaryColor,$secondColor){
     color: #ffffff;
     background-color: tint($primaryColor, 5);
     border-color: transparent;
@@ -11,7 +11,7 @@
     }
 }
 
-@mixin notification-outline($textColor,$primaryColor,$percentage){
+@mixin alert-outline($textColor,$primaryColor,$percentage){
     color: $textColor;
     background-color: tint($primaryColor, $percentage);
     border: 1px solid tint($primaryColor, 80);
@@ -24,7 +24,7 @@
 }
 
 /* BASE */
-.ms-notification{
+.ms-alert{
     width: 100%;
     height: auto;
     color: $color-gray-3;
@@ -37,35 +37,35 @@
     
     /* COLORS */
     &.ms-info{
-        @include notification(#ffffff,$color-blue-1,$color-blue-2)
+        @include alert(#ffffff,$color-blue-1,$color-blue-2)
     }
     
     &.ms-outline-info{
-        @include notification-outline(shade($color-blue-3,30),$color-blue-1,95)
+        @include alert-outline(shade($color-blue-3,30),$color-blue-1,95)
     }
     
     &.ms-danger{
-        @include notification(#ffffff,$color-red-1,$color-red-3)
+        @include alert(#ffffff,$color-red-1,$color-red-3)
     }
     
     &.ms-outline-danger{
-        @include notification-outline(shade($color-red-3,30),$color-red-1,95)
+        @include alert-outline(shade($color-red-3,30),$color-red-1,95)
     }
     
     &.ms-success{
-        @include notification(#ffffff,$color-green-1,$color-green-3)
+        @include alert(#ffffff,$color-green-1,$color-green-3)
     }
     
     &.ms-outline-success{
-        @include notification-outline(shade($color-green-3,30),$color-green-1,95)
+        @include alert-outline(shade($color-green-3,30),$color-green-1,95)
     }
     
     &.ms-warning{
-        @include notification(#ffffff,$color-yellow-1,$color-yellow-3)
+        @include alert(#ffffff,$color-yellow-1,$color-yellow-3)
     }
     
     &.ms-outline-warning{
-        @include notification-outline(shade($color-yellow-3,35),$color-yellow-1,95)
+        @include alert-outline(shade($color-yellow-3,35),$color-yellow-1,95)
     }
 
     /* CLOSE ICON */
@@ -95,10 +95,10 @@
 
     /* SIZES */
     &.ms-medium{
-        padding: 1.4rem 1.7rem;
+        padding: 1.4rem 1.2rem;
     }
 
     &.ms-large{
-        padding: 1.7rem 2rem;
+        padding: 1.7rem 1.2rem;
     }
 }
