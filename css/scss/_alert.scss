@@ -1,6 +1,6 @@
 /* MIXIN */
 @mixin alert($textColor,$primaryColor,$secondColor){
-    color: #ffffff;
+    color: $textColor;
     background-color: tint($primaryColor, 5);
     border-color: transparent;
     
@@ -61,7 +61,7 @@
     }
     
     &.ms-warning{
-        @include alert(#ffffff,$color-yellow-1,$color-yellow-3)
+        @include alert(#000000,$color-yellow-1,$color-yellow-3)
     }
     
     &.ms-outline-warning{

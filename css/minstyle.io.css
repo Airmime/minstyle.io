@@ -383,7 +383,7 @@ button[disabled], .ms-disabled {
     .ms-alert.ms-outline-success .ms-close:before, .ms-alert.ms-outline-success .ms-close:after {
       background-color: #236e34; }
   .ms-alert.ms-warning {
-    color: #ffffff;
+    color: #000000;
     background-color: #f9c21c;
     border-color: transparent; }
     .ms-alert.ms-warning .ms-close:before, .ms-alert.ms-warning .ms-close:after {
