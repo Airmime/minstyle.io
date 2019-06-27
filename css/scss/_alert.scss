@@ -31,7 +31,7 @@
     border: 1px solid $color-gray-1;
     font-size: 1rem;
     position: relative;
-    margin: 0;
+    margin-bottom: 1rem;
     padding: 0.9rem 1.2rem;
     @include border-radius(3px);
     
@@ -96,9 +96,11 @@
     /* SIZES */
     &.ms-medium{
         padding: 1.4rem 1.2rem;
+        font-size: 1.2rem;
     }
 
     &.ms-large{
         padding: 1.7rem 1.2rem;
+        font-size: 1.4rem;
     }
 }

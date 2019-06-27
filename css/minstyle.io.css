@@ -323,7 +323,7 @@ input[type='submit'] {
   input[type='submit']:focus {
     outline: 0; }
 
-button[disabled] {
+button[disabled], .ms-disabled {
   cursor: not-allowed;
   opacity: 0.55; }
 
@@ -336,7 +336,7 @@ button[disabled] {
   border: 1px solid #e1e1e1;
   font-size: 1rem;
   position: relative;
-  margin: 0;
+  margin-bottom: 1rem;
   padding: 0.9rem 1.2rem;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -412,9 +412,11 @@ button[disabled] {
     .ms-alert .ms-close:after {
       transform: rotate(-45deg); }
   .ms-alert.ms-medium {
-    padding: 1.4rem 1.2rem; }
+    padding: 1.4rem 1.2rem;
+    font-size: 1.2rem; }
   .ms-alert.ms-large {
-    padding: 1.7rem 1.2rem; }
+    padding: 1.7rem 1.2rem;
+    font-size: 1.4rem; }
 
 /* BASE */
 progress,
