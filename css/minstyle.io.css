@@ -427,6 +427,7 @@ progress,
   background-color: #f6f6f6;
   text-align: center;
   overflow: hidden;
+  margin-bottom: 1rem;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
