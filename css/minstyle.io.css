@@ -508,7 +508,7 @@ textarea,
 select {
   display: inline-block;
   width: 100%;
-  height: 2.3rem;
+  height: 2.2rem;
   appearance: none;
   background-color: #ffffff;
   border: 1px solid #e1e1e1;
@@ -775,7 +775,7 @@ select {
   input:not([type]).ms-medium,
   textarea.ms-medium,
   select.ms-medium {
-    height: 2.7rem; }
+    height: 2.6rem; }
   input[type='email'].ms-large,
   input[type='number'].ms-large,
   input[type='password'].ms-large,
@@ -794,7 +794,7 @@ select {
   input:not([type]).ms-large,
   textarea.ms-large,
   select.ms-large {
-    height: 3.2rem; }
+    height: 3rem; }
   input[type='email']:focus,
   input[type='number']:focus,
   input[type='password']:focus,
@@ -974,26 +974,18 @@ kbd, .ms-kbd {
     background-color: #219ced;
     color: #ffffff;
     border-color: transparent; }
-    .ms-label.ms-info:hover {
-      background-color: #1f91dc; }
   .ms-label.ms-success {
     background-color: #3ab656;
     color: #ffffff;
     border-color: transparent; }
-    .ms-label.ms-success:hover {
-      background-color: #36a950; }
   .ms-label.ms-danger {
     background-color: #e04540;
     color: #ffffff;
     border-color: transparent; }
-    .ms-label.ms-danger:hover {
-      background-color: #d0403c; }
   .ms-label.ms-warning {
     background-color: #f9bf10;
     color: #000000;
     border-color: transparent; }
-    .ms-label.ms-warning:hover {
-      background-color: #e8b20f; }
   .ms-label.ms-small {
     padding: 0.1rem 0.2rem;
     font-size: 0.9rem; }

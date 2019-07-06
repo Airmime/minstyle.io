@@ -29,7 +29,7 @@ textarea,
 select{
 	display: inline-block;
 	width: 100%;
-	height: 2.3rem;
+	height: 2.2rem;
 	appearance: none;
 	background-color: #ffffff;
 	border: 1px solid $color-gray-1;
@@ -74,11 +74,11 @@ select{
 	  }
 	  
 	  &.ms-medium{
-		height: 2.7rem;
+		height: 2.6rem;
 	  }
 	  
 	  &.ms-large{
-		height: 3.2rem;
+		height: 3rem;
 	  }
 	
 	/* EVENTS */

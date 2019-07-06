@@ -7,34 +7,18 @@
 @mixin color-label {
 	&.ms-info{
 		@include label(#ffffff, $color-blue-1);
-		
-		&:hover{
-			background-color: $color-blue-2;
-		}
 	}
 	
 	&.ms-success{
 		@include label(#ffffff, $color-green-1);
-
-		&:hover{
-			background-color: $color-green-2;
-		}
 	}
 	
 	&.ms-danger{
 		@include label(#ffffff, $color-red-1);
-
-		&:hover{
-			background-color: $color-red-2;
-		}
 	}
 	
 	&.ms-warning{
 		@include label(#000000, $color-yellow-1);
-		
-		&:hover{
-			background-color: $color-yellow-2;
-		}
 	}
 }
 
