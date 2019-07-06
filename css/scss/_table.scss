@@ -3,6 +3,7 @@ table, .ms-table{
 	width: 100%;
 	border-spacing: 0;
 	border-collapse: collapse;
+	margin-bottom: 1rem;
 	
 	thead{
 		border-bottom: 2px solid $color-gray-1;
@@ -25,7 +26,7 @@ table, .ms-table{
 		}
 	}
 
-	&.ms-boxed {
+	&.ms-bordered {
 		border: 1px solid $color-gray-1;
 
 		td,th{

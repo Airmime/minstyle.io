@@ -1006,7 +1006,8 @@ kbd, .ms-kbd {
 table, .ms-table {
   width: 100%;
   border-spacing: 0;
-  border-collapse: collapse; }
+  border-collapse: collapse;
+  margin-bottom: 1rem; }
   table thead, .ms-table thead {
     border-bottom: 2px solid #e1e1e1; }
   table td, table th, .ms-table td, .ms-table th {
@@ -1016,7 +1017,7 @@ table, .ms-table {
     font-weight: bold; }
   table.ms-striped tbody tr:nth-of-type(odd), .ms-table.ms-striped tbody tr:nth-of-type(odd) {
     background: #f6f6f6; }
-  table.ms-boxed, .ms-table.ms-boxed {
+  table.ms-bordered, .ms-table.ms-bordered {
     border: 1px solid #e1e1e1; }
-    table.ms-boxed td, table.ms-boxed th, .ms-table.ms-boxed td, .ms-table.ms-boxed th {
+    table.ms-bordered td, table.ms-bordered th, .ms-table.ms-bordered td, .ms-table.ms-bordered th {
       border-right: 1px solid #e1e1e1; }
