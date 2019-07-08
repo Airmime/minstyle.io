@@ -911,22 +911,14 @@ h6, .h6 {
 
 /* MARK */
 mark, .ms-mark {
-  background-color: #f9bf10;
-  padding: 0.1rem 0.15rem;
+  background-color: #ffe9b3;
+  border-bottom: .05rem solid #ffd367;
+  padding: 0.1rem 0.2rem;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
   border-radius: 3px; }
-  mark.ms-info, .ms-mark.ms-info {
-    background-color: #219ced;
-    color: #ffffff; }
-  mark.ms-success, .ms-mark.ms-success {
-    background-color: #3ab656;
-    color: #ffffff; }
-  mark.ms-danger, .ms-mark.ms-danger {
-    background-color: #e04540;
-    color: #ffffff; }
 
 /* CODE */
 code, .ms-code {
@@ -934,7 +926,7 @@ code, .ms-code {
   color: #e04540;
   font-size: 90%;
   font-family: Courier, monospace;
-  padding: 0.1rem 0.15rem;
+  padding: 0.1rem 0.2rem;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
