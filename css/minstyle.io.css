@@ -946,6 +946,39 @@ kbd, .ms-kbd {
   -o-border-radius: 3px;
   border-radius: 3px; }
 
+/* SEMENTIC */
+del, s {
+  text-decoration: line-through; }
+
+ins, u {
+  text-decoration: underline; }
+
+small {
+  font-size: 80%; }
+
+b, strong {
+  font-weight: bold; }
+
+i, cite {
+  font-style: italic; }
+
+pre i, pre cite {
+  font-style: normal; }
+
+sup {
+  font-size: 75%;
+  position: relative;
+  line-height: 0;
+  vertical-align: baseline;
+  top: -0.4rem; }
+
+sub {
+  font-size: 75%;
+  position: relative;
+  line-height: 0;
+  vertical-align: baseline;
+  bottom: -0.20rem; }
+
 /* BASE LABEL*/
 .ms-label {
   background-color: #ffffff;
