@@ -37,35 +37,35 @@
     
     /* COLORS */
     &.ms-info{
-        @include alert(#ffffff,$color-blue-1,$color-blue-2)
+        @include alert(#ffffff,$color-blue-1,$color-blue-2);
     }
     
     &.ms-outline-info{
-        @include alert-outline(shade($color-blue-3,30),$color-blue-1,95)
+        @include alert-outline(shade($color-blue-3,30),$color-blue-1,95);
     }
     
     &.ms-danger{
-        @include alert(#ffffff,$color-red-1,$color-red-3)
+        @include alert(#ffffff,$color-red-1,$color-red-3);
     }
     
     &.ms-outline-danger{
-        @include alert-outline(shade($color-red-3,30),$color-red-1,95)
+        @include alert-outline(shade($color-red-3,30),$color-red-1,95);
     }
     
     &.ms-success{
-        @include alert(#ffffff,$color-green-1,$color-green-3)
+        @include alert(#ffffff,$color-green-1,$color-green-3);
     }
     
     &.ms-outline-success{
-        @include alert-outline(shade($color-green-3,30),$color-green-1,95)
+        @include alert-outline(shade($color-green-3,30),$color-green-1,95);
     }
     
     &.ms-warning{
-        @include alert(#000000,$color-yellow-1,$color-yellow-3)
+        @include alert(#000000,$color-yellow-1,$color-yellow-3);
     }
     
     &.ms-outline-warning{
-        @include alert-outline(shade($color-yellow-3,35),$color-yellow-1,95)
+        @include alert-outline(shade($color-yellow-3,35),$color-yellow-1,95);
     }
 
     /* CLOSE ICON */
