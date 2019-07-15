@@ -301,13 +301,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   min-height: 1px;
   padding-left: 10px;
   vertical-align: top; }
-  @media (max-width: 700px) {
+  @media (max-width: 720px) {
     .ms_col {
       display: block;
       margin-left: 0;
       margin-right: 0;
       width: auto; } }
-  @media (max-width: 700px) and (min-width: 480px) {
+  @media (max-width: 720px) and (min-width: 576px) {
     .ms_col[class*="ms_col--m-"] {
       display: inline-block;
       margin-right: -.24em; }
@@ -321,7 +321,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
       width: 25%; }
     .ms_col.ms_col--m-3-of-4 {
       width: 75%; } }
-  @media (max-width: 480px) {
+  @media (max-width: 576px) {
     .ms_col[class*="ms_col--s-"] {
       display: inline-block;
       margin-right: -.24em; }
