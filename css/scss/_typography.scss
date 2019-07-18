@@ -129,3 +129,44 @@ sub{
 	vertical-align: baseline;
 	bottom: -0.20rem;
 }
+
+/* LIST */
+ul,
+ol {
+  margin: 0.5rem 0 1rem 0.5rem;
+  padding: 0;
+
+  ul,
+  ol {
+    margin: 1rem;
+  }
+
+  li {
+    margin-top: 1rem;
+  }
+}
+
+ul {
+  list-style: disc inside;
+
+  ul {
+    list-style-type: circle;
+  }
+}
+
+ol {
+  list-style: decimal inside;
+
+  ol {
+    list-style-type: lower-alpha;
+  }
+}
+
+dl {
+  dt {
+    font-weight: bold;
+  }
+  dd {
+    margin: 1rem;
+  }
+}
