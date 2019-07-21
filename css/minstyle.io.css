@@ -1625,6 +1625,31 @@ dl dt {
 dl dd {
   margin: 1rem; }
 
+/* BLOCKQUOTE */
+blockquote, .ms-blockquote {
+  border-left: 2px solid #e1e1e1;
+  color: #484848;
+  margin-bottom: 1rem;
+  padding: 1rem; }
+  blockquote p, .ms-blockquote p {
+    margin: 0 0 0.5rem 0; }
+  blockquote.ms-center, .ms-blockquote.ms-center {
+    text-align: center; }
+  blockquote.ms-info, .ms-blockquote.ms-info {
+    border-color: #219ced; }
+  blockquote.ms-success, .ms-blockquote.ms-success {
+    border-color: #3ab656; }
+  blockquote.ms-error, .ms-blockquote.ms-error {
+    border-color: #e04540; }
+  blockquote.ms-warning, .ms-blockquote.ms-warning {
+    border-color: #f9bf10; }
+
+/* HR */
+hr {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.1); }
+
 /* BASE LABEL*/
 .ms-label {
   background-color: #ffffff;
