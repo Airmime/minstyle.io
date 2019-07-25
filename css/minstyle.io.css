@@ -1717,3 +1717,81 @@ table, .ms-table {
     border: 1px solid #e1e1e1; }
     table.ms-bordered td, table.ms-bordered th, .ms-table.ms-bordered td, .ms-table.ms-bordered th {
       border-right: 1px solid #e1e1e1; }
+
+.ms-avatar {
+  width: 55px;
+  height: 55px;
+  background-color: #e1e1e1;
+  position: relative;
+  vertical-align: middle;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%; }
+  .ms-avatar img, .ms-avatar .ms-avatar-img {
+    display: block;
+    max-width: 100%;
+    min-width: 100%;
+    margin: 0 auto;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%; }
+  .ms-avatar .ms-text {
+    font-size: 1.2rem;
+    line-height: 55px;
+    font-weight: bold; }
+  .ms-avatar.ms-small {
+    width: 35px;
+    height: 35px; }
+    .ms-avatar.ms-small .ms-text {
+      font-size: 0.8rem;
+      line-height: 35px; }
+  .ms-avatar.ms-medium {
+    width: 75px;
+    height: 75px; }
+    .ms-avatar.ms-medium .ms-text {
+      font-size: 2rem;
+      line-height: 75px; }
+  .ms-avatar.ms-large {
+    width: 95px;
+    height: 95px; }
+    .ms-avatar.ms-large .ms-text {
+      font-size: 3rem;
+      line-height: 95px; }
+  .ms-avatar .ms-status {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    background-color: #e1e1e1;
+    border: 2px solid #fff;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%; }
+    .ms-avatar .ms-status.ms-info {
+      background-color: #219ced; }
+    .ms-avatar .ms-status.ms-success {
+      background-color: #3ab656; }
+    .ms-avatar .ms-status.ms-error {
+      background-color: #e04540; }
+    .ms-avatar .ms-status.ms-warning {
+      background-color: #f9bf10; }
+  .ms-avatar.ms-shadow {
+    -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 0 10px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.4) 0 0 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0 0 10px; }
+
+.ms-user {
+  background-color: #fff;
+  margin: 1rem 0;
+  padding: 1rem; }
