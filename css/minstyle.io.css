@@ -1525,6 +1525,9 @@ h6, .h6 {
 .ms-text-left {
   text-align: left; }
 
+.ms-text-justify {
+  text-align: justify; }
+
 /* MARK */
 mark, .ms-mark {
   background-color: #ffe9b3;
@@ -1758,12 +1761,22 @@ table, .ms-table {
     .ms-avatar.ms-medium .ms-text {
       font-size: 2rem;
       line-height: 75px; }
+    .ms-avatar.ms-medium .ms-status {
+      width: 15px;
+      height: 15px;
+      right: 4px;
+      bottom: 4px; }
   .ms-avatar.ms-large {
     width: 95px;
     height: 95px; }
     .ms-avatar.ms-large .ms-text {
       font-size: 3rem;
       line-height: 95px; }
+    .ms-avatar.ms-large .ms-status {
+      width: 20px;
+      height: 20px;
+      right: 2px;
+      bottom: 2px; }
   .ms-avatar .ms-status {
     width: 15px;
     height: 15px;
@@ -1792,6 +1805,42 @@ table, .ms-table {
     box-shadow: rgba(0, 0, 0, 0.4) 0 0 10px; }
 
 .ms-user {
+  width: 100%;
   background-color: #fff;
-  margin: 1rem 0;
-  padding: 1rem; }
+  border: 1px solid #e1e1e1;
+  overflow: auto;
+  position: relative;
+  padding: 1rem;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px; }
+  .ms-user .ms-avatar {
+    margin: 0 auto; }
+  .ms-user .ms-user-info {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 1rem; }
+  .ms-user .ms-user-content {
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-top: 1rem; }
+  .ms-user .ms-user-pined {
+    position: absolute;
+    top: 10px;
+    right: 10px; }
+  .ms-user.ms-compact .ms-avatar {
+    float: left;
+    margin: 0; }
+  .ms-user.ms-compact .ms-user-info {
+    float: left;
+    text-align: left;
+    margin: 0;
+    margin-left: 1rem; }
+  .ms-user.ms-compact .ms-user-content {
+    float: left;
+    width: 100%;
+    margin-top: 1rem; }
+  .ms-user.ms-borderless {
+    border: none; }
