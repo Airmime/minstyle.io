@@ -1,0 +1,52 @@
+.ms-card{
+	width: 100%;
+	height: auto;
+	margin: 1rem 0;
+	padding: 0;
+
+	.ms-card-pic{
+		margin-bottom: 1rem;
+		position: relative;
+
+		img{
+			width: 100%;
+			@include border-radius(3px);
+		}
+
+		.ms-card-pic-stick{
+			position: absolute;
+			text-align: right;
+			top: 10px;
+			right: 10px;
+		}
+	}
+
+	.ms-card-title{
+		margin: 0;
+		padding: 0 1rem 1rem 1rem;
+
+		h1,h2,h3,h4,h5,h6{
+			margin: 0;
+			padding: 0;
+		}
+
+		span{
+			font-style: italic;
+			color: $color-gray-2;
+		}
+	}
+
+	.ms-card-text{
+		margin: 0;
+		padding: 0 1rem 1rem 1rem;
+
+		p{
+			margin: 0;
+		}
+	}
+
+	.ms-card-btn{
+		margin: 0;
+		padding: 0 1rem 1rem 1rem;
+	}
+}

@@ -1844,3 +1844,41 @@ table, .ms-table {
     margin-top: 1rem; }
   .ms-user.ms-borderless {
     border: none; }
+
+.ms-card {
+  width: 100%;
+  height: auto;
+  margin: 1rem 0;
+  padding: 0; }
+  .ms-card .ms-card-pic {
+    margin-bottom: 1rem;
+    position: relative; }
+    .ms-card .ms-card-pic img {
+      width: 100%;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      -ms-border-radius: 3px;
+      -o-border-radius: 3px;
+      border-radius: 3px; }
+    .ms-card .ms-card-pic .ms-card-pic-stick {
+      position: absolute;
+      text-align: right;
+      top: 10px;
+      right: 10px; }
+  .ms-card .ms-card-title {
+    margin: 0;
+    padding: 0 1rem 1rem 1rem; }
+    .ms-card .ms-card-title h1, .ms-card .ms-card-title h2, .ms-card .ms-card-title h3, .ms-card .ms-card-title h4, .ms-card .ms-card-title h5, .ms-card .ms-card-title h6 {
+      margin: 0;
+      padding: 0; }
+    .ms-card .ms-card-title span {
+      font-style: italic;
+      color: #b1b1b1; }
+  .ms-card .ms-card-text {
+    margin: 0;
+    padding: 0 1rem 1rem 1rem; }
+    .ms-card .ms-card-text p {
+      margin: 0; }
+  .ms-card .ms-card-btn {
+    margin: 0;
+    padding: 0 1rem 1rem 1rem; }
