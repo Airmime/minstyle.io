@@ -1653,6 +1653,7 @@ hr {
   height: 1px;
   background-color: rgba(0, 0, 0, 0.1); }
 
+/* MIXINS */
 /* BASE LABEL*/
 .ms-label {
   background-color: #ffffff;
@@ -1721,6 +1722,8 @@ table, .ms-table {
     table.ms-bordered td, table.ms-bordered th, .ms-table.ms-bordered td, .ms-table.ms-bordered th {
       border-right: 1px solid #e1e1e1; }
 
+/* MIXINS */
+/* BASE */
 .ms-avatar {
   width: 55px;
   height: 55px;
@@ -1804,6 +1807,7 @@ table, .ms-table {
     -moz-box-shadow: rgba(0, 0, 0, 0.4) 0 0 10px;
     box-shadow: rgba(0, 0, 0, 0.4) 0 0 10px; }
 
+/* BASE */
 .ms-user {
   width: 100%;
   background-color: #fff;
@@ -1850,6 +1854,14 @@ table, .ms-table {
   height: auto;
   margin: 1rem 0;
   padding: 0; }
+  .ms-card.ms-border {
+    border: 1px solid #e1e1e1;
+    padding-top: 1rem;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px; }
   .ms-card .ms-card-pic {
     margin-bottom: 1rem;
     position: relative; }
@@ -1868,7 +1880,10 @@ table, .ms-table {
   .ms-card .ms-card-title {
     margin: 0;
     padding: 0 1rem 1rem 1rem; }
-    .ms-card .ms-card-title h1, .ms-card .ms-card-title h2, .ms-card .ms-card-title h3, .ms-card .ms-card-title h4, .ms-card .ms-card-title h5, .ms-card .ms-card-title h6 {
+    .ms-card .ms-card-title h1, .ms-card .ms-card-title h2, .ms-card .ms-card-title h3, .ms-card .ms-card-title h4, .ms-card .ms-card-title h5, .ms-card .ms-card-title h6, .ms-card .ms-card-title a {
+      font-size: 1.75rem;
+      text-decoration: none;
+      color: #2c3e50;
       margin: 0;
       padding: 0; }
     .ms-card .ms-card-title span {
@@ -1882,3 +1897,33 @@ table, .ms-table {
   .ms-card .ms-card-btn {
     margin: 0;
     padding: 0 1rem 1rem 1rem; }
+  .ms-card .ms-section .ms-section-bloc {
+    border-bottom: 1px solid #e1e1e1;
+    padding: 1rem; }
+    .ms-card .ms-section .ms-section-bloc p {
+      margin: 0; }
+    .ms-card .ms-section .ms-section-bloc:first-child {
+      border-top: 1px solid #e1e1e1; }
+    .ms-card .ms-section .ms-section-bloc:last-child {
+      border-bottom: 1px solid #e1e1e1;
+      margin-bottom: 1rem; }
+
+/* BASE */
+.ms-tab {
+  border-bottom: 1px solid #e1e1e1;
+  margin: 0;
+  padding: 0; }
+  .ms-tab ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    .ms-tab ul li {
+      display: inline-block;
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+      .ms-tab ul li a {
+        border-bottom: 2px solid #b1b1b1;
+        text-decoration: none;
+        margin: 0;
+        padding: 1rem; }

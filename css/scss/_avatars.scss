@@ -1,3 +1,4 @@
+/* MIXINS */
 @mixin sizeAvatar($font-size,$line-height,$width,$height){
 	width: $width;
 	height: $height;
@@ -8,6 +9,7 @@
 	}
 }
 
+/* BASE */
 .ms-avatar{
 	width: 55px;
 	height: 55px;
