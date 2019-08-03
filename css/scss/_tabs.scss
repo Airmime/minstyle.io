@@ -52,6 +52,14 @@
 					border-bottom: 2px solid $color-gray-2;
 				}
 			}
+
+			/* LOGO */
+			&.ms-logo{
+				img{
+					max-height: 30px;
+					vertical-align: bottom;
+				}
+			}
 		}
 	}
 
