@@ -85,8 +85,7 @@ code,.ms-code{
 kbd,.ms-kbd{
 	background-color: $color-dark-1;
 	color: #ffffff;
-	font-size: 90%;
-	font-family: Courier, monospace;
+	font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
 	padding: 0.2rem 0.2rem;
 	@include border-radius(3px);
 }
@@ -210,4 +209,6 @@ hr{
 	width: 100%;
 	height: 1px;
 	background-color: rgba(0,0,0,0.1);
+	border: none;
+	margin: 1rem 0;
 }
