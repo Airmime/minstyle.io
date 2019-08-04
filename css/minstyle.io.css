@@ -1674,7 +1674,7 @@ blockquote, .ms-blockquote {
   margin-bottom: 1rem;
   padding: 1rem; }
   blockquote p, .ms-blockquote p {
-    margin: 0 0 0.5rem 0; }
+    margin: 0 0 0 0; }
   blockquote.ms-center, .ms-blockquote.ms-center {
     text-align: center; }
   blockquote.ms-info, .ms-blockquote.ms-info {
