@@ -7,7 +7,7 @@
 	&.ms-border{
 		border: 1px solid $color-gray-1;
 		padding-top: 1rem;
-		@include border-radius(3px);
+		@include border-radius($default-border-radius);
 	}
 
 	.ms-card-pic{
@@ -16,7 +16,7 @@
 
 		img{
 			width: 100%;
-			@include border-radius(3px);
+			@include border-radius($default-border-radius);
 		}
 
 		.ms-card-pic-stick{

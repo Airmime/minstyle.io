@@ -357,6 +357,7 @@ template {
 [hidden] {
   display: none; }
 
+/* VARIABLES */
 /*-----------------------------------*
   $TOAST-GRID
 
@@ -667,7 +668,7 @@ template {
 .ms_col--am {
   vertical-align: middle; }
 
-/* BASE */
+/* COLORS */
 *,
 *:after,
 *:before {
@@ -1044,14 +1045,18 @@ button[disabled], .ms-disabled {
     .ms-alert.ms-outline-warning h1, .ms-alert.ms-outline-warning h2, .ms-alert.ms-outline-warning h3, .ms-alert.ms-outline-warning h4, .ms-alert.ms-outline-warning h5, .ms-alert.ms-outline-warning h6 {
       color: #8c6c09; }
   .ms-alert .ms-close {
+    width: 20px;
+    height: 20px;
     display: block;
     position: absolute;
     top: 5px;
-    right: 25px;
-    cursor: pointer; }
+    right: 5px;
+    cursor: pointer;
+    text-align: center; }
     .ms-alert .ms-close:before, .ms-alert .ms-close:after {
       position: absolute;
-      left: 15px;
+      left: 9px;
+      top: 5px;
       content: ' ';
       height: 10px;
       width: 2px;
@@ -1060,6 +1065,20 @@ button[disabled], .ms-disabled {
       transform: rotate(45deg); }
     .ms-alert .ms-close:after {
       transform: rotate(-45deg); }
+    .ms-alert .ms-close:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      -ms-border-radius: 4px;
+      -o-border-radius: 4px;
+      border-radius: 4px; }
+    .ms-alert .ms-close:active {
+      background-color: rgba(0, 0, 0, 0.2);
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      -ms-border-radius: 4px;
+      -o-border-radius: 4px;
+      border-radius: 4px; }
   .ms-alert.ms-content h1, .ms-alert.ms-content h2, .ms-alert.ms-content h3, .ms-alert.ms-content h4, .ms-alert.ms-content h5, .ms-alert.ms-content h6 {
     margin: 0 0 0.3rem 0; }
   .ms-alert.ms-content p {

@@ -68,7 +68,7 @@ h6,.h6 {
 	background-color: #ffe9b3;
 	border-bottom: .05rem solid #ffd367;
 	padding: 0.1rem 0.2rem;
-	@include border-radius(3px);
+	@include border-radius($default-border-radius);
 }
 
 /* CODE */
@@ -78,7 +78,7 @@ code,.ms-code{
 	font-size: 90%;
 	font-family: Courier, monospace;
 	padding: 0.1rem 0.2rem;
-	@include border-radius(3px);
+	@include border-radius($default-border-radius);
 }
 
 /* TERMINAL */
@@ -87,7 +87,7 @@ kbd,.ms-kbd{
 	color: #ffffff;
 	font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
 	padding: 0.2rem 0.2rem;
-	@include border-radius(3px);
+	@include border-radius($default-border-radius);
 }
 
 /* SEMENTIC */

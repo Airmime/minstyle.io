@@ -37,7 +37,7 @@ select{
 	box-shadow: none;
 	padding: 0.4rem 0.8rem;
 	@include box-sizing(border-box);
-	@include border-radius(3px);
+	@include border-radius($default-border-radius);
 	@include appearance('none');
 	
 	/* COLORS */

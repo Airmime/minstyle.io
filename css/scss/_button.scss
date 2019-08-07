@@ -31,7 +31,7 @@ input[type='submit']{
   cursor: pointer;
   margin: 0;
   padding: 0.4rem 1rem;
-  @include border-radius(3px);
+  @include border-radius($default-border-radius);
   
   /* COLORS */
   &.ms-info{

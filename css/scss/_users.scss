@@ -6,7 +6,7 @@
 	overflow: auto;
 	position: relative;
 	padding: 1rem;
-	@include border-radius(3px);
+	@include border-radius($default-border-radius);
 
 	.ms-avatar{
 		margin: 0 auto;
