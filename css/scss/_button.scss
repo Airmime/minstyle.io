@@ -117,6 +117,7 @@ input[type='submit']{
 }
 
 button[disabled], .ms-disabled{
-  cursor: not-allowed;
+  cursor: default;
+  pointer-events: none;
   opacity: 0.55;
 }

@@ -1,3 +1,4 @@
+/* BASE */
 .ms-breadcrumb{
 	ul{
 		list-style: none;
@@ -23,6 +24,7 @@
 		}
 	}
 
+	/* BACKGROUND */
 	&.ms-background{
 		width: 100%;
 		background-color: $color-gray-0;
@@ -30,6 +32,7 @@
 		@include border-radius($default-border-radius);
 	}
 
+	/* BORDER */
 	&.ms-border{
 		width: 100%;
 		border-bottom: 1px solid $color-gray-1;

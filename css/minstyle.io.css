@@ -942,7 +942,8 @@ input[type='submit'] {
     outline: 0; }
 
 button[disabled], .ms-disabled {
-  cursor: not-allowed;
+  cursor: default;
+  pointer-events: none;
   opacity: 0.55; }
 
 /* MIXIN */
@@ -2084,32 +2085,90 @@ table, .ms-table {
             -o-border-radius: 3px;
             border-radius: 3px; }
 
-.ms-breadcrumb ul {
-  list-style: none;
-  margin: 0; }
-  .ms-breadcrumb ul li {
+/* BASE */
+.ms-breadcrumb {
+  /* BACKGROUND */
+  /* BORDER */ }
+  .ms-breadcrumb ul {
     list-style: none;
-    display: inline-block;
-    margin: 0 0 0 0.5rem; }
-    .ms-breadcrumb ul li:after {
-      content: "/";
-      padding-left: 0.5rem; }
-    .ms-breadcrumb ul li:last-child:after {
-      content: ""; }
-    .ms-breadcrumb ul li:first-child {
-      margin-left: 0; }
+    margin: 0; }
+    .ms-breadcrumb ul li {
+      list-style: none;
+      display: inline-block;
+      margin: 0 0 0 0.5rem; }
+      .ms-breadcrumb ul li:after {
+        content: "/";
+        padding-left: 0.5rem; }
+      .ms-breadcrumb ul li:last-child:after {
+        content: ""; }
+      .ms-breadcrumb ul li:first-child {
+        margin-left: 0; }
+  .ms-breadcrumb.ms-background {
+    width: 100%;
+    background-color: #f6f6f6;
+    padding: 1rem;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px; }
+  .ms-breadcrumb.ms-border {
+    width: 100%;
+    border-bottom: 1px solid #e1e1e1;
+    padding: 1rem; }
 
-.ms-breadcrumb.ms-background {
-  width: 100%;
-  background-color: #f6f6f6;
-  padding: 1rem;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
-  border-radius: 3px; }
-
-.ms-breadcrumb.ms-border {
-  width: 100%;
-  border-bottom: 1px solid #e1e1e1;
-  padding: 1rem; }
+.ms-pagination {
+  margin: 1rem 0; }
+  .ms-pagination ul {
+    list-style: none;
+    display: flex;
+    margin: 0; }
+    .ms-pagination ul li {
+      list-style: none;
+      margin: 0; }
+      .ms-pagination ul li a {
+        padding: 0.5rem;
+        text-decoration: none;
+        color: #2f2f2f;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+        border-radius: 3px; }
+        .ms-pagination ul li a.ms-active {
+          color: #fff;
+          background-color: #219ced; }
+          .ms-pagination ul li a.ms-active:hover {
+            background-color: #1f91dc; }
+          .ms-pagination ul li a.ms-active:active {
+            background-color: #1d87cd; }
+        .ms-pagination ul li a.ms-disabled {
+          cursor: default;
+          pointer-events: none;
+          color: #595959; }
+        .ms-pagination ul li a:hover {
+          background-color: #f6f6f6; }
+        .ms-pagination ul li a:active {
+          background-color: #e1e1e1; }
+      .ms-pagination ul li span {
+        padding: 0.5rem;
+        color: #b1b1b1; }
+  .ms-pagination.ms-border ul li {
+    margin-right: -1px; }
+    .ms-pagination.ms-border ul li:first-child a {
+      border-top-left-radius: 3px;
+      border-bottom-left-radius: 3px; }
+    .ms-pagination.ms-border ul li:last-child a {
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px; }
+    .ms-pagination.ms-border ul li a {
+      border: 1px solid #e1e1e1;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      -ms-border-radius: 0;
+      -o-border-radius: 0;
+      border-radius: 0; }
+      .ms-pagination.ms-border ul li a.ms-active {
+        border-color: #219ced; }
+    .ms-pagination.ms-border ul li span {
+      border: 1px solid #e1e1e1; }

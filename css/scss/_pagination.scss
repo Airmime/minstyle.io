@@ -1,0 +1,85 @@
+.ms-pagination{
+
+	margin: 1rem 0;
+
+	ul{
+		list-style: none;
+		display: flex;
+		margin: 0;
+
+		li{
+			list-style: none;
+			margin: 0;
+
+			a{
+				padding: 0.5rem;
+				text-decoration: none;
+				color: $color-dark-1;
+				@include border-radius($default-border-radius);
+
+				&.ms-active{
+					color: #fff;
+					background-color: $color-blue-1;
+
+					&:hover{
+						background-color: $color-blue-2;
+					}
+
+					&:active{
+						background-color: $color-blue-3;
+					}
+				}
+
+				&.ms-disabled{
+					cursor: default;
+					pointer-events: none;
+					color: tint($color-dark-1,20);
+				}
+
+				&:hover{
+					background-color: $color-gray-0;
+				}
+
+				&:active{
+					background-color: $color-gray-1;
+				}
+			}
+
+			span{
+				padding: 0.5rem;
+				color: $color-gray-2;
+			}
+		}
+	}
+
+	&.ms-border{
+		ul{
+			li{
+				margin-right: -1px;
+
+				&:first-child a{
+					border-top-left-radius: $default-border-radius;
+					border-bottom-left-radius: $default-border-radius;
+				}
+
+				&:last-child a{
+					border-top-right-radius: $default-border-radius;
+					border-bottom-right-radius: $default-border-radius;
+				}
+
+				a{
+					border: 1px solid $color-gray-1;
+					@include border-radius(0);
+
+					&.ms-active{
+						border-color: $color-blue-1;
+					}
+				}
+
+				span{
+					border: 1px solid $color-gray-1;
+				}
+			}
+		}
+	}
+}
