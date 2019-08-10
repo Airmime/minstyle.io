@@ -29,7 +29,7 @@ input[type='submit']{
   font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
-  margin: 0;
+  margin: 0.5rem 0;
   padding: 0.4rem 1rem;
   @include border-radius($default-border-radius);
   
