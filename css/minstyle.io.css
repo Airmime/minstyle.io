@@ -956,7 +956,7 @@ button[disabled], .ms-disabled {
   font-size: 1rem;
   position: relative;
   margin-bottom: 1rem;
-  padding: 1rem;
+  padding: 0.8rem;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
