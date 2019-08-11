@@ -971,6 +971,8 @@ button[disabled], .ms-disabled {
     border-color: transparent; }
     .ms-alert.ms-info .ms-close:before, .ms-alert.ms-info .ms-close:after {
       background-color: #ffffff; }
+    .ms-alert.ms-info p {
+      color: #ffffff; }
     .ms-alert.ms-info hr {
       background-color: #59b5f2; }
     .ms-alert.ms-info h1, .ms-alert.ms-info h2, .ms-alert.ms-info h3, .ms-alert.ms-info h4, .ms-alert.ms-info h5, .ms-alert.ms-info h6 {
@@ -981,6 +983,8 @@ button[disabled], .ms-disabled {
     border: 1px solid #d3ebfb; }
     .ms-alert.ms-outline-info .ms-close:before, .ms-alert.ms-outline-info .ms-close:after {
       background-color: #145f90; }
+    .ms-alert.ms-outline-info p {
+      color: #145f90; }
     .ms-alert.ms-outline-info hr {
       background-color: #d3ebfb; }
     .ms-alert.ms-outline-info h1, .ms-alert.ms-outline-info h2, .ms-alert.ms-outline-info h3, .ms-alert.ms-outline-info h4, .ms-alert.ms-outline-info h5, .ms-alert.ms-outline-info h6 {
@@ -991,6 +995,8 @@ button[disabled], .ms-disabled {
     border-color: transparent; }
     .ms-alert.ms-danger .ms-close:before, .ms-alert.ms-danger .ms-close:after {
       background-color: #ffffff; }
+    .ms-alert.ms-danger p {
+      color: #ffffff; }
     .ms-alert.ms-danger hr {
       background-color: #e87470; }
     .ms-alert.ms-danger h1, .ms-alert.ms-danger h2, .ms-alert.ms-danger h3, .ms-alert.ms-danger h4, .ms-alert.ms-danger h5, .ms-alert.ms-danger h6 {
@@ -1001,6 +1007,8 @@ button[disabled], .ms-disabled {
     border: 1px solid #f9dad9; }
     .ms-alert.ms-outline-danger .ms-close:before, .ms-alert.ms-outline-danger .ms-close:after {
       background-color: #872a27; }
+    .ms-alert.ms-outline-danger p {
+      color: #872a27; }
     .ms-alert.ms-outline-danger hr {
       background-color: #f9dad9; }
     .ms-alert.ms-outline-danger h1, .ms-alert.ms-outline-danger h2, .ms-alert.ms-outline-danger h3, .ms-alert.ms-outline-danger h4, .ms-alert.ms-outline-danger h5, .ms-alert.ms-outline-danger h6 {
@@ -1011,6 +1019,8 @@ button[disabled], .ms-disabled {
     border-color: transparent; }
     .ms-alert.ms-success .ms-close:before, .ms-alert.ms-success .ms-close:after {
       background-color: #ffffff; }
+    .ms-alert.ms-success p {
+      color: #ffffff; }
     .ms-alert.ms-success hr {
       background-color: #6bc880; }
     .ms-alert.ms-success h1, .ms-alert.ms-success h2, .ms-alert.ms-success h3, .ms-alert.ms-success h4, .ms-alert.ms-success h5, .ms-alert.ms-success h6 {
@@ -1021,6 +1031,8 @@ button[disabled], .ms-disabled {
     border: 1px solid #d8f0dd; }
     .ms-alert.ms-outline-success .ms-close:before, .ms-alert.ms-outline-success .ms-close:after {
       background-color: #236e34; }
+    .ms-alert.ms-outline-success p {
+      color: #236e34; }
     .ms-alert.ms-outline-success hr {
       background-color: #d8f0dd; }
     .ms-alert.ms-outline-success h1, .ms-alert.ms-outline-success h2, .ms-alert.ms-outline-success h3, .ms-alert.ms-outline-success h4, .ms-alert.ms-outline-success h5, .ms-alert.ms-outline-success h6 {
@@ -1031,6 +1043,8 @@ button[disabled], .ms-disabled {
     border-color: transparent; }
     .ms-alert.ms-warning .ms-close:before, .ms-alert.ms-warning .ms-close:after {
       background-color: #ffffff; }
+    .ms-alert.ms-warning p {
+      color: #000000; }
     .ms-alert.ms-warning hr {
       background-color: #fbcf4c; }
     .ms-alert.ms-warning h1, .ms-alert.ms-warning h2, .ms-alert.ms-warning h3, .ms-alert.ms-warning h4, .ms-alert.ms-warning h5, .ms-alert.ms-warning h6 {
@@ -1041,6 +1055,8 @@ button[disabled], .ms-disabled {
     border: 1px solid #fef2cf; }
     .ms-alert.ms-outline-warning .ms-close:before, .ms-alert.ms-outline-warning .ms-close:after {
       background-color: #8c6c09; }
+    .ms-alert.ms-outline-warning p {
+      color: #8c6c09; }
     .ms-alert.ms-outline-warning hr {
       background-color: #fef2cf; }
     .ms-alert.ms-outline-warning h1, .ms-alert.ms-outline-warning h2, .ms-alert.ms-outline-warning h3, .ms-alert.ms-outline-warning h4, .ms-alert.ms-outline-warning h5, .ms-alert.ms-outline-warning h6 {
@@ -2044,6 +2060,11 @@ table, .ms-table {
   position: relative;
   margin: 0;
   padding: 0; }
+  .ms-dropdown button,
+  .ms-dropdown .ms-btn,
+  .ms-dropdown input[type='button'],
+  .ms-dropdown input[type='submit'] {
+    margin-bottom: 0; }
   .ms-dropdown:hover .ms-dropdown-content, .ms-dropdown .ms-dropdown-content:focus {
     display: block; }
   .ms-dropdown .ms-dropdown-content {

@@ -5,47 +5,54 @@
 	margin: 0;
 	padding: 0;
 
-	&:hover .ms-dropdown-content, .ms-dropdown-content:focus{
-		display: block;
+	button, 
+	.ms-btn, 
+	input[type='button'], 
+	input[type='submit']{
+		margin-bottom: 0;
 	}
 
-	.ms-dropdown-content{
-		display: none;
-		height: 0.3rem;
-		width: 100%;
-		position: absolute;
-		left: 0;
-		top: 100%;
+		&:hover .ms-dropdown-content, .ms-dropdown-content:focus{
+			display: block;
+		}
 
-		.ms-dropdown-content-list{
-			min-width: 7rem;
+		.ms-dropdown-content{
+			display: none;
+			height: 0.3rem;
+			width: 100%;
 			position: absolute;
 			left: 0;
 			top: 100%;
-			background-color: #fff;
-			border: 1px solid $color-gray-1;
-			margin: 0;
-			padding: 0.5rem;
-			@include border-radius($default-border-radius);
 
-			li{
-				list-style: none;
+			.ms-dropdown-content-list{
+				min-width: 7rem;
+				position: absolute;
+				left: 0;
+				top: 100%;
+				background-color: #fff;
+				border: 1px solid $color-gray-1;
 				margin: 0;
-				padding: 0;
+				padding: 0.5rem;
+				@include border-radius($default-border-radius);
 
-				a{
-					font-size: 0.9rem;
-					color: #484848;
-					display: block;
+				li{
+					list-style: none;
 					margin: 0;
-					padding: 0.2rem 0.5rem;
+					padding: 0;
 
-					&:hover{
-						background-color: $color-gray-0;
-						@include border-radius($default-border-radius);
+					a{
+						font-size: 0.9rem;
+						color: #484848;
+						display: block;
+						margin: 0;
+						padding: 0.2rem 0.5rem;
+
+						&:hover{
+							background-color: $color-gray-0;
+							@include border-radius($default-border-radius);
+						}
 					}
 				}
 			}
 		}
 	}
-}

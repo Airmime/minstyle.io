@@ -10,6 +10,10 @@
         }
     }
 
+    p{
+        color: $textColor;
+    }
+
     hr{
         background-color: tint($primaryColor, 25);
     }
@@ -28,6 +32,10 @@
         &:before, &:after {
             background-color: $textColor;
         }
+    }
+
+    p{
+        color: $textColor;
     }
 
     hr{
