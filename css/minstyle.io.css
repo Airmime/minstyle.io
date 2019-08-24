@@ -1736,7 +1736,7 @@ hr {
   background-color: #ffffff;
   border: 1px solid #e1e1e1;
   color: #2f2f2f;
-  font-size: 1rem;
+  font-size: 0.9rem;
   margin-right: 0.1rem;
   padding: 0.2rem 0.4rem;
   -webkit-border-radius: 3px;
@@ -1763,6 +1763,22 @@ hr {
     background-color: #f9bf10;
     color: #000000;
     border-color: transparent; }
+  .ms-label.ms-outline-info {
+    background-color: #f4fafe;
+    color: #145f90;
+    border-color: #d3ebfb; }
+  .ms-label.ms-outline-success {
+    background-color: #f5fbf7;
+    color: #236e34;
+    border-color: #d8f0dd; }
+  .ms-label.ms-outline-danger {
+    background-color: #fdf6f5;
+    color: #872a27;
+    border-color: #f9dad9; }
+  .ms-label.ms-outline-warning {
+    background-color: #fffcf3;
+    color: #8c6c09;
+    border-color: #fef2cf; }
   .ms-label.ms-small {
     padding: 0.1rem 0.2rem;
     font-size: 0.9rem; }
