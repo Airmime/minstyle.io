@@ -64,6 +64,8 @@ $toast-pulls: true !default;
 .#{$toast-grid-namespace} {
   list-style: none;
   margin-left: -$toast-gutter-width;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 %span-all       { width: percentage(1/1); }

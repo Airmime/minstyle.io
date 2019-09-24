@@ -400,7 +400,9 @@ template {
 \*-----------------------------------*/
 .container {
   list-style: none;
-  margin-left: -10px; }
+  margin-left: -10px;
+  max-width: 1200px;
+  margin: 0 auto; }
 
 .ms_col--2-of-2, .ms_col--3-of-3, .ms_col--4-of-4, .ms_col--5-of-5, .ms_col--6-of-6, .ms_col--8-of-8, .ms_col--12-of-12 {
   width: 100%; }
