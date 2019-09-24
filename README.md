@@ -14,11 +14,11 @@
 minstyle.io is a simple and light open source CSS framework. It integrates a set of pre-designed HTML elements, allowing the rapid and simple development of interfaces for all devices.
 
 ## Version
-minstyle.io V0.2.3
+minstyle.io V1.0.0
 
 ## Get Started
 
-The architecture of the framework is based on the concatenation of classes. For example, the ms-btn class allows to get the default design of a button, the ms-green class allows to color the button green, and the ms-rounded class allows to round the button angles :
+The architecture of the framework is based on the concatenation of classes. For example, the ms-btn class allows to get the default design of a button, the ms-info class allows to color the button blue, and the ms-rounded class allows to round the button angles :
 
 ```html
 <button class="ms-btn">Button</button>
@@ -26,7 +26,7 @@ The architecture of the framework is based on the concatenation of classes. For 
 <button class="ms-btn ms-green ms-rounded">Button</button>
 ```
 
-Get more information on [minstyle.io/doc](https://minstyle.io/doc) 
+Get more information on [minstyle.io/doc](https://minstyle.io/docs/installation) 
 
 ## Install
 
@@ -41,21 +41,15 @@ The first possibility is to download the CSS file, or all SCSS files :
 You also have the possibility to use the CDN by integrating the tag below between the head tags of your HTML page or project :
 
 ```html
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/minstyle.io@0.2.3/css/minstyle.io.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/minstyle.io@1.0.0/css/minstyle.io.min.css">
 ```
 
-Finally, minstyle.io is also available as an NPM package:
+Finally, minstyle.io is also available as an NPM or Yarn package:
 
 **npm :**
 
 ```sh
 $ npm install minstyle.io
-```
-
-**bower :**
-
-```sh
-$ bower install minstyle.io
 ```
 
 **yarn :**
@@ -68,18 +62,30 @@ $ yarn add minstyle.io
 
 Full documentation is available on [minstyle.io](https://minstyle.io).
 
-* [Grid responsive](https://minstyle.io/doc/grid-responsive) 
-* [Buttons](https://minstyle.io/doc/buttons) 
-* [Blockquotes](https://minstyle.io/doc/blockquotes) 
-* [Tables](https://minstyle.io/doc/tables) 
-* [Alerts](https://minstyle.io/doc/alerts) 
-* [Lists](https://minstyle.io/doc/lists) 
-* [Forms](https://minstyle.io/doc/forms) 
-* [Badges](https://minstyle.io/doc/badges) 
-* [Progress-bar](https://minstyle.io/doc/progress-bar) 
-* [Cards](https://minstyle.io/doc/cards) 
-* [Menu](https://minstyle.io/doc/menu) 
-* [Box](https://minstyle.io/doc/box) 
+#### Get started
+* [Installation](https://minstyle.io/docs/installation) 
+* [Browsers support](https://minstyle.io/docs/browsers-support) 
+
+#### Layout
+* [Blockquotes](https://minstyle.io/docs/grid) 
+
+#### Content
+* [Icons](https://minstyle.io/docs/icons) 
+* [Tables](https://minstyle.io/docs/tables) 
+* [Typographie](https://minstyle.io/docs/typographie)
+
+#### Components 
+* [Alerts](https://minstyle.io/docs/alerts) 
+* [Avatars](https://minstyle.io/docs/avatars) 
+* [Buttons](https://minstyle.io/docs/buttons) 
+* [Cards](https://minstyle.io/docs/cards) 
+* [Dropdown](https://minstyle.io/docs/dropdown) 
+* [Forms](https://minstyle.io/docs/forms)
+* [Labels](https://minstyle.io/docs/labels)
+* [Pagination](https://minstyle.io/docs/pagination)
+* [Progress-bars](https://minstyle.io/docs/progress-bars)
+* [Tabs](https://minstyle.io/docs/tabs)
+* [Users](https://minstyle.io/docs/users)
 
 ## License
 
