@@ -1,0 +1,100 @@
+/* MIXINS */
+@mixin tabColor($scolorTab){
+	ul{
+		li{
+			a{
+				color: $scolorTab;
+
+				&:hover{
+					border-bottom: 2px solid tint($scolorTab, 70%);
+				}
+
+				&.ms-active{
+					border-bottom: 2px solid $scolorTab;
+				}
+			}
+		}
+	}
+}
+
+/* BASE */
+.ms-tab{
+	width: 100%;
+	border-bottom: 1px solid $color-gray-1;
+	margin: 0;
+	padding: 0;
+	@include box-sizing(border-box);
+
+	ul{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+
+		li{
+			display: inline-block;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+
+			a{
+				display: block;
+				font-size: 1rem;
+				text-decoration: none;
+				margin: 0;
+				padding: 1rem;
+				border-bottom: 2px solid transparent;
+
+				&:hover{
+					border-bottom: 2px solid tint($color-gray-2, 70%);
+				}
+
+				&.ms-active{
+					border-bottom: 2px solid $color-gray-2;
+				}
+			}
+
+			/* LOGO */
+			&.ms-logo{
+				img{
+					max-height: 30px;
+					vertical-align: bottom;
+				}
+			}
+		}
+	}
+
+	/* FULL WIDTH */
+	&.ms-fullwidth{
+
+		ul{
+			display: flex;
+			flex-wrap: wrap;
+
+			li{
+				text-align: center;
+				flex: 1;
+
+				a{
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	/* COLORS */
+	&.ms-info{
+		@include tabColor($color-blue-1);
+	}
+
+	&.ms-success{
+		@include tabColor($color-green-1);
+	}
+
+	&.ms-error{
+		@include tabColor($color-red-1);
+	}
+
+	&.ms-warning{
+		@include tabColor($color-yellow-1);
+	}
+}

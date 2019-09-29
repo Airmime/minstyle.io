@@ -1,0 +1,81 @@
+.ms-card{
+	width: 100%;
+	height: auto;
+	margin: 1rem 0;
+	padding: 0;
+
+	&.ms-border{
+		border: 1px solid $color-gray-1;
+		padding-top: 1rem;
+		@include border-radius($default-border-radius);
+	}
+
+	.ms-card-pic{
+		margin-bottom: 1rem;
+		position: relative;
+
+		img{
+			width: 100%;
+			@include border-radius($default-border-radius);
+		}
+
+		.ms-card-pic-stick{
+			position: absolute;
+			text-align: right;
+			top: 10px;
+			right: 10px;
+		}
+	}
+
+	.ms-card-title{
+		margin: 0;
+		padding: 0 1rem 1rem 1rem;
+
+		h1,h2,h3,h4,h5,h6,a{
+			font-size: 1.75rem;
+			text-decoration: none;
+			color: #2c3e50;
+			margin: 0;
+			padding: 0;
+		}
+
+		span{
+			font-style: italic;
+			color: $color-gray-2;
+		}
+	}
+
+	.ms-card-text{
+		margin: 0;
+		padding: 0 1rem 1rem 1rem;
+
+		p{
+			margin: 0;
+		}
+	}
+
+	.ms-card-btn{
+		margin: 0;
+		padding: 0 1rem 1rem 1rem;
+	}
+
+	.ms-section{
+		.ms-section-bloc{
+			border-bottom: 1px solid $color-gray-1;
+			padding: 1rem;
+
+			p{
+				margin: 0;
+			}
+
+			&:first-child{
+				border-top: 1px solid $color-gray-1;
+			}
+
+			&:last-child{
+				border-bottom: 1px solid $color-gray-1;
+				margin-bottom: 1rem;
+			}
+		}
+	}
+}

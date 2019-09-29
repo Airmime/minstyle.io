@@ -1,29 +1,33 @@
 /* 
 * minstyle.io - A simple CSS Framework ! 
 * Repo : https://github.com/Airmime/minstyle.io
-* Version : v0.2.3
+* Version : v1.0.0
 * Website : https://minstyle.io
 */
 
-$default-border-radius: .3rem;
-
 @import "compass";
 @import "compass/reset";
+@import "compass/css3";
 
+@import "_normelize";
+@import "_variables";
+
+@import "_grid";
 @import "_color";
 @import "_global";
-@import "_utility";
-@import "_grid";
-@import "_heading";
 @import "_button";
-@import "_badge";
-@import "_blockquote";
-@import "_alert";
-@import "_list";
-@import "_form";
-@import "_table";
+@import "_alerts";
 @import "_progressbar";
-@import "_card";
-@import "_menu";
-@import "_typographie";
-@import "_box";
+@import "_form";
+@import "_typography";
+@import "_label";
+@import "_table";
+@import "_avatars";
+@import "_users";
+@import "_cards";
+@import "_tabs";
+@import "_dropdown";
+@import "_breadcrumbs";
+@import "_pagination";
+
+

@@ -1,0 +1,56 @@
+/* BASE */
+.ms-user{
+	width: 100%;
+	background-color: #fff;
+	border: 1px solid $color-gray-1;
+	overflow: auto;
+	position: relative;
+	padding: 1rem;
+	@include border-radius($default-border-radius);
+
+	.ms-avatar{
+		margin: 0 auto;
+	}
+
+	.ms-user-info{
+		text-align: center;
+		margin: 0 auto;
+		margin-top: 1rem;
+	}
+
+	.ms-user-content{
+		box-sizing: border-box;
+		margin: 0 auto;
+		margin-top: 1rem;
+	}
+
+	.ms-user-pined{
+		position: absolute;
+		top: 10px;
+		right: 10px;
+	}
+
+	&.ms-compact{
+		.ms-avatar{
+			float: left;
+			margin: 0;
+		}
+
+		.ms-user-info{
+			float: left;
+			text-align: left;
+			margin: 0;
+			margin-left: 1rem;
+		}
+
+		.ms-user-content{
+			float: left;
+			width: 100%;
+			margin-top: 1rem;
+		}
+	}
+
+	&.ms-borderless{
+		border: none;
+	}
+}

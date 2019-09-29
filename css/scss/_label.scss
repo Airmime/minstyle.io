@@ -1,0 +1,84 @@
+/* MIXINS */
+@mixin label($textColor,$primaryColor){
+	background-color: $primaryColor;
+	color: $textColor;
+	border-color: transparent;
+}
+
+@mixin label-outline($textColor,$primaryColor,$percentage){
+	background-color: tint($primaryColor, $percentage);
+	color: $textColor;
+	border-color: tint($primaryColor, 80);
+}
+
+@mixin color-label{
+	&.ms-info{
+		@include label(#ffffff, $color-blue-1);
+	}
+	
+	&.ms-success{
+		@include label(#ffffff, $color-green-1);
+	}
+	
+	&.ms-danger{
+		@include label(#ffffff, $color-red-1);
+	}
+	
+	&.ms-warning{
+		@include label(#000000, $color-yellow-1);
+	}
+}
+
+@mixin color-outline-label{
+	&.ms-outline-info{
+		@include label-outline(shade($color-blue-3,30),$color-blue-1,95);
+	}
+	
+	&.ms-outline-success{
+		@include label-outline(shade($color-green-3,30),$color-green-1,95);
+	}
+	
+	&.ms-outline-danger{
+		@include label-outline(shade($color-red-3,30),$color-red-1,95);
+	}
+	
+	&.ms-outline-warning{
+		@include label-outline(shade($color-yellow-3,35),$color-yellow-1,95);
+	}
+}
+
+/* BASE LABEL*/
+.ms-label{
+	background-color: #ffffff;
+	border: 1px solid $color-gray-1;
+	color: $color-dark-1;
+	font-size: 0.9rem;
+	margin-right: 0.1rem;
+	padding: 0.2rem 0.4rem;
+	@include border-radius($default-border-radius);
+	
+	/* COLORS */
+	@include color-label;
+	@include color-outline-label;
+	
+	/* SIZES */
+	&.ms-small{
+		padding: 0.1rem 0.2rem;
+		font-size: 0.9rem;
+	}
+	
+	&.ms-medium{
+		padding: 0.4rem 0.6rem;
+		font-size: 1.1rem;
+	}
+	
+	&.ms-large{
+		padding: 0.6rem 0.8rem;
+		font-size: 1.2rem;
+	}
+	
+	/* GLOBAL */
+	&.ms-rounded{
+		@include border-radius(100px);
+	}
+}

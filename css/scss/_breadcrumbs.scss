@@ -1,0 +1,41 @@
+/* BASE */
+.ms-breadcrumb{
+	ul{
+		list-style: none;
+		margin: 0;
+
+		li{
+			list-style: none;
+			display: inline-block;
+			margin: 0 0 0 0.5rem;
+
+			&:after{
+				content: "/";
+				padding-left: 0.5rem;
+			}
+
+			&:last-child:after{
+				content: "";
+			}
+
+			&:first-child{
+				margin-left: 0;
+			}
+		}
+	}
+
+	/* BACKGROUND */
+	&.ms-background{
+		width: 100%;
+		background-color: $color-gray-0;
+		padding: 1rem;
+		@include border-radius($default-border-radius);
+	}
+
+	/* BORDER */
+	&.ms-border{
+		width: 100%;
+		border-bottom: 1px solid $color-gray-1;
+		padding: 1rem;
+	}
+}

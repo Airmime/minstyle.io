@@ -1,0 +1,98 @@
+/* MIXINS */
+@mixin sizeAvatar($font-size,$line-height,$width,$height){
+	width: $width;
+	height: $height;
+
+	.ms-text{
+		font-size: $font-size;
+		line-height: $line-height;
+	}
+}
+
+/* BASE */
+.ms-avatar{
+	width: 55px;
+	height: 55px;
+	background-color: $color-gray-1;
+	position: relative;
+  	vertical-align: middle;
+  	text-align: center;
+	margin: 0;
+	padding: 0;
+	@include border-radius(50%);
+
+	img, .ms-avatar-img{
+		display: block;
+		max-width: 100%;
+		min-width: 100%;
+		margin: 0 auto;
+		@include border-radius(50%);
+	}
+
+	.ms-text{
+		font-size: 1.2rem;
+		line-height: 55px;
+	  	font-weight: bold;
+	}
+	
+	&.ms-small{
+		$sizeSmall: 35px;
+		@include sizeAvatar(0.8rem,$sizeSmall,$sizeSmall,$sizeSmall);
+	}
+
+	&.ms-medium{
+		$sizeMedium: 75px;
+		@include sizeAvatar(2rem,$sizeMedium,$sizeMedium,$sizeMedium);
+
+		.ms-status{
+			width: 15px;
+			height: 15px;
+			right: 4px;
+			bottom: 4px;
+		}
+	}
+
+	&.ms-large{
+		$sizeLarge: 95px;
+		@include sizeAvatar(3rem,$sizeLarge,$sizeLarge,$sizeLarge);
+
+		.ms-status{
+			width: 20px;
+			height: 20px;
+			right: 2px;
+			bottom: 2px;
+		}
+	}
+
+	.ms-status{
+		width: 15px;
+		height: 15px;
+		position: absolute;
+		right: 0px;
+		bottom: 0px;
+		background-color: $color-gray-1;
+		border: 2px solid #fff;
+		overflow: hidden;
+		@include border-radius(50%);
+
+		&.ms-info{
+			background-color: $color-blue-1;
+		}
+
+		&.ms-success{
+			background-color: $color-green-1;
+		}
+
+		&.ms-error{
+			background-color: $color-red-1;
+		}
+
+		&.ms-warning{
+			background-color: $color-yellow-1;
+		}
+	}
+
+	&.ms-shadow{
+		@include box-shadow(rgba(black, 0.4) 0 0 10px)
+	}
+}

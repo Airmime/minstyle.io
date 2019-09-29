@@ -1,77 +1,67 @@
+/* BASE */
+progress,
 .ms-progress{
 	width: 100%;
 	height: 1.3rem;
 	display: flex;
-	background-color: $color-gray;
-	@include border-radius;
-	overflow: hidden;
+	background-color: $color-gray-0;
 	text-align: center;
-	margin: 1rem 0;
-
+	overflow: hidden;
+	margin-bottom: 1rem;
+	@include border-radius(4px);
+	
 	.ms-progress-fill{
 		height: 1.3rem;
-		background-color: $color-gray-font;
-		white-space: nowrap;
+		background-color: $color-gray-2;
 		font-size: 0.75rem;
 		text-align: center;
+		font-weight: bold;
 		line-height: 1.3rem;
 		color: #fff;
-		text-align: center;
-		font-weight: bold;
-
-		&.ms-blue{
-			background-color: $color-blue;
+		
+		/* COLORS */
+		&.ms-info{
+			background-color: $color-blue-1;
 		}
-
-		&.ms-green{
-			background-color: $color-green;
+		
+		&.ms-success{
+			background-color: $color-green-1;
 		}
-
-		&.ms-red{
-			background-color: $color-red;
+		
+		&.ms-danger{
+			background-color: $color-red-1;
 		}
-
-		&.ms-yellow{
-			background-color: $color-yellow;
-		}
-
-		&.ms-gradient{
-			@include background-image(linear-gradient(to left top, #2193b0, #6dd5ed));
-		}
-
-		&.ms-striped{
-			background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
-			background-size: 1rem 1rem;
-		}
-
-		&.ms-rounded{
-			@include border-radius;
+		
+		&.ms-warning{
+			background-color: $color-yellow-1;
 		}
 	}
-
-	&.ms-small{
-		height: 1rem;
-
-		.ms-progress-fill{
-			height: 1rem;
-			line-height: 1rem;
-		}
-	}
-
-	&.ms-large{
-		height: 1.6rem;
-
+	
+	/* SIZES */
+	&.ms-medium{
+		height: 1.7rem;
+		
 		.ms-progress-fill{
 			height: 1.7rem;
 			line-height: 1.7rem;
 		}
 	}
-
+	
+	&.ms-large{
+		height: 2rem;
+		
+		.ms-progress-fill{
+			height: 2rem;
+			line-height: 2rem;
+		}
+	}
+	
+	/* GLOBAL */
 	&.ms-rounded{
-		border-radius: 10rem;
-
+		@include border-radius(50rem);
+		
 		.ms-rounded{
-			border-radius: 10rem;
+			@include border-radius(50rem);
 		}
 	}
 }
