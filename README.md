@@ -6,7 +6,7 @@
 [![npm version](https://badge.fury.io/js/minstyle.io.svg)](https://badge.fury.io/js/minstyle.io)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/288674d06fe449ddaece13d6614cc5a4)](https://www.codacy.com/app/Airmime/minstyle.io?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Airmime/minstyle.io&amp;utm_campaign=Badge_Grade)
 
-![minstyle.io](https://image.noelshack.com/fichiers/2018/30/1/1532343771-coding.gif)
+![minstyle.io](https://image.noelshack.com/fichiers/2019/39/7/1569783335-back.png)
 
 ## Informations
 minstyle.io is a simple and light open source CSS framework. It integrates a set of pre-designed HTML elements, allowing the rapid and simple development of interfaces for all devices.
