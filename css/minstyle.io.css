@@ -2875,3 +2875,86 @@ table.ms-bordered td, table.ms-bordered th, .ms-table.ms-bordered td, .ms-table.
 .ms-pagination.ms-border ul li span {
   border: 1px solid #e1e1e1;
 }
+
+.ms-article {
+  display: block;
+  width: 100%;
+  position: relative;
+  margin: 1rem 0;
+  padding: 0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.ms-article .ms-article-picture {
+  position: relative;
+  overflow: hidden;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.ms-article .ms-article-picture img {
+  display: block;
+  width: 100%;
+}
+
+.ms-article .ms-article-picture .ms-article-picture-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: -owg-linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  background-image: -webkit-linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  background-image: -moz-linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  background-image: -o-linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+}
+
+.ms-article .ms-article-picture .ms-article-picture-title {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+}
+
+.ms-article .ms-article-picture .ms-article-picture-title h1, .ms-article .ms-article-picture .ms-article-picture-title h2, .ms-article .ms-article-picture .ms-article-picture-title h3, .ms-article .ms-article-picture .ms-article-picture-title h4, .ms-article .ms-article-picture .ms-article-picture-title h5, .ms-article .ms-article-picture .ms-article-picture-title h6, .ms-article .ms-article-picture .ms-article-picture-title a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.ms-article .ms-article-title {
+  display: block;
+  margin: 0;
+  padding: 1rem;
+}
+
+.ms-article .ms-article-title h1, .ms-article .ms-article-title h2, .ms-article .ms-article-title h3, .ms-article .ms-article-title h4, .ms-article .ms-article-title h5, .ms-article .ms-article-title h6, .ms-article .ms-article-title a {
+  display: block;
+  font-size: 1.75rem;
+  text-decoration: none;
+  font-weight: 600;
+  color: #2c3e50;
+  margin: 0;
+  padding: 0;
+}
+
+.ms-article .ms-article-text {
+  margin: 0;
+  padding: 1rem;
+}
+
+.ms-article .ms-article-text p {
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
