@@ -2919,7 +2919,7 @@ table.ms-bordered td, table.ms-bordered th, .ms-table.ms-bordered td, .ms-table.
 
 .ms-article .ms-article-picture .ms-article-picture-title {
   position: absolute;
-  bottom: 1rem;
+  bottom: 1.5rem;
   left: 1rem;
 }
 
@@ -2930,6 +2930,28 @@ table.ms-bordered td, table.ms-bordered th, .ms-table.ms-bordered td, .ms-table.
   color: #fff;
   margin: 0;
   padding: 0;
+}
+
+.ms-article .ms-article-infos {
+  margin: 0;
+  padding: 0.4rem 1rem;
+}
+
+.ms-article .ms-article-infos ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ms-article .ms-article-infos ul li {
+  display: inline-block;
+  font-size: 14px;
+  margin: 0 1rem 0 0;
+  padding: 0;
+}
+
+.ms-article .ms-article-infos i {
+  color: #b1b1b1;
 }
 
 .ms-article .ms-article-title {
@@ -2957,4 +2979,23 @@ table.ms-bordered td, table.ms-bordered th, .ms-table.ms-bordered td, .ms-table.
   color: #000;
   margin: 0;
   padding: 0;
+}
+
+.ms-article .ms-article-text h1, .ms-article .ms-article-text h2, .ms-article .ms-article-text h3, .ms-article .ms-article-text h4, .ms-article .ms-article-text h5, .ms-article .ms-article-text h6 {
+  display: block;
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  color: #2c3e50;
+  margin: 1rem 0;
+  padding: 0;
+}
+
+.ms-article .ms-article-text .ms-article-text-quote {
+  display: block;
+  border-left: 3px solid #e1e1e1;
+  color: #484848;
+  font-style: italic;
+  margin: 1rem 0;
+  padding: 0.5rem 0 0.5rem 1rem;
 }
