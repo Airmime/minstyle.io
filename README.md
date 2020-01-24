@@ -12,7 +12,7 @@
 minstyle.io is a simple and light open source CSS framework. It integrates a set of pre-designed HTML elements, allowing the rapid and simple development of interfaces for all devices.
 
 ## Version
-minstyle.io V1.0.0
+minstyle.io V1.0.1
 
 ## Get Started
 
@@ -24,7 +24,7 @@ The architecture of the framework is based on the concatenation of classes. For 
 <button class="ms-btn ms-green ms-rounded">Button</button>
 ```
 
-Get more information on [minstyle.io/doc](https://minstyle.io/docs/installation) 
+Get more information on [minstyle.io/doc](https://minstyle.io/docs/installation)
 
 ## Install
 
@@ -39,7 +39,7 @@ The first possibility is to download the CSS file, or all SCSS files :
 You also have the possibility to use the CDN by integrating the tag below between the head tags of your HTML page or project :
 
 ```html
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/minstyle.io@1.0.0/css/minstyle.io.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/minstyle.io@1.0.1/css/minstyle.io.min.css">
 ```
 
 Finally, minstyle.io is also available as an NPM or Yarn package:
@@ -61,23 +61,24 @@ $ yarn add minstyle.io
 Full documentation is available on [minstyle.io](https://minstyle.io).
 
 #### Get started
-* [Installation](https://minstyle.io/docs/installation) 
-* [Browsers support](https://minstyle.io/docs/browsers-support) 
+* [Installation](https://minstyle.io/docs/installation)
+* [Browsers support](https://minstyle.io/docs/browsers-support)
 
 #### Layout
-* [Blockquotes](https://minstyle.io/docs/grid) 
+* [Blockquotes](https://minstyle.io/docs/grid)
 
 #### Content
-* [Icons](https://minstyle.io/docs/icons) 
-* [Tables](https://minstyle.io/docs/tables) 
+* [Icons](https://minstyle.io/docs/icons)
+* [Tables](https://minstyle.io/docs/tables)
 * [Typographie](https://minstyle.io/docs/typographie)
 
-#### Components 
-* [Alerts](https://minstyle.io/docs/alerts) 
-* [Avatars](https://minstyle.io/docs/avatars) 
-* [Buttons](https://minstyle.io/docs/buttons) 
-* [Cards](https://minstyle.io/docs/cards) 
-* [Dropdown](https://minstyle.io/docs/dropdown) 
+#### Components
+* [Alerts](https://minstyle.io/docs/alerts)
+* [Avatars](https://minstyle.io/docs/avatars)
+* [Buttons](https://minstyle.io/docs/buttons)
+* [Breadcrumb](https://minstyle.io/docs/breadcrumbs)
+* [Cards](https://minstyle.io/docs/cards)
+* [Dropdown](https://minstyle.io/docs/dropdown)
 * [Forms](https://minstyle.io/docs/forms)
 * [Labels](https://minstyle.io/docs/labels)
 * [Pagination](https://minstyle.io/docs/pagination)
@@ -92,6 +93,6 @@ Designed by [Rémi MARION](https://remi-marion.fr). Licensed under [MIT License]
 
 ## Links
 
-* [Website / Documentation](https://minstyle.io/) 
-* [Website Repository](https://github.com/Airmime/minstyle.io-Website) 
+* [Website / Documentation](https://minstyle.io/)
+* [Website Repository](https://github.com/Airmime/minstyle.io-Website)
 
