@@ -1,0 +1,111 @@
+.ms-article{
+	display: block;
+	width: 100%;
+    position: relative;
+    margin: 1rem 0;
+    padding: 0;
+    @include border-radius($default-border-radius);
+
+    .ms-article-picture{
+    	position: relative;
+    	overflow: hidden;
+    	@include border-radius($default-border-radius);
+
+    	img{
+    		display: block;
+    		width: 100%;
+    	}
+
+    	.ms-article-picture-overlay{
+    		position: absolute;
+    		top: 0;
+    		left: 0;
+    		bottom: 0;
+    		right: 0;
+    		@include background-image(linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0)));
+    	}
+
+    	.ms-article-picture-title{
+			position: absolute;
+			bottom: 1.5rem;
+			left: 1rem;
+
+			h1,h2,h3,h4,h5,h6,a{
+				font-size: 1.5rem;
+				text-decoration: none;
+				font-weight: 600;
+				color: #fff;
+				margin: 0;
+				padding: 0;
+			}
+		}
+    }
+
+    .ms-article-infos{
+		margin: 0;
+    	padding: 0.4rem 1rem;
+
+		ul{
+			list-style: none;
+			margin: 0;
+    		padding: 0;
+
+    		li{
+    			display: inline-block;
+    			font-size: 14px;
+				margin: 0 1rem 0 0;
+	    		padding: 0;
+    		}
+		}
+
+		i{
+			color: $color-gray-2;
+		}
+	}
+
+    .ms-article-title{
+    	display: block;
+		margin: 0;
+    	padding: 1rem;
+
+		h1,h2,h3,h4,h5,h6,a{
+			display: block;
+			font-size: 1.75rem;
+			text-decoration: none;
+			font-weight: 600;
+			color: #2c3e50;
+			margin: 0;
+			padding: 0;
+		}
+	}
+
+	.ms-article-text{
+		margin: 0;
+    	padding: 1rem;
+
+		p{
+			color: #000;
+			margin: 0;
+			padding: 0;
+		}
+
+		h1,h2,h3,h4,h5,h6{
+			display: block;
+			font-size: 1.5rem;
+			text-decoration: none;
+			font-weight: 600;
+			color: #2c3e50;
+			margin: 1rem 0;
+			padding: 0;
+		}
+
+		.ms-article-text-quote{
+			display: block;
+			border-left: 3px solid $color-gray-1;
+			color: $color-gray-3;
+			font-style: italic;
+			margin: 1rem 0;
+			padding: 0.5rem 0 0.5rem 1rem;
+		}
+	}
+}
