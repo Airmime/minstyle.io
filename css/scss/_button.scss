@@ -16,9 +16,9 @@
 }
 
 /* BASE */
-button, 
-.ms-btn, 
-input[type='button'], 
+button,
+.ms-btn,
+input[type='button'],
 input[type='submit']{
   display: inline-block;
   color: $color-gray-3;
@@ -26,38 +26,38 @@ input[type='submit']{
   border: 1px solid $color-gray-1;
   text-align: center;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 500;
   cursor: pointer;
   margin: 0.5rem 0;
   padding: 0.4rem 1rem;
   @include border-radius($default-border-radius);
-  
+
   /* COLORS */
   &.ms-info{
     @include btn(#ffffff,$color-blue-1,$color-blue-2,$color-blue-3);
   }
-  
+
   &.ms-outline-info{
     @include btn-outline($color-blue-2,$color-blue-2,$color-blue-3);
   }
-  
+
   &.ms-danger{
     @include btn(#ffffff,$color-red-1,$color-red-2,$color-red-3);
   }
-  
+
   &.ms-outline-danger{
     @include btn-outline($color-red-2,$color-red-2,$color-red-3);
   }
-  
+
   &.ms-success{
     @include btn(#ffffff,$color-green-1,$color-green-2,$color-green-3);
   }
-  
+
   &.ms-outline-success{
     @include btn-outline($color-green-2,$color-green-2,$color-green-3);
   }
-  
+
   &.ms-warning{
     @include btn(#000000,$color-yellow-1,$color-yellow-2,$color-yellow-3);
   }
@@ -65,29 +65,29 @@ input[type='submit']{
   &.ms-outline-warning{
     @include btn-outline($color-yellow-2,$color-yellow-2,$color-yellow-3);
   }
-  
+
   /* SIZES */
   &.ms-small{
     padding: 0.2rem 0.6rem;
     font-size: 0.8rem;
   }
-  
+
   &.ms-medium{
     padding: 0.6rem 1.2rem;
     font-size: 1.1rem;
   }
-  
+
   &.ms-large{
     padding: 0.7rem 1.4rem;
     font-size: 1.2rem;
   }
-  
+
   /* WIDTH */
   &.ms-fullwidth{
     display: block;
     width: 100%;
   }
-  
+
   /* GLOBAL */
   &.ms-shadow{
     @include box-shadow(rgba(black, 0.2) 0 6px 5px -4px);
@@ -106,11 +106,11 @@ input[type='submit']{
   &:hover{
     border-color: $color-gray-2;
   }
-  
+
   &:active{
     border-color: $color-gray-3;
   }
-  
+
   &:focus {
     outline:0;
   }
