@@ -1,3 +1,40 @@
+@mixin menu($textColor,$primaryColor,$secondColor){
+	background-color: $primaryColor;
+
+
+	.ms-menu-logo {
+		color: $textColor;
+	}
+
+	.ms-menu-link {
+		ul {
+			a {
+				color: $textColor;
+
+				&:hover {
+					background-color: $secondColor;
+					color: #fff;
+				}
+			}
+		}
+	}
+
+	.ms-menu-icon {
+		color: $textColor;
+	}
+}
+
+@mixin menuResponsive($primaryColor){
+
+	.ms-menu-link {
+		ul {
+			a {
+				background-color: $primaryColor;
+			}
+		}
+	}
+}
+
 .ms-menu{
 	position: relative;
 	z-index: 999;
@@ -14,6 +51,18 @@
 		height: 100%;
 		float: left;
 		margin: 0 0 0 5%;
+		color: $color-gray-3;
+
+		p{
+			font-size: 1.2rem;
+			font-weight: bold;
+			margin: 0;
+			padding: 15px 0;
+		}
+
+		img{
+			max-height: 50px;
+		}
 	}
 
 	.ms-menu-link {
@@ -42,7 +91,7 @@
 				text-decoration: none;
 
 				&:hover {
-					background-color: $color-red-1;
+					background-color: $color-gray-2;
 					color: #fff;
 				}
 
@@ -53,15 +102,35 @@
 			}
 		}
 	}
+
+
+	#ms-menu-toggle {
+		display: none;
+	}
+
+	.ms-menu-icon {
+		display: none;
+		cursor: pointer;
+		color: $color-gray-3;
+	}
+
+	&.ms-info{
+		@include menu(#ffffff,$color-blue-1,$color-blue-2);
+	}
+
+	&.ms-danger{
+		@include menu(#ffffff,$color-red-1,$color-red-2);
+	}
+
+	&.ms-success{
+		@include menu(#ffffff,$color-green-1,$color-green-2);
+	}
+
+	&.ms-warning{
+		@include menu(#ffffff,$color-yellow-1,$color-yellow-2);
+	}
 }
 
-#ms-menu-toggle {
-	display: none;
-}
-.ms-menu-icon {
-	display: none;
-	cursor: pointer;
-}
 
 
 /* Screen < 768px */
@@ -87,7 +156,7 @@
 					width: 100%;
 					height: 50px;
 					background-color: $color-gray-1;
-					padding: 10px 0px 10px 5%;
+					padding: 0.2rem 0px 0.2rem 5%;
 				}
 			}
 		}
@@ -108,6 +177,22 @@
 
 		.ms-menu-icon i {
 			font-size: 1.7em;
+		}
+
+		&.ms-info{
+			@include menuResponsive($color-blue-1);
+		}
+
+		&.ms-danger{
+			@include menuResponsive($color-red-1);
+		}
+
+		&.ms-success{
+			@include menuResponsive($color-green-1);
+		}
+
+		&.ms-warning{
+			@include menuResponsive($color-yellow-1);
 		}
 	}
 }

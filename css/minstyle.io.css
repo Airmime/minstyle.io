@@ -3033,6 +3033,18 @@ table.ms-bordered td, table.ms-bordered th, .ms-table.ms-bordered td, .ms-table.
   height: 100%;
   float: left;
   margin: 0 0 0 5%;
+  color: #484848;
+}
+
+.ms-menu .ms-menu-logo p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
+  padding: 15px 0;
+}
+
+.ms-menu .ms-menu-logo img {
+  max-height: 50px;
 }
 
 .ms-menu .ms-menu-link {
@@ -3063,7 +3075,7 @@ table.ms-bordered td, table.ms-bordered th, .ms-table.ms-bordered td, .ms-table.
 }
 
 .ms-menu .ms-menu-link ul a:hover {
-  background-color: #e04540;
+  background-color: #b1b1b1;
   color: #fff;
 }
 
@@ -3072,13 +3084,98 @@ table.ms-bordered td, table.ms-bordered th, .ms-table.ms-bordered td, .ms-table.
   padding: 0;
 }
 
-#ms-menu-toggle {
+.ms-menu #ms-menu-toggle {
   display: none;
 }
 
-.ms-menu-icon {
+.ms-menu .ms-menu-icon {
   display: none;
   cursor: pointer;
+  color: #484848;
+}
+
+.ms-menu.ms-info {
+  background-color: #219ced;
+}
+
+.ms-menu.ms-info .ms-menu-logo {
+  color: #ffffff;
+}
+
+.ms-menu.ms-info .ms-menu-link ul a {
+  color: #ffffff;
+}
+
+.ms-menu.ms-info .ms-menu-link ul a:hover {
+  background-color: #1f91dc;
+  color: #fff;
+}
+
+.ms-menu.ms-info .ms-menu-icon {
+  color: #ffffff;
+}
+
+.ms-menu.ms-danger {
+  background-color: #e04540;
+}
+
+.ms-menu.ms-danger .ms-menu-logo {
+  color: #ffffff;
+}
+
+.ms-menu.ms-danger .ms-menu-link ul a {
+  color: #ffffff;
+}
+
+.ms-menu.ms-danger .ms-menu-link ul a:hover {
+  background-color: #d0403c;
+  color: #fff;
+}
+
+.ms-menu.ms-danger .ms-menu-icon {
+  color: #ffffff;
+}
+
+.ms-menu.ms-success {
+  background-color: #3ab656;
+}
+
+.ms-menu.ms-success .ms-menu-logo {
+  color: #ffffff;
+}
+
+.ms-menu.ms-success .ms-menu-link ul a {
+  color: #ffffff;
+}
+
+.ms-menu.ms-success .ms-menu-link ul a:hover {
+  background-color: #36a950;
+  color: #fff;
+}
+
+.ms-menu.ms-success .ms-menu-icon {
+  color: #ffffff;
+}
+
+.ms-menu.ms-warning {
+  background-color: #f9bf10;
+}
+
+.ms-menu.ms-warning .ms-menu-logo {
+  color: #ffffff;
+}
+
+.ms-menu.ms-warning .ms-menu-link ul a {
+  color: #ffffff;
+}
+
+.ms-menu.ms-warning .ms-menu-link ul a:hover {
+  background-color: #e8b20f;
+  color: #fff;
+}
+
+.ms-menu.ms-warning .ms-menu-icon {
+  color: #ffffff;
 }
 
 /* Screen < 768px */
@@ -3102,7 +3199,7 @@ table.ms-bordered td, table.ms-bordered th, .ms-table.ms-bordered td, .ms-table.
     width: 100%;
     height: 50px;
     background-color: #e1e1e1;
-    padding: 10px 0px 10px 5%;
+    padding: 0.2rem 0px 0.2rem 5%;
   }
   .ms-menu .ms-menu-icon {
     width: 100px;
@@ -3118,5 +3215,17 @@ table.ms-bordered td, table.ms-bordered th, .ms-table.ms-bordered td, .ms-table.
   }
   .ms-menu .ms-menu-icon i {
     font-size: 1.7em;
+  }
+  .ms-menu.ms-info .ms-menu-link ul a {
+    background-color: #219ced;
+  }
+  .ms-menu.ms-danger .ms-menu-link ul a {
+    background-color: #e04540;
+  }
+  .ms-menu.ms-success .ms-menu-link ul a {
+    background-color: #3ab656;
+  }
+  .ms-menu.ms-warning .ms-menu-link ul a {
+    background-color: #f9bf10;
   }
 }
