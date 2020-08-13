@@ -15,7 +15,8 @@ html {
 }
 
 body{
-	color: #333333;
+	background-color: $default-bg;
+	color: $default-font-color;
 	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"
 }
 
@@ -37,3 +38,10 @@ p{
 	margin-inline-end: 0px;
 }
 
+/* Dark Theme */
+@media (prefers-color-scheme: dark) {
+	body{
+		background-color: $default-bg-dark;
+		color: $default-font-color-dark;
+	}
+}

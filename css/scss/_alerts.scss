@@ -3,7 +3,7 @@
     color: $textColor;
     background-color: tint($primaryColor, 5);
     border-color: transparent;
-    
+
     .ms-close{
         &:before, &:after {
             background-color: #ffffff;
@@ -15,19 +15,27 @@
     }
 
     hr{
-        background-color: tint($primaryColor, 25);
+        background-color: tint($primaryColor, 35);
     }
 
     h1,h2,h3,h4,h5,h6{
         color: $textColor;
     }
+
+    @media (prefers-color-scheme: dark) {
+		.ms-close{
+	        &:before, &:after {
+	            background-color: $default-bg-dark-light;
+	        }
+	    }
+	}
 }
 
 @mixin alert-outline($textColor,$primaryColor,$percentage){
     color: $textColor;
     background-color: tint($primaryColor, $percentage);
-    border: 1px solid tint($primaryColor, 80);
-    
+    border: 1px solid tint($primaryColor, 70);
+
     .ms-close{
         &:before, &:after {
             background-color: $textColor;
@@ -45,6 +53,31 @@
     h1,h2,h3,h4,h5,h6{
         color: $textColor;
     }
+
+    /* Dark Theme */
+	@media (prefers-color-scheme: dark) {
+		color: $primaryColor;
+    	background-color: rgba($primaryColor,0.15);
+    	border: 1px solid rgba($primaryColor,0.40);
+
+    	p{
+	        color: $primaryColor;
+	    }
+
+	    hr{
+	        background-color: rgba($primaryColor,0.3);
+	    }
+
+		h1,h2,h3,h4,h5,h6{
+			color: $primaryColor;
+		}
+
+    	.ms-close{
+	        &:before, &:after {
+	            background-color: $primaryColor;
+	        }
+	    }
+	}
 }
 
 /* BASE */
@@ -53,43 +86,49 @@
     height: auto;
     color: $color-gray-3;
     border: 1px solid $color-gray-1;
+    background-color: $default-bg;
     font-size: 1rem;
     position: relative;
-    margin-bottom: 1rem;
+    box-sizing: border-box;
+    margin: $default-margin;
     padding: 0.8rem;
     @include border-radius($default-border-radius);
-    
+
+    p{
+    	margin: 0;
+    }
+
     /* COLORS */
     &.ms-info{
         @include alert(#ffffff,$color-blue-1,$color-blue-2);
     }
-    
+
     &.ms-outline-info{
-        @include alert-outline(shade($color-blue-3,30),$color-blue-1,95);
+        @include alert-outline(shade($color-blue-3,30),$color-blue-1,90);
     }
-    
+
     &.ms-danger{
         @include alert(#ffffff,$color-red-1,$color-red-3);
     }
-    
+
     &.ms-outline-danger{
-        @include alert-outline(shade($color-red-3,30),$color-red-1,95);
+        @include alert-outline(shade($color-red-3,30),$color-red-1,90);
     }
-    
+
     &.ms-success{
         @include alert(#ffffff,$color-green-1,$color-green-3);
     }
-    
+
     &.ms-outline-success{
-        @include alert-outline(shade($color-green-3,30),$color-green-1,95);
+        @include alert-outline(shade($color-green-3,30),$color-green-1,90);
     }
-    
+
     &.ms-warning{
         @include alert(#000000,$color-yellow-1,$color-yellow-3);
     }
-    
+
     &.ms-outline-warning{
-        @include alert-outline(shade($color-yellow-3,35),$color-yellow-1,95);
+        @include alert-outline(shade($color-yellow-3,35),$color-yellow-1,90);
     }
 
     /* CLOSE ICON */
@@ -102,7 +141,7 @@
         right: 5px;
         cursor: pointer;
         text-align: center;
-        
+
         &:before, &:after {
             position: absolute;
             left: 9px;
@@ -112,7 +151,7 @@
             width: 2px;
             background-color: $color-gray-3;
         }
-        
+
         &:before {
             transform: rotate(45deg);
         }
@@ -131,7 +170,7 @@
         }
     }
 
-    &.ms-content{        
+    &.ms-content{
         h1,h2,h3,h4,h5,h6{
             margin: 0 0 0.3rem 0;
         }
@@ -156,4 +195,14 @@
         padding: 1.7rem 1.2rem;
         font-size: 1.4rem;
     }
+}
+
+
+/* Dark Theme */
+@media (prefers-color-scheme: dark) {
+	.ms-alert{
+		background-color: $default-bg-dark;
+		color: $default-font-color-dark;
+		border-color: $default-bg-dark-light;
+	}
 }
