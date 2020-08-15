@@ -1,3 +1,15 @@
+/* VARIABLES */
+html{
+	--card-title-font-color: $default-font-color;
+	--card-border-color: $color-gray-1;
+}
+
+html[data-theme='dark'] {
+	--card-title-font-color: $default-font-color-dark;
+	--card-border-color: $color-gray-3;
+}
+
+/* BASE */
 .ms-card{
 	width: 100%;
 	height: auto;
@@ -5,7 +17,7 @@
 	padding: 0;
 
 	&.ms-border{
-		border: 1px solid $color-gray-1;
+		border: 1px solid var(--card-border-color);
 		padding-top: 1rem;
 		@include border-radius($default-border-radius);
 	}
@@ -34,7 +46,7 @@
 		h1,h2,h3,h4,h5,h6,a{
 			font-size: 1.75rem;
 			text-decoration: none;
-			color: #2c3e50;
+			color: var(--card-title-font-color);
 			margin: 0;
 			padding: 0;
 		}
@@ -61,7 +73,7 @@
 
 	.ms-section{
 		.ms-section-bloc{
-			border-bottom: 1px solid $color-gray-1;
+			border-bottom: 1px solid var(--card-border-color);
 			padding: 1rem;
 
 			p{
@@ -69,11 +81,11 @@
 			}
 
 			&:first-child{
-				border-top: 1px solid $color-gray-1;
+				border-top: 1px solid var(--card-border-color);
 			}
 
 			&:last-child{
-				border-bottom: 1px solid $color-gray-1;
+				border-bottom: 1px solid var(--card-border-color);
 				margin-bottom: 1rem;
 			}
 		}
