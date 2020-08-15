@@ -1,3 +1,16 @@
+/* VARIABLES */
+html{
+	--breadcrumb-bg: $default-bg-darker;
+	--breadcrumb-font-color: $default-font-color;
+	--breadcrumb-border-color: $color-gray-1;
+}
+
+html[data-theme='dark'] {
+	--breadcrumb-bg: $default-bg-dark;
+	--breadcrumb-font-color: $default-font-color-dark;
+	--breadcrumb-border-color: $color-gray-3;
+}
+
 /* BASE */
 .ms-breadcrumb{
 	ul{
@@ -5,6 +18,7 @@
 		margin: 0;
 
 		li{
+			color: var(--breadcrumb-font-color);
 			list-style: none;
 			display: inline-block;
 			margin: 0 0 0 0.5rem;
@@ -27,7 +41,7 @@
 	/* BACKGROUND */
 	&.ms-background{
 		width: 100%;
-		background-color: $color-gray-0;
+		background-color: var(--breadcrumb-bg);
 		padding: 1rem;
 		@include border-radius($default-border-radius);
 	}
@@ -35,7 +49,7 @@
 	/* BORDER */
 	&.ms-border{
 		width: 100%;
-		border-bottom: 1px solid $color-gray-1;
+		border-bottom: 1px solid var(--breadcrumb-border-color);
 		padding: 1rem;
 	}
 }

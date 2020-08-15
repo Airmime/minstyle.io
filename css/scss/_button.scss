@@ -1,3 +1,16 @@
+/* VARIABLES */
+html{
+	--btn-bg: $default-bg;
+	--btn-font-color: $default-font-color;
+	--btn-border-color: $color-gray-1;
+}
+
+html[data-theme='dark'] {
+	--btn-bg: $default-bg-dark-lighter;
+	--btn-font-color: $default-font-color-dark;
+	--btn-border-color: $default-font-color-dark;
+}
+
 /* MIXINS */
 @mixin btn($textColor,$primaryColor,$secondColor,$thirdColor){
   color: $textColor;
@@ -21,16 +34,16 @@ button,
 input[type='button'],
 input[type='submit']{
   display: inline-block;
-  color: $color-gray-3;
-  background-color: #ffffff;
-  border: 1px solid $color-gray-1;
+  color: var(--btn-font-color);
+  background-color: var(--btn-bg);
+  border: 1px solid var(--btn-border-color);
   text-align: center;
   text-decoration: none;
   font-size: 0.9rem;
   font-weight: 500;
   cursor: pointer;
   margin: 0.5rem 0;
-  padding: 0.4rem 1rem;
+  padding: 0.3rem 1rem 0.4rem 1rem;
   @include border-radius($default-border-radius);
 
   /* COLORS */

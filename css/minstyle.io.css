@@ -866,6 +866,19 @@ p {
   margin-inline-end: 0px;
 }
 
+/* VARIABLES */
+html {
+  --btn-bg: #ffffff;
+  --btn-font-color: rgba(0, 0, 0, 0.85);
+  --btn-border-color: #e1e1e1;
+}
+
+html[data-theme='dark'] {
+  --btn-bg: #25282c;
+  --btn-font-color: #ffffff;
+  --btn-border-color: #ffffff;
+}
+
 /* MIXINS */
 /* BASE */
 button,
@@ -873,16 +886,16 @@ button,
 input[type='button'],
 input[type='submit'] {
   display: inline-block;
-  color: #484848;
-  background-color: #ffffff;
-  border: 1px solid #e1e1e1;
+  color: var(--btn-font-color);
+  background-color: var(--btn-bg);
+  border: 1px solid var(--btn-border-color);
   text-align: center;
   text-decoration: none;
   font-size: 0.9rem;
   font-weight: 500;
   cursor: pointer;
   margin: 0.5rem 0;
-  padding: 0.4rem 1rem;
+  padding: 0.3rem 1rem 0.4rem 1rem;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -2196,7 +2209,7 @@ blockquote, .ms-blockquote {
   -moz-border-radius-bottomright: 5px;
   -webkit-border-bottom-right-radius: 5px;
   border-bottom-right-radius: 5px;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
   padding: 1rem;
 }
 
@@ -2501,11 +2514,25 @@ html[data-theme='dark'] {
   box-shadow: rgba(0, 0, 0, 0.4) 0 0 10px;
 }
 
+/* VARIABLES */
+html {
+  --user-bg: #ffffff;
+  --user-border-color: #f3f3f3;
+  --user-font-color: rgba(0, 0, 0, 0.85);
+}
+
+html[data-theme='dark'] {
+  --user-bg: #25282c;
+  --user-border-color: #111417;
+  --user-font-color: #ffffff;
+}
+
 /* BASE */
 .ms-user {
   width: 100%;
-  background-color: #fff;
-  border: 1px solid #e1e1e1;
+  background-color: var(--user-bg);
+  border: 1px solid var(--user-border-color);
+  color: var(--user-font-color);
   overflow: auto;
   position: relative;
   box-sizing: border-box;
@@ -2528,6 +2555,7 @@ html[data-theme='dark'] {
 }
 
 .ms-user .ms-user-info p {
+  color: var(--user-font-color);
   line-height: 1.3rem;
   margin-block-start: 0;
   margin-block-end: 0;
@@ -2536,6 +2564,7 @@ html[data-theme='dark'] {
 }
 
 .ms-user .ms-user-content {
+  color: var(--user-font-color);
   box-sizing: border-box;
   margin: 0 auto;
   margin-top: 1rem;
@@ -2567,6 +2596,10 @@ html[data-theme='dark'] {
 
 .ms-user.ms-borderless {
   border: none;
+}
+
+.ms-user.ms-background {
+  background-color: var(--user-border-color);
 }
 
 .ms-card {
@@ -2837,6 +2870,19 @@ html[data-theme='dark'] {
   border-radius: 5px;
 }
 
+/* VARIABLES */
+html {
+  --breadcrumb-bg: #f3f3f3;
+  --breadcrumb-font-color: rgba(0, 0, 0, 0.85);
+  --breadcrumb-border-color: #e1e1e1;
+}
+
+html[data-theme='dark'] {
+  --breadcrumb-bg: #111417;
+  --breadcrumb-font-color: #ffffff;
+  --breadcrumb-border-color: #484848;
+}
+
 /* BASE */
 .ms-breadcrumb {
   /* BACKGROUND */
@@ -2849,6 +2895,7 @@ html[data-theme='dark'] {
 }
 
 .ms-breadcrumb ul li {
+  color: var(--breadcrumb-font-color);
   list-style: none;
   display: inline-block;
   margin: 0 0 0 0.5rem;
@@ -2869,7 +2916,7 @@ html[data-theme='dark'] {
 
 .ms-breadcrumb.ms-background {
   width: 100%;
-  background-color: #f6f6f6;
+  background-color: var(--breadcrumb-bg);
   padding: 1rem;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -2880,7 +2927,7 @@ html[data-theme='dark'] {
 
 .ms-breadcrumb.ms-border {
   width: 100%;
-  border-bottom: 1px solid #e1e1e1;
+  border-bottom: 1px solid var(--breadcrumb-border-color);
   padding: 1rem;
 }
 
@@ -2973,6 +3020,16 @@ html[data-theme='dark'] {
   border: 1px solid #e1e1e1;
 }
 
+/* VARIABLES */
+html {
+  --article-font-color: rgba(0, 0, 0, 0.85);
+}
+
+html[data-theme='dark'] {
+  --article-font-color: #ffffff;
+}
+
+/* BASE */
 .ms-article {
   display: block;
   width: 100%;
@@ -3024,7 +3081,7 @@ html[data-theme='dark'] {
   font-size: 1.5rem;
   text-decoration: none;
   font-weight: 600;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.9);
   margin: 0;
   padding: 0;
 }
@@ -3062,7 +3119,7 @@ html[data-theme='dark'] {
   font-size: 1.75rem;
   text-decoration: none;
   font-weight: 600;
-  color: #2c3e50;
+  color: var(--article-font-color);
   margin: 0;
   padding: 0;
 }
@@ -3073,7 +3130,7 @@ html[data-theme='dark'] {
 }
 
 .ms-article .ms-article-text p {
-  color: #000;
+  color: var(--article-font-color);
   margin: 0;
   padding: 0;
 }
@@ -3083,7 +3140,7 @@ html[data-theme='dark'] {
   font-size: 1.5rem;
   text-decoration: none;
   font-weight: 600;
-  color: #2c3e50;
+  color: var(--article-font-color);
   margin: 1rem 0;
   padding: 0;
 }

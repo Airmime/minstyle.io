@@ -189,7 +189,7 @@ blockquote, .ms-blockquote{
 	background-color: var(--blockquote-bg);
 	color: var(--blockquote-font-color);
 	@include border-right-radius($default-border-radius);
-	margin-bottom: 1rem;
+	margin: $default-margin;
 	padding: 1rem;
 
 	p{
