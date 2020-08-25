@@ -1,3 +1,19 @@
+/* VARIABLES */
+html{
+  --dropdown-bg: $default-bg;
+  --dropdown-bg-hover: $color-gray-0;
+  --dropdown-font-color: $default-font-color;
+  --dropdown-border-color: $color-gray-1;
+}
+
+html[data-theme='dark'] {
+  --dropdown-bg: $default-bg-dark;
+  --dropdown-bg-hover: $default-bg-dark-lighter;
+  --dropdown-font-color: $default-font-color-dark;
+  --dropdown-border-color: $color-gray-3;
+}
+
+/* BASE */
 .ms-dropdown{
 	z-index: 999;
 	display: inline-block;
@@ -29,8 +45,8 @@
 				position: absolute;
 				left: 0;
 				top: 100%;
-				background-color: #fff;
-				border: 1px solid $color-gray-1;
+				background-color: var(--dropdown-bg);
+				border: 1px solid var(--dropdown-border-color);
 				margin: 0;
 				padding: 0.5rem;
 				@include border-radius($default-border-radius);
@@ -42,13 +58,13 @@
 
 					a{
 						font-size: 0.9rem;
-						color: #484848;
+						color: var(--dropdown-font-color);
 						display: block;
 						margin: 0;
 						padding: 0.2rem 0.5rem;
 
 						&:hover{
-							background-color: $color-gray-0;
+							background-color: var(--dropdown-bg-hover);
 							@include border-radius($default-border-radius);
 						}
 					}

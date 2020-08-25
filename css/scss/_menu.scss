@@ -1,3 +1,17 @@
+/* VARIABLES */
+html{
+  --menu-bg: $default-bg-darker;
+  --menu-bg-hover: $default-bg;
+  --menu-font-color: $default-font-color;
+}
+
+html[data-theme='dark'] {
+  --menu-bg: $default-bg-dark;
+  --menu-bg-hover: $default-bg-dark-lighter;
+  --menu-font-color: $default-font-color-dark;
+}
+
+/* MIXIN */
 @mixin menu($textColor,$primaryColor,$secondColor){
 	background-color: $primaryColor;
 
@@ -35,6 +49,7 @@
 	}
 }
 
+/* BASE */
 .ms-menu{
 	position: relative;
 	z-index: 999;
@@ -44,14 +59,14 @@
 	line-height: 50px;
 	text-align: center;
 	font-family: sans-serif;
-	background-color: $color-gray-0;
+	background-color: var(--menu-bg);
 
 	.ms-menu-logo {
 		width: auto;
 		height: 100%;
 		float: left;
 		margin: 0 0 0 5%;
-		color: $color-gray-3;
+		color: var(--default-font-color);
 
 		p{
 			font-size: 1.2rem;
@@ -86,13 +101,13 @@
 			a {
 				width: 20%;
 				height: inherit;
-				color: $color-gray-3;
+				color: var(--default-font-color);
 				display: inline-block;
 				text-decoration: none;
 
 				&:hover {
-					background-color: $color-gray-2;
-					color: #fff;
+					background-color: var(--menu-bg-hover);
+					color: var(--default-font-color);
 				}
 
 				li{
@@ -111,7 +126,7 @@
 	.ms-menu-icon {
 		display: none;
 		cursor: pointer;
-		color: $color-gray-3;
+		color: var(--default-font-color);
 	}
 
 	&.ms-info{
@@ -155,7 +170,7 @@
 					text-align: left;
 					width: 100%;
 					height: 50px;
-					background-color: $color-gray-1;
+					background-color: var(--menu-bg);
 					padding: 0.2rem 0px 0.2rem 5%;
 				}
 			}
