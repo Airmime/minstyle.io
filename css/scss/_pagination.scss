@@ -8,7 +8,7 @@ html{
 html[data-theme='dark'] {
   --pagination-bg: $default-bg-dark;
   --pagination-font-color: $default-font-color-dark;
-  --pagination-border-color: $default-bg-dark-lighter;
+  --pagination-border-color: $color-gray-3;
 }
 
 /* BASE */
@@ -82,7 +82,7 @@ html[data-theme='dark'] {
 				}
 
 				a{
-					border: 1px solid $color-gray-1;
+					border: 1px solid var(--pagination-border-color);
 					@include border-radius(0);
 
 					&.ms-active{
@@ -91,7 +91,7 @@ html[data-theme='dark'] {
 				}
 
 				span{
-					border: 1px solid $color-gray-1;
+					border: 1px solid var(--pagination-border-color);
 				}
 			}
 		}

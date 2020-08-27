@@ -3252,7 +3252,7 @@ input[type='submit'] {
   font-weight: 500;
   cursor: pointer;
   margin: 0.5rem 0;
-  padding: 0.3rem 1rem 0.4rem 1rem;
+  padding: 0.4rem 0.8rem 0.5rem 0.8rem;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -4862,7 +4862,7 @@ html {
 html[data-theme='dark'] {
   --pagination-bg: #111417;
   --pagination-font-color: #ffffff;
-  --pagination-border-color: #25282c; }
+  --pagination-border-color: #484848; }
 
 /* BASE */
 .ms-pagination {
@@ -4910,7 +4910,7 @@ html[data-theme='dark'] {
       border-top-right-radius: 5px;
       border-bottom-right-radius: 5px; }
     .ms-pagination.ms-border ul li a {
-      border: 1px solid #e1e1e1;
+      border: 1px solid var(--pagination-border-color);
       -webkit-border-radius: 0;
       -moz-border-radius: 0;
       -ms-border-radius: 0;
@@ -4919,7 +4919,7 @@ html[data-theme='dark'] {
       .ms-pagination.ms-border ul li a.ms-active {
         border-color: #219ced; }
     .ms-pagination.ms-border ul li span {
-      border: 1px solid #e1e1e1; }
+      border: 1px solid var(--pagination-border-color); }
 
 /* VARIABLES */
 html {
