@@ -1,3 +1,14 @@
+/* VARIABLES */
+html{
+  --tab-font-color: $color-gray-3;
+  --tab-border-color: $color-gray-1;
+}
+
+html[data-theme='dark'] {
+  --tab-font-color: $default-font-color-dark;
+  --tab-border-color: $default-bg-dark;
+}
+
 /* MIXINS */
 @mixin tabColor($scolorTab){
 	ul{
@@ -20,8 +31,8 @@
 /* BASE */
 .ms-tab{
 	width: 100%;
-	color: red;
-	border-bottom: 1px solid $color-gray-1;
+	color: var(--tab-font-color);
+	border-bottom: 1px solid var(--tab-border-color);
 	margin: 0;
 	padding: 0;
 	@include box-sizing(border-box);
@@ -46,11 +57,11 @@
 				border-bottom: 2px solid transparent;
 
 				&:hover{
-					border-bottom: 2px solid tint($color-gray-2, 70%);
+					border-bottom: 2px solid var(--tab-border-color);
 				}
 
 				&.ms-active{
-					border-bottom: 2px solid $color-gray-2;
+					border-bottom: 2px solid var(--tab-border-color);
 				}
 			}
 
