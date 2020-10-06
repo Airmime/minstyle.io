@@ -1,18 +1,29 @@
+/* VARIABLES */
+html{
+  --progress-bg: $default-bg-darker;
+  --progress-bg-fill: $color-gray-3;
+}
+
+html[data-theme='dark'] {
+  --progress-bg: $default-bg-dark;
+  --progress-bg-fill: $color-gray-3;
+}
+
 /* BASE */
 progress,
 .ms-progress{
 	width: 100%;
 	height: 1.3rem;
 	display: flex;
-	background-color: $color-gray-0;
+	background-color: var(--progress-bg);
 	text-align: center;
 	overflow: hidden;
-	margin-bottom: 1rem;
+	margin: $default-margin;
 	@include border-radius(4px);
 	
 	.ms-progress-fill{
 		height: 1.3rem;
-		background-color: $color-gray-2;
+		background-color: var(--progress-bg-fill);
 		font-size: 0.75rem;
 		text-align: center;
 		font-weight: bold;

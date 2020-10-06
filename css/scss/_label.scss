@@ -1,3 +1,16 @@
+/* VARIABLES */
+html{
+  --label-bg: $default-bg;
+  --label-font-color: $color-gray-3;
+  --label-border-color: $color-gray-1;
+}
+
+html[data-theme='dark'] {
+  --label-bg: $default-bg-dark;
+  --label-font-color: $default-font-color-dark;
+  --label-border-color: $default-bg-dark-lighter;
+}
+
 /* MIXINS */
 @mixin label($textColor,$primaryColor){
 	background-color: $primaryColor;
@@ -6,9 +19,9 @@
 }
 
 @mixin label-outline($textColor,$primaryColor,$percentage){
-	background-color: tint($primaryColor, $percentage);
+	background-color: rgba($primaryColor,0.15);
 	color: $textColor;
-	border-color: tint($primaryColor, 80);
+	border-color: rgba($primaryColor,0.35);
 }
 
 @mixin color-label{
@@ -31,30 +44,30 @@
 
 @mixin color-outline-label{
 	&.ms-outline-info{
-		@include label-outline(shade($color-blue-3,30),$color-blue-1,95);
+		@include label-outline($color-blue-3,$color-blue-1,95);
 	}
 	
 	&.ms-outline-success{
-		@include label-outline(shade($color-green-3,30),$color-green-1,95);
+		@include label-outline($color-green-3,$color-green-1,95);
 	}
 	
 	&.ms-outline-danger{
-		@include label-outline(shade($color-red-3,30),$color-red-1,95);
+		@include label-outline($color-red-3,$color-red-1,95);
 	}
 	
 	&.ms-outline-warning{
-		@include label-outline(shade($color-yellow-3,35),$color-yellow-1,95);
+		@include label-outline($color-yellow-3,$color-yellow-1,95);
 	}
 }
 
-/* BASE LABEL*/
+/* BASE */
 .ms-label{
-	background-color: #ffffff;
-	border: 1px solid $color-gray-1;
-	color: $color-dark-1;
+	background-color: var(--label-bg);
+	border: 1px solid var(--label-border-color);
+	color: var(--label-font-color);
 	font-size: 0.9rem;
 	margin-right: 0.1rem;
-	padding: 0.2rem 0.4rem;
+	padding: 0.1rem 0.3rem;
 	@include border-radius($default-border-radius);
 	
 	/* COLORS */
@@ -63,22 +76,22 @@
 	
 	/* SIZES */
 	&.ms-small{
-		padding: 0.1rem 0.2rem;
+		padding: 0 0.1rem;
 		font-size: 0.9rem;
 	}
 	
 	&.ms-medium{
-		padding: 0.4rem 0.6rem;
-		font-size: 1.1rem;
+		padding: 0.2rem 0.4rem;
+		font-size: 1rem;
 	}
 	
 	&.ms-large{
-		padding: 0.6rem 0.8rem;
-		font-size: 1.2rem;
+		padding: 0.3rem 0.6rem;
+		font-size: 1rem;
 	}
 	
 	/* GLOBAL */
 	&.ms-rounded{
-		@include border-radius(100px);
+		@include border-radius(100rem);
 	}
 }

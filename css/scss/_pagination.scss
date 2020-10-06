@@ -1,3 +1,17 @@
+/* VARIABLES */
+html{
+  --pagination-bg: $default-bg-darker;
+  --pagination-font-color: $color-gray-3;
+  --pagination-border-color: $color-gray-1;
+}
+
+html[data-theme='dark'] {
+  --pagination-bg: $default-bg-dark;
+  --pagination-font-color: $default-font-color-dark;
+  --pagination-border-color: $color-gray-3;
+}
+
+/* BASE */
 .ms-pagination{
 
 	margin: 1rem 0;
@@ -14,7 +28,7 @@
 			a{
 				padding: 0.5rem;
 				text-decoration: none;
-				color: $color-dark-1;
+				color: var(--pagination-font-color);
 				@include border-radius($default-border-radius);
 
 				&.ms-active{
@@ -37,11 +51,11 @@
 				}
 
 				&:hover{
-					background-color: $color-gray-0;
+					background-color: var(--pagination-bg);
 				}
 
 				&:active{
-					background-color: $color-gray-1;
+					background-color: var(--pagination-bg);
 				}
 			}
 
@@ -68,7 +82,7 @@
 				}
 
 				a{
-					border: 1px solid $color-gray-1;
+					border: 1px solid var(--pagination-border-color);
 					@include border-radius(0);
 
 					&.ms-active{
@@ -77,7 +91,7 @@
 				}
 
 				span{
-					border: 1px solid $color-gray-1;
+					border: 1px solid var(--pagination-border-color);
 				}
 			}
 		}

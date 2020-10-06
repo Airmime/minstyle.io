@@ -1,2 +1,37 @@
+/* COLORS BASE */
+$default-bg: #ffffff;
+$default-bg-darker: #f3f3f3;;
+$default-font-color: rgba(0,0,0,.85);
+
+$default-bg-dark: #111417;
+$default-bg-dark-lighter: #25282c;
+$default-font-color-dark: #ffffff;
+
+/* COLORS ELEMENTS */
+$color-gray-0: #f6f6f6;
+$color-gray-1: #e1e1e1;
+$color-gray-2: #b1b1b1;
+$color-gray-3: #484848;
+
+$color-dark-1: #2f2f2f;
+
+$color-blue-1: #219ced;
+$color-blue-2: shade($color-blue-1, 7);
+$color-blue-3: shade($color-blue-2, 7);
+
+$color-red-1: #e04540;
+$color-red-2: shade($color-red-1, 7);
+$color-red-3: shade($color-red-2, 7);
+
+$color-green-1: #3ab656;
+$color-green-2: shade($color-green-1, 7);
+$color-green-3: shade($color-green-2, 7);
+
+$color-yellow-1: #f9bf10;
+$color-yellow-2: shade($color-yellow-1, 7);
+$color-yellow-3: shade($color-yellow-2, 7);
+
+
 /* VARIABLES */
-$default-border-radius: 3px;
+$default-border-radius: 5px;
+$default-margin: 1rem 0;

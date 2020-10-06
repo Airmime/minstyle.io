@@ -1,3 +1,16 @@
+/* VARIABLES */
+html{
+  --avatar-bg: $color-gray-1;
+  --avatar-font-color: $color-gray-3;
+  --avatar-border-color: $default-bg;
+}
+
+html[data-theme='dark'] {
+  --avatar-bg: $default-bg-dark;
+  --avatar-font-color: $default-font-color-dark;
+  --avatar-border-color: $default-bg-dark-lighter;
+}
+
 /* MIXINS */
 @mixin sizeAvatar($font-size,$line-height,$width,$height){
 	width: $width;
@@ -13,7 +26,7 @@
 .ms-avatar{
 	width: 55px;
 	height: 55px;
-	background-color: $color-gray-1;
+	background-color: var(--avatar-bg);
 	position: relative;
   	vertical-align: middle;
   	text-align: center;
@@ -33,8 +46,9 @@
 		font-size: 1.2rem;
 		line-height: 55px;
 	  	font-weight: bold;
+	  	color: var(--avatar-font-color);
 	}
-	
+
 	&.ms-small{
 		$sizeSmall: 35px;
 		@include sizeAvatar(0.8rem,$sizeSmall,$sizeSmall,$sizeSmall);
@@ -71,7 +85,7 @@
 		right: 0px;
 		bottom: 0px;
 		background-color: $color-gray-1;
-		border: 2px solid #fff;
+		border: 2px solid var(--avatar-border-color);
 		overflow: hidden;
 		@include border-radius(50%);
 

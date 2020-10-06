@@ -1,3 +1,14 @@
+/* VARIABLES */
+html{
+  --blockquote-bg: $default-bg-darker;
+  --blockquote-font-color: $default-font-color;
+}
+
+html[data-theme='dark'] {
+  --blockquote-bg: $default-bg-dark;
+  --blockquote-font-color: $default-font-color-dark;
+}
+
 /* MIXINS */
 @mixin mark($textColor,$primaryColor) {
 	background-color: $primaryColor;
@@ -174,9 +185,11 @@ dl {
 
 /* BLOCKQUOTE */
 blockquote, .ms-blockquote{
-	border-left: 2px solid $color-gray-1;
-	color: $color-gray-3;
-	margin-bottom: 1rem;
+	border-left: 4px solid $color-gray-1;
+	background-color: var(--blockquote-bg);
+	color: var(--blockquote-font-color);
+	@include border-right-radius($default-border-radius);
+	margin: $default-margin;
 	padding: 1rem;
 
 	p{

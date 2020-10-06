@@ -1,3 +1,13 @@
+/* VARIABLES */
+html{
+  --article-font-color: $default-font-color;
+}
+
+html[data-theme='dark'] {
+  --article-font-color: $default-font-color-dark;
+}
+
+/* BASE */
 .ms-article{
 	display: block;
 	width: 100%;
@@ -34,7 +44,7 @@
 				font-size: 1.5rem;
 				text-decoration: none;
 				font-weight: 600;
-				color: #fff;
+				color: rgba(255,255,255,0.9);
 				margin: 0;
 				padding: 0;
 			}
@@ -73,7 +83,7 @@
 			font-size: 1.75rem;
 			text-decoration: none;
 			font-weight: 600;
-			color: #2c3e50;
+			color: var(--article-font-color);
 			margin: 0;
 			padding: 0;
 		}
@@ -84,7 +94,7 @@
     	padding: 1rem;
 
 		p{
-			color: #000;
+			color: var(--article-font-color);
 			margin: 0;
 			padding: 0;
 		}
@@ -94,7 +104,7 @@
 			font-size: 1.5rem;
 			text-decoration: none;
 			font-weight: 600;
-			color: #2c3e50;
+			color: var(--article-font-color);
 			margin: 1rem 0;
 			padding: 0;
 		}

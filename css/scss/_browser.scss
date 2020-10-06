@@ -1,0 +1,50 @@
+/* VARIABLES */
+html{
+  --browser-bg: $default-bg-darker;
+  --browser-font-color: $default-font-color;
+  --browser-bg-content: $default-bg;
+}
+
+html[data-theme='dark'] {
+  --browser-bg: $default-bg-dark;
+  --browser-font-color: $default-font-color-dark;
+  --browser-bg-content: $default-bg-dark-lighter;
+}
+
+.ms-browser{
+	background-color: var(--browser-bg);
+	border: 4px solid var(--browser-bg);
+	@include border-top-radius($default-border-radius);
+
+	.ms-tab-browser{
+
+		padding: 0.4rem 0.6rem;
+
+		.ms-dot{
+			display: inline-block;
+			height: 12px;
+			width: 12px;
+			background-color: $color-gray-1;
+			@include border-radius(50%);
+
+			&.red{
+				background-color: $color-red-1;
+			}
+
+			&.yellow{
+				background-color: $color-yellow-1;
+			}
+
+			&.green{
+				background-color: $color-green-1;
+			}
+		}
+	}
+
+	.ms-content{
+		background-color: var(--browser-bg-content);
+		box-sizing: border-box;
+		overflow: hidden;
+		padding: 10px;
+	}
+}
