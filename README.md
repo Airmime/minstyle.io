@@ -1,6 +1,6 @@
 # minstyle.io
 
-> A simple & Lightweight CSS Framework, whith dark theme.
+> A simple & Lightweight CSS Framework, including dark theme.
 
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
 [![npm version](https://badge.fury.io/js/minstyle.io.svg)](https://badge.fury.io/js/minstyle.io)
@@ -67,6 +67,7 @@ Full documentation is available on [minstyle.io](https://minstyle.io).
 
 #### Layout
 * [Grid](https://minstyle.io/docs/grid/)
+* [Dark Theme](https://minstyle.io/docs/dark/)
 
 #### Content
 * [Icons](https://minstyle.io/docs/icons)
