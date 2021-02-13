@@ -24,6 +24,7 @@ html[data-theme='dark'] {
 			display: inline-block;
 			height: 12px;
 			width: 12px;
+			margin-right: 3px;
 			background-color: $color-gray-1;
 			@include border-radius(50%);
 
