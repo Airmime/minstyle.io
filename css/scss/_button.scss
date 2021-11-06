@@ -1,136 +1,214 @@
-/* VARIABLES */
-html{
-	--btn-bg: $default-bg;
-	--btn-font-color: $default-font-color;
-	--btn-border-color: $color-gray-1;
+html {
+  --btn-text-color: 255,255,255;
+  --btn-bg-color: 36,36,36;
 }
 
 html[data-theme='dark'] {
-	--btn-bg: $default-bg-dark;
-	--btn-font-color: $default-font-color-dark;
-	--btn-border-color: $default-bg-dark;
+  --btn-text-color: 36,36,36;
+  --btn-bg-color: 243, 243, 243;
 }
 
-/* MIXINS */
-@mixin btn($textColor,$primaryColor,$secondColor,$thirdColor){
+@mixin btn-default($backgroundColor, $textColor) {
+  background-color: $backgroundColor;
   color: $textColor;
-  background-color: $primaryColor;
-  border-color: transparent;
-  &:hover{border-color: transparent; background-color: $secondColor;}
-  &:active{border-color: $thirdColor; background-color: $thirdColor;}
 }
 
-@mixin btn-outline($textColor,$primaryColor,$secondColor){
-  color:$textColor;
-  background-color: transparent;
-  border-color: $primaryColor;
-  &:hover{border-color: $primaryColor; background-color: $primaryColor; color: #ffffff}
-  &:active{border-color: $secondColor; background-color: $secondColor;}
+@mixin btn-outline($color) {
+  border-color: $color;
+  color: $color;
 }
 
-/* BASE */
+@mixin btn-underline($color) {
+  border-bottom-color: $color;
+  color: $color;
+}
+
+@mixin btn-underline-active($color) {
+  box-shadow: none;
+  border-bottom: 2px solid $color;
+}
+
 button,
 .ms-btn,
 input[type='button'],
 input[type='submit']{
-  display: inline-block;
-  color: var(--btn-font-color);
-  background-color: var(--btn-bg);
-  border: 1px solid var(--btn-border-color);
-  text-align: center;
-  text-decoration: none;
-  font-size: 0.9rem;
-  font-weight: 500;
+
+  /* General */
   cursor: pointer;
-  margin: 0.5rem 0;
-  padding: 0.4rem 0.8rem 0.5rem 0.8rem;
-  @include border-radius($default-border-radius);
-
-  /* COLORS */
-  &.ms-info{
-    @include btn(#ffffff,$color-blue-1,$color-blue-2,$color-blue-3);
+  display: inline-block;
+  box-sizing: border-box;
+  
+  /* Color */
+  background-color: rgba(var(--btn-bg-color), 1);
+  color: rgba(var(--btn-text-color), 1);
+  
+  /* Border */
+  border: none;
+  border-radius: 10px;
+  
+  /* Font */
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: .85rem;
+  text-decoration: none;
+  
+  /* Animation */
+  -webkit-transition: 0.2s all ease;
+  transition: 0.2s ease all;
+  
+  /* Margin */
+  margin: 3px;
+  padding: .65rem 2.4rem;
+  
+  &.ms-primary{
+    @include btn-default(rgba(var(--primary-bg-color), 1), #fff);   
   }
-
-  &.ms-outline-info{
-    @include btn-outline($color-blue-2,$color-blue-2,$color-blue-3);
+  
+  &.ms-secondary{
+    @include btn-default(rgba(var(--secondary-bg-color), 1), #fff);
   }
-
-  &.ms-danger{
-    @include btn(#ffffff,$color-red-1,$color-red-2,$color-red-3);
+  
+  &.ms-action{
+    @include btn-default(rgba(var(--action-bg-color), 1), #fff);
   }
-
-  &.ms-outline-danger{
-    @include btn-outline($color-red-2,$color-red-2,$color-red-3);
+  
+  &.ms-action2{
+    @include btn-default(rgba(var(--action2-bg-color), 1), #fff);
   }
+  
+  &.ms-outline{
 
-  &.ms-success{
-    @include btn(#ffffff,$color-green-1,$color-green-2,$color-green-3);
+    /* Color */
+    background-color: transparent;
+    color: rgba(var(--btn-bg-color), 1);
+    
+    /* Border */
+    border: 2px solid rgba(var(--btn-bg-color), 1);
+    
+    &.ms-primary{
+      @include btn-outline(rgba(var(--primary-bg-color), 1));
+    }
+    
+    &.ms-secondary{
+      @include btn-outline(rgba(var(--secondary-bg-color), 1));
+    }
+    
+    &.ms-action{
+      @include btn-outline(rgba(var(--action-bg-color), 1));
+    }
+    
+    &.ms-action2{
+      @include btn-outline(rgba(var(--action2-bg-color), 1));
+    }
   }
+  
+  &.ms-underline{
 
-  &.ms-outline-success{
-    @include btn-outline($color-green-2,$color-green-2,$color-green-3);
+    /* Color */
+    background-color: transparent;
+    color: rgba(var(--btn-bg-color), 1);
+    
+    /* Border */
+    border-radius: 0;
+    border-bottom: 2px solid rgba(var(--btn-bg-color), 1);
+    
+    &.ms-primary{
+      @include btn-underline(rgba(var(--primary-bg-color), 1));
+    }
+    
+    &.ms-secondary{
+      @include btn-underline(rgba(var(--secondary-bg-color), 1));
+    }
+    
+    &.ms-action{
+      @include btn-underline(rgba(var(--action-bg-color), 1));
+    }
+    
+    &.ms-action2{
+      @include btn-underline(rgba(var(--action2-bg-color), 1));
+    }
+    
+    &:active{
+      box-shadow: none;
+      border-bottom: 2px solid rgba(var(--btn-bg-color), .3);
+      
+      &.ms-primary{
+        @include btn-underline-active(rgba(var(--primary-bg-color), .3));
+      }
+      
+      &.ms-secondary{
+        @include btn-underline-active(rgba(var(--secondary-bg-color), .3));
+      }
+      
+      &.ms-action{
+        @include btn-underline-active(rgba(var(--action-bg-color), .3));
+      }
+      
+      &.ms-action2{
+        @include btn-underline-active(rgba(var(--action2-bg-color), .3));
+      }
+    }
   }
-
-  &.ms-warning{
-    @include btn(#000000,$color-yellow-1,$color-yellow-2,$color-yellow-3);
+  
+  /* Options */
+  &.ms-rounded{
+    border-radius: 50rem;
   }
-
-  &.ms-outline-warning{
-    @include btn-outline($color-yellow-2,$color-yellow-2,$color-yellow-3);
-  }
-
-  /* SIZES */
-  &.ms-small{
-    padding: 0.2rem 0.6rem;
-    font-size: 0.8rem;
-  }
-
-  &.ms-medium{
-    padding: 0.6rem 1.2rem;
-    font-size: 1.1rem;
-  }
-
-  &.ms-large{
-    padding: 0.7rem 1.4rem;
-    font-size: 1.2rem;
-  }
-
-  /* WIDTH */
+  
   &.ms-fullwidth{
-    display: block;
     width: 100%;
   }
-
-  /* GLOBAL */
-  &.ms-shadow{
-    @include box-shadow(rgba(black, 0.2) 0 6px 5px -4px);
+  
+  &.ms-small{
+    font-size: .8rem;
+    padding: .5rem 1.2rem;
   }
-
-  &.ms-rounded{
-    @include border-radius(100px);
+  
+  &.ms-medium{
+    font-size: 1rem;
+    padding: .8rem 3rem;
   }
-
-  &.ms-disabled{
-    cursor: not-allowed;
-    opacity: 0.55;
+  
+  &.ms-large{
+    font-size: 1rem;
+    padding: 1rem 5rem;
   }
-
-  /* EVENTS */
+  
+  /* Actions */
   &:hover{
-    border-color: $color-gray-2;
+    filter: contrast(130%);
+    
+    &.ms-disabled{
+      filter: none;
+    }
   }
-
+  
   &:active{
-    border-color: $color-gray-3;
-  }
-
-  &:focus {
-    outline:0;
+    box-shadow: 0 0 0 5px rgba(var(--btn-bg-color), .3);
+    
+    &.ms-primary{
+      box-shadow: 0 0 0 5px rgba(var(--primary-bg-color), .3);
+    }
+    
+    &.ms-secondary{
+      box-shadow: 0 0 0 5px rgba(var(--secondary-bg-color), .3);
+    }
+    
+    &.ms-action{
+      box-shadow: 0 0 0 5px rgba(var(--action-bg-color), .3);
+    }
+    
+    &.ms-action2{
+      box-shadow: 0 0 0 5px rgba(var(--action2-bg-color), .3);
+    }
+    
+    &.ms-disabled{
+      box-shadow: none;
+    }
   }
 }
 
 button[disabled], .ms-disabled{
-  cursor: default;
-  pointer-events: none;
-  opacity: 0.55;
+  opacity: .5;
+  cursor: not-allowed;
 }
