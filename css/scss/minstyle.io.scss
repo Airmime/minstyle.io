@@ -10,7 +10,7 @@
 :root{
     --main-bg: #ffffff;
     --main-text-color: #000;
-    
+
     --primary-bg-color: 34,115,238;
     --secondary-bg-color: 60,168,118;
     --action-bg-color: 206,65,76;
@@ -29,3 +29,4 @@ html, body{
 
 @import "_button";
 @import "_helper";
+@import "grid";
