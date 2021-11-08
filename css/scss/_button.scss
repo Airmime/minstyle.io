@@ -1,214 +1,215 @@
+/* Mixins */
 html {
-  --btn-text-color: 255,255,255;
-  --btn-bg-color: 36,36,36;
+	--btn-text-color: 255, 255, 255;
+	--btn-bg-color: 36, 36, 36;
 }
 
-html[data-theme='dark'] {
-  --btn-text-color: 36,36,36;
-  --btn-bg-color: 243, 243, 243;
+html[data-theme="dark"] {
+	--btn-text-color: 36, 36, 36;
+	--btn-bg-color: 243, 243, 243;
 }
 
+/* Mixins */
 @mixin btn-default($backgroundColor, $textColor) {
-  background-color: $backgroundColor;
-  color: $textColor;
+	background-color: $backgroundColor;
+	color: $textColor;
 }
 
 @mixin btn-outline($color) {
-  border-color: $color;
-  color: $color;
+	border-color: $color;
+	color: $color;
 }
 
 @mixin btn-underline($color) {
-  border-bottom-color: $color;
-  color: $color;
+	border-bottom-color: $color;
+	color: $color;
 }
 
 @mixin btn-underline-active($color) {
-  box-shadow: none;
-  border-bottom: 2px solid $color;
+	box-shadow: none;
+	border-bottom: 2px solid $color;
 }
 
 button,
 .ms-btn,
-input[type='button'],
-input[type='submit']{
+input[type="button"],
+input[type="submit"] {
+	/* General */
+	cursor: pointer;
+	display: inline-block;
+	box-sizing: border-box;
 
-  /* General */
-  cursor: pointer;
-  display: inline-block;
-  box-sizing: border-box;
-  
-  /* Color */
-  background-color: rgba(var(--btn-bg-color), 1);
-  color: rgba(var(--btn-text-color), 1);
-  
-  /* Border */
-  border: none;
-  border-radius: 10px;
-  
-  /* Font */
-  font-family: 'Inter', sans-serif;
-  font-weight: 500;
-  font-size: .85rem;
-  text-decoration: none;
-  
-  /* Animation */
-  -webkit-transition: 0.2s all ease;
-  transition: 0.2s ease all;
-  
-  /* Margin */
-  margin: 3px;
-  padding: .65rem 2.4rem;
-  
-  &.ms-primary{
-    @include btn-default(rgba(var(--primary-bg-color), 1), #fff);   
-  }
-  
-  &.ms-secondary{
-    @include btn-default(rgba(var(--secondary-bg-color), 1), #fff);
-  }
-  
-  &.ms-action{
-    @include btn-default(rgba(var(--action-bg-color), 1), #fff);
-  }
-  
-  &.ms-action2{
-    @include btn-default(rgba(var(--action2-bg-color), 1), #fff);
-  }
-  
-  &.ms-outline{
+	/* Color */
+	background-color: rgba(var(--btn-bg-color), 1);
+	color: rgba(var(--btn-text-color), 1);
 
-    /* Color */
-    background-color: transparent;
-    color: rgba(var(--btn-bg-color), 1);
-    
-    /* Border */
-    border: 2px solid rgba(var(--btn-bg-color), 1);
-    
-    &.ms-primary{
-      @include btn-outline(rgba(var(--primary-bg-color), 1));
-    }
-    
-    &.ms-secondary{
-      @include btn-outline(rgba(var(--secondary-bg-color), 1));
-    }
-    
-    &.ms-action{
-      @include btn-outline(rgba(var(--action-bg-color), 1));
-    }
-    
-    &.ms-action2{
-      @include btn-outline(rgba(var(--action2-bg-color), 1));
-    }
-  }
-  
-  &.ms-underline{
+	/* Border */
+	border: none;
+	border-radius: 10px;
 
-    /* Color */
-    background-color: transparent;
-    color: rgba(var(--btn-bg-color), 1);
-    
-    /* Border */
-    border-radius: 0;
-    border-bottom: 2px solid rgba(var(--btn-bg-color), 1);
-    
-    &.ms-primary{
-      @include btn-underline(rgba(var(--primary-bg-color), 1));
-    }
-    
-    &.ms-secondary{
-      @include btn-underline(rgba(var(--secondary-bg-color), 1));
-    }
-    
-    &.ms-action{
-      @include btn-underline(rgba(var(--action-bg-color), 1));
-    }
-    
-    &.ms-action2{
-      @include btn-underline(rgba(var(--action2-bg-color), 1));
-    }
-    
-    &:active{
-      box-shadow: none;
-      border-bottom: 2px solid rgba(var(--btn-bg-color), .3);
-      
-      &.ms-primary{
-        @include btn-underline-active(rgba(var(--primary-bg-color), .3));
-      }
-      
-      &.ms-secondary{
-        @include btn-underline-active(rgba(var(--secondary-bg-color), .3));
-      }
-      
-      &.ms-action{
-        @include btn-underline-active(rgba(var(--action-bg-color), .3));
-      }
-      
-      &.ms-action2{
-        @include btn-underline-active(rgba(var(--action2-bg-color), .3));
-      }
-    }
-  }
-  
-  /* Options */
-  &.ms-rounded{
-    border-radius: 50rem;
-  }
-  
-  &.ms-fullwidth{
-    width: 100%;
-  }
-  
-  &.ms-small{
-    font-size: .8rem;
-    padding: .5rem 1.2rem;
-  }
-  
-  &.ms-medium{
-    font-size: 1rem;
-    padding: .8rem 3rem;
-  }
-  
-  &.ms-large{
-    font-size: 1rem;
-    padding: 1rem 5rem;
-  }
-  
-  /* Actions */
-  &:hover{
-    filter: contrast(130%);
-    
-    &.ms-disabled{
-      filter: none;
-    }
-  }
-  
-  &:active{
-    box-shadow: 0 0 0 5px rgba(var(--btn-bg-color), .3);
-    
-    &.ms-primary{
-      box-shadow: 0 0 0 5px rgba(var(--primary-bg-color), .3);
-    }
-    
-    &.ms-secondary{
-      box-shadow: 0 0 0 5px rgba(var(--secondary-bg-color), .3);
-    }
-    
-    &.ms-action{
-      box-shadow: 0 0 0 5px rgba(var(--action-bg-color), .3);
-    }
-    
-    &.ms-action2{
-      box-shadow: 0 0 0 5px rgba(var(--action2-bg-color), .3);
-    }
-    
-    &.ms-disabled{
-      box-shadow: none;
-    }
-  }
+	/* Font */
+	font-family: "Inter", sans-serif;
+	font-weight: 500;
+	font-size: 0.85rem;
+	text-decoration: none;
+
+	/* Animation */
+	-webkit-transition: 0.2s all ease;
+	transition: 0.2s ease all;
+
+	/* Margin */
+	margin: 0rem;
+	padding: 0.6rem 2rem;
+
+	&.ms-primary {
+		@include btn-default(rgba(var(--primary-bg-color), 1), #fff);
+	}
+
+	&.ms-secondary {
+		@include btn-default(rgba(var(--secondary-bg-color), 1), #fff);
+	}
+
+	&.ms-action {
+		@include btn-default(rgba(var(--action-bg-color), 1), #fff);
+	}
+
+	&.ms-action2 {
+		@include btn-default(rgba(var(--action2-bg-color), 1), #fff);
+	}
+
+	&.ms-outline {
+		/* Color */
+		background-color: transparent;
+		color: rgba(var(--btn-bg-color), 1);
+
+		/* Border */
+		border: 2px solid rgba(var(--btn-bg-color), 1);
+
+		&.ms-primary {
+			@include btn-outline(rgba(var(--primary-bg-color), 1));
+		}
+
+		&.ms-secondary {
+			@include btn-outline(rgba(var(--secondary-bg-color), 1));
+		}
+
+		&.ms-action {
+			@include btn-outline(rgba(var(--action-bg-color), 1));
+		}
+
+		&.ms-action2 {
+			@include btn-outline(rgba(var(--action2-bg-color), 1));
+		}
+	}
+
+	&.ms-underline {
+		/* Color */
+		background-color: transparent;
+		color: rgba(var(--btn-bg-color), 1);
+
+		/* Border */
+		border-radius: 0;
+		border-bottom: 2px solid rgba(var(--btn-bg-color), 1);
+
+		&.ms-primary {
+			@include btn-underline(rgba(var(--primary-bg-color), 1));
+		}
+
+		&.ms-secondary {
+			@include btn-underline(rgba(var(--secondary-bg-color), 1));
+		}
+
+		&.ms-action {
+			@include btn-underline(rgba(var(--action-bg-color), 1));
+		}
+
+		&.ms-action2 {
+			@include btn-underline(rgba(var(--action2-bg-color), 1));
+		}
+
+		&:active {
+			box-shadow: none;
+			border-bottom: 2px solid rgba(var(--btn-bg-color), 0.3);
+
+			&.ms-primary {
+				@include btn-underline-active(rgba(var(--primary-bg-color), 0.3));
+			}
+
+			&.ms-secondary {
+				@include btn-underline-active(rgba(var(--secondary-bg-color), 0.3));
+			}
+
+			&.ms-action {
+				@include btn-underline-active(rgba(var(--action-bg-color), 0.3));
+			}
+
+			&.ms-action2 {
+				@include btn-underline-active(rgba(var(--action2-bg-color), 0.3));
+			}
+		}
+	}
+
+	/* Options */
+	&.ms-rounded {
+		border-radius: 50rem;
+	}
+
+	&.ms-fullwidth {
+		width: 100%;
+		text-align: center;
+	}
+
+	&.ms-small {
+		font-size: 0.8rem;
+		padding: 0.4rem 1rem;
+	}
+
+	&.ms-medium {
+		font-size: 1rem;
+		padding: 0.8rem 3rem;
+	}
+
+	&.ms-large {
+		font-size: 1rem;
+		padding: 1rem 5rem;
+	}
+
+	/* Actions */
+	&:hover {
+		filter: contrast(130%);
+
+		&.ms-disabled {
+			filter: none;
+		}
+	}
+
+	&:active {
+		box-shadow: 0 0 0 5px rgba(var(--btn-bg-color), 0.3);
+
+		&.ms-primary {
+			box-shadow: 0 0 0 5px rgba(var(--primary-bg-color), 0.3);
+		}
+
+		&.ms-secondary {
+			box-shadow: 0 0 0 5px rgba(var(--secondary-bg-color), 0.3);
+		}
+
+		&.ms-action {
+			box-shadow: 0 0 0 5px rgba(var(--action-bg-color), 0.3);
+		}
+
+		&.ms-action2 {
+			box-shadow: 0 0 0 5px rgba(var(--action2-bg-color), 0.3);
+		}
+
+		&.ms-disabled {
+			box-shadow: none;
+		}
+	}
 }
 
-button[disabled], .ms-disabled{
-  opacity: .5;
-  cursor: not-allowed;
+button[disabled],
+.ms-disabled {
+	opacity: 0.5;
+	cursor: not-allowed;
 }

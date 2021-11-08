@@ -1,0 +1,177 @@
+/* Variables */
+html {
+	--alert-text-color: 36, 36, 36;
+	--alert-bg-color: 36, 36, 36;
+}
+
+html[data-theme="dark"] {
+	--alert-text-color: 255, 255, 255;
+	--alert-bg-color: 243, 243, 243;
+}
+
+/* Mixins */
+@mixin alert($color) {
+	background-color: $color;
+	border-color: transparent;
+	color: #fff;
+
+	.ms-close {
+		&:before,
+		&:after {
+			background-color: #fff;
+		}
+	}
+}
+
+@mixin alert-light($bgColor, $textColor) {
+	background-color: $bgColor;
+	border-color: transparent;
+	color: $textColor;
+
+	.ms-close {
+		&:before,
+		&:after {
+			background-color: $textColor;
+		}
+	}
+}
+
+.ms-alert {
+	/* General */
+	display: inline-block;
+	height: auto;
+	position: relative;
+	box-sizing: border-box;
+	vertical-align: middle;
+
+	/* Color */
+	background-color: var(--main-bg);
+	color: rgba(var(--alert-text-color), 1);
+
+	/* Font */
+	font-size: 0.9rem;
+
+	/* Border */
+	border: 2px solid rgba(var(--alert-bg-color), 0.3);
+	border-radius: 10px;
+
+	/* Margin */
+	margin: 0.5rem 0;
+	padding: 1rem 1.4rem;
+
+	p {
+		margin: 0;
+	}
+
+	&.ms-primary {
+		@include alert(rgba(var(--primary-bg-color), 1));
+	}
+
+	&.ms-secondary {
+		@include alert(rgba(var(--secondary-bg-color), 1));
+	}
+
+	&.ms-action {
+		@include alert(rgba(var(--action-bg-color), 1));
+	}
+
+	&.ms-action2 {
+		@include alert(rgba(var(--action2-bg-color), 1));
+	}
+
+	&.ms-light {
+		@include alert-light(
+			rgba(var(--alert-bg-color), 0.3),
+			rgba(var(--alert-text-color), 1)
+		);
+
+		/* Color */
+		&.ms-primary {
+			@include alert-light(
+				rgba(var(--primary-bg-color), 0.3),
+				rgba(var(--primary-bg-color), 1)
+			);
+		}
+
+		&.ms-secondary {
+			@include alert-light(
+				rgba(var(--secondary-bg-color), 0.3),
+				rgba(var(--secondary-bg-color), 1)
+			);
+		}
+
+		&.ms-action {
+			@include alert-light(
+				rgba(var(--action-bg-color), 0.3),
+				rgba(var(--action-bg-color), 1)
+			);
+		}
+
+		&.ms-action2 {
+			@include alert-light(
+				rgba(var(--action2-bg-color), 0.3),
+				rgba(var(--action2-bg-color), 1)
+			);
+		}
+	}
+
+	/* Options */
+	&.ms-fullwidth {
+		display: block;
+		text-align: center;
+	}
+
+	&.ms-small {
+		padding: 0.7rem;
+	}
+
+	&.ms-medium {
+		padding: 1.2rem;
+		font-size: 1.1rem;
+	}
+
+	&.ms-large {
+		padding: 1.5rem;
+		font-size: 1.2rem;
+	}
+
+	/* Close */
+	.ms-close {
+		width: 20px;
+		height: 20px;
+		display: block;
+		position: absolute;
+		top: 2px;
+		right: 2px;
+		cursor: pointer;
+		text-align: center;
+
+		&:before,
+		&:after {
+			position: absolute;
+			left: 9px;
+			top: 5px;
+			content: " ";
+			height: 10px;
+			width: 2px;
+			background-color: rgba(var(--alert-text-color), 1);
+		}
+
+		&:before {
+			transform: rotate(45deg);
+		}
+		&:after {
+			transform: rotate(-45deg);
+		}
+
+		&:hover {
+			background-color: rgba(0, 0, 0, 0.1);
+			border-radius: 4px;
+		}
+
+		&:active {
+			background-color: rgba(0, 0, 0, 0.2);
+			border-radius: 4px;
+		}
+	}
+}

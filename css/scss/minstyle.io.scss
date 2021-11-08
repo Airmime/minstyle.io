@@ -5,28 +5,46 @@
 * Website : https://minstyle.io/
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-:root{
-    --main-bg: #ffffff;
-    --main-text-color: #000;
+:root {
+	--main-bg: #ffffff;
+	--main-text-color: #000;
 
-    --primary-bg-color: 34,115,238;
-    --secondary-bg-color: 60,168,118;
-    --action-bg-color: 206,65,76;
-    --action2-bg-color: 255,183,3;
+	--primary-bg-color: 34, 115, 238;
+	--secondary-bg-color: 60, 168, 118;
+	--action-bg-color: 206, 65, 76;
+	--action2-bg-color: 255, 183, 3;
 }
 
-html[data-theme='dark'] {
-    --main-bg: #25282c;
-    color: --main-text-color;
+html[data-theme="dark"] {
+	--main-bg: #25282c;
+	color: --main-text-color;
 }
 
-html, body{
-    background-color: var(--main-bg);
-    font-family: Inter, sans-serif;
+* {
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+*:before,
+*:after {
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
 }
 
+html {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	background-color: var(--main-bg);
+	font-family: Inter, sans-serif;
+}
+
+@import "alert";
 @import "_button";
 @import "_helper";
 @import "grid";
