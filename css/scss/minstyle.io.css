@@ -682,7 +682,12 @@ button[disabled],
   color: #ea9ab2 !important;
 }
 
-/* Shadow */
+/* Invert color */
+.ms-invert-color {
+  -webkit-filter: invert(1) !important;
+          filter: invert(1) !important;
+}
+
 /*!
  * Bootstrap Grid v5.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
