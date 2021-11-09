@@ -103,4 +103,7 @@
     color: #ea9ab2 !important;
 }
 
-/* Shadow */
+/* Invert color */
+.ms-invert-color{
+    filter: invert(1);
+}
