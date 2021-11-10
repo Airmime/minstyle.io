@@ -8,9 +8,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 :root {
-	--main-bg: #ffffff;
-	--main-text-color: #000;
+	--main-bg: 255, 255, 255;
+	--main-text-color: 0, 0, 0;
 
+	--default-bg-color: 36, 36, 36;
 	--primary-bg-color: 34, 115, 238;
 	--secondary-bg-color: 60, 168, 118;
 	--action-bg-color: 206, 65, 76;
@@ -18,19 +19,16 @@
 }
 
 html[data-theme="dark"] {
-	--main-bg: #25282c;
-	color: --main-text-color;
+	--main-bg: 37, 40, 44;
+	--main-text-color: 255, 255, 255;
+	--default-bg-color: 243, 243, 243;
 }
 
 * {
-	-webkit-box-sizing: content-box;
-	-moz-box-sizing: content-box;
 	box-sizing: content-box;
 }
 *:before,
 *:after {
-	-webkit-box-sizing: content-box;
-	-moz-box-sizing: content-box;
 	box-sizing: content-box;
 }
 
@@ -40,11 +38,13 @@ html {
 
 html,
 body {
-	background-color: var(--main-bg);
+	background-color: rgba(var(--main-bg), 1);
 	font-family: Inter, sans-serif;
+	font-size: 0.98rem;
 }
 
-@import "alert";
+@import "_alert";
 @import "_button";
+@import "_card";
 @import "_helper";
-@import "grid";
+@import "_grid";

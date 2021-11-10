@@ -1,12 +1,10 @@
 /* Mixins */
 html {
 	--btn-text-color: 255, 255, 255;
-	--btn-bg-color: 36, 36, 36;
 }
 
 html[data-theme="dark"] {
 	--btn-text-color: 36, 36, 36;
-	--btn-bg-color: 243, 243, 243;
 }
 
 /* Mixins */
@@ -40,7 +38,7 @@ input[type="submit"] {
 	box-sizing: border-box;
 
 	/* Color */
-	background-color: rgba(var(--btn-bg-color), 1);
+	background-color: rgba(var(--default-bg-color), 1);
 	color: rgba(var(--btn-text-color), 1);
 
 	/* Border */
@@ -50,7 +48,7 @@ input[type="submit"] {
 	/* Font */
 	font-family: "Inter", sans-serif;
 	font-weight: 500;
-	font-size: 0.85rem;
+	font-size: 0.95rem;
 	text-decoration: none;
 
 	/* Animation */
@@ -80,10 +78,10 @@ input[type="submit"] {
 	&.ms-outline {
 		/* Color */
 		background-color: transparent;
-		color: rgba(var(--btn-bg-color), 1);
+		color: rgba(var(--default-bg-color), 1);
 
 		/* Border */
-		border: 2px solid rgba(var(--btn-bg-color), 1);
+		border: 2px solid rgba(var(--default-bg-color), 1);
 
 		&.ms-primary {
 			@include btn-outline(rgba(var(--primary-bg-color), 1));
@@ -105,11 +103,11 @@ input[type="submit"] {
 	&.ms-underline {
 		/* Color */
 		background-color: transparent;
-		color: rgba(var(--btn-bg-color), 1);
+		color: rgba(var(--default-bg-color), 1);
 
 		/* Border */
 		border-radius: 0;
-		border-bottom: 2px solid rgba(var(--btn-bg-color), 1);
+		border-bottom: 2px solid rgba(var(--default-bg-color), 1);
 
 		&.ms-primary {
 			@include btn-underline(rgba(var(--primary-bg-color), 1));
@@ -129,7 +127,7 @@ input[type="submit"] {
 
 		&:active {
 			box-shadow: none;
-			border-bottom: 2px solid rgba(var(--btn-bg-color), 0.3);
+			border-bottom: 2px solid rgba(var(--default-bg-color), 0.3);
 
 			&.ms-primary {
 				@include btn-underline-active(rgba(var(--primary-bg-color), 0.3));
@@ -184,7 +182,7 @@ input[type="submit"] {
 	}
 
 	&:active {
-		box-shadow: 0 0 0 5px rgba(var(--btn-bg-color), 0.3);
+		box-shadow: 0 0 0 5px rgba(var(--default-bg-color), 0.3);
 
 		&.ms-primary {
 			box-shadow: 0 0 0 5px rgba(var(--primary-bg-color), 0.3);
