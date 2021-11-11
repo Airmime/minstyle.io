@@ -194,23 +194,31 @@ html[data-theme="dark"] {
 }
 
 .ms-alert .ms-close {
+  /* General */
   width: 20px;
   height: 20px;
   display: block;
+  /* Position */
   position: absolute;
   top: 2px;
   right: 2px;
-  cursor: pointer;
+  /* Text */
   text-align: center;
+  /* Cursor */
+  cursor: pointer;
 }
 
 .ms-alert .ms-close:before, .ms-alert .ms-close:after {
+  /* General */
+  height: 10px;
+  width: 2px;
+  /* Position */
   position: absolute;
   left: 9px;
   top: 5px;
+  /* Content */
   content: " ";
-  height: 10px;
-  width: 2px;
+  /* Color */
   background-color: rgba(var(--alert-text-color), 1);
 }
 
@@ -571,10 +579,12 @@ button[disabled],
 }
 
 .ms-card .ms-card-pic .ms-card-pic-stick {
+  /* Position */
   position: absolute;
-  text-align: right;
   top: 10px;
   right: 10px;
+  /* Text */
+  text-align: right;
 }
 
 .ms-card .ms-card-title {
@@ -589,9 +599,11 @@ button[disabled],
 .ms-card .ms-card-title h5,
 .ms-card .ms-card-title h6,
 .ms-card .ms-card-title a {
+  /* Text */
   font-size: 2rem;
   text-decoration: none;
   color: rgba(var(--main-text-color), 1);
+  /* Margin */
   margin: 0;
   padding: 0;
 }
@@ -637,15 +649,20 @@ button[disabled],
 }
 
 .ms-card.ms-border {
+  /* Border */
   border: 2px solid rgba(var(--default-bg-color), 0.1);
   padding-top: 1rem;
   border-radius: 10px;
+  /* Margin */
   padding: 1rem;
 }
 
 .ms-card.ms-fill {
+  /* Color */
   background-color: rgba(var(--default-bg-color), 0.1);
+  /* Border */
   border-radius: 10px;
+  /* Margin */
   padding: 1rem;
 }
 
@@ -662,8 +679,10 @@ button[disabled],
 }
 
 .ms-card.ms-inline .ms-card-btn .ms-btn {
+  /* Position */
   position: relative;
   top: 50%;
+  /* Transform */
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }

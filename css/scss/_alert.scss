@@ -137,23 +137,37 @@ html[data-theme="dark"] {
 
 	/* Close */
 	.ms-close {
+		/* General */
 		width: 20px;
 		height: 20px;
 		display: block;
+
+		/* Position */
 		position: absolute;
 		top: 2px;
 		right: 2px;
-		cursor: pointer;
+
+		/* Text */
 		text-align: center;
+
+		/* Cursor */
+		cursor: pointer;
 
 		&:before,
 		&:after {
+			/* General */
+			height: 10px;
+			width: 2px;
+
+			/* Position */
 			position: absolute;
 			left: 9px;
 			top: 5px;
+
+			/* Content */
 			content: " ";
-			height: 10px;
-			width: 2px;
+
+			/* Color */
 			background-color: rgba(var(--alert-text-color), 1);
 		}
 

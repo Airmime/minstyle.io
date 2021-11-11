@@ -18,10 +18,13 @@
 		}
 
 		.ms-card-pic-stick {
+			/* Position */
 			position: absolute;
-			text-align: right;
 			top: 10px;
 			right: 10px;
+
+			/* Text */
+			text-align: right;
 		}
 	}
 
@@ -36,9 +39,12 @@
 		h5,
 		h6,
 		a {
+			/* Text */
 			font-size: 2rem;
 			text-decoration: none;
 			color: rgba(var(--main-text-color), 1);
+
+			/* Margin */
 			margin: 0;
 			padding: 0;
 		}
@@ -88,15 +94,23 @@
 
 	/* Options */
 	&.ms-border {
+		/* Border */
 		border: 2px solid rgba(var(--default-bg-color), 0.1);
 		padding-top: 1rem;
 		border-radius: 10px;
+
+		/* Margin */
 		padding: 1rem;
 	}
 
 	&.ms-fill {
+		/* Color */
 		background-color: rgba(var(--default-bg-color), 0.1);
+
+		/* Border */
 		border-radius: 10px;
+
+		/* Margin */
 		padding: 1rem;
 	}
 
@@ -111,9 +125,11 @@
 			padding: 0 1rem;
 
 			.ms-btn {
+				/* Position */
 				position: relative;
 				top: 50%;
-				-ms-transform: translateY(-50%);
+
+				/* Transform */
 				transform: translateY(-50%);
 			}
 		}
