@@ -226,12 +226,12 @@ html[data-theme="dark"] {
 
 .ms-alert .ms-close:hover {
   background-color: rgba(0, 0, 0, 0.1);
-  border-radius: 4px;
+  border-radius: 10px;
 }
 
 .ms-alert .ms-close:active {
   background-color: rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
+  border-radius: 10px;
 }
 
 /* Mixins */
