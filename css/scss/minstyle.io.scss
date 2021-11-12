@@ -39,8 +39,14 @@ html {
 html,
 body {
 	background-color: rgba(var(--main-bg), 1);
+	color: rgba(var(--primary-bg-color), 1);
 	font-family: Inter, sans-serif;
 	font-size: 0.98rem;
+}
+
+a {
+	color: rgba(var(--primary-bg-color), 1);
+	text-decoration: none;
 }
 
 @import "_alert";
@@ -49,3 +55,4 @@ body {
 @import "_card";
 @import "_helper";
 @import "_grid";
+@import "_user";

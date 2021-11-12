@@ -40,8 +40,14 @@ html {
 html,
 body {
   background-color: rgba(var(--main-bg), 1);
+  color: rgba(var(--primary-bg-color), 1);
   font-family: Inter, sans-serif;
   font-size: 0.98rem;
+}
+
+a {
+  color: rgba(var(--primary-bg-color), 1);
+  text-decoration: none;
 }
 
 /* Variables */
@@ -352,7 +358,7 @@ html[data-theme="dark"] {
   background-color: #3ca876;
 }
 
-.ms-avatar .ms-status.ms-busy {
+.ms-avatar .ms-status.ms-off {
   background-color: #ce414c;
 }
 
@@ -5754,5 +5760,95 @@ button[disabled],
   .d-print-none {
     display: none !important;
   }
+}
+
+/* Variables */
+html {
+  --user-bg-color: 36, 36, 36;
+}
+
+html[data-theme="dark"] {
+  --user-bg-color: 243, 243, 243;
+}
+
+.ms-user {
+  /* General */
+  width: 100%;
+  overflow: auto;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* Colors */
+  background-color: var(--user-bg);
+  color: rgba(var(--main-text-color), 1);
+  /* Borders */
+  border: 2px solid rgba(var(--user-bg-color), 0.3);
+  /* Margins */
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.ms-user .ms-avatar {
+  display: block;
+  margin: 0 auto;
+}
+
+.ms-user .ms-user-info {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+.ms-user .ms-user-info p {
+  color: rgba(var(--main-text-color), 1);
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-margin-start: 0;
+          margin-inline-start: 0;
+  -webkit-margin-end: 0;
+          margin-inline-end: 0;
+}
+
+.ms-user .ms-user-content {
+  color: rgba(var(--main-text-color), 1);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+.ms-user .ms-user-pined {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+}
+
+.ms-user.ms-compact .ms-avatar {
+  float: left;
+  margin: 0;
+}
+
+.ms-user.ms-compact .ms-user-info {
+  float: left;
+  text-align: left;
+  margin: 0;
+  margin-left: 1rem;
+}
+
+.ms-user.ms-compact .ms-user-content {
+  float: left;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.ms-user.ms-borderless {
+  border: none;
+}
+
+.ms-user.ms-fill {
+  background-color: rgba(var(--default-bg-color), 0.1);
+  border: none;
 }
 /*# sourceMappingURL=minstyle.io.css.map */
