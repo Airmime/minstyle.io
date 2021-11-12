@@ -1,109 +1,126 @@
 /* Background color */
-.ms-bg-white{
-    background-color: #fff !important;
+.ms-bg-white {
+	background-color: #fff !important;
 }
-.ms-bg-black{
-    background-color: #000 !important;
+.ms-bg-black {
+	background-color: #000 !important;
 }
-.ms-bg-yellow{
-    background-color: #ffd166 !important;
+.ms-bg-yellow {
+	background-color: #ffd166 !important;
 }
-.ms-bg-green{
-    background-color: #52b788 !important;
+.ms-bg-green {
+	background-color: #52b788 !important;
 }
-.ms-bg-red{
-    background-color: #e63946 !important;
+.ms-bg-red {
+	background-color: #e63946 !important;
 }
-.ms-bg-purple{
-    background-color: #9f86c0 !important;
+.ms-bg-purple {
+	background-color: #9f86c0 !important;
 }
-.ms-bg-orange{
-    background-color: #f77f00 !important;
+.ms-bg-orange {
+	background-color: #f77f00 !important;
 }
-.ms-bg-brown{
-    background-color: #7f4f24 !important;
+.ms-bg-brown {
+	background-color: #7f4f24 !important;
 }
-.ms-bg-navy{
-    background-color: #003049 !important;
+.ms-bg-navy {
+	background-color: #003049 !important;
 }
-.ms-bg-bluesky{
-    background-color: #48cae4 !important;
+.ms-bg-bluesky {
+	background-color: #48cae4 !important;
 }
-.ms-bg-pink{
-    background-color: #ea9ab2 !important;
+.ms-bg-pink {
+	background-color: #ea9ab2 !important;
 }
 
 /* Border color */
-.ms-border-white{
-    border-color: #fff !important;
+.ms-border-white {
+	border-color: #fff !important;
 }
-.ms-border-black{
-    border-color: #000 !important;
+.ms-border-black {
+	border-color: #000 !important;
 }
-.ms-border-yellow{
-    border-color: #ffd166 !important;
+.ms-border-yellow {
+	border-color: #ffd166 !important;
 }
-.ms-border-green{
-    border-color: #52b788 !important;
+.ms-border-green {
+	border-color: #52b788 !important;
 }
-.ms-border-red{
-    border-color: #e63946 !important;
+.ms-border-red {
+	border-color: #e63946 !important;
 }
-.ms-border-purple{
-    border-color: #9f86c0 !important;
+.ms-border-purple {
+	border-color: #9f86c0 !important;
 }
-.ms-border-orange{
-    border-color: #f77f00 !important;
+.ms-border-orange {
+	border-color: #f77f00 !important;
 }
-.ms-border-brown{
-    border-color: #7f4f24 !important;
+.ms-border-brown {
+	border-color: #7f4f24 !important;
 }
-.ms-border-navy{
-    border-color: #003049 !important;
+.ms-border-navy {
+	border-color: #003049 !important;
 }
-.ms-border-bluesky{
-    border-color: #48cae4 !important;
+.ms-border-bluesky {
+	border-color: #48cae4 !important;
 }
-.ms-border-pink{
-    border-color: #ea9ab2 !important;
+.ms-border-pink {
+	border-color: #ea9ab2 !important;
 }
 
 /* Text color */
-.ms-text-white{
-    color: #fff !important;
+.ms-text-white {
+	color: #fff !important;
 }
-.ms-text-black{
-    color: #000 !important;
+.ms-text-black {
+	color: #000 !important;
 }
-.ms-text-yellow{
-    color: #ffd166 !important;
+.ms-text-yellow {
+	color: #ffd166 !important;
 }
-.ms-text-green{
-    color: #52b788 !important;
+.ms-text-green {
+	color: #52b788 !important;
 }
-.ms-text-red{
-    color: #e63946 !important;
+.ms-text-red {
+	color: #e63946 !important;
 }
-.ms-text-purple{
-    color: #9f86c0 !important;
+.ms-text-purple {
+	color: #9f86c0 !important;
 }
-.ms-text-orange{
-    color: #f77f00 !important;
+.ms-text-orange {
+	color: #f77f00 !important;
 }
-.ms-text-brown{
-    color: #7f4f24 !important;
+.ms-text-brown {
+	color: #7f4f24 !important;
 }
-.ms-text-navy{
-    color: #003049 !important;
+.ms-text-navy {
+	color: #003049 !important;
 }
-.ms-text-bluesky{
-    color: #48cae4 !important;
+.ms-text-bluesky {
+	color: #48cae4 !important;
 }
-.ms-text-pink{
-    color: #ea9ab2 !important;
+.ms-text-pink {
+	color: #ea9ab2 !important;
+}
+
+/* Text position */
+.ms-text-left {
+	text-align: left !important;
+}
+.ms-text-center {
+	text-align: center !important;
+}
+.ms-text-right {
+	text-align: center !important;
 }
 
 /* Invert color */
-.ms-invert-color{
-    filter: invert(1) !important;
+.ms-invert-color {
+	filter: invert(1) !important;
+}
+
+/* Center div */
+.ms-center {
+	display: block;
+	margin: 0 auto !important;
 }

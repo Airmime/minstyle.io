@@ -394,7 +394,7 @@ input[type="submit"] {
   /* Font */
   font-family: "Inter", sans-serif;
   font-weight: 500;
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   text-decoration: none;
   /* Animation */
   -webkit-transition: 0.2s all ease;
@@ -946,10 +946,29 @@ button[disabled],
   color: #ea9ab2 !important;
 }
 
+/* Text position */
+.ms-text-left {
+  text-align: left !important;
+}
+
+.ms-text-center {
+  text-align: center !important;
+}
+
+.ms-text-right {
+  text-align: center !important;
+}
+
 /* Invert color */
 .ms-invert-color {
   -webkit-filter: invert(1) !important;
           filter: invert(1) !important;
+}
+
+/* Center div */
+.ms-center {
+  display: block;
+  margin: 0 auto !important;
 }
 
 /*!
