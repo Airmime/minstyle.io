@@ -242,6 +242,124 @@ html[data-theme="dark"] {
   border-radius: 10px;
 }
 
+/* Variables */
+html {
+  --avatar-bg-color: 36, 36, 36;
+}
+
+html[data-theme="dark"] {
+  --avatar-bg-color: 248, 248, 248;
+}
+
+.ms-avatar {
+  /* General */
+  width: 55px;
+  height: 55px;
+  display: inline-block;
+  position: relative;
+  /* Colors */
+  background-color: rgba(var(--avatar-bg-color), 0.2);
+  /* Border */
+  border-radius: 50%;
+  /* Text */
+  vertical-align: middle;
+  text-align: center;
+  /* Margin */
+  margin: 0;
+  padding: 0;
+}
+
+.ms-avatar.ms-border {
+  border: 3px solid rgba(var(--avatar-bg-color), 0.2);
+}
+
+.ms-avatar img,
+.ms-avatar .ms-avatar-img {
+  /* General */
+  display: block;
+  max-width: 100%;
+  min-width: 100%;
+  /* Border */
+  border-radius: 50%;
+  /* Margin */
+  margin: 0 auto;
+}
+
+.ms-avatar .ms-text {
+  font-size: 1.7rem;
+  line-height: 55px;
+  font-weight: 600;
+  color: rgba(var(--main-text-color), 1);
+}
+
+.ms-avatar.ms-small {
+  width: 35px;
+  height: 35px;
+}
+
+.ms-avatar.ms-small .ms-text {
+  font-size: 1.1rem;
+  line-height: 35px;
+}
+
+.ms-avatar.ms-medium {
+  width: 75px;
+  height: 75px;
+}
+
+.ms-avatar.ms-medium .ms-text {
+  font-size: 2.5rem;
+  line-height: 75px;
+}
+
+.ms-avatar.ms-medium .ms-status {
+  width: 15px;
+  height: 15px;
+  right: 4px;
+  bottom: 4px;
+}
+
+.ms-avatar.ms-large {
+  width: 95px;
+  height: 95px;
+}
+
+.ms-avatar.ms-large .ms-text {
+  font-size: 3.3rem;
+  line-height: 95px;
+}
+
+.ms-avatar.ms-large .ms-status {
+  width: 20px;
+  height: 20px;
+  right: 2px;
+  bottom: 2px;
+}
+
+.ms-avatar .ms-status {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  right: -5px;
+  bottom: -5px;
+  background-color: #f3f3f3;
+  border: 3px solid rgba(var(--main-bg), 1);
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.ms-avatar .ms-status.ms-on {
+  background-color: #3ca876;
+}
+
+.ms-avatar .ms-status.ms-busy {
+  background-color: #ce414c;
+}
+
+.ms-avatar .ms-status.ms-out {
+  background-color: #ffb703;
+}
+
 /* Mixins */
 html {
   --btn-text-color: 255, 255, 255;
