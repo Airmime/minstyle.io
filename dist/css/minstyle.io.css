@@ -366,6 +366,143 @@ html[data-theme="dark"] {
   background-color: #ffb703;
 }
 
+.ms-article {
+  /* General */
+  display: block;
+  width: 100%;
+  position: relative;
+  /* Border */
+  border-radius: 10px;
+  /* Margin */
+  margin: 1rem 0;
+  padding: 0;
+}
+
+.ms-article .ms-article-picture {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.ms-article .ms-article-picture img {
+  display: block;
+  width: 100%;
+}
+
+.ms-article .ms-article-picture .ms-article-picture-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #020024;
+  background: -webkit-gradient(linear, left bottom, left top, from(#020024), color-stop(0%, rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(0deg, #020024 0%, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.ms-article .ms-article-picture .ms-article-picture-title {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1rem;
+}
+
+.ms-article .ms-article-picture .ms-article-picture-title h1,
+.ms-article .ms-article-picture .ms-article-picture-title h2,
+.ms-article .ms-article-picture .ms-article-picture-title h3,
+.ms-article .ms-article-picture .ms-article-picture-title h4,
+.ms-article .ms-article-picture .ms-article-picture-title h5,
+.ms-article .ms-article-picture .ms-article-picture-title h6,
+.ms-article .ms-article-picture .ms-article-picture-title a {
+  font-size: 2rem;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.ms-article .ms-article-infos {
+  margin: 0;
+  padding: 0.4rem 0;
+}
+
+.ms-article .ms-article-infos ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ms-article .ms-article-infos ul li {
+  display: inline-block;
+  color: rgba(var(--main-text-color), 0.7);
+  font-size: 14px;
+  margin: 0 1rem 0 0;
+  padding: 0;
+}
+
+.ms-article .ms-article-infos i {
+  color: rgba(var(--main-text-color), 0.5);
+}
+
+.ms-article .ms-article-title {
+  display: block;
+  margin: 0;
+  padding: 1rem 0;
+}
+
+.ms-article .ms-article-title h1,
+.ms-article .ms-article-title h2,
+.ms-article .ms-article-title h3,
+.ms-article .ms-article-title h4,
+.ms-article .ms-article-title h5,
+.ms-article .ms-article-title h6,
+.ms-article .ms-article-title a {
+  display: block;
+  font-size: 2rem;
+  text-decoration: none;
+  font-weight: bold;
+  color: rgba(var(--main-text-color), 1);
+  margin: 0;
+  padding: 0;
+}
+
+.ms-article .ms-article-text {
+  color: rgba(var(--main-text-color), 0.9);
+  margin: 0;
+  padding: 1rem 0;
+}
+
+.ms-article .ms-article-text p {
+  margin: 0;
+  padding: 0;
+}
+
+.ms-article .ms-article-text h1,
+.ms-article .ms-article-text h2,
+.ms-article .ms-article-text h3,
+.ms-article .ms-article-text h4,
+.ms-article .ms-article-text h5,
+.ms-article .ms-article-text h6 {
+  display: block;
+  font-size: 1.7rem;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--article-font-color);
+  margin: 1rem 0;
+  padding: 0;
+}
+
+.ms-article .ms-list-label {
+  margin: 0.5rem 0 0 0;
+  padding: 0;
+}
+
+.ms-article .ms-list-label ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 /* Mixins */
 html {
   --btn-text-color: 255, 255, 255;
@@ -743,7 +880,7 @@ button[disabled],
 }
 
 .ms-card .ms-card-content p {
-  color: rgba(var(--main-text-color), 0.8);
+  color: rgba(var(--main-text-color), 0.9);
   margin: 0;
 }
 
@@ -5779,6 +5916,270 @@ button[disabled],
   .d-print-none {
     display: none !important;
   }
+}
+
+/* Variables */
+html {
+  --label-text-color: 36, 36, 36;
+}
+
+html[data-theme="dark"] {
+  --label-text-color: 255, 255, 255;
+}
+
+/* Mixins */
+.ms-label {
+  /* General */
+  display: inline;
+  width: auto;
+  /* Color */
+  background-color: transparent;
+  color: rgba(var(--label-text-color), 1);
+  /* Border */
+  border: 2px solid rgba(var(--alert-bg-color), 0.3);
+  border-radius: 10px;
+  /* Text */
+  line-height: 0.9rem;
+  font-size: 0.9rem;
+  /* Margins */
+  margin-right: 0.1rem;
+  padding: 0.1rem 0.4rem;
+}
+
+.ms-label a {
+  color: var(--main-text-color);
+}
+
+.ms-label.ms-primary {
+  background-color: rgba(var(--primary-bg-color), 1);
+  color: #ffffff;
+  border-color: transparent;
+}
+
+.ms-label.ms-primary a {
+  color: #ffffff;
+}
+
+.ms-label.ms-secondary {
+  background-color: rgba(var(--secondary-bg-color), 1);
+  color: #ffffff;
+  border-color: transparent;
+}
+
+.ms-label.ms-secondary a {
+  color: #ffffff;
+}
+
+.ms-label.ms-action {
+  background-color: rgba(var(--action-bg-color), 1);
+  color: #ffffff;
+  border-color: transparent;
+}
+
+.ms-label.ms-action a {
+  color: #ffffff;
+}
+
+.ms-label.ms-action2 {
+  background-color: rgba(var(--action2-bg-color), 1);
+  color: #000000;
+  border-color: transparent;
+}
+
+.ms-label.ms-action2 a {
+  color: #ffffff;
+}
+
+.ms-label.ms-light.ms-primary {
+  background-color: rgba(var(--primary-bg-color), 0.3);
+  border-color: transparent;
+  color: rgba(var(--primary-bg-color), 1);
+}
+
+.ms-label.ms-light.ms-secondary {
+  background-color: rgba(var(--secondary-bg-color), 0.3);
+  border-color: transparent;
+  color: rgba(var(--secondary-bg-color), 1);
+}
+
+.ms-label.ms-light.ms-action {
+  background-color: rgba(var(--action-bg-color), 0.3);
+  border-color: transparent;
+  color: rgba(var(--action-bg-color), 1);
+}
+
+.ms-label.ms-light.ms-action2 {
+  background-color: rgba(var(--action2-bg-color), 0.3);
+  border-color: transparent;
+  color: rgba(var(--action2-bg-color), 1);
+}
+
+.ms-label.ms-small {
+  font-size: 0.7rem;
+  border-radius: 8px;
+  padding: 0.1rem 0.3rem;
+}
+
+.ms-label.ms-medium {
+  font-size: 1rem;
+  padding: 0.3rem 0.7rem;
+}
+
+.ms-label.ms-large {
+  font-size: 1.2rem;
+  padding: 0.5rem 0.9rem;
+}
+
+.ms-label.ms-rounded {
+  border-radius: 50rem;
+}
+
+/* Mark */
+mark,
+.ms-mark {
+  /* Color */
+  background-color: #ffe9b3;
+  /* Border */
+  border-bottom: 0.05rem solid #ffd367;
+  border-radius: 10px;
+  /* Margin */
+  padding: 0.1rem 0.2rem;
+}
+
+/* Code */
+code,
+.ms-code {
+  /* Color */
+  background-color: #e045404d;
+  color: #e04540;
+  /* Text */
+  font-size: 90%;
+  font-family: Courier, monospace;
+  /* Border */
+  border-radius: 10px;
+  /* Margin */
+  padding: 0.1rem 0.2rem;
+}
+
+/* Terminal */
+kbd,
+.ms-kbd {
+  /* Text */
+  background-color: rgba(var(--main-text-color), 1);
+  color: #ffffff;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  /* Border */
+  border-radius: 10px;
+  /* Margin */
+  padding: 0.2rem 0.2rem;
+}
+
+/* Sementic */
+del,
+s {
+  text-decoration: line-through;
+}
+
+ins,
+u {
+  text-decoration: underline;
+}
+
+small {
+  font-size: 80%;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+i,
+cite {
+  font-style: italic;
+}
+
+pre i,
+pre cite {
+  font-style: normal;
+}
+
+sup {
+  /* General */
+  position: relative;
+  top: -0.4rem;
+  /* Text */
+  line-height: 0;
+  vertical-align: baseline;
+  font-size: 75%;
+}
+
+sub {
+  /* General */
+  position: relative;
+  bottom: -0.2rem;
+  /* Test */
+  line-height: 0;
+  font-size: 75%;
+  vertical-align: baseline;
+}
+
+/* Blockquote */
+blockquote,
+.ms-blockquote {
+  /* Color */
+  background-color: var(--blockquote-bg);
+  color: var(--blockquote-font-color);
+  /* Border */
+  border-left: 4px solid rgba(var(--default-bg-color), 0.2);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  /* Margin */
+  margin: 1rem;
+  padding: 1rem;
+}
+
+blockquote p,
+.ms-blockquote p {
+  margin: 0 0 0 0;
+}
+
+blockquote.ms-center,
+.ms-blockquote.ms-center {
+  text-align: center;
+}
+
+blockquote.ms-primary,
+.ms-blockquote.ms-primary {
+  border-color: rgba(var(--primary-bg-color), 0.5);
+}
+
+blockquote.ms-secondary,
+.ms-blockquote.ms-secondary {
+  border-color: rgba(var(--secondary-bg-color), 0.5);
+}
+
+blockquote.ms-action,
+.ms-blockquote.ms-action {
+  border-color: rgba(var(--action-bg-color), 0.5);
+}
+
+blockquote.ms-action2,
+.ms-blockquote.ms-action2 {
+  border-color: rgba(var(--action2-bg-color), 0.5);
+}
+
+/* HR */
+hr {
+  /* General */
+  width: 100%;
+  height: 1px;
+  /* Color */
+  background-color: rgba(0, 0, 0, 0.1);
+  /* Border */
+  border: none;
+  /* Margin */
+  margin: 1rem 0;
 }
 
 /* Variables */
