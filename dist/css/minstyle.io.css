@@ -40,7 +40,7 @@ html {
 html,
 body {
   background-color: rgba(var(--main-bg), 1);
-  color: rgba(var(--primary-bg-color), 1);
+  color: rgba(var(--main-text-color), 1);
   font-family: Inter, sans-serif;
   font-size: 0.98rem;
 }
@@ -877,6 +877,67 @@ html[data-theme="dark"] {
   width: 100%;
   /* Border */
   border-bottom: 2px solid rgba(var(--breadcrumb-bg-color), 0.3);
+}
+
+/* Variables */
+html {
+  --browser-bg-color: #f3f3f3;
+}
+
+html[data-theme="dark"] {
+  --browser-bg-color: #25282c;
+}
+
+.ms-browser {
+  background-color: var(--browser-bg-color);
+  border: 4px solid var(--browser-bg-color);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.ms-browser .ms-tab-browser {
+  padding: 0.6rem 0.6rem;
+}
+
+.ms-browser .ms-tab-browser .ms-dots {
+  display: inline-block;
+}
+
+.ms-browser .ms-tab-browser .ms-dots .ms-dot {
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  background-color: rgba(var(--primary-bg-color), 1);
+  border-radius: 50%;
+}
+
+.ms-browser .ms-tab-browser .ms-dots .ms-dot.red {
+  background-color: #e04540;
+}
+
+.ms-browser .ms-tab-browser .ms-dots .ms-dot.yellow {
+  background-color: #f9bf10;
+}
+
+.ms-browser .ms-tab-browser .ms-dots .ms-dot.green {
+  background-color: #3ab656;
+}
+
+.ms-browser .ms-tab-browser .ms-uri {
+  width: 80%;
+  display: inline-block;
+  background-color: rgba(var(--main-bg), 1);
+  border-radius: 50rem;
+  margin: 0 0 0 0.5rem;
+  padding: 0.2rem 0.5rem;
+}
+
+.ms-browser .ms-content {
+  background-color: rgba(var(--main-bg), 1);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+  padding: 10px;
 }
 
 .ms-card {

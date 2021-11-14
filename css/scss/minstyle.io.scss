@@ -39,7 +39,7 @@ html {
 html,
 body {
 	background-color: rgba(var(--main-bg), 1);
-	color: rgba(var(--primary-bg-color), 1);
+	color: rgba(var(--main-text-color), 1);
 	font-family: Inter, sans-serif;
 	font-size: 0.98rem;
 }
@@ -53,7 +53,8 @@ a {
 @import "avatar";
 @import "article";
 @import "_button";
-@import "_breadcrumbs";
+@import "_breadcrumb";
+@import "_browser";
 @import "_card";
 @import "_helper";
 @import "_grid";

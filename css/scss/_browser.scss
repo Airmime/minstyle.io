@@ -1,48 +1,57 @@
-/* VARIABLES */
-html{
-  --browser-bg: $default-bg-darker;
-  --browser-font-color: $default-font-color;
-  --browser-bg-content: $default-bg;
+/* Variables */
+html {
+	--browser-bg-color: #f3f3f3;
 }
 
-html[data-theme='dark'] {
-  --browser-bg: $default-bg-dark;
-  --browser-font-color: $default-font-color-dark;
-  --browser-bg-content: $default-bg-dark-lighter;
+html[data-theme="dark"] {
+	--browser-bg-color: #25282c;
 }
 
-.ms-browser{
-	background-color: var(--browser-bg);
-	border: 4px solid var(--browser-bg);
-	@include border-top-radius($default-border-radius);
+.ms-browser {
+	background-color: var(--browser-bg-color);
+	border: 4px solid var(--browser-bg-color);
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
 
-	.ms-tab-browser{
+	.ms-tab-browser {
+		padding: 0.6rem 0.6rem;
 
-		padding: 0.4rem 0.6rem;
-
-		.ms-dot{
+		.ms-dots {
 			display: inline-block;
-			height: 12px;
-			width: 12px;
-			background-color: $color-gray-1;
-			@include border-radius(50%);
 
-			&.red{
-				background-color: $color-red-1;
-			}
+			.ms-dot {
+				display: inline-block;
+				height: 12px;
+				width: 12px;
+				background-color: rgba(var(--primary-bg-color), 1);
+				border-radius: 50%;
 
-			&.yellow{
-				background-color: $color-yellow-1;
-			}
+				&.red {
+					background-color: #e04540;
+				}
 
-			&.green{
-				background-color: $color-green-1;
+				&.yellow {
+					background-color: #f9bf10;
+				}
+
+				&.green {
+					background-color: #3ab656;
+				}
 			}
+		}
+
+		.ms-uri {
+			width: 80%;
+			display: inline-block;
+			background-color: rgba(var(--main-bg), 1);
+			border-radius: 50rem;
+			margin: 0 0 0 0.5rem;
+			padding: 0.2rem 0.5rem;
 		}
 	}
 
-	.ms-content{
-		background-color: var(--browser-bg-content);
+	.ms-content {
+		background-color: rgba(var(--main-bg), 1);
 		box-sizing: border-box;
 		overflow: hidden;
 		padding: 10px;
