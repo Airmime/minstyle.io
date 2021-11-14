@@ -1,55 +1,67 @@
-/* VARIABLES */
-html{
-	--breadcrumb-bg: $default-bg-darker;
-	--breadcrumb-font-color: $default-font-color;
-	--breadcrumb-border-color: $color-gray-1;
+/* Variables */
+html {
+	--breadcrumb-bg-color: 36, 36, 36;
 }
 
-html[data-theme='dark'] {
-	--breadcrumb-bg: $default-bg-dark;
-	--breadcrumb-font-color: $default-font-color-dark;
-	--breadcrumb-border-color: $color-gray-3;
+html[data-theme="dark"] {
+	--breadcrumb-bg-color: 243, 243, 243;
 }
 
-/* BASE */
-.ms-breadcrumb{
-	ul{
+.ms-breadcrumb {
+	/* Margin */
+	padding: 1rem;
+
+	ul {
+		/* General */
 		list-style: none;
-		margin: 0;
 
-		li{
-			color: var(--breadcrumb-font-color);
+		/* Margin */
+		margin: 0;
+		padding: 0;
+
+		li {
+			/* General */
 			list-style: none;
 			display: inline-block;
-			margin: 0 0 0 0.5rem;
 
-			&:after{
+			/* Color */
+			color: rgba(var(--main-text-color), 1);
+
+			/* Margin */
+			margin: 0 0 0 0.5rem;
+			padding: 0;
+
+			&:after {
 				content: "/";
 				padding-left: 0.5rem;
 			}
 
-			&:last-child:after{
+			&:last-child:after {
 				content: "";
 			}
 
-			&:first-child{
+			&:first-child {
 				margin-left: 0;
 			}
 		}
 	}
 
-	/* BACKGROUND */
-	&.ms-background{
+	&.ms-background {
+		/* General */
 		width: 100%;
-		background-color: var(--breadcrumb-bg);
-		padding: 1rem;
-		@include border-radius($default-border-radius);
+
+		/* Color */
+		background-color: rgba(var(--default-bg-color), 0.1);
+
+		/* Border */
+		border-radius: 10px;
 	}
 
-	/* BORDER */
-	&.ms-border{
+	&.ms-border {
+		/* Genral */
 		width: 100%;
-		border-bottom: 1px solid var(--breadcrumb-border-color);
-		padding: 1rem;
+
+		/* Border */
+		border-bottom: 2px solid rgba(var(--breadcrumb-bg-color), 0.3);
 	}
 }

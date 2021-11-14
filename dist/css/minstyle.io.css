@@ -817,6 +817,68 @@ button[disabled],
   cursor: not-allowed;
 }
 
+/* Variables */
+html {
+  --breadcrumb-bg-color: 36, 36, 36;
+}
+
+html[data-theme="dark"] {
+  --breadcrumb-bg-color: 243, 243, 243;
+}
+
+.ms-breadcrumb {
+  /* Margin */
+  padding: 1rem;
+}
+
+.ms-breadcrumb ul {
+  /* General */
+  list-style: none;
+  /* Margin */
+  margin: 0;
+  padding: 0;
+}
+
+.ms-breadcrumb ul li {
+  /* General */
+  list-style: none;
+  display: inline-block;
+  /* Color */
+  color: rgba(var(--main-text-color), 1);
+  /* Margin */
+  margin: 0 0 0 0.5rem;
+  padding: 0;
+}
+
+.ms-breadcrumb ul li:after {
+  content: "/";
+  padding-left: 0.5rem;
+}
+
+.ms-breadcrumb ul li:last-child:after {
+  content: "";
+}
+
+.ms-breadcrumb ul li:first-child {
+  margin-left: 0;
+}
+
+.ms-breadcrumb.ms-background {
+  /* General */
+  width: 100%;
+  /* Color */
+  background-color: rgba(var(--default-bg-color), 0.1);
+  /* Border */
+  border-radius: 10px;
+}
+
+.ms-breadcrumb.ms-border {
+  /* Genral */
+  width: 100%;
+  /* Border */
+  border-bottom: 2px solid rgba(var(--breadcrumb-bg-color), 0.3);
+}
+
 .ms-card {
   /* General */
   width: 100%;
