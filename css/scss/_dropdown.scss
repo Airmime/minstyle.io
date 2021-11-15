@@ -1,74 +1,85 @@
-/* VARIABLES */
-html{
-  --dropdown-bg: $default-bg;
-  --dropdown-bg-hover: $color-gray-0;
-  --dropdown-font-color: $default-font-color;
-  --dropdown-border-color: $color-gray-1;
-}
-
-html[data-theme='dark'] {
-  --dropdown-bg: $default-bg-dark;
-  --dropdown-bg-hover: $default-bg-dark-lighter;
-  --dropdown-font-color: $default-font-color-dark;
-  --dropdown-border-color: $color-gray-3;
-}
-
-/* BASE */
-.ms-dropdown{
-	z-index: 999;
+.ms-dropdown {
+	/* General */
+	z-index: 998;
 	display: inline-block;
+
+	/* Position */
 	position: relative;
+
+	/* Margin */
 	margin: 0;
 	padding: 0;
 
-	button, 
-	.ms-btn, 
-	input[type='button'], 
-	input[type='submit']{
+	button,
+	.ms-btn,
+	input[type="button"],
+	input[type="submit"] {
 		margin-bottom: 0;
 	}
 
-		&:hover .ms-dropdown-content, .ms-dropdown-content:focus{
-			display: block;
-		}
+	&:hover .ms-dropdown-content,
+	.ms-dropdown-content:focus {
+		display: block;
+	}
 
-		.ms-dropdown-content{
-			display: none;
-			height: 0.3rem;
-			width: 100%;
+	.ms-dropdown-content {
+		/* General */
+		display: none;
+		height: 0.3rem;
+		width: 100%;
+
+		/* Position */
+		position: absolute;
+		left: 0;
+		top: 100%;
+
+		.ms-dropdown-content-list {
+			/* General */
+			z-index: 999;
+			min-width: 7rem;
+
+			/* Position */
 			position: absolute;
 			left: 0;
 			top: 100%;
 
-			.ms-dropdown-content-list{
-				min-width: 7rem;
-				position: absolute;
-				left: 0;
-				top: 100%;
-				background-color: var(--dropdown-bg);
-				border: 1px solid var(--dropdown-border-color);
+			/* Color */
+			background-color: rgba(var(--default-bg-color), 0.05);
+
+			/* Border */
+			border-radius: 10px;
+			border: none;
+
+			/* Margin */
+			margin: 0;
+			padding: 0.5rem;
+
+			li {
+				list-style: none;
 				margin: 0;
-				padding: 0.5rem;
-				@include border-radius($default-border-radius);
+				padding: 0;
 
-				li{
-					list-style: none;
+				a {
+					/* General */
+					display: block;
+
+					/* Text */
+					font-size: 0.9rem;
+					font-weight: 500;
+
+					/* Color */
+					color: rgba(var(--main-text-color), 1);
+
+					/* Margin */
 					margin: 0;
-					padding: 0;
+					padding: 0.3rem 0.5rem;
 
-					a{
-						font-size: 0.9rem;
-						color: var(--dropdown-font-color);
-						display: block;
-						margin: 0;
-						padding: 0.2rem 0.5rem;
-
-						&:hover{
-							background-color: var(--dropdown-bg-hover);
-							@include border-radius($default-border-radius);
-						}
+					&:hover {
+						background-color: rgba(var(--default-bg-color), 0.1);
+						border-radius: 10px;
 					}
 				}
 			}
 		}
 	}
+}
