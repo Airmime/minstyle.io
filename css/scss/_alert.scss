@@ -81,28 +81,28 @@ html[data-theme="dark"] {
 
 	&.ms-light {
 		@include alert-light(
-			rgba(var(--alert-bg-color), 0.3),
+			rgba(var(--alert-bg-color), 0.2),
 			rgba(var(--alert-text-color), 1)
 		);
 
 		/* Color */
 		&.ms-primary {
 			@include alert-light(
-				rgba(var(--primary-bg-color), 0.3),
+				rgba(var(--primary-bg-color), 0.2),
 				rgba(var(--primary-bg-color), 1)
 			);
 		}
 
 		&.ms-secondary {
 			@include alert-light(
-				rgba(var(--secondary-bg-color), 0.3),
+				rgba(var(--secondary-bg-color), 0.2),
 				rgba(var(--secondary-bg-color), 1)
 			);
 		}
 
 		&.ms-action {
 			@include alert-light(
-				rgba(var(--action-bg-color), 0.3),
+				rgba(var(--action-bg-color), 0.2),
 				rgba(var(--action-bg-color), 1)
 			);
 		}

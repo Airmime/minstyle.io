@@ -130,7 +130,7 @@ html[data-theme="dark"] {
 }
 
 .ms-alert.ms-light {
-  background-color: rgba(var(--alert-bg-color), 0.3);
+  background-color: rgba(var(--alert-bg-color), 0.2);
   border-color: transparent;
   color: rgba(var(--alert-text-color), 1);
   /* Color */
@@ -141,7 +141,7 @@ html[data-theme="dark"] {
 }
 
 .ms-alert.ms-light.ms-primary {
-  background-color: rgba(var(--primary-bg-color), 0.3);
+  background-color: rgba(var(--primary-bg-color), 0.2);
   border-color: transparent;
   color: rgba(var(--primary-bg-color), 1);
 }
@@ -151,7 +151,7 @@ html[data-theme="dark"] {
 }
 
 .ms-alert.ms-light.ms-secondary {
-  background-color: rgba(var(--secondary-bg-color), 0.3);
+  background-color: rgba(var(--secondary-bg-color), 0.2);
   border-color: transparent;
   color: rgba(var(--secondary-bg-color), 1);
 }
@@ -161,7 +161,7 @@ html[data-theme="dark"] {
 }
 
 .ms-alert.ms-light.ms-action {
-  background-color: rgba(var(--action-bg-color), 0.3);
+  background-color: rgba(var(--action-bg-color), 0.2);
   border-color: transparent;
   color: rgba(var(--action-bg-color), 1);
 }
@@ -885,7 +885,7 @@ html {
 }
 
 html[data-theme="dark"] {
-  --browser-bg-color: #25282c;
+  --browser-bg-color: #1d1e20;
 }
 
 .ms-browser {
@@ -1305,6 +1305,404 @@ html[data-theme="dark"] {
 .ms-center {
   display: block;
   margin: 0 auto !important;
+}
+
+/* Variables */
+html {
+  --form-text-color: 36, 36, 36;
+  --form-border-color: 36, 36, 36;
+}
+
+html[data-theme="dark"] {
+  --form-text-color: 255, 255, 255;
+  --form-border-color: 243, 243, 243;
+}
+
+/* Mixins */
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="url"],
+input[type="color"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="datetime"],
+input[type="range"],
+input[type="datetime-local"],
+input[type="file"],
+input:not([type]),
+textarea,
+select {
+  /* General */
+  display: inline-block;
+  width: 100%;
+  height: 40px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  /* Font */
+  font-family: Inter, sans-serif;
+  color: var(--form-text-color);
+  font-size: 0.98rem;
+  /* Background */
+  background-color: var(--main-bg);
+  /* Border */
+  border: 2px solid rgba(var(--alert-bg-color), 0.3);
+  border-radius: 10px;
+  /* Margin */
+  margin: 0;
+  padding: 0 0.8rem;
+  /* Colors */
+  /* Options */
+  /* Size */
+  /* Events */
+}
+
+input[type="email"]::-webkit-input-placeholder,
+input[type="number"]::-webkit-input-placeholder,
+input[type="password"]::-webkit-input-placeholder,
+input[type="search"]::-webkit-input-placeholder,
+input[type="tel"]::-webkit-input-placeholder,
+input[type="text"]::-webkit-input-placeholder,
+input[type="url"]::-webkit-input-placeholder,
+input[type="color"]::-webkit-input-placeholder,
+input[type="date"]::-webkit-input-placeholder,
+input[type="month"]::-webkit-input-placeholder,
+input[type="week"]::-webkit-input-placeholder,
+input[type="datetime"]::-webkit-input-placeholder,
+input[type="range"]::-webkit-input-placeholder,
+input[type="datetime-local"]::-webkit-input-placeholder,
+input[type="file"]::-webkit-input-placeholder,
+input:not([type])::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder,
+select::-webkit-input-placeholder {
+  color: rgba(var(--alert-bg-color), 0.4);
+}
+
+input[type="email"]:-ms-input-placeholder,
+input[type="number"]:-ms-input-placeholder,
+input[type="password"]:-ms-input-placeholder,
+input[type="search"]:-ms-input-placeholder,
+input[type="tel"]:-ms-input-placeholder,
+input[type="text"]:-ms-input-placeholder,
+input[type="url"]:-ms-input-placeholder,
+input[type="color"]:-ms-input-placeholder,
+input[type="date"]:-ms-input-placeholder,
+input[type="month"]:-ms-input-placeholder,
+input[type="week"]:-ms-input-placeholder,
+input[type="datetime"]:-ms-input-placeholder,
+input[type="range"]:-ms-input-placeholder,
+input[type="datetime-local"]:-ms-input-placeholder,
+input[type="file"]:-ms-input-placeholder,
+input:not([type]):-ms-input-placeholder,
+textarea:-ms-input-placeholder,
+select:-ms-input-placeholder {
+  color: rgba(var(--alert-bg-color), 0.4);
+}
+
+input[type="email"]::-ms-input-placeholder,
+input[type="number"]::-ms-input-placeholder,
+input[type="password"]::-ms-input-placeholder,
+input[type="search"]::-ms-input-placeholder,
+input[type="tel"]::-ms-input-placeholder,
+input[type="text"]::-ms-input-placeholder,
+input[type="url"]::-ms-input-placeholder,
+input[type="color"]::-ms-input-placeholder,
+input[type="date"]::-ms-input-placeholder,
+input[type="month"]::-ms-input-placeholder,
+input[type="week"]::-ms-input-placeholder,
+input[type="datetime"]::-ms-input-placeholder,
+input[type="range"]::-ms-input-placeholder,
+input[type="datetime-local"]::-ms-input-placeholder,
+input[type="file"]::-ms-input-placeholder,
+input:not([type])::-ms-input-placeholder,
+textarea::-ms-input-placeholder,
+select::-ms-input-placeholder {
+  color: rgba(var(--alert-bg-color), 0.4);
+}
+
+input[type="email"]::placeholder,
+input[type="number"]::placeholder,
+input[type="password"]::placeholder,
+input[type="search"]::placeholder,
+input[type="tel"]::placeholder,
+input[type="text"]::placeholder,
+input[type="url"]::placeholder,
+input[type="color"]::placeholder,
+input[type="date"]::placeholder,
+input[type="month"]::placeholder,
+input[type="week"]::placeholder,
+input[type="datetime"]::placeholder,
+input[type="range"]::placeholder,
+input[type="datetime-local"]::placeholder,
+input[type="file"]::placeholder,
+input:not([type])::placeholder,
+textarea::placeholder,
+select::placeholder {
+  color: rgba(var(--alert-bg-color), 0.4);
+}
+
+input[type="email"].ms-primary,
+input[type="number"].ms-primary,
+input[type="password"].ms-primary,
+input[type="search"].ms-primary,
+input[type="tel"].ms-primary,
+input[type="text"].ms-primary,
+input[type="url"].ms-primary,
+input[type="color"].ms-primary,
+input[type="date"].ms-primary,
+input[type="month"].ms-primary,
+input[type="week"].ms-primary,
+input[type="datetime"].ms-primary,
+input[type="range"].ms-primary,
+input[type="datetime-local"].ms-primary,
+input[type="file"].ms-primary,
+input:not([type]).ms-primary,
+textarea.ms-primary,
+select.ms-primary {
+  border: 2px solid rgba(var(--primary-bg-color), 1);
+  background-color: var(--main-bg);
+}
+
+input[type="email"].ms-secondary,
+input[type="number"].ms-secondary,
+input[type="password"].ms-secondary,
+input[type="search"].ms-secondary,
+input[type="tel"].ms-secondary,
+input[type="text"].ms-secondary,
+input[type="url"].ms-secondary,
+input[type="color"].ms-secondary,
+input[type="date"].ms-secondary,
+input[type="month"].ms-secondary,
+input[type="week"].ms-secondary,
+input[type="datetime"].ms-secondary,
+input[type="range"].ms-secondary,
+input[type="datetime-local"].ms-secondary,
+input[type="file"].ms-secondary,
+input:not([type]).ms-secondary,
+textarea.ms-secondary,
+select.ms-secondary {
+  border: 2px solid rgba(var(--secondary-bg-color), 1);
+  background-color: var(--main-bg);
+}
+
+input[type="email"].ms-action,
+input[type="number"].ms-action,
+input[type="password"].ms-action,
+input[type="search"].ms-action,
+input[type="tel"].ms-action,
+input[type="text"].ms-action,
+input[type="url"].ms-action,
+input[type="color"].ms-action,
+input[type="date"].ms-action,
+input[type="month"].ms-action,
+input[type="week"].ms-action,
+input[type="datetime"].ms-action,
+input[type="range"].ms-action,
+input[type="datetime-local"].ms-action,
+input[type="file"].ms-action,
+input:not([type]).ms-action,
+textarea.ms-action,
+select.ms-action {
+  border: 2px solid rgba(var(--action-bg-color), 1);
+  background-color: var(--main-bg);
+}
+
+input[type="email"].ms-action2,
+input[type="number"].ms-action2,
+input[type="password"].ms-action2,
+input[type="search"].ms-action2,
+input[type="tel"].ms-action2,
+input[type="text"].ms-action2,
+input[type="url"].ms-action2,
+input[type="color"].ms-action2,
+input[type="date"].ms-action2,
+input[type="month"].ms-action2,
+input[type="week"].ms-action2,
+input[type="datetime"].ms-action2,
+input[type="range"].ms-action2,
+input[type="datetime-local"].ms-action2,
+input[type="file"].ms-action2,
+input:not([type]).ms-action2,
+textarea.ms-action2,
+select.ms-action2 {
+  border: 2px solid rgba(var(--action2-bg-color), 1);
+  background-color: var(--main-bg);
+}
+
+input[type="email"].ms-rounded,
+input[type="number"].ms-rounded,
+input[type="password"].ms-rounded,
+input[type="search"].ms-rounded,
+input[type="tel"].ms-rounded,
+input[type="text"].ms-rounded,
+input[type="url"].ms-rounded,
+input[type="color"].ms-rounded,
+input[type="date"].ms-rounded,
+input[type="month"].ms-rounded,
+input[type="week"].ms-rounded,
+input[type="datetime"].ms-rounded,
+input[type="range"].ms-rounded,
+input[type="datetime-local"].ms-rounded,
+input[type="file"].ms-rounded,
+input:not([type]).ms-rounded,
+textarea.ms-rounded,
+select.ms-rounded {
+  border-radius: 50px;
+}
+
+input[type="email"].ms-disabled,
+input[type="number"].ms-disabled,
+input[type="password"].ms-disabled,
+input[type="search"].ms-disabled,
+input[type="tel"].ms-disabled,
+input[type="text"].ms-disabled,
+input[type="url"].ms-disabled,
+input[type="color"].ms-disabled,
+input[type="date"].ms-disabled,
+input[type="month"].ms-disabled,
+input[type="week"].ms-disabled,
+input[type="datetime"].ms-disabled,
+input[type="range"].ms-disabled,
+input[type="datetime-local"].ms-disabled,
+input[type="file"].ms-disabled,
+input:not([type]).ms-disabled,
+textarea.ms-disabled,
+select.ms-disabled {
+  cursor: not-allowed;
+}
+
+input[type="email"].ms-small,
+input[type="number"].ms-small,
+input[type="password"].ms-small,
+input[type="search"].ms-small,
+input[type="tel"].ms-small,
+input[type="text"].ms-small,
+input[type="url"].ms-small,
+input[type="color"].ms-small,
+input[type="date"].ms-small,
+input[type="month"].ms-small,
+input[type="week"].ms-small,
+input[type="datetime"].ms-small,
+input[type="range"].ms-small,
+input[type="datetime-local"].ms-small,
+input[type="file"].ms-small,
+input:not([type]).ms-small,
+textarea.ms-small,
+select.ms-small {
+  height: 30px;
+}
+
+input[type="email"].ms-medium,
+input[type="number"].ms-medium,
+input[type="password"].ms-medium,
+input[type="search"].ms-medium,
+input[type="tel"].ms-medium,
+input[type="text"].ms-medium,
+input[type="url"].ms-medium,
+input[type="color"].ms-medium,
+input[type="date"].ms-medium,
+input[type="month"].ms-medium,
+input[type="week"].ms-medium,
+input[type="datetime"].ms-medium,
+input[type="range"].ms-medium,
+input[type="datetime-local"].ms-medium,
+input[type="file"].ms-medium,
+input:not([type]).ms-medium,
+textarea.ms-medium,
+select.ms-medium {
+  height: 50px;
+}
+
+input[type="email"].ms-large,
+input[type="number"].ms-large,
+input[type="password"].ms-large,
+input[type="search"].ms-large,
+input[type="tel"].ms-large,
+input[type="text"].ms-large,
+input[type="url"].ms-large,
+input[type="color"].ms-large,
+input[type="date"].ms-large,
+input[type="month"].ms-large,
+input[type="week"].ms-large,
+input[type="datetime"].ms-large,
+input[type="range"].ms-large,
+input[type="datetime-local"].ms-large,
+input[type="file"].ms-large,
+input:not([type]).ms-large,
+textarea.ms-large,
+select.ms-large {
+  height: 60px;
+}
+
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="text"]:focus,
+input[type="url"]:focus,
+input[type="color"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="datetime"]:focus,
+input[type="range"]:focus,
+input[type="datetime-local"]:focus,
+input[type="file"]:focus,
+input:not([type]):focus,
+textarea:focus,
+select:focus {
+  outline: 0;
+}
+
+/* Form group */
+.ms-form-group {
+  margin-bottom: 1rem;
+}
+
+.ms-form-group label,
+.ms-form-group .ms-label {
+  display: block;
+  margin-bottom: 0.6rem;
+  font-size: 0.9rem;
+}
+
+.ms-form-group .ms-under-input {
+  display: block;
+  font-size: 0.9rem;
+  margin-top: 0.4rem;
+}
+
+/* Overide */
+select {
+  min-width: 100px;
+  cursor: pointer;
+  background: url("data:image/svg+xml,%3Csvg aria-hidden='true' focusable='false' data-prefix='fas' data-icon='sort-down' class='svg-inline--fa fa-sort-down fa-w-10' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'%3E%3Cpath fill='currentColor' d='M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41z'%3E%3C/path%3E%3C/svg%3E") no-repeat right 0.5rem center/1rem 1rem;
+}
+
+textarea {
+  padding: 10px;
+  height: inherit;
+}
+
+input[disabled] {
+  cursor: not-allowed;
+  background-color: var(--form-bg);
+  border: 1px solid var(--form-border-color);
+}
+
+input[type="file"] {
+  border: none;
+  padding: 0 0.5rem;
 }
 
 /*!
