@@ -139,11 +139,14 @@ textarea {
 
 input[disabled] {
 	cursor: not-allowed;
-	background-color: var(--form-bg);
-	border: 1px solid var(--form-border-color);
 }
 
 input[type="file"] {
 	border: none;
 	padding: 0 0.5rem;
+}
+
+select option {
+	background: rgba(var(--main-bg), 1);
+	color: rgba(var(--main-text-color), 1);
 }
