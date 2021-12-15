@@ -42,6 +42,8 @@ body {
 	color: rgba(var(--main-text-color), 1);
 	font-family: Inter, sans-serif;
 	font-size: 0.98rem;
+	margin: 0;
+	padding: 0;
 }
 
 a {
@@ -50,16 +52,17 @@ a {
 }
 
 @import "_alert";
-@import "avatar";
 @import "article";
-@import "_button";
+@import "avatar";
 @import "_breadcrumb";
 @import "_browser";
+@import "_button";
 @import "_card";
 @import "_dropdown";
-@import "_helper";
 @import "_form";
 @import "_grid";
+@import "_helper";
 @import "_label";
+@import "_menu";
 @import "_typography";
 @import "_user";

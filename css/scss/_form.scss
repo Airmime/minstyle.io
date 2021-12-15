@@ -43,11 +43,11 @@ select {
 
 	/* Font */
 	font-family: Inter, sans-serif;
-	color: var(--form-text-color);
+	color: rgba(var(--main-text-color), 1);
 	font-size: 0.98rem;
 
 	/* Background */
-	background-color: var(--main-bg);
+	background-color: rgba(var(--main-bg), 1);
 
 	/* Border */
 	border: 2px solid rgba(var(--alert-bg-color), 0.3);

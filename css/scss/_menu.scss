@@ -1,123 +1,88 @@
-/* VARIABLES */
-html{
-  --menu-bg: $default-bg-darker;
-  --menu-bg-hover: $default-bg;
-  --menu-font-color: $default-font-color;
-}
-
-html[data-theme='dark'] {
-  --menu-bg: $default-bg-dark;
-  --menu-bg-hover: $default-bg-dark-lighter;
-  --menu-font-color: $default-font-color-dark;
-}
-
-/* MIXIN */
-@mixin menu($textColor,$primaryColor,$secondColor){
-	background-color: $primaryColor;
-
-
-	.ms-menu-logo {
-		color: $textColor;
-	}
-
-	.ms-menu-link {
-		ul {
-			a {
-				color: $textColor;
-
-				&:hover {
-					background-color: $secondColor;
-					color: #fff;
-				}
-			}
-		}
-	}
-
-	.ms-menu-icon {
-		color: $textColor;
-	}
-}
-
-@mixin menuResponsive($primaryColor){
-
-	.ms-menu-link {
-		ul {
-			a {
-				background-color: $primaryColor;
-			}
-		}
-	}
-}
-
-/* BASE */
-.ms-menu{
+.ms-menu {
+	/* General */
 	position: relative;
 	z-index: 999;
-
 	width: 100%;
 	height: 50px;
+
+	/* Colors */
 	line-height: 50px;
 	text-align: center;
-	font-family: sans-serif;
-	background-color: var(--menu-bg);
+
+	/* Color */
+	background-color: rgba(var(--default-bg-color), 0.03);
 
 	.ms-menu-logo {
+		/* General */
 		width: auto;
 		height: 100%;
 		float: left;
-		margin: 0 0 0 15px;
-		color: var(--default-font-color);
 
-		p{
+		/* Colors */
+		color: rgba(var(--main-text-color), 1);
+
+		/* Margin */
+		margin: 0 0 0 15px;
+		padding: 0;
+
+		p {
 			font-size: 1.2rem;
-			font-weight: bold;
+			font-weight: 600;
 			margin: 0;
-			padding: 15px 0;
+			padding: 0;
 		}
 
-		img{
+		img {
 			max-height: 50px;
 		}
 	}
 
 	.ms-menu-link {
-		width: 60%;
+		width: 75%;
 		height: 100%;
 		float: right;
 
 		ul {
-			width: 100%;
 			height: inherit;
-			margin: 0;
-			padding: 0;
 			list-style: none;
-			display: -webkit-box;
-			display: -moz-box;
-			display: -ms-flexbox;
-			display: -webkit-flex;
-			display: flex;
+			text-align: right;
+			margin: 0 15px 0 0;
+			padding: 0;
 
-
-			a {
-				width: 20%;
+			li {
+				font-weight: 400;
 				height: inherit;
-				color: var(--default-font-color);
 				display: inline-block;
-				text-decoration: none;
+				margin: 0;
+				padding: 0;
 
-				&:hover {
-					background-color: var(--menu-bg-hover);
-					color: var(--default-font-color);
+				&:last-child {
+					padding-right: 0;
 				}
 
-				li{
-					margin: 0;
-					padding: 0;
+				a {
+					display: block;
+
+					/* Animation */
+					-webkit-transition: 0.2s all ease;
+					transition: 0.2s ease all;
+
+					color: rgba(var(--main-text-color), 1);
+					text-decoration: none;
+					font-weight: 600;
+					padding: 0 20px;
+
+					&:hover {
+						background-color: rgba(var(--default-bg-color), 0.05);
+					}
+
+					&:active {
+						background-color: rgba(var(--default-bg-color), 0.2);
+					}
 				}
 			}
 		}
 	}
-
 
 	#ms-menu-toggle {
 		display: none;
@@ -126,52 +91,34 @@ html[data-theme='dark'] {
 	.ms-menu-icon {
 		display: none;
 		cursor: pointer;
-		color: var(--default-font-color);
-	}
-
-	&.ms-info{
-		@include menu(#ffffff,$color-blue-1,$color-blue-2);
-	}
-
-	&.ms-danger{
-		@include menu(#ffffff,$color-red-1,$color-red-2);
-	}
-
-	&.ms-success{
-		@include menu(#ffffff,$color-green-1,$color-green-2);
-	}
-
-	&.ms-warning{
-		@include menu(#ffffff,$color-yellow-1,$color-yellow-2);
+		color: rgba(var(--main-text-color), 1);
 	}
 }
 
-
-
 /* Screen < 768px */
 @media screen and (max-width: 768px) {
-	.ms-menu{
-
+	.ms-menu {
 		.ms-menu-link {
+			background-color: rgba(var(--main-bg), 1);
 			width: 100%;
 			height: auto;
+			margin: 0;
+			padding: 0;
 
 			ul {
 				display: block;
 				max-height: 0;
 				overflow: hidden;
-				-webkit-transition: max-height 0.3s;
-				-moz-transition: max-height 0.3s;
-				-ms-transition: max-height 0.3s;
-				-o-transition: max-height 0.3s;
 				transition: max-height 0.3s;
+				margin: 0;
+				padding: 10px;
 
-				a {
+				li {
 					text-align: left;
 					width: 100%;
 					height: 50px;
-					background-color: var(--menu-bg);
-					padding: 0.2rem 0px 0.2rem 5%;
+					margin: 0;
+					padding: 0;
 				}
 			}
 		}
@@ -192,22 +139,6 @@ html[data-theme='dark'] {
 
 		.ms-menu-icon i {
 			font-size: 1.7em;
-		}
-
-		&.ms-info{
-			@include menuResponsive($color-blue-1);
-		}
-
-		&.ms-danger{
-			@include menuResponsive($color-red-1);
-		}
-
-		&.ms-success{
-			@include menuResponsive($color-green-1);
-		}
-
-		&.ms-warning{
-			@include menuResponsive($color-yellow-1);
 		}
 	}
 }
