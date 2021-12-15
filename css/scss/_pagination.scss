@@ -1,97 +1,78 @@
-/* VARIABLES */
-html{
-  --pagination-bg: $default-bg-darker;
-  --pagination-font-color: $color-gray-3;
-  --pagination-border-color: $color-gray-1;
-}
-
-html[data-theme='dark'] {
-  --pagination-bg: $default-bg-dark;
-  --pagination-font-color: $default-font-color-dark;
-  --pagination-border-color: $color-gray-3;
-}
-
-/* BASE */
-.ms-pagination{
-
+.ms-pagination {
 	margin: 1rem 0;
 
-	ul{
+	ul {
 		list-style: none;
 		display: flex;
 		margin: 0;
 
-		li{
+		li {
 			list-style: none;
 			margin: 0;
 
-			a{
+			a {
 				padding: 0.5rem;
 				text-decoration: none;
-				color: var(--pagination-font-color);
-				@include border-radius($default-border-radius);
+				color: rgba(var(--alert-text-color), 1);
+				border-radius: 10px;
 
-				&.ms-active{
+				&.ms-active {
 					color: #fff;
-					background-color: $color-blue-1;
+					background-color: rgba(var(--primary-bg-color), 1);
 
-					&:hover{
-						background-color: $color-blue-2;
-					}
-
-					&:active{
-						background-color: $color-blue-3;
+					&:hover {
+						background-color: rgba(var(--primary-bg-color), 1);
 					}
 				}
 
-				&.ms-disabled{
+				&.ms-disabled {
 					cursor: default;
 					pointer-events: none;
-					color: tint($color-dark-1,20);
+					color: rgba(var(--main-text-color), 0.5);
 				}
 
-				&:hover{
-					background-color: var(--pagination-bg);
+				&:hover {
+					background-color: rgba(var(--default-bg-color), 0.1);
 				}
 
-				&:active{
-					background-color: var(--pagination-bg);
+				&:active {
+					background-color: rgba(var(--default-bg-color), 0.2);
 				}
 			}
 
-			span{
+			span {
 				padding: 0.5rem;
-				color: $color-gray-2;
+				color: rgba(var(--main-text-color), 0.5);
 			}
 		}
 	}
 
-	&.ms-border{
-		ul{
-			li{
+	&.ms-border {
+		ul {
+			li {
 				margin-right: -1px;
 
-				&:first-child a{
-					border-top-left-radius: $default-border-radius;
-					border-bottom-left-radius: $default-border-radius;
+				&:first-child a {
+					border-top-left-radius: 10px;
+					border-bottom-left-radius: 10px;
 				}
 
-				&:last-child a{
-					border-top-right-radius: $default-border-radius;
-					border-bottom-right-radius: $default-border-radius;
+				&:last-child a {
+					border-top-right-radius: 10px;
+					border-bottom-right-radius: 10px;
 				}
 
-				a{
-					border: 1px solid var(--pagination-border-color);
-					@include border-radius(0);
+				a {
+					border: 2px solid rgba(var(--alert-bg-color), 0.2);
+					border-radius: 0px;
 
-					&.ms-active{
-						border-color: $color-blue-1;
+					&.ms-active {
+						border-color: rgba(var(--primary-bg-color), 1);
 					}
 				}
 
-				span{
-					border: 1px solid var(--pagination-border-color);
+				span {
+					border: 2px solid rgba(var(--alert-bg-color), 0.3);
 				}
 			}
 		}

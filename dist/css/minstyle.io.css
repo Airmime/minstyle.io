@@ -73,7 +73,7 @@ html[data-theme="dark"] {
           box-sizing: border-box;
   vertical-align: middle;
   /* Color */
-  background-color: var(--main-bg);
+  background-color: rgba(var(--main-bg), 1);
   color: rgba(var(--alert-text-color), 1);
   /* Font */
   font-size: 0.9rem;
@@ -625,7 +625,7 @@ html[data-theme="dark"] {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   overflow: hidden;
-  padding: 10px;
+  padding: 15px;
 }
 
 /* Mixins */
@@ -6765,6 +6765,85 @@ html[data-theme="dark"] {
   .ms-menu .ms-menu-icon i {
     font-size: 1.7em;
   }
+}
+
+.ms-pagination {
+  margin: 1rem 0;
+}
+
+.ms-pagination ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+}
+
+.ms-pagination ul li {
+  list-style: none;
+  margin: 0;
+}
+
+.ms-pagination ul li a {
+  padding: 0.5rem;
+  text-decoration: none;
+  color: rgba(var(--alert-text-color), 1);
+  border-radius: 10px;
+}
+
+.ms-pagination ul li a.ms-active {
+  color: #fff;
+  background-color: rgba(var(--primary-bg-color), 1);
+}
+
+.ms-pagination ul li a.ms-active:hover {
+  background-color: rgba(var(--primary-bg-color), 1);
+}
+
+.ms-pagination ul li a.ms-disabled {
+  cursor: default;
+  pointer-events: none;
+  color: rgba(var(--main-text-color), 0.5);
+}
+
+.ms-pagination ul li a:hover {
+  background-color: rgba(var(--default-bg-color), 0.1);
+}
+
+.ms-pagination ul li a:active {
+  background-color: rgba(var(--default-bg-color), 0.2);
+}
+
+.ms-pagination ul li span {
+  padding: 0.5rem;
+  color: rgba(var(--main-text-color), 0.5);
+}
+
+.ms-pagination.ms-border ul li {
+  margin-right: -1px;
+}
+
+.ms-pagination.ms-border ul li:first-child a {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.ms-pagination.ms-border ul li:last-child a {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.ms-pagination.ms-border ul li a {
+  border: 2px solid rgba(var(--alert-bg-color), 0.2);
+  border-radius: 0px;
+}
+
+.ms-pagination.ms-border ul li a.ms-active {
+  border-color: rgba(var(--primary-bg-color), 1);
+}
+
+.ms-pagination.ms-border ul li span {
+  border: 2px solid rgba(var(--alert-bg-color), 0.3);
 }
 
 /* Mark */

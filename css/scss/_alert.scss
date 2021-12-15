@@ -45,7 +45,7 @@ html[data-theme="dark"] {
 	vertical-align: middle;
 
 	/* Color */
-	background-color: var(--main-bg);
+	background-color: rgba(var(--main-bg), 1);
 	color: rgba(var(--alert-text-color), 1);
 
 	/* Font */
