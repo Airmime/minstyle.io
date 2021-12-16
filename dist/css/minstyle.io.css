@@ -6926,6 +6926,45 @@ html[data-theme="dark"] {
   height: 0.3rem;
 }
 
+table,
+.ms-table {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+table thead,
+.ms-table thead {
+  text-align: left;
+  border-bottom: 3px solid rgba(var(--alert-bg-color), 0.1);
+}
+
+table td,
+table th,
+.ms-table td,
+.ms-table th {
+  padding: 0.8rem 0.4rem;
+  border-bottom: 2px solid rgba(var(--alert-bg-color), 0.1);
+}
+
+table th,
+.ms-table th {
+  font-weight: bold;
+}
+
+table.ms-striped td,
+table.ms-striped th,
+.ms-table.ms-striped td,
+.ms-table.ms-striped th {
+  border: none;
+}
+
+table.ms-striped tbody tr:nth-of-type(odd),
+.ms-table.ms-striped tbody tr:nth-of-type(odd) {
+  background: rgba(var(--alert-bg-color), 0.05);
+}
+
 /* Mark */
 mark,
 .ms-mark {
