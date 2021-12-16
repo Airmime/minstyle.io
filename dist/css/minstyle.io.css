@@ -42,7 +42,7 @@ body {
   background-color: rgba(var(--main-bg), 1);
   color: rgba(var(--main-text-color), 1);
   font-family: Inter, sans-serif;
-  font-size: 0.98rem;
+  font-size: 0.97rem;
   margin: 0;
   padding: 0;
 }
@@ -617,7 +617,7 @@ html[data-theme="dark"] {
   background-color: rgba(var(--main-bg), 1);
   border-radius: 50rem;
   margin: 0 0 0 0.5rem;
-  padding: 0.2rem 0.5rem;
+  padding: 0.2rem 1rem;
 }
 
 .ms-browser .ms-content {
