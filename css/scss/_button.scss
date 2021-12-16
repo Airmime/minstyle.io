@@ -48,6 +48,7 @@ input[type="submit"] {
 	font-family: "Inter", sans-serif;
 	font-weight: 500;
 	font-size: 0.92rem;
+	text-align: center;
 	text-decoration: none;
 
 	/* Animation */
@@ -233,16 +234,26 @@ button[disabled],
 		&:first-child:not(:last-child) {
 			border-bottom-right-radius: 0;
 			border-top-right-radius: 0;
+			border-right: 1px solid rgba(var(--btn-text-color), 0.3);
 
 			&.ms-outline {
+				border-right: 0px;
+			}
+
+			&.ms-underline {
 				border-right: 0px;
 			}
 		}
 
 		&:not(:first-child):not(:last-child) {
 			border-radius: 0;
+			border-right: 1px solid rgba(var(--btn-text-color), 0.3);
 
 			&.ms-outline {
+				border-right: 0px;
+			}
+
+			&.ms-underline {
 				border-right: 0px;
 			}
 		}
