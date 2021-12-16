@@ -6965,6 +6965,75 @@ table.ms-striped tbody tr:nth-of-type(odd),
   background: rgba(var(--alert-bg-color), 0.05);
 }
 
+.ms-tab {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-bottom: 2px solid rgba(var(--default-bg-color), 0.1);
+  margin: 0;
+  padding: 0;
+}
+
+.ms-tab ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ms-tab ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ms-tab ul li a {
+  display: block;
+  font-size: 1rem;
+  color: rgba(var(--default-text-color), 0.1);
+  text-decoration: none;
+  margin: 0;
+  padding: 1rem;
+  border-bottom: 2px solid transparent;
+}
+
+.ms-tab ul li a:hover {
+  border-bottom: 4px solid rgba(var(--default-bg-color), 0.1);
+}
+
+.ms-tab ul li a.ms-active {
+  border-bottom: 4px solid rgba(var(--default-bg-color), 0.1);
+}
+
+.ms-tab ul li.ms-logo img {
+  max-height: 30px;
+  vertical-align: bottom;
+}
+
+.ms-tab ul li.ms-logo a:hover {
+  border-bottom: none;
+}
+
+.ms-tab.ms-fullwidth ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.ms-tab.ms-fullwidth ul li {
+  overflow: hidden;
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.ms-tab.ms-fullwidth ul li a {
+  width: 100%;
+}
+
 /* Mark */
 mark,
 .ms-mark {
