@@ -42,6 +42,7 @@ body {
   background-color: rgba(var(--main-bg), 1);
   color: rgba(var(--main-text-color), 1);
   font-family: Inter, sans-serif;
+  text-rendering: optimizeLegibility;
   font-size: 0.97rem;
   margin: 0;
   padding: 0;
@@ -628,7 +629,6 @@ html[data-theme="dark"] {
   padding: 15px;
 }
 
-/* Mixins */
 html {
   --btn-text-color: 255, 255, 255;
 }
@@ -637,7 +637,6 @@ html[data-theme="dark"] {
   --btn-text-color: 36, 36, 36;
 }
 
-/* Mixins */
 button,
 .ms-btn,
 input[type="button"],
@@ -647,6 +646,10 @@ input[type="submit"] {
   display: inline-block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   /* Color */
   background-color: rgba(var(--default-bg-color), 1);
   color: rgba(var(--btn-text-color), 1);
@@ -940,6 +943,66 @@ button[disabled],
 .ms-disabled {
   opacity: 0.5;
   cursor: not-allowed;
+}
+
+.ms-btn-group {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.ms-btn-group.ms-fullwidth {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.ms-btn-group.ms-fullwidth button,
+.ms-btn-group.ms-fullwidth .ms-btn,
+.ms-btn-group.ms-fullwidth input[type="button"],
+.ms-btn-group.ms-fullwidth input[type="submit"] {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 0px;
+          flex: 1 0 0;
+}
+
+.ms-btn-group button:first-child:not(:last-child),
+.ms-btn-group .ms-btn:first-child:not(:last-child),
+.ms-btn-group input[type="button"]:first-child:not(:last-child),
+.ms-btn-group input[type="submit"]:first-child:not(:last-child) {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.ms-btn-group button:first-child:not(:last-child).ms-outline,
+.ms-btn-group .ms-btn:first-child:not(:last-child).ms-outline,
+.ms-btn-group input[type="button"]:first-child:not(:last-child).ms-outline,
+.ms-btn-group input[type="submit"]:first-child:not(:last-child).ms-outline {
+  border-right: 0px;
+}
+
+.ms-btn-group button:not(:first-child):not(:last-child),
+.ms-btn-group .ms-btn:not(:first-child):not(:last-child),
+.ms-btn-group input[type="button"]:not(:first-child):not(:last-child),
+.ms-btn-group input[type="submit"]:not(:first-child):not(:last-child) {
+  border-radius: 0;
+}
+
+.ms-btn-group button:not(:first-child):not(:last-child).ms-outline,
+.ms-btn-group .ms-btn:not(:first-child):not(:last-child).ms-outline,
+.ms-btn-group input[type="button"]:not(:first-child):not(:last-child).ms-outline,
+.ms-btn-group input[type="submit"]:not(:first-child):not(:last-child).ms-outline {
+  border-right: 0px;
+}
+
+.ms-btn-group button:last-child:not(:first-child),
+.ms-btn-group .ms-btn:last-child:not(:first-child),
+.ms-btn-group input[type="button"]:last-child:not(:first-child),
+.ms-btn-group input[type="submit"]:last-child:not(:first-child) {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
 }
 
 .ms-card {
