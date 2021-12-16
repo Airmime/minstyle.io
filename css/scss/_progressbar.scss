@@ -1,78 +1,74 @@
-/* VARIABLES */
-html{
-  --progress-bg: $default-bg-darker;
-  --progress-bg-fill: $color-gray-3;
+html {
+	--progress-text-color: 255, 255, 255;
 }
 
-html[data-theme='dark'] {
-  --progress-bg: $default-bg-dark;
-  --progress-bg-fill: $color-gray-3;
+html[data-theme="dark"] {
+	--progress-text-color: 36, 36, 36;
 }
 
-/* BASE */
-progress,
-.ms-progress{
+.ms-progress {
 	width: 100%;
 	height: 1.3rem;
 	display: flex;
-	background-color: var(--progress-bg);
+	background-color: rgba(var(--default-bg-color), 0.1);
 	text-align: center;
 	overflow: hidden;
-	margin: $default-margin;
-	@include border-radius(4px);
-	
-	.ms-progress-fill{
+	margin: 10px 0;
+	border-radius: 10px;
+
+	.ms-progress-fill {
 		height: 1.3rem;
-		background-color: var(--progress-bg-fill);
+		background-color: rgba(var(--default-bg-color), 1);
 		font-size: 0.75rem;
 		text-align: center;
 		font-weight: bold;
 		line-height: 1.3rem;
-		color: #fff;
-		
-		/* COLORS */
-		&.ms-info{
-			background-color: $color-blue-1;
+		color: rgba(var(--progress-text-color), 1);
+
+		&.ms-primary {
+			background-color: rgba(var(--primary-bg-color), 1);
 		}
-		
-		&.ms-success{
-			background-color: $color-green-1;
+
+		&.ms-secondary {
+			background-color: rgba(var(--secondary-bg-color), 1);
 		}
-		
-		&.ms-danger{
-			background-color: $color-red-1;
+
+		&.ms-action {
+			background-color: rgba(var(--action-bg-color), 1);
 		}
-		
-		&.ms-warning{
-			background-color: $color-yellow-1;
+
+		&.ms-action2 {
+			background-color: rgba(var(--action2-bg-color), 1);
 		}
 	}
-	
-	/* SIZES */
-	&.ms-medium{
+
+	&.ms-medium {
 		height: 1.7rem;
-		
-		.ms-progress-fill{
+
+		.ms-progress-fill {
 			height: 1.7rem;
 			line-height: 1.7rem;
 		}
 	}
-	
-	&.ms-large{
+
+	&.ms-large {
 		height: 2rem;
-		
-		.ms-progress-fill{
+
+		.ms-progress-fill {
 			height: 2rem;
 			line-height: 2rem;
 		}
 	}
-	
-	/* GLOBAL */
-	&.ms-rounded{
-		@include border-radius(50rem);
-		
-		.ms-rounded{
-			@include border-radius(50rem);
+
+	&.ms-rounded {
+		border-radius: 50px;
+
+		.ms-rounded {
+			border-radius: 50px;
 		}
+	}
+
+	&.ms-light {
+		height: 0.3rem;
 	}
 }

@@ -6849,6 +6849,83 @@ html[data-theme="dark"] {
   border: 2px solid rgba(var(--alert-bg-color), 0.3);
 }
 
+html {
+  --progress-text-color: 255, 255, 255;
+}
+
+html[data-theme="dark"] {
+  --progress-text-color: 36, 36, 36;
+}
+
+.ms-progress {
+  width: 100%;
+  height: 1.3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(var(--default-bg-color), 0.1);
+  text-align: center;
+  overflow: hidden;
+  margin: 10px 0;
+  border-radius: 10px;
+}
+
+.ms-progress .ms-progress-fill {
+  height: 1.3rem;
+  background-color: rgba(var(--default-bg-color), 1);
+  font-size: 0.75rem;
+  text-align: center;
+  font-weight: bold;
+  line-height: 1.3rem;
+  color: rgba(var(--progress-text-color), 1);
+}
+
+.ms-progress .ms-progress-fill.ms-primary {
+  background-color: rgba(var(--primary-bg-color), 1);
+}
+
+.ms-progress .ms-progress-fill.ms-secondary {
+  background-color: rgba(var(--secondary-bg-color), 1);
+}
+
+.ms-progress .ms-progress-fill.ms-action {
+  background-color: rgba(var(--action-bg-color), 1);
+}
+
+.ms-progress .ms-progress-fill.ms-action2 {
+  background-color: rgba(var(--action2-bg-color), 1);
+}
+
+.ms-progress.ms-medium {
+  height: 1.7rem;
+}
+
+.ms-progress.ms-medium .ms-progress-fill {
+  height: 1.7rem;
+  line-height: 1.7rem;
+}
+
+.ms-progress.ms-large {
+  height: 2rem;
+}
+
+.ms-progress.ms-large .ms-progress-fill {
+  height: 2rem;
+  line-height: 2rem;
+}
+
+.ms-progress.ms-rounded {
+  border-radius: 50px;
+}
+
+.ms-progress.ms-rounded .ms-rounded {
+  border-radius: 50px;
+}
+
+.ms-progress.ms-light {
+  height: 0.3rem;
+}
+
 /* Mark */
 mark,
 .ms-mark {
