@@ -6926,45 +6926,6 @@ html[data-theme="dark"] {
   height: 0.3rem;
 }
 
-table,
-.ms-table {
-  width: 100%;
-  border-spacing: 0;
-  border-collapse: collapse;
-  margin-bottom: 1rem;
-}
-
-table thead,
-.ms-table thead {
-  text-align: left;
-  border-bottom: 3px solid rgba(var(--alert-bg-color), 0.1);
-}
-
-table td,
-table th,
-.ms-table td,
-.ms-table th {
-  padding: 0.8rem 0.4rem;
-  border-bottom: 2px solid rgba(var(--alert-bg-color), 0.1);
-}
-
-table th,
-.ms-table th {
-  font-weight: bold;
-}
-
-table.ms-striped td,
-table.ms-striped th,
-.ms-table.ms-striped td,
-.ms-table.ms-striped th {
-  border: none;
-}
-
-table.ms-striped tbody tr:nth-of-type(odd),
-.ms-table.ms-striped tbody tr:nth-of-type(odd) {
-  background: rgba(var(--alert-bg-color), 0.05);
-}
-
 .ms-tab {
   width: 100%;
   -webkit-box-sizing: border-box;
@@ -7032,6 +6993,45 @@ table.ms-striped tbody tr:nth-of-type(odd),
 
 .ms-tab.ms-fullwidth ul li a {
   width: 100%;
+}
+
+table,
+.ms-table {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+table thead,
+.ms-table thead {
+  text-align: left;
+  border-bottom: 3px solid rgba(var(--alert-bg-color), 0.1);
+}
+
+table td,
+table th,
+.ms-table td,
+.ms-table th {
+  padding: 0.8rem 0.4rem;
+  border-bottom: 2px solid rgba(var(--alert-bg-color), 0.1);
+}
+
+table th,
+.ms-table th {
+  font-weight: bold;
+}
+
+table.ms-striped td,
+table.ms-striped th,
+.ms-table.ms-striped td,
+.ms-table.ms-striped th {
+  border: none;
+}
+
+table.ms-striped tbody tr:nth-of-type(odd),
+.ms-table.ms-striped tbody tr:nth-of-type(odd) {
+  background: rgba(var(--alert-bg-color), 0.05);
 }
 
 /* Mark */
@@ -7201,8 +7201,6 @@ html[data-theme="dark"] {
   /* Colors */
   background-color: var(--user-bg);
   color: rgba(var(--main-text-color), 1);
-  /* Borders */
-  border: 2px solid rgba(var(--user-bg-color), 0.3);
   /* Margins */
   padding: 1rem;
   border-radius: 10px;
@@ -7270,5 +7268,9 @@ html[data-theme="dark"] {
 .ms-user.ms-fill {
   background-color: rgba(var(--default-bg-color), 0.1);
   border: none;
+}
+
+.ms-user.ms-border {
+  border: 2px solid rgba(var(--user-bg-color), 0.3);
 }
 /*# sourceMappingURL=minstyle.io.css.map */

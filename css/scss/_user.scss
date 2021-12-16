@@ -18,9 +18,6 @@ html[data-theme="dark"] {
 	background-color: var(--user-bg);
 	color: rgba(var(--main-text-color), 1);
 
-	/* Borders */
-	border: 2px solid rgba(var(--user-bg-color), 0.3);
-
 	/* Margins */
 	padding: 1rem;
 	border-radius: 10px;
@@ -84,5 +81,9 @@ html[data-theme="dark"] {
 	&.ms-fill {
 		background-color: rgba(var(--default-bg-color), 0.1);
 		border: none;
+	}
+
+	&.ms-border {
+		border: 2px solid rgba(var(--user-bg-color), 0.3);
 	}
 }
