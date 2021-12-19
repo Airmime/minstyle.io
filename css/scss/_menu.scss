@@ -38,7 +38,7 @@
 	}
 
 	.ms-menu-link {
-		width: 75%;
+		width: auto;
 		height: 100%;
 		float: right;
 
@@ -61,8 +61,6 @@
 				}
 
 				a {
-					display: block;
-
 					/* Animation */
 					-webkit-transition: 0.2s all ease;
 					transition: 0.2s ease all;
@@ -73,11 +71,11 @@
 					padding: 0 20px;
 
 					&:hover {
-						background-color: rgba(var(--default-bg-color), 0.05);
+						color: rgba(var(--main-text-color), 0.6);
 					}
 
 					&:active {
-						background-color: rgba(var(--default-bg-color), 0.2);
+						color: rgba(var(--main-text-color), 0.4);
 					}
 				}
 			}

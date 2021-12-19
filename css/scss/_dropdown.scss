@@ -15,6 +15,10 @@
 	input[type="button"],
 	input[type="submit"] {
 		margin-bottom: 0;
+
+		&:hover {
+			transform: none;
+		}
 	}
 
 	&:hover .ms-dropdown-content,

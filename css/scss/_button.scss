@@ -174,10 +174,10 @@ input[type="submit"] {
 
 	/* Actions */
 	&:hover {
-		filter: contrast(130%);
+		transform: translate(0, -3px);
 
 		&.ms-disabled {
-			filter: none;
+			transform: none;
 		}
 	}
 
