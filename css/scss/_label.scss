@@ -1,13 +1,3 @@
-/* Variables */
-html {
-	--label-text-color: 36, 36, 36;
-}
-
-html[data-theme="dark"] {
-	--label-text-color: 255, 255, 255;
-}
-
-/* Mixins */
 @mixin label($textColor, $primaryColor) {
 	background-color: $primaryColor;
 	color: $textColor;
@@ -24,17 +14,23 @@ html[data-theme="dark"] {
 	color: $textColor;
 }
 
+@mixin label-border($bgColor) {
+	border: 2px solid $bgColor;
+	color: $bgColor;
+	background-color: transparent;
+}
+
 .ms-label {
 	/* General */
 	display: inline;
 	width: auto;
 
 	/* Color */
-	background-color: transparent;
-	color: rgba(var(--label-text-color), 1);
+	background-color: rgba(var(--ligth-bg-color), 1);
+	color: rgba(var(--main-text-color), 1);
 
 	/* Border */
-	border: 2px solid rgba(var(--alert-bg-color), 0.3);
+	border: 2px solid transparent;
 	border-radius: 10px;
 
 	/* Text */
@@ -63,6 +59,24 @@ html[data-theme="dark"] {
 
 	&.ms-action2 {
 		@include label(#000000, rgba(var(--action2-bg-color), 1));
+	}
+
+	&.ms-border {
+		&.ms-primary {
+			@include label-border(rgba(var(--primary-bg-color), 1));
+		}
+
+		&.ms-secondary {
+			@include label-border(rgba(var(--secondary-bg-color), 1));
+		}
+
+		&.ms-action {
+			@include label-border(rgba(var(--action-bg-color), 1));
+		}
+
+		&.ms-action2 {
+			@include label-border(rgba(var(--action2-bg-color), 1));
+		}
 	}
 
 	&.ms-light {

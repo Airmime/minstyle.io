@@ -15,7 +15,7 @@ html[data-theme="dark"] {
 	box-sizing: border-box;
 
 	/* Colors */
-	background-color: var(--user-bg);
+	background-color: transparent;
 	color: rgba(var(--main-text-color), 1);
 
 	/* Margins */
@@ -79,11 +79,11 @@ html[data-theme="dark"] {
 	}
 
 	&.ms-fill {
-		background-color: rgba(var(--default-bg-color), 0.1);
+		background-color: rgba(var(--ligth-bg-color), 1);
 		border: none;
 	}
 
 	&.ms-border {
-		border: 2px solid rgba(var(--user-bg-color), 0.3);
+		border: 2px solid rgba(var(--default-border-color), 1);
 	}
 }

@@ -9,9 +9,13 @@
 
 :root {
 	--main-bg: 255, 255, 255;
-	--main-text-color: 0, 0, 0;
+	--main-text-color: 25, 25, 25;
+	--light-text-color: 190, 190, 190;
 
-	--default-bg-color: 36, 36, 36;
+	--default-bg-color: 40, 40, 40;
+	--ligth-bg-color: 248, 248, 248;
+	--default-border-color: 230, 230, 230;
+
 	--primary-bg-color: 34, 115, 238;
 	--secondary-bg-color: 60, 168, 118;
 	--action-bg-color: 206, 65, 76;
@@ -21,6 +25,10 @@
 html[data-theme="dark"] {
 	--main-bg: 37, 40, 44;
 	--main-text-color: 255, 255, 255;
+
+	--ligth-bg-color: 46, 49, 54;
+	--default-border-color: 55, 58, 63;
+
 	--default-bg-color: 243, 243, 243;
 }
 

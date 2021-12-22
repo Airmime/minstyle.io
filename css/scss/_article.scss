@@ -51,7 +51,7 @@
 				font-size: 2rem;
 				text-decoration: none;
 				font-weight: bold;
-				color: rgba(255, 255, 255, 1);
+				color: rgba(255, 255, 255, 0.95);
 				margin: 0;
 				padding: 0;
 			}
@@ -69,7 +69,7 @@
 
 			li {
 				display: inline-block;
-				color: rgba(var(--main-text-color), 0.7);
+				color: rgba(var(--default-bg-color), 1);
 				font-size: 14px;
 				margin: 0 1rem 0 0;
 				padding: 0;
@@ -123,7 +123,7 @@
 			font-size: 1.7rem;
 			text-decoration: none;
 			font-weight: 600;
-			color: var(--article-font-color);
+			color: var(--main-text-color);
 			margin: 1rem 0;
 			padding: 0;
 		}

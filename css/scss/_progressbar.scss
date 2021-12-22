@@ -1,29 +1,21 @@
-html {
-	--progress-text-color: 255, 255, 255;
-}
-
-html[data-theme="dark"] {
-	--progress-text-color: 36, 36, 36;
-}
-
 .ms-progress {
 	width: 100%;
-	height: 1.3rem;
+	height: 1.1rem;
 	display: flex;
-	background-color: rgba(var(--default-bg-color), 0.1);
+	background-color: rgba(var(--ligth-bg-color), 1);
 	text-align: center;
 	overflow: hidden;
 	margin: 10px 0;
 	border-radius: 10px;
 
 	.ms-progress-fill {
-		height: 1.3rem;
-		background-color: rgba(var(--default-bg-color), 1);
+		height: 1.1rem;
+		background-color: rgba(var(--default-bg-color), 0.2);
 		font-size: 0.75rem;
 		text-align: center;
 		font-weight: bold;
-		line-height: 1.3rem;
-		color: rgba(var(--progress-text-color), 1);
+		line-height: 1.2rem;
+		color: #fff;
 
 		&.ms-primary {
 			background-color: rgba(var(--primary-bg-color), 1);

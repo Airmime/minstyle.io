@@ -102,11 +102,11 @@ sub {
 blockquote,
 .ms-blockquote {
 	/* Color */
-	background-color: var(--blockquote-bg);
-	color: var(--blockquote-font-color);
+	color: rgba(var(--main-text-color), 1);
+	font-weight: inherit;
 
 	/* Border */
-	border-left: 4px solid rgba(var(--default-bg-color), 0.2);
+	border-left: 4px solid rgba(var(--default-border-color), 0.2);
 	border-top-right-radius: 10px;
 	border-bottom-right-radius: 10px;
 

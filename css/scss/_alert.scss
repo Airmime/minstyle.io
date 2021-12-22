@@ -1,15 +1,3 @@
-/* Variables */
-html {
-	--alert-text-color: 36, 36, 36;
-	--alert-bg-color: 36, 36, 36;
-}
-
-html[data-theme="dark"] {
-	--alert-text-color: 255, 255, 255;
-	--alert-bg-color: 243, 243, 243;
-}
-
-/* Mixins */
 @mixin alert($color) {
 	background-color: $color;
 	border-color: transparent;
@@ -52,7 +40,7 @@ html[data-theme="dark"] {
 	font-size: 0.9rem;
 
 	/* Border */
-	border: 2px solid rgba(var(--alert-bg-color), 0.3);
+	border: 2px solid rgba(var(--default-border-color), 1);
 	border-radius: 10px;
 
 	/* Margin */
@@ -81,7 +69,7 @@ html[data-theme="dark"] {
 
 	&.ms-light {
 		@include alert-light(
-			rgba(var(--alert-bg-color), 0.2),
+			rgba(var(--ligth-bg-color), 1),
 			rgba(var(--alert-text-color), 1)
 		);
 
@@ -168,7 +156,7 @@ html[data-theme="dark"] {
 			content: " ";
 
 			/* Color */
-			background-color: rgba(var(--alert-text-color), 1);
+			background-color: rgba(var(--main-text-color), 1);
 		}
 
 		&:before {

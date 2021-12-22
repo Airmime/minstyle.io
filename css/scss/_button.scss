@@ -1,11 +1,3 @@
-html {
-	--btn-text-color: 255, 255, 255;
-}
-
-html[data-theme="dark"] {
-	--btn-text-color: 36, 36, 36;
-}
-
 @mixin btn-default($backgroundColor, $textColor) {
 	background-color: $backgroundColor;
 	color: $textColor;
@@ -37,8 +29,8 @@ input[type="submit"] {
 	user-select: none;
 
 	/* Color */
-	background-color: rgba(var(--default-bg-color), 1);
-	color: rgba(var(--btn-text-color), 1);
+	background-color: rgba(var(--ligth-bg-color), 1);
+	color: rgba(var(--main-text-color), 1);
 
 	/* Border */
 	border: none;
@@ -234,7 +226,7 @@ button[disabled],
 		&:first-child:not(:last-child) {
 			border-bottom-right-radius: 0;
 			border-top-right-radius: 0;
-			border-right: 1px solid rgba(var(--btn-text-color), 0.3);
+			border-right: 1px solid rgba(var(--main-bg), 1);
 
 			&.ms-outline {
 				border-right: 0px;
@@ -247,7 +239,7 @@ button[disabled],
 
 		&:not(:first-child):not(:last-child) {
 			border-radius: 0;
-			border-right: 1px solid rgba(var(--btn-text-color), 0.3);
+			border-right: 1px solid rgba(var(--main-bg), 1);
 
 			&.ms-outline {
 				border-right: 0px;

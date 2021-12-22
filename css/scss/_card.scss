@@ -51,7 +51,7 @@
 
 		span {
 			font-style: italic;
-			color: rgba(var(--main-text-color), 0.5);
+			color: rgba(var(--light-text-color), 1);
 		}
 	}
 
@@ -60,7 +60,7 @@
 		padding-bottom: 1rem;
 
 		p {
-			color: rgba(var(--main-text-color), 0.9);
+			color: rgba(var(--main-text-color), 1);
 			margin: 0;
 		}
 	}
@@ -73,20 +73,20 @@
 
 	.ms-section {
 		.ms-section-bloc {
-			border-bottom: 2px solid rgba(var(--main-text-color), 0.1);
+			border-bottom: 2px solid rgba(var(--default-border-color), 1);
 			padding: 1rem;
 
 			p {
-				color: rgba(var(--main-text-color), 0.8);
+				color: rgba(var(--main-text-color), 1);
 				margin: 0;
 			}
 
 			&:first-child {
-				border-top: 2px solid rgba(var(--main-text-color), 0.1);
+				border-top: 2px solid rgba(var(--default-border-color), 1);
 			}
 
 			&:last-child {
-				border-bottom: 2px solid rgba(var(--main-text-color), 0.1);
+				border-bottom: 2px solid rgba(var(--default-border-color), 1);
 				margin-bottom: 1rem;
 			}
 		}
@@ -95,7 +95,7 @@
 	/* Options */
 	&.ms-border {
 		/* Border */
-		border: 2px solid rgba(var(--default-bg-color), 0.1);
+		border: 2px solid rgba(var(--default-border-color), 1);
 		padding-top: 1rem;
 		border-radius: 10px;
 
@@ -105,7 +105,7 @@
 
 	&.ms-fill {
 		/* Color */
-		background-color: rgba(var(--default-bg-color), 0.1);
+		background-color: rgba(var(--ligth-bg-color), 1);
 
 		/* Border */
 		border-radius: 10px;

@@ -1,7 +1,7 @@
 .ms-tab {
 	width: 100%;
 	box-sizing: border-box;
-	border-bottom: 2px solid rgba(var(--default-bg-color), 0.1);
+	border-bottom: 2px solid rgba(var(--default-border-color), 1);
 	margin: 0;
 	padding: 0;
 
@@ -26,11 +26,11 @@
 				border-bottom: 2px solid transparent;
 
 				&:hover {
-					border-bottom: 4px solid rgba(var(--default-bg-color), 0.1);
+					border-bottom: 4px solid rgba(var(--default-border-color), 1);
 				}
 
 				&.ms-active {
-					border-bottom: 4px solid rgba(var(--default-bg-color), 0.1);
+					border-bottom: 4px solid rgba(var(--default-border-color), 1);
 				}
 			}
 
