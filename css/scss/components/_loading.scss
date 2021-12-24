@@ -1,0 +1,61 @@
+.ms-loading {
+	display: block;
+	position: relative;
+	margin: 20px 0;
+
+	.ms-loading-circle {
+		position: absolute;
+		width: 13px;
+		height: 13px;
+		border-radius: 50%;
+		background-color: rgba(var(--main-text-color), 1);
+		animation-timing-function: cubic-bezier(0, 1, 1, 0);
+
+		&:nth-child(1) {
+			left: 8px;
+			animation: ms-loading1 0.6s infinite;
+		}
+
+		&:nth-child(2) {
+			left: 8px;
+			animation: ms-loading2 0.6s infinite;
+		}
+
+		&:nth-child(3) {
+			left: 32px;
+			animation: ms-loading2 0.6s infinite;
+		}
+
+		&:nth-child(4) {
+			left: 56px;
+			animation: ms-loading3 0.6s infinite;
+		}
+	}
+}
+
+@keyframes ms-loading1 {
+	0% {
+		transform: scale(0);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes ms-loading2 {
+	0% {
+		transform: translate(0, 0);
+	}
+	100% {
+		transform: translate(24px, 0);
+	}
+}
+
+@keyframes ms-loading3 {
+	0% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(0);
+	}
+}
