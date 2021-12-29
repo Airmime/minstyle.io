@@ -212,6 +212,11 @@ input[type="submit"] {
 			box-shadow: none;
 		}
 	}
+
+	/* Loading */
+	.ms-loading {
+		border-color: red;
+	}
 }
 
 button[disabled],
