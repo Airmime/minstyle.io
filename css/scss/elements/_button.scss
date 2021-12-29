@@ -21,7 +21,7 @@
 	color: rgba(var(--main-text-color), 1);
 
 	&:hover {
-		border-bottom-color: rgba($color, 0.7);
+		border-bottom-color: rgba($color, 0.5);
 	}
 }
 
@@ -134,27 +134,27 @@ input[type="submit"] {
 
 		&:hover {
 			background-color: transparent;
-			border-color: rgba(var(--default-bg-color), 0.7);
+			border-color: rgba(var(--default-bg-color), 0.5);
 		}
 
 		&:active {
 			box-shadow: none;
-			border-bottom: 2px solid rgba(var(--default-bg-color), 0.3);
+			border-bottom: 2px solid rgba(var(--default-bg-color), 0.2);
 
 			&.ms-primary {
-				@include btn-underline-active(rgba(var(--primary-bg-color), 0.3));
+				@include btn-underline-active(rgba(var(--primary-bg-color), 0.2));
 			}
 
 			&.ms-secondary {
-				@include btn-underline-active(rgba(var(--secondary-bg-color), 0.3));
+				@include btn-underline-active(rgba(var(--secondary-bg-color), 0.2));
 			}
 
 			&.ms-action {
-				@include btn-underline-active(rgba(var(--action-bg-color), 0.3));
+				@include btn-underline-active(rgba(var(--action-bg-color), 0.2));
 			}
 
 			&.ms-action2 {
-				@include btn-underline-active(rgba(var(--action2-bg-color), 0.3));
+				@include btn-underline-active(rgba(var(--action2-bg-color), 0.2));
 			}
 		}
 	}
@@ -211,11 +211,6 @@ input[type="submit"] {
 		&.ms-disabled {
 			box-shadow: none;
 		}
-	}
-
-	/* Loading */
-	.ms-loading {
-		border-color: red;
 	}
 }
 

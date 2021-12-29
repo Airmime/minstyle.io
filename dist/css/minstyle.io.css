@@ -637,7 +637,6 @@ input[type="submit"] {
   padding: 0.5rem 1rem;
   /* Options */
   /* Actions */
-  /* Loading */
 }
 
 button.ms-primary,
@@ -797,7 +796,7 @@ button.ms-underline.ms-primary:hover,
 .ms-btn.ms-underline.ms-primary:hover,
 input[type="button"].ms-underline.ms-primary:hover,
 input[type="submit"].ms-underline.ms-primary:hover {
-  border-bottom-color: rgba(var(--primary-bg-color), 0.7);
+  border-bottom-color: rgba(var(--primary-bg-color), 0.5);
 }
 
 button.ms-underline.ms-secondary,
@@ -812,7 +811,7 @@ button.ms-underline.ms-secondary:hover,
 .ms-btn.ms-underline.ms-secondary:hover,
 input[type="button"].ms-underline.ms-secondary:hover,
 input[type="submit"].ms-underline.ms-secondary:hover {
-  border-bottom-color: rgba(var(--secondary-bg-color), 0.7);
+  border-bottom-color: rgba(var(--secondary-bg-color), 0.5);
 }
 
 button.ms-underline.ms-action,
@@ -827,7 +826,7 @@ button.ms-underline.ms-action:hover,
 .ms-btn.ms-underline.ms-action:hover,
 input[type="button"].ms-underline.ms-action:hover,
 input[type="submit"].ms-underline.ms-action:hover {
-  border-bottom-color: rgba(var(--action-bg-color), 0.7);
+  border-bottom-color: rgba(var(--action-bg-color), 0.5);
 }
 
 button.ms-underline.ms-action2,
@@ -842,7 +841,7 @@ button.ms-underline.ms-action2:hover,
 .ms-btn.ms-underline.ms-action2:hover,
 input[type="button"].ms-underline.ms-action2:hover,
 input[type="submit"].ms-underline.ms-action2:hover {
-  border-bottom-color: rgba(var(--action2-bg-color), 0.7);
+  border-bottom-color: rgba(var(--action2-bg-color), 0.5);
 }
 
 button.ms-underline:hover,
@@ -850,7 +849,7 @@ button.ms-underline:hover,
 input[type="button"].ms-underline:hover,
 input[type="submit"].ms-underline:hover {
   background-color: transparent;
-  border-color: rgba(var(--default-bg-color), 0.7);
+  border-color: rgba(var(--default-bg-color), 0.5);
 }
 
 button.ms-underline:active,
@@ -859,7 +858,7 @@ input[type="button"].ms-underline:active,
 input[type="submit"].ms-underline:active {
   -webkit-box-shadow: none;
           box-shadow: none;
-  border-bottom: 2px solid rgba(var(--default-bg-color), 0.3);
+  border-bottom: 2px solid rgba(var(--default-bg-color), 0.2);
 }
 
 button.ms-underline:active.ms-primary,
@@ -868,7 +867,7 @@ input[type="button"].ms-underline:active.ms-primary,
 input[type="submit"].ms-underline:active.ms-primary {
   -webkit-box-shadow: none;
           box-shadow: none;
-  border-bottom: 2px solid rgba(var(--primary-bg-color), 0.3);
+  border-bottom: 2px solid rgba(var(--primary-bg-color), 0.2);
 }
 
 button.ms-underline:active.ms-secondary,
@@ -877,7 +876,7 @@ input[type="button"].ms-underline:active.ms-secondary,
 input[type="submit"].ms-underline:active.ms-secondary {
   -webkit-box-shadow: none;
           box-shadow: none;
-  border-bottom: 2px solid rgba(var(--secondary-bg-color), 0.3);
+  border-bottom: 2px solid rgba(var(--secondary-bg-color), 0.2);
 }
 
 button.ms-underline:active.ms-action,
@@ -886,7 +885,7 @@ input[type="button"].ms-underline:active.ms-action,
 input[type="submit"].ms-underline:active.ms-action {
   -webkit-box-shadow: none;
           box-shadow: none;
-  border-bottom: 2px solid rgba(var(--action-bg-color), 0.3);
+  border-bottom: 2px solid rgba(var(--action-bg-color), 0.2);
 }
 
 button.ms-underline:active.ms-action2,
@@ -895,7 +894,7 @@ input[type="button"].ms-underline:active.ms-action2,
 input[type="submit"].ms-underline:active.ms-action2 {
   -webkit-box-shadow: none;
           box-shadow: none;
-  border-bottom: 2px solid rgba(var(--action2-bg-color), 0.3);
+  border-bottom: 2px solid rgba(var(--action2-bg-color), 0.2);
 }
 
 button.ms-rounded,
@@ -990,13 +989,6 @@ input[type="button"]:active.ms-disabled,
 input[type="submit"]:active.ms-disabled {
   -webkit-box-shadow: none;
           box-shadow: none;
-}
-
-button .ms-loading,
-.ms-btn .ms-loading,
-input[type="button"] .ms-loading,
-input[type="submit"] .ms-loading {
-  border-color: red;
 }
 
 button[disabled],
