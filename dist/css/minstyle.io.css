@@ -493,6 +493,8 @@ a {
 .ms-breadcrumb {
   /* Margin */
   padding: 1rem;
+  /* Border */
+  border-radius: 10px;
 }
 
 .ms-breadcrumb ul {
@@ -516,6 +518,10 @@ a {
   padding: 0;
 }
 
+.ms-breadcrumb ul li a:hover {
+  color: rgba(var(--primary-bg-color), 0.7);
+}
+
 .ms-breadcrumb ul li:after {
   content: "/";
   padding-left: 0.5rem;
@@ -534,8 +540,6 @@ a {
   width: 100%;
   /* Color */
   background-color: rgba(var(--ligth-bg-color), 1);
-  /* Border */
-  border-radius: 10px;
 }
 
 .ms-breadcrumb.ms-border {
@@ -543,6 +547,7 @@ a {
   width: 100%;
   /* Border */
   border-bottom: 2px solid rgba(var(--default-border-color), 1);
+  border-radius: 0;
 }
 
 .ms-browser {
@@ -6795,6 +6800,17 @@ select option {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
+}
+
+/* Box Shadow */
+.ms-box-shadow {
+  -webkit-box-shadow: rgba(10, 10, 10, 0.1) 0px 8px 16px -2px, rgba(10, 10, 10, 0) 0px 0px 0px 1px !important;
+          box-shadow: rgba(10, 10, 10, 0.1) 0px 8px 16px -2px, rgba(10, 10, 10, 0) 0px 0px 0px 1px !important;
+}
+
+.ms-box-shadow-none {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
 }
 
 /* FlexBox */

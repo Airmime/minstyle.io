@@ -2,6 +2,9 @@
 	/* Margin */
 	padding: 1rem;
 
+	/* Border */
+	border-radius: 10px;
+
 	ul {
 		/* General */
 		list-style: none;
@@ -25,6 +28,12 @@
 			margin: 0 0 0 0.5rem;
 			padding: 0;
 
+			a {
+				&:hover {
+					color: rgba(var(--primary-bg-color), 0.7);
+				}
+			}
+
 			&:after {
 				content: "/";
 				padding-left: 0.5rem;
@@ -46,9 +55,6 @@
 
 		/* Color */
 		background-color: rgba(var(--ligth-bg-color), 1);
-
-		/* Border */
-		border-radius: 10px;
 	}
 
 	&.ms-border {
@@ -57,5 +63,6 @@
 
 		/* Border */
 		border-bottom: 2px solid rgba(var(--default-border-color), 1);
+		border-radius: 0;
 	}
 }
