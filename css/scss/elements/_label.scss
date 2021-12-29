@@ -22,7 +22,7 @@
 
 .ms-label {
 	/* General */
-	display: inline;
+	display: inline-flex;
 	width: auto;
 
 	/* Color */
@@ -127,5 +127,57 @@
 
 	&.ms-rounded {
 		border-radius: 50rem;
+	}
+
+	/* Close */
+	.ms-close {
+		/* General */
+		height: 15px;
+		width: 15px;
+		position: relative;
+		display: inline-block;
+		overflow: hidden;
+		margin-left: 2px;
+
+		/* Text */
+		text-align: center;
+
+		/* Cursor */
+		cursor: pointer;
+
+		&:before,
+		&:after {
+			/* General */
+			height: 10px;
+			width: 2px;
+
+			/* Position */
+			position: absolute;
+			left: 6.7px;
+			top: 2.5px;
+
+			/* Content */
+			content: " ";
+
+			/* Color */
+			background-color: rgba(var(--main-text-color), 1);
+		}
+
+		&:before {
+			transform: rotate(45deg);
+		}
+		&:after {
+			transform: rotate(-45deg);
+		}
+
+		&:hover {
+			background-color: rgba(0, 0, 0, 0.1);
+			border-radius: 10px;
+		}
+
+		&:active {
+			background-color: rgba(0, 0, 0, 0.2);
+			border-radius: 10px;
+		}
 	}
 }

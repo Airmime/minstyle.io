@@ -7231,7 +7231,9 @@ select option {
 
 .ms-label {
   /* General */
-  display: inline;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   width: auto;
   /* Color */
   background-color: rgba(var(--ligth-bg-color), 1);
@@ -7245,6 +7247,7 @@ select option {
   /* Margins */
   margin-right: 0.1rem;
   padding: 0.1rem 0.4rem;
+  /* Close */
 }
 
 .ms-label a {
@@ -7357,6 +7360,54 @@ select option {
 
 .ms-label.ms-rounded {
   border-radius: 50rem;
+}
+
+.ms-label .ms-close {
+  /* General */
+  height: 15px;
+  width: 15px;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin-left: 2px;
+  /* Text */
+  text-align: center;
+  /* Cursor */
+  cursor: pointer;
+}
+
+.ms-label .ms-close:before, .ms-label .ms-close:after {
+  /* General */
+  height: 10px;
+  width: 2px;
+  /* Position */
+  position: absolute;
+  left: 6.7px;
+  top: 2.5px;
+  /* Content */
+  content: " ";
+  /* Color */
+  background-color: rgba(var(--main-text-color), 1);
+}
+
+.ms-label .ms-close:before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.ms-label .ms-close:after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.ms-label .ms-close:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.ms-label .ms-close:active {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
 }
 
 .ms-loading {
