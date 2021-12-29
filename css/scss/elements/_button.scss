@@ -1,16 +1,28 @@
 @mixin btn-default($backgroundColor, $textColor) {
-	background-color: $backgroundColor;
+	background-color: rgba($backgroundColor, 1);
 	color: $textColor;
+
+	&:hover {
+		background-color: rgba($backgroundColor, 0.8);
+	}
 }
 
 @mixin btn-outline($color) {
-	border-color: $color;
-	color: $color;
+	border-color: rgba($color, 1);
+	color: rgba(var(--main-text-color), 1);
+
+	&:hover {
+		background-color: rgba($color, 0.05);
+	}
 }
 
 @mixin btn-underline($color) {
-	border-bottom-color: $color;
-	color: $color;
+	border-bottom-color: rgba($color, 1);
+	color: rgba(var(--main-text-color), 1);
+
+	&:hover {
+		border-bottom-color: rgba($color, 0.7);
+	}
 }
 
 @mixin btn-underline-active($color) {
@@ -27,6 +39,7 @@ input[type="submit"] {
 	display: inline-block;
 	box-sizing: border-box;
 	user-select: none;
+	outline: none;
 
 	/* Color */
 	background-color: rgba(var(--ligth-bg-color), 1);
@@ -52,19 +65,19 @@ input[type="submit"] {
 	padding: 0.5rem 1rem;
 
 	&.ms-primary {
-		@include btn-default(rgba(var(--primary-bg-color), 1), #fff);
+		@include btn-default(var(--primary-bg-color), #fff);
 	}
 
 	&.ms-secondary {
-		@include btn-default(rgba(var(--secondary-bg-color), 1), #fff);
+		@include btn-default(var(--secondary-bg-color), #fff);
 	}
 
 	&.ms-action {
-		@include btn-default(rgba(var(--action-bg-color), 1), #fff);
+		@include btn-default(var(--action-bg-color), #fff);
 	}
 
 	&.ms-action2 {
-		@include btn-default(rgba(var(--action2-bg-color), 1), #fff);
+		@include btn-default(var(--action2-bg-color), #fff);
 	}
 
 	&.ms-outline {
@@ -76,19 +89,19 @@ input[type="submit"] {
 		border: 2px solid rgba(var(--default-bg-color), 1);
 
 		&.ms-primary {
-			@include btn-outline(rgba(var(--primary-bg-color), 1));
+			@include btn-outline(var(--primary-bg-color));
 		}
 
 		&.ms-secondary {
-			@include btn-outline(rgba(var(--secondary-bg-color), 1));
+			@include btn-outline(var(--secondary-bg-color));
 		}
 
 		&.ms-action {
-			@include btn-outline(rgba(var(--action-bg-color), 1));
+			@include btn-outline(var(--action-bg-color));
 		}
 
 		&.ms-action2 {
-			@include btn-outline(rgba(var(--action2-bg-color), 1));
+			@include btn-outline(var(--action2-bg-color));
 		}
 	}
 
@@ -99,22 +112,29 @@ input[type="submit"] {
 
 		/* Border */
 		border-radius: 0;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
 		border-bottom: 2px solid rgba(var(--default-bg-color), 1);
 
 		&.ms-primary {
-			@include btn-underline(rgba(var(--primary-bg-color), 1));
+			@include btn-underline(var(--primary-bg-color));
 		}
 
 		&.ms-secondary {
-			@include btn-underline(rgba(var(--secondary-bg-color), 1));
+			@include btn-underline(var(--secondary-bg-color));
 		}
 
 		&.ms-action {
-			@include btn-underline(rgba(var(--action-bg-color), 1));
+			@include btn-underline(var(--action-bg-color));
 		}
 
 		&.ms-action2 {
-			@include btn-underline(rgba(var(--action2-bg-color), 1));
+			@include btn-underline(var(--action2-bg-color));
+		}
+
+		&:hover {
+			background-color: transparent;
+			border-color: rgba(var(--default-bg-color), 0.7);
 		}
 
 		&:active {
@@ -166,11 +186,7 @@ input[type="submit"] {
 
 	/* Actions */
 	&:hover {
-		transform: translate(0, -3px);
-
-		&.ms-disabled {
-			transform: none;
-		}
+		background-color: rgba(var(--ligth-bg-color), 0.8);
 	}
 
 	&:active {

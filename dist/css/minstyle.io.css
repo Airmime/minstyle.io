@@ -10,7 +10,7 @@
   --main-text-color: 25, 25, 25;
   --light-text-color: 190, 190, 190;
   --default-bg-color: 40, 40, 40;
-  --ligth-bg-color: 248, 248, 248;
+  --ligth-bg-color: 240, 240, 240;
   --default-border-color: 230, 230, 230;
   --primary-bg-color: 34, 115, 238;
   --secondary-bg-color: 60, 168, 118;
@@ -610,6 +610,7 @@ input[type="submit"] {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  outline: none;
   /* Color */
   background-color: rgba(var(--ligth-bg-color), 1);
   color: rgba(var(--main-text-color), 1);
@@ -641,12 +642,26 @@ input[type="submit"].ms-primary {
   color: #fff;
 }
 
+button.ms-primary:hover,
+.ms-btn.ms-primary:hover,
+input[type="button"].ms-primary:hover,
+input[type="submit"].ms-primary:hover {
+  background-color: rgba(var(--primary-bg-color), 0.8);
+}
+
 button.ms-secondary,
 .ms-btn.ms-secondary,
 input[type="button"].ms-secondary,
 input[type="submit"].ms-secondary {
   background-color: rgba(var(--secondary-bg-color), 1);
   color: #fff;
+}
+
+button.ms-secondary:hover,
+.ms-btn.ms-secondary:hover,
+input[type="button"].ms-secondary:hover,
+input[type="submit"].ms-secondary:hover {
+  background-color: rgba(var(--secondary-bg-color), 0.8);
 }
 
 button.ms-action,
@@ -657,12 +672,26 @@ input[type="submit"].ms-action {
   color: #fff;
 }
 
+button.ms-action:hover,
+.ms-btn.ms-action:hover,
+input[type="button"].ms-action:hover,
+input[type="submit"].ms-action:hover {
+  background-color: rgba(var(--action-bg-color), 0.8);
+}
+
 button.ms-action2,
 .ms-btn.ms-action2,
 input[type="button"].ms-action2,
 input[type="submit"].ms-action2 {
   background-color: rgba(var(--action2-bg-color), 1);
   color: #fff;
+}
+
+button.ms-action2:hover,
+.ms-btn.ms-action2:hover,
+input[type="button"].ms-action2:hover,
+input[type="submit"].ms-action2:hover {
+  background-color: rgba(var(--action2-bg-color), 0.8);
 }
 
 button.ms-outline,
@@ -681,7 +710,14 @@ button.ms-outline.ms-primary,
 input[type="button"].ms-outline.ms-primary,
 input[type="submit"].ms-outline.ms-primary {
   border-color: rgba(var(--primary-bg-color), 1);
-  color: rgba(var(--primary-bg-color), 1);
+  color: rgba(var(--main-text-color), 1);
+}
+
+button.ms-outline.ms-primary:hover,
+.ms-btn.ms-outline.ms-primary:hover,
+input[type="button"].ms-outline.ms-primary:hover,
+input[type="submit"].ms-outline.ms-primary:hover {
+  background-color: rgba(var(--primary-bg-color), 0.05);
 }
 
 button.ms-outline.ms-secondary,
@@ -689,7 +725,14 @@ button.ms-outline.ms-secondary,
 input[type="button"].ms-outline.ms-secondary,
 input[type="submit"].ms-outline.ms-secondary {
   border-color: rgba(var(--secondary-bg-color), 1);
-  color: rgba(var(--secondary-bg-color), 1);
+  color: rgba(var(--main-text-color), 1);
+}
+
+button.ms-outline.ms-secondary:hover,
+.ms-btn.ms-outline.ms-secondary:hover,
+input[type="button"].ms-outline.ms-secondary:hover,
+input[type="submit"].ms-outline.ms-secondary:hover {
+  background-color: rgba(var(--secondary-bg-color), 0.05);
 }
 
 button.ms-outline.ms-action,
@@ -697,7 +740,14 @@ button.ms-outline.ms-action,
 input[type="button"].ms-outline.ms-action,
 input[type="submit"].ms-outline.ms-action {
   border-color: rgba(var(--action-bg-color), 1);
-  color: rgba(var(--action-bg-color), 1);
+  color: rgba(var(--main-text-color), 1);
+}
+
+button.ms-outline.ms-action:hover,
+.ms-btn.ms-outline.ms-action:hover,
+input[type="button"].ms-outline.ms-action:hover,
+input[type="submit"].ms-outline.ms-action:hover {
+  background-color: rgba(var(--action-bg-color), 0.05);
 }
 
 button.ms-outline.ms-action2,
@@ -705,7 +755,14 @@ button.ms-outline.ms-action2,
 input[type="button"].ms-outline.ms-action2,
 input[type="submit"].ms-outline.ms-action2 {
   border-color: rgba(var(--action2-bg-color), 1);
-  color: rgba(var(--action2-bg-color), 1);
+  color: rgba(var(--main-text-color), 1);
+}
+
+button.ms-outline.ms-action2:hover,
+.ms-btn.ms-outline.ms-action2:hover,
+input[type="button"].ms-outline.ms-action2:hover,
+input[type="submit"].ms-outline.ms-action2:hover {
+  background-color: rgba(var(--action2-bg-color), 0.05);
 }
 
 button.ms-underline,
@@ -717,6 +774,8 @@ input[type="submit"].ms-underline {
   color: rgba(var(--default-bg-color), 1);
   /* Border */
   border-radius: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   border-bottom: 2px solid rgba(var(--default-bg-color), 1);
 }
 
@@ -725,7 +784,14 @@ button.ms-underline.ms-primary,
 input[type="button"].ms-underline.ms-primary,
 input[type="submit"].ms-underline.ms-primary {
   border-bottom-color: rgba(var(--primary-bg-color), 1);
-  color: rgba(var(--primary-bg-color), 1);
+  color: rgba(var(--main-text-color), 1);
+}
+
+button.ms-underline.ms-primary:hover,
+.ms-btn.ms-underline.ms-primary:hover,
+input[type="button"].ms-underline.ms-primary:hover,
+input[type="submit"].ms-underline.ms-primary:hover {
+  border-bottom-color: rgba(var(--primary-bg-color), 0.7);
 }
 
 button.ms-underline.ms-secondary,
@@ -733,7 +799,14 @@ button.ms-underline.ms-secondary,
 input[type="button"].ms-underline.ms-secondary,
 input[type="submit"].ms-underline.ms-secondary {
   border-bottom-color: rgba(var(--secondary-bg-color), 1);
-  color: rgba(var(--secondary-bg-color), 1);
+  color: rgba(var(--main-text-color), 1);
+}
+
+button.ms-underline.ms-secondary:hover,
+.ms-btn.ms-underline.ms-secondary:hover,
+input[type="button"].ms-underline.ms-secondary:hover,
+input[type="submit"].ms-underline.ms-secondary:hover {
+  border-bottom-color: rgba(var(--secondary-bg-color), 0.7);
 }
 
 button.ms-underline.ms-action,
@@ -741,7 +814,14 @@ button.ms-underline.ms-action,
 input[type="button"].ms-underline.ms-action,
 input[type="submit"].ms-underline.ms-action {
   border-bottom-color: rgba(var(--action-bg-color), 1);
-  color: rgba(var(--action-bg-color), 1);
+  color: rgba(var(--main-text-color), 1);
+}
+
+button.ms-underline.ms-action:hover,
+.ms-btn.ms-underline.ms-action:hover,
+input[type="button"].ms-underline.ms-action:hover,
+input[type="submit"].ms-underline.ms-action:hover {
+  border-bottom-color: rgba(var(--action-bg-color), 0.7);
 }
 
 button.ms-underline.ms-action2,
@@ -749,7 +829,22 @@ button.ms-underline.ms-action2,
 input[type="button"].ms-underline.ms-action2,
 input[type="submit"].ms-underline.ms-action2 {
   border-bottom-color: rgba(var(--action2-bg-color), 1);
-  color: rgba(var(--action2-bg-color), 1);
+  color: rgba(var(--main-text-color), 1);
+}
+
+button.ms-underline.ms-action2:hover,
+.ms-btn.ms-underline.ms-action2:hover,
+input[type="button"].ms-underline.ms-action2:hover,
+input[type="submit"].ms-underline.ms-action2:hover {
+  border-bottom-color: rgba(var(--action2-bg-color), 0.7);
+}
+
+button.ms-underline:hover,
+.ms-btn.ms-underline:hover,
+input[type="button"].ms-underline:hover,
+input[type="submit"].ms-underline:hover {
+  background-color: transparent;
+  border-color: rgba(var(--default-bg-color), 0.7);
 }
 
 button.ms-underline:active,
@@ -840,16 +935,7 @@ button:hover,
 .ms-btn:hover,
 input[type="button"]:hover,
 input[type="submit"]:hover {
-  -webkit-transform: translate(0, -3px);
-          transform: translate(0, -3px);
-}
-
-button:hover.ms-disabled,
-.ms-btn:hover.ms-disabled,
-input[type="button"]:hover.ms-disabled,
-input[type="submit"]:hover.ms-disabled {
-  -webkit-transform: none;
-          transform: none;
+  background-color: rgba(var(--ligth-bg-color), 0.8);
 }
 
 button:active,
