@@ -14,7 +14,7 @@
 
 		img {
 			width: 100%;
-			border-radius: 10px;
+			border-radius: var(--default-border-radius);
 		}
 
 		.ms-card-pic-stick {
@@ -96,7 +96,7 @@
 	&.ms-border {
 		/* Border */
 		border: 2px solid rgba(var(--default-border-color), 1);
-		border-radius: 10px;
+		border-radius: var(--default-border-radius);
 
 		/* Margin */
 		padding: 1rem;
@@ -107,7 +107,7 @@
 		background-color: rgba(var(--ligth-bg-color), 1);
 
 		/* Border */
-		border-radius: 10px;
+		border-radius: var(--default-border-radius);
 
 		/* Margin */
 		padding: 1rem;

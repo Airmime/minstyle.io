@@ -6,7 +6,7 @@
 	text-align: center;
 	overflow: hidden;
 	margin: 10px 0;
-	border-radius: 10px;
+	border-radius: var(--default-border-radius);
 
 	.ms-progress-fill {
 		height: 1.1rem;

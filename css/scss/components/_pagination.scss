@@ -19,7 +19,7 @@
 				padding: 0.5rem;
 				text-decoration: none;
 				color: rgba(var(--main-text-color), 1);
-				border-radius: 10px;
+				border-radius: var(--default-border-radius);
 
 				&.ms-active {
 					color: #fff;
@@ -58,13 +58,13 @@
 				margin-right: -1px;
 
 				&:first-child a {
-					border-top-left-radius: 10px;
-					border-bottom-left-radius: 10px;
+					border-top-left-radius: var(--default-border-radius);
+					border-bottom-left-radius: var(--default-border-radius);
 				}
 
 				&:last-child a {
-					border-top-right-radius: 10px;
-					border-bottom-right-radius: 10px;
+					border-top-right-radius: var(--default-border-radius);
+					border-bottom-right-radius: var(--default-border-radius);
 				}
 
 				a {

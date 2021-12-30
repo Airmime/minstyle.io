@@ -39,7 +39,7 @@ select {
 
 	/* Border */
 	border: 2px solid rgba(var(--default-border-color), 1);
-	border-radius: 10px;
+	border-radius: var(--default-border-radius);
 
 	/* Margin */
 	margin: 0;

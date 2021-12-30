@@ -222,7 +222,7 @@
 	border-radius: 0 !important;
 }
 .ms-shape-round {
-	border-radius: 10px !important;
+	border-radius: var(--default-border-radius) !important;
 }
 
 /* Invert color */

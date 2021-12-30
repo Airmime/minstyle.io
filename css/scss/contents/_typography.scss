@@ -38,7 +38,7 @@ mark,
 
 	/* Border */
 	border-bottom: 0.05rem solid #ffd367;
-	border-radius: 10px;
+	border-radius: var(--default-border-radius);
 
 	/* Margin */
 	padding: 0.1rem 0.2rem;
@@ -56,7 +56,7 @@ code,
 	font-family: Courier, monospace;
 
 	/* Border */
-	border-radius: 10px;
+	border-radius: var(--default-border-radius);
 
 	/* Margin */
 	padding: 0.1rem 0.2rem;
@@ -72,7 +72,7 @@ kbd,
 		"Courier New", monospace;
 
 	/* Border */
-	border-radius: 10px;
+	border-radius: var(--default-border-radius);
 
 	/* Margin */
 	padding: 0.2rem 0.2rem;
@@ -139,8 +139,8 @@ blockquote,
 
 	/* Border */
 	border-left: 4px solid rgba(var(--default-border-color), 0.2);
-	border-top-right-radius: 10px;
-	border-bottom-right-radius: 10px;
+	border-top-right-radius: var(--default-border-radius);
+	border-bottom-right-radius: var(--default-border-radius);
 
 	/* Margin */
 	margin: 1rem;

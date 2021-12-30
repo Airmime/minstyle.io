@@ -51,7 +51,7 @@
 			background-color: rgba(var(--ligth-bg-color), 1);
 
 			/* Border */
-			border-radius: 10px;
+			border-radius: var(--default-border-radius);
 			border: none;
 
 			/* Margin */
@@ -80,7 +80,7 @@
 
 					&:hover {
 						background-color: rgba(var(--default-bg-color), 0.1);
-						border-radius: 10px;
+						border-radius: var(--default-border-radius);
 					}
 				}
 			}

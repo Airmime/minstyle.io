@@ -5,7 +5,7 @@
 	position: relative;
 
 	/* Border */
-	border-radius: 10px;
+	border-radius: var(--default-border-radius);
 
 	/* Margin */
 	margin: 1rem 0;
@@ -14,7 +14,7 @@
 	.ms-article-picture {
 		position: relative;
 		overflow: hidden;
-		border-radius: 10px;
+		border-radius: var(--default-border-radius);
 
 		img {
 			display: block;

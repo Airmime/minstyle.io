@@ -41,7 +41,7 @@
 
 	/* Border */
 	border: 2px solid rgba(var(--default-border-color), 1);
-	border-radius: 10px;
+	border-radius: var(--default-border-radius);
 
 	/* Margin */
 	margin: 0.5rem 0;
@@ -168,12 +168,12 @@
 
 		&:hover {
 			background-color: rgba(0, 0, 0, 0.1);
-			border-radius: 10px;
+			border-radius: var(--default-border-radius);
 		}
 
 		&:active {
 			background-color: rgba(0, 0, 0, 0.2);
-			border-radius: 10px;
+			border-radius: var(--default-border-radius);
 		}
 	}
 }

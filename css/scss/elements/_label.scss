@@ -31,7 +31,7 @@
 
 	/* Border */
 	border: 2px solid transparent;
-	border-radius: 10px;
+	border-radius: var(--default-border-radius);
 
 	/* Text */
 	line-height: 0.9rem;
@@ -111,7 +111,7 @@
 
 	&.ms-small {
 		font-size: 0.7rem;
-		border-radius: 8px;
+		border-radius: var(--default-border-radius);
 		padding: 0.1rem 0.3rem;
 	}
 
@@ -172,12 +172,12 @@
 
 		&:hover {
 			background-color: rgba(0, 0, 0, 0.1);
-			border-radius: 10px;
+			border-radius: var(--default-border-radius);
 		}
 
 		&:active {
 			background-color: rgba(0, 0, 0, 0.2);
-			border-radius: 10px;
+			border-radius: var(--default-border-radius);
 		}
 	}
 }

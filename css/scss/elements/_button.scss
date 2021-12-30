@@ -47,7 +47,7 @@ input[type="submit"] {
 
 	/* Border */
 	border: none;
-	border-radius: 10px;
+	border-radius: var(--default-border-radius);
 
 	/* Font */
 	font-family: "Inter", sans-serif;
@@ -112,8 +112,8 @@ input[type="submit"] {
 
 		/* Border */
 		border-radius: 0;
-		border-top-left-radius: 10px;
-		border-top-right-radius: 10px;
+		border-top-left-radius: var(--default-border-radius);
+		border-top-right-radius: var(--default-border-radius);
 		border-bottom: 2px solid rgba(var(--default-bg-color), 1);
 
 		&.ms-primary {
