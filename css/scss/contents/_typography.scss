@@ -1,3 +1,35 @@
+/* Title */
+h1 {
+	font-size: 5rem;
+	margin: 1rem 0;
+	padding: 0;
+}
+h2 {
+	font-size: 4rem;
+	margin: 1rem 0;
+	padding: 0;
+}
+h3 {
+	font-size: 3rem;
+	margin: 1rem 0;
+	padding: 0;
+}
+h4 {
+	font-size: 2rem;
+	margin: 1rem 0;
+	padding: 0;
+}
+h5 {
+	font-size: 1.5rem;
+	margin: 1rem 0;
+	padding: 0;
+}
+h6 {
+	font-size: 1.25rem;
+	margin: 1rem 0;
+	padding: 0;
+}
+
 /* Mark */
 mark,
 .ms-mark {
@@ -146,7 +178,7 @@ hr {
 	height: 1px;
 
 	/* Color */
-	background-color: rgba(0, 0, 0, 0.1);
+	background-color: rgba(var(--ligth-bg-color), 0.1);
 
 	/* Border */
 	border: none;

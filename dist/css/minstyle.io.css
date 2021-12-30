@@ -7228,6 +7228,161 @@ select option {
       align-self: stretch !important;
 }
 
+.ms-hero {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(var(--ligth-bg-color), 0.5);
+}
+
+.ms-hero .ms-hero-background {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+
+.ms-hero .ms-hero-background .ms-hero-cover {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  overflow: hidden;
+  background: #020024;
+  background: -webkit-gradient(linear, left bottom, left top, from(#020024), color-stop(0%, rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(0deg, #020024 0%, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.ms-hero .ms-hero-background img {
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.ms-hero .ms-hero-body {
+  z-index: 2;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 4rem 1.5rem;
+}
+
+.ms-hero .ms-hero-body.ms-center {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+}
+
+.ms-hero .ms-hero-body .ms-hero-title {
+  color: rgba(var(--main-text-color), 1);
+  margin: 0;
+  padding: 0;
+}
+
+.ms-hero .ms-hero-body .ms-hero-subtitle {
+  color: rgba(var(--main-text-color), 1);
+  margin: 0.5rem 0;
+  padding: 0;
+}
+
+.ms-hero .ms-hero-body .ms-hero-content {
+  color: rgba(var(--main-text-color), 1);
+  margin: 0.5rem 0;
+  padding: 0;
+}
+
+.ms-hero.ms-primary {
+  background-color: rgba(var(--primary-bg-color), 1);
+}
+
+.ms-hero.ms-primary .ms-hero-title {
+  color: #fff;
+}
+
+.ms-hero.ms-primary .ms-hero-subtitle {
+  color: #fff;
+}
+
+.ms-hero.ms-primary .ms-hero-content {
+  color: #fff;
+}
+
+.ms-hero.ms-secondary {
+  background-color: rgba(var(--secondary-bg-color), 1);
+}
+
+.ms-hero.ms-secondary .ms-hero-title {
+  color: #fff;
+}
+
+.ms-hero.ms-secondary .ms-hero-subtitle {
+  color: #fff;
+}
+
+.ms-hero.ms-secondary .ms-hero-content {
+  color: #fff;
+}
+
+.ms-hero.ms-action {
+  background-color: rgba(var(--action-bg-color), 1);
+}
+
+.ms-hero.ms-action .ms-hero-title {
+  color: #fff;
+}
+
+.ms-hero.ms-action .ms-hero-subtitle {
+  color: #fff;
+}
+
+.ms-hero.ms-action .ms-hero-content {
+  color: #fff;
+}
+
+.ms-hero.ms-action2 {
+  background-color: rgba(var(--action2-bg-color), 1);
+}
+
+.ms-hero.ms-action2 .ms-hero-title {
+  color: #fff;
+}
+
+.ms-hero.ms-action2 .ms-hero-subtitle {
+  color: #fff;
+}
+
+.ms-hero.ms-action2 .ms-hero-content {
+  color: #fff;
+}
+
+.ms-hero.ms-small .ms-hero-body {
+  padding: 2rem 1.5rem;
+}
+
+.ms-hero.ms-medium .ms-hero-body {
+  padding: 8rem 1.5rem;
+}
+
+.ms-hero.ms-large .ms-hero-body {
+  padding: 15rem 1.5rem;
+}
+
+.ms-hero.ms-half-screen {
+  min-height: 50vh;
+}
+
+.ms-hero.ms-full-screen {
+  min-height: 100vh;
+}
+
 .ms-label {
   /* General */
   display: -webkit-inline-box;
@@ -7478,7 +7633,6 @@ select option {
 
 .ms-menu {
   /* General */
-  position: relative;
   z-index: 999;
   width: 100%;
   height: 50px;
@@ -7492,7 +7646,7 @@ select option {
 .ms-menu .ms-menu-logo {
   /* General */
   width: auto;
-  height: 100%;
+  height: 50px;
   float: left;
   /* Colors */
   color: rgba(var(--main-text-color), 1);
@@ -7570,7 +7724,8 @@ select option {
 /* Screen < 768px */
 @media screen and (max-width: 768px) {
   .ms-menu .ms-menu-link {
-    background-color: rgba(var(--main-bg), 1);
+    z-index: 999;
+    background-color: rgba(var(--ligth-bg-color), 1);
     width: 100%;
     height: auto;
     margin: 0;
@@ -7583,7 +7738,6 @@ select option {
     -webkit-transition: max-height 0.3s;
     transition: max-height 0.3s;
     margin: 0;
-    padding: 10px;
   }
   .ms-menu .ms-menu-link ul li {
     text-align: left;
@@ -7873,6 +8027,43 @@ table.ms-striped tbody tr:nth-of-type(odd),
   background: rgba(var(--ligth-bg-color), 1);
 }
 
+/* Title */
+h1 {
+  font-size: 5rem;
+  margin: 1rem 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 4rem;
+  margin: 1rem 0;
+  padding: 0;
+}
+
+h3 {
+  font-size: 3rem;
+  margin: 1rem 0;
+  padding: 0;
+}
+
+h4 {
+  font-size: 2rem;
+  margin: 1rem 0;
+  padding: 0;
+}
+
+h5 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  padding: 0;
+}
+
+h6 {
+  font-size: 1.25rem;
+  margin: 1rem 0;
+  padding: 0;
+}
+
 /* Mark */
 mark,
 .ms-mark {
@@ -8014,7 +8205,7 @@ hr {
   width: 100%;
   height: 1px;
   /* Color */
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(var(--ligth-bg-color), 0.1);
   /* Border */
   border: none;
   /* Margin */
