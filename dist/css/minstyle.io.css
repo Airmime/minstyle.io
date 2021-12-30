@@ -10,7 +10,7 @@
   --main-text-color: 25, 25, 25;
   --light-text-color: 190, 190, 190;
   --default-bg-color: 40, 40, 40;
-  --ligth-bg-color: 240, 240, 240;
+  --ligth-bg-color: 242, 242, 242;
   --default-border-color: 230, 230, 230;
   --primary-bg-color: 34, 115, 238;
   --secondary-bg-color: 60, 168, 118;
@@ -1285,6 +1285,18 @@ button[disabled],
 .ms-dropdown .ms-dropdown-content .ms-dropdown-content-list li a:hover {
   background-color: rgba(var(--default-bg-color), 0.1);
   border-radius: 10px;
+}
+
+.ms-footer {
+  width: 100%;
+  background-color: rgba(var(--ligth-bg-color), 1);
+  text-align: center;
+  margin: 0;
+  padding: 3rem 0 4rem 0;
+}
+
+.ms-footer.ms-small {
+  padding: 1.5rem 0;
 }
 
 input[type="email"],
