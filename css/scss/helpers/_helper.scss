@@ -69,6 +69,18 @@
 }
 
 /* Text color */
+.ms-text-primary {
+	color: rgba(var(--primary-bg-color), 1) !important;
+}
+.ms-text-secondary {
+	color: rgba(var(--secondary-bg-color), 1) !important;
+}
+.ms-text-action {
+	color: rgba(var(--action-bg-color), 1) !important;
+}
+.ms-text-action2 {
+	color: rgba(var(--action2-bg-color), 1) !important;
+}
 .ms-text-white {
 	color: #fff !important;
 }

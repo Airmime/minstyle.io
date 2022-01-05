@@ -49,9 +49,17 @@ body {
   color: rgba(var(--main-text-color), 1);
   font-family: Inter, sans-serif;
   text-rendering: optimizeLegibility;
-  font-size: 0.97rem;
+  font-size: 1rem;
   margin: 0;
   padding: 0;
+}
+
+p {
+  background-color: rgba(var(--main-bg), 1);
+  color: rgba(var(--main-text-color), 1);
+  font-family: Inter, sans-serif;
+  text-rendering: optimizeLegibility;
+  font-size: 1rem;
 }
 
 a {
@@ -6485,6 +6493,22 @@ select option {
 }
 
 /* Text color */
+.ms-text-primary {
+  color: rgba(var(--primary-bg-color), 1) !important;
+}
+
+.ms-text-secondary {
+  color: rgba(var(--secondary-bg-color), 1) !important;
+}
+
+.ms-text-action {
+  color: rgba(var(--action-bg-color), 1) !important;
+}
+
+.ms-text-action2 {
+  color: rgba(var(--action2-bg-color), 1) !important;
+}
+
 .ms-text-white {
   color: #fff !important;
 }
@@ -7937,40 +7961,44 @@ table.ms-striped tbody tr:nth-of-type(odd),
 }
 
 /* Title */
-h1 {
-  font-size: 5rem;
-  margin: 1rem 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Inter, sans-serif;
   padding: 0;
+}
+
+h1 {
+  font-size: 3.5rem;
+  margin: 1rem 0;
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 3rem;
   margin: 1rem 0;
-  padding: 0;
 }
 
 h3 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin: 1rem 0;
-  padding: 0;
 }
 
 h4 {
   font-size: 2rem;
   margin: 1rem 0;
-  padding: 0;
 }
 
 h5 {
   font-size: 1.5rem;
   margin: 1rem 0;
-  padding: 0;
 }
 
 h6 {
   font-size: 1.25rem;
   margin: 1rem 0;
-  padding: 0;
 }
 
 /* Mark */
@@ -7989,15 +8017,14 @@ mark,
 code,
 .ms-code {
   /* Color */
-  background-color: #e045404d;
+  background-color: #e0454031;
   color: #e04540;
   /* Text */
-  font-size: 90%;
   font-family: Courier, monospace;
   /* Border */
   border-radius: var(--default-border-radius);
   /* Margin */
-  padding: 0.1rem 0.2rem;
+  padding: 0.2rem 0.4rem;
 }
 
 /* Terminal */
@@ -8006,7 +8033,7 @@ kbd,
   /* Text */
   background-color: rgba(var(--main-text-color), 1);
   color: #ffffff;
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   /* Border */
   border-radius: var(--default-border-radius);
   /* Margin */

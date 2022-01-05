@@ -52,9 +52,17 @@ body {
 	color: rgba(var(--main-text-color), 1);
 	font-family: Inter, sans-serif;
 	text-rendering: optimizeLegibility;
-	font-size: 0.97rem;
+	font-size: 1rem;
 	margin: 0;
 	padding: 0;
+}
+
+p {
+	background-color: rgba(var(--main-bg), 1);
+	color: rgba(var(--main-text-color), 1);
+	font-family: Inter, sans-serif;
+	text-rendering: optimizeLegibility;
+	font-size: 1rem;
 }
 
 a {
