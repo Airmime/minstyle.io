@@ -12,10 +12,10 @@
   --default-bg-color: 40, 40, 40;
   --ligth-bg-color: 242, 242, 242;
   --default-border-color: 230, 230, 230;
-  --primary-bg-color: 34, 115, 238;
-  --secondary-bg-color: 60, 168, 118;
-  --action-bg-color: 206, 65, 76;
-  --action2-bg-color: 255, 183, 3;
+  --primary-bg-color: 225, 83, 98;
+  --secondary-bg-color: 233, 147, 86;
+  --action-bg-color: 54, 146, 133;
+  --action2-bg-color: 93, 194, 72;
   --default-border-radius: 0.5rem;
 }
 
@@ -642,7 +642,7 @@ input[type="submit"] {
   -webkit-transition: 0.2s ease all;
   transition: 0.2s ease all;
   /* Margin */
-  margin: 0rem;
+  margin: 0rem 0.1rem;
   padding: 0.5rem 1rem;
   /* Options */
   /* Actions */
@@ -933,7 +933,7 @@ button.ms-medium,
 .ms-btn.ms-medium,
 input[type="button"].ms-medium,
 input[type="submit"].ms-medium {
-  font-size: 1rem;
+  font-size: 1.1rem;
   padding: 0.7rem 1.5rem;
 }
 
@@ -941,7 +941,7 @@ button.ms-large,
 .ms-btn.ms-large,
 input[type="button"].ms-large,
 input[type="submit"].ms-large {
-  font-size: 1rem;
+  font-size: 1.2rem;
   padding: 0.9rem 2.5rem;
 }
 
@@ -1012,6 +1012,7 @@ button[disabled],
   display: inline-flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin: 0.1rem;
 }
 
 .ms-btn-group.ms-fullwidth {
@@ -1027,6 +1028,13 @@ button[disabled],
   -webkit-box-flex: 1;
       -ms-flex: 1 0 0px;
           flex: 1 0 0;
+}
+
+.ms-btn-group button,
+.ms-btn-group .ms-btn,
+.ms-btn-group input[type="button"],
+.ms-btn-group input[type="submit"] {
+  margin: 0.1rem 0;
 }
 
 .ms-btn-group button:first-child:not(:last-child),
@@ -8029,7 +8037,7 @@ mark,
 code,
 .ms-code {
   /* Color */
-  background-color: #e0454031;
+  background-color: #e0454015;
   color: #e04540;
   /* Text */
   font-family: Courier, monospace;
@@ -8045,7 +8053,7 @@ kbd,
   /* Text */
   background-color: rgba(var(--main-text-color), 1);
   color: #ffffff;
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   /* Border */
   border-radius: var(--default-border-radius);
   /* Margin */

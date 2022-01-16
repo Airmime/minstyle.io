@@ -61,7 +61,7 @@ input[type="submit"] {
 	transition: 0.2s ease all;
 
 	/* Margin */
-	margin: 0rem;
+	margin: 0rem 0.1rem;
 	padding: 0.5rem 1rem;
 
 	&.ms-primary {
@@ -175,12 +175,12 @@ input[type="submit"] {
 	}
 
 	&.ms-medium {
-		font-size: 1rem;
+		font-size: 1.1rem;
 		padding: 0.7rem 1.5rem;
 	}
 
 	&.ms-large {
-		font-size: 1rem;
+		font-size: 1.2rem;
 		padding: 0.9rem 2.5rem;
 	}
 
@@ -223,6 +223,7 @@ button[disabled],
 .ms-btn-group {
 	display: inline-flex;
 	flex-wrap: wrap;
+	margin: 0.1rem;
 
 	&.ms-fullwidth {
 		display: flex;
@@ -239,6 +240,8 @@ button[disabled],
 	.ms-btn,
 	input[type="button"],
 	input[type="submit"] {
+		margin: 0.1rem 0;
+
 		&:first-child:not(:last-child) {
 			border-bottom-right-radius: 0;
 			border-top-right-radius: 0;
