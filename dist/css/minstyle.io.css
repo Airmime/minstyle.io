@@ -1321,7 +1321,6 @@ textarea,
 select {
   /* General */
   display: inline-block;
-  width: 100%;
   height: 40px;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -1478,6 +1477,20 @@ select.ms-rounded {
   border-radius: 50px;
 }
 
+input[type="email"].ms-fullwidth,
+input[type="number"].ms-fullwidth,
+input[type="password"].ms-fullwidth,
+input[type="search"].ms-fullwidth,
+input[type="tel"].ms-fullwidth,
+input[type="text"].ms-fullwidth,
+input[type="url"].ms-fullwidth,
+input[type="file"].ms-fullwidth,
+input:not([type]).ms-fullwidth,
+textarea.ms-fullwidth,
+select.ms-fullwidth {
+  width: 100%;
+}
+
 input[type="email"].ms-disabled,
 input[type="number"].ms-disabled,
 input[type="password"].ms-disabled,
@@ -1555,14 +1568,13 @@ select:focus {
 
 .ms-form-group label,
 .ms-form-group .ms-label {
+  font-weight: 500;
   display: block;
   margin-bottom: 0.6rem;
-  font-size: 0.9rem;
 }
 
 .ms-form-group .ms-under-input {
   display: block;
-  font-size: 0.9rem;
   margin-top: 0.4rem;
 }
 
