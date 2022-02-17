@@ -55,8 +55,6 @@ body {
 }
 
 p {
-  background-color: rgba(var(--main-bg), 1);
-  color: rgba(var(--main-text-color), 1);
   font-family: Inter, sans-serif;
   text-rendering: optimizeLegibility;
   font-size: 1rem;
@@ -580,6 +578,7 @@ a {
   width: 12px;
   background-color: rgba(var(--primary-bg-color), 1);
   border-radius: 50%;
+  margin-right: 2px;
 }
 
 .ms-browser .ms-tab-browser .ms-dots .ms-dot.red {
@@ -956,8 +955,8 @@ button:active,
 .ms-btn:active,
 input[type="button"]:active,
 input[type="submit"]:active {
-  -webkit-box-shadow: 0 0 0 5px rgba(var(--default-bg-color), 0.3);
-          box-shadow: 0 0 0 5px rgba(var(--default-bg-color), 0.3);
+  -webkit-box-shadow: 0 0 0 5px rgba(var(--default-bg-color), 0.2);
+          box-shadow: 0 0 0 5px rgba(var(--default-bg-color), 0.2);
 }
 
 button:active.ms-primary,
@@ -998,6 +997,13 @@ input[type="button"]:active.ms-disabled,
 input[type="submit"]:active.ms-disabled {
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+button .ms-loading,
+.ms-btn .ms-loading,
+input[type="button"] .ms-loading,
+input[type="submit"] .ms-loading {
+  display: inline-block;
 }
 
 button[disabled],
@@ -7527,22 +7533,22 @@ select option {
 }
 
 .ms-loading.ms-small {
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
   border: 3px solid rgba(var(--ligth-bg-color), 1);
   border-top: 3px solid rgba(var(--default-bg-color), 1);
 }
 
 .ms-loading.ms-medium {
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   border: 8px solid rgba(var(--ligth-bg-color), 1);
   border-top: 8px solid rgba(var(--default-bg-color), 1);
 }
 
 .ms-loading.ms-large {
-  width: 75px;
-  height: 75px;
+  width: 70px;
+  height: 70px;
   border: 10px solid rgba(var(--ligth-bg-color), 1);
   border-top: 10px solid rgba(var(--default-bg-color), 1);
 }
@@ -8053,7 +8059,7 @@ kbd,
   /* Text */
   background-color: rgba(var(--main-text-color), 1);
   color: #ffffff;
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   /* Border */
   border-radius: var(--default-border-radius);
   /* Margin */
@@ -8117,7 +8123,7 @@ blockquote,
   color: rgba(var(--main-text-color), 1);
   font-weight: inherit;
   /* Border */
-  border-left: 4px solid rgba(var(--default-border-color), 0.2);
+  border-left: 4px solid rgba(var(--default-border-color), 1);
   border-top-right-radius: var(--default-border-radius);
   border-bottom-right-radius: var(--default-border-radius);
   /* Margin */

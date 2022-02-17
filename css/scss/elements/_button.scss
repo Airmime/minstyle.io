@@ -190,7 +190,7 @@ input[type="submit"] {
 	}
 
 	&:active {
-		box-shadow: 0 0 0 5px rgba(var(--default-bg-color), 0.3);
+		box-shadow: 0 0 0 5px rgba(var(--default-bg-color), 0.2);
 
 		&.ms-primary {
 			box-shadow: 0 0 0 5px rgba(var(--primary-bg-color), 0.3);
@@ -211,6 +211,10 @@ input[type="submit"] {
 		&.ms-disabled {
 			box-shadow: none;
 		}
+	}
+
+	.ms-loading{
+		display: inline-block;
 	}
 }
 
