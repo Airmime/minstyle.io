@@ -17,6 +17,7 @@ select {
 	/* General */
 	display: inline-block;
 	height: 40px;
+	width: 100%;
 	appearance: none;
 	box-sizing: border-box;
 	box-shadow: none;
@@ -61,10 +62,6 @@ select {
 	/* Options */
 	&.ms-rounded {
 		border-radius: 50px;
-	}
-
-	&.ms-fullwidth {
-		width: 100%;
 	}
 
 	&.ms-disabled {
