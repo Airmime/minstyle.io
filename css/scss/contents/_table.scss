@@ -1,19 +1,21 @@
-table,
 .ms-table {
 	width: 100%;
+	display: table;
 	border-spacing: 0;
-	border-collapse: collapse;
 	margin-bottom: 1rem;
+	color: rgba(var(--default-bg-color), 1);
+	padding: 0;
 
 	thead {
+		color: rgba(var(--default-bg-color), 1);
 		text-align: left;
-		border-bottom: 3px solid rgba(var(--default-border-color), 1);
 	}
 
 	td,
 	th {
+		color: rgba(var(--default-bg-color), 1);
 		padding: 0.8rem 0.4rem;
-		border-bottom: 2px solid rgba(var(--default-border-color), 0.3);
+		border-bottom: 2px solid rgba(var(--default-border-color), 1);
 	}
 
 	th {
@@ -31,5 +33,9 @@ table,
 				background: rgba(var(--ligth-bg-color), 1);
 			}
 		}
+	}
+
+	&.ms-border{
+		border: 2px solid rgba(var(--default-border-color), 1);
 	}
 }
