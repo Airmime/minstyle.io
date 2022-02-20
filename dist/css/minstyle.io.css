@@ -1492,6 +1492,20 @@ select.ms-rounded {
   border-radius: 50px;
 }
 
+input[type="email"].ms-autowidth,
+input[type="number"].ms-autowidth,
+input[type="password"].ms-autowidth,
+input[type="search"].ms-autowidth,
+input[type="tel"].ms-autowidth,
+input[type="text"].ms-autowidth,
+input[type="url"].ms-autowidth,
+input[type="file"].ms-autowidth,
+input:not([type]).ms-autowidth,
+textarea.ms-autowidth,
+select.ms-autowidth {
+  width: auto;
+}
+
 input[type="email"].ms-disabled,
 input[type="number"].ms-disabled,
 input[type="password"].ms-disabled,
@@ -1562,21 +1576,40 @@ select:focus {
   outline: 0;
 }
 
-/* Form group */
-.ms-form-group {
-  margin-bottom: 1rem;
-}
-
-.ms-form-group label,
-.ms-form-group .ms-label {
+label,
+.ms-label {
   font-weight: 500;
   display: block;
   margin-bottom: 0.6rem;
 }
 
-.ms-form-group .ms-under-input {
+.ms-under-input {
   display: block;
   margin-top: 0.4rem;
+}
+
+/* Form group */
+.ms-form-group {
+  margin-bottom: 1rem;
+}
+
+.ms-form-group-inline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1rem;
+}
+
+.ms-form-group-inline label,
+.ms-form-group-inline .ms-label {
+  margin: 0 .5rem;
+}
+
+.ms-form-group-inline input, .ms-form-group-inline select, .ms-form-group-inline textarea {
+  width: auto;
 }
 
 /* Overide */

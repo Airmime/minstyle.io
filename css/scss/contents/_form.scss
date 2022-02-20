@@ -64,6 +64,10 @@ select {
 		border-radius: 50px;
 	}
 
+	&.ms-autowidth {
+		width: auto;
+	}
+
 	&.ms-disabled {
 		cursor: not-allowed;
 	}
@@ -87,20 +91,35 @@ select {
 	}
 }
 
+label,
+.ms-label {
+	font-weight: 500;
+	display: block;
+	margin-bottom: 0.6rem;
+}
+
+.ms-under-input {
+	display: block;
+	margin-top: 0.4rem;
+}
+
 /* Form group */
 .ms-form-group {
+	margin-bottom: 1rem;
+}
+
+.ms-form-group-inline {
+	display: flex;
+  	align-items: center;
 	margin-bottom: 1rem;
 
 	label,
 	.ms-label {
-		font-weight: 500;
-		display: block;
-		margin-bottom: 0.6rem;
+		margin: 0 .5rem;
 	}
 
-	.ms-under-input {
-		display: block;
-		margin-top: 0.4rem;
+	input, select, textarea{
+		width: auto;
 	}
 }
 
