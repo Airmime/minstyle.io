@@ -8049,7 +8049,9 @@ h6 {
 mark,
 .ms-mark {
   /* Color */
+  display: inline;
   background-color: #ffe9b3;
+  color: #191919;
   /* Border */
   border-bottom: 0.05rem solid #ffd367;
   border-radius: var(--default-border-radius);
@@ -8061,6 +8063,7 @@ mark,
 code,
 .ms-code {
   /* Color */
+  display: inline;
   background-color: #e0454015;
   color: #e04540;
   /* Text */
@@ -8075,9 +8078,10 @@ code,
 kbd,
 .ms-kbd {
   /* Text */
-  background-color: rgba(var(--main-text-color), 1);
+  display: inline;
+  background-color: #000;
   color: #ffffff;
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: Courier, monospace;
   /* Border */
   border-radius: var(--default-border-radius);
   /* Margin */
@@ -8161,26 +8165,26 @@ blockquote.ms-center,
 
 blockquote.ms-primary,
 .ms-blockquote.ms-primary {
-  border-color: rgba(var(--primary-bg-color), 0.5);
+  border-color: rgba(var(--primary-bg-color), 1);
 }
 
 blockquote.ms-secondary,
 .ms-blockquote.ms-secondary {
-  border-color: rgba(var(--secondary-bg-color), 0.5);
+  border-color: rgba(var(--secondary-bg-color), 1);
 }
 
 blockquote.ms-action,
 .ms-blockquote.ms-action {
-  border-color: rgba(var(--action-bg-color), 0.5);
+  border-color: rgba(var(--action-bg-color), 1);
 }
 
 blockquote.ms-action2,
 .ms-blockquote.ms-action2 {
-  border-color: rgba(var(--action2-bg-color), 0.5);
+  border-color: rgba(var(--action2-bg-color), 1);
 }
 
 /* HR */
-hr {
+hr, .ms-hr {
   /* General */
   width: 100%;
   height: 1px;
