@@ -1,4 +1,22 @@
 /* Background color */
+.ms-bg-main {
+	background-color: rgba(var(--main-bg), 1);
+}
+.ms-bg-light {
+	background-color: rgba(var(--light-text-color), 1);
+}
+.ms-bg-primary {
+	background-color: rgba(var(--primary-bg-color), 1) !important;
+}
+.ms-bg-secondary {
+	background-color: rgba(var(--secondary-bg-color), 1) !important;
+}
+.ms-bg-action {
+	background-color: rgba(var(--action-bg-color), 1) !important;
+}
+.ms-bg-action2 {
+	background-color: rgba(var(--action2-bg-color), 1) !important;
+}
 .ms-bg-white {
 	background-color: #fff !important;
 }
@@ -34,6 +52,21 @@
 }
 
 /* Border color */
+.ms-border-main {
+	border-color: rgba(var(--default-border-color), 1);
+}
+.ms-border-primary {
+	border-color: rgba(var(--primary-bg-color), 1) !important;
+}
+.ms-border-secondary {
+	border-color: rgba(var(--secondary-bg-color), 1) !important;
+}
+.ms-border-action {
+	border-color: rgba(var(--action-bg-color), 1) !important;
+}
+.ms-border-action2 {
+	border-color: rgba(var(--action2-bg-color), 1) !important;
+}
 .ms-border-white {
 	border-color: #fff !important;
 }
@@ -69,6 +102,12 @@
 }
 
 /* Text color */
+.ms-text-main {
+	color: rgba(var(--main-text-color), 1) !important;
+}
+.ms-text-light {
+	color: rgba(var(--light-text-color), 1) !important;
+}
 .ms-text-primary {
 	color: rgba(var(--primary-bg-color), 1) !important;
 }
@@ -115,6 +154,11 @@
 	color: #ea9ab2 !important;
 }
 
+/* Invert color */
+.ms-invert-color {
+	filter: invert(1) !important;
+}
+
 /* Text position */
 .ms-text-left {
 	text-align: left !important;
@@ -123,7 +167,7 @@
 	text-align: center !important;
 }
 .ms-text-right {
-	text-align: center !important;
+	text-align: right !important;
 }
 
 /* Float */
@@ -226,6 +270,12 @@
 	position: sticky !important;
 }
 
+/* Center div */
+.ms-div-center {
+	display: block;
+	margin: 0 auto !important;
+}
+
 /* Shape */
 .ms-shape-circle {
 	border-radius: 50% !important;
@@ -235,17 +285,6 @@
 }
 .ms-shape-round {
 	border-radius: var(--default-border-radius) !important;
-}
-
-/* Invert color */
-.ms-invert-color {
-	filter: invert(1) !important;
-}
-
-/* Center div */
-.ms-div-center {
-	display: block;
-	margin: 0 auto !important;
 }
 
 /* Display */
