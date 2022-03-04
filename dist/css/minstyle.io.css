@@ -6689,6 +6689,15 @@ select option {
   position: relative !important;
 }
 
+.ms-posision-fixed {
+  position: fixed !important;
+}
+
+.ms-posision-sticky {
+  position: -webkit-sticky !important;
+  position: sticky !important;
+}
+
 .ms-posision-absolute {
   position: absolute !important;
 }
@@ -6792,7 +6801,7 @@ select option {
 
 /* Center div */
 .ms-div-center {
-  display: block;
+  display: block !important;
   margin: 0 auto !important;
 }
 
@@ -6872,7 +6881,7 @@ select option {
           flex-direction: column-reverse !important;
 }
 
-.ms-flex-nowrap {
+.ms-flex-wrap-nowrap {
   -ms-flex-wrap: nowrap !important;
       flex-wrap: nowrap !important;
 }
@@ -6882,16 +6891,9 @@ select option {
       flex-wrap: wrap !important;
 }
 
-.ms-flex-wrapreverse {
+.ms-flex-wrap-reverse {
   -ms-flex-wrap: wrap-reverse !important;
       flex-wrap: wrap-reverse !important;
-}
-
-.ms-flex-flow-row {
-  -webkit-box-orient: horizontal !important;
-  -webkit-box-direction: normal !important;
-      -ms-flex-flow: row !important;
-          flex-flow: row !important;
 }
 
 .ms-flex-justify-start {
@@ -6923,7 +6925,7 @@ select option {
       justify-content: space-around !important;
 }
 
-.ms-flex-justify-space-evenly {
+.ms-flex-justify-evenly {
   -webkit-box-pack: space-evenly !important;
       -ms-flex-pack: space-evenly !important;
           justify-content: space-evenly !important;
@@ -7002,81 +7004,81 @@ select option {
 }
 
 .ms-flex-item-0 {
-  -webkit-box-flex: 0 !important;
-      -ms-flex: 0 !important;
-          flex: 0 !important;
+  -webkit-box-ordinal-group: 1 !important;
+      -ms-flex-order: 0 !important;
+          order: 0 !important;
 }
 
 .ms-flex-item-1 {
-  -webkit-box-flex: 1 !important;
-      -ms-flex: 1 !important;
-          flex: 1 !important;
+  -webkit-box-ordinal-group: 2 !important;
+      -ms-flex-order: 1 !important;
+          order: 1 !important;
 }
 
 .ms-flex-item-2 {
-  -webkit-box-flex: 2 !important;
-      -ms-flex: 2 !important;
-          flex: 2 !important;
+  -webkit-box-ordinal-group: 3 !important;
+      -ms-flex-order: 2 !important;
+          order: 2 !important;
 }
 
 .ms-flex-item-3 {
-  -webkit-box-flex: 3 !important;
-      -ms-flex: 3 !important;
-          flex: 3 !important;
+  -webkit-box-ordinal-group: 4 !important;
+      -ms-flex-order: 3 !important;
+          order: 3 !important;
 }
 
 .ms-flex-item-4 {
-  -webkit-box-flex: 4 !important;
-      -ms-flex: 4 !important;
-          flex: 4 !important;
+  -webkit-box-ordinal-group: 5 !important;
+      -ms-flex-order: 4 !important;
+          order: 4 !important;
 }
 
 .ms-flex-item-5 {
-  -webkit-box-flex: 5 !important;
-      -ms-flex: 5 !important;
-          flex: 5 !important;
+  -webkit-box-ordinal-group: 6 !important;
+      -ms-flex-order: 5 !important;
+          order: 5 !important;
 }
 
 .ms-flex-item-6 {
-  -webkit-box-flex: 6 !important;
-      -ms-flex: 6 !important;
-          flex: 6 !important;
+  -webkit-box-ordinal-group: 7 !important;
+      -ms-flex-order: 6 !important;
+          order: 6 !important;
 }
 
 .ms-flex-item-7 {
-  -webkit-box-flex: 7 !important;
-      -ms-flex: 7 !important;
-          flex: 7 !important;
+  -webkit-box-ordinal-group: 8 !important;
+      -ms-flex-order: 7 !important;
+          order: 7 !important;
 }
 
 .ms-flex-item-8 {
-  -webkit-box-flex: 8 !important;
-      -ms-flex: 8 !important;
-          flex: 8 !important;
+  -webkit-box-ordinal-group: 9 !important;
+      -ms-flex-order: 8 !important;
+          order: 8 !important;
 }
 
 .ms-flex-item-9 {
-  -webkit-box-flex: 9 !important;
-      -ms-flex: 9 !important;
-          flex: 9 !important;
+  -webkit-box-ordinal-group: 10 !important;
+      -ms-flex-order: 9 !important;
+          order: 9 !important;
 }
 
 .ms-flex-item-10 {
-  -webkit-box-flex: 10 !important;
-      -ms-flex: 10 !important;
-          flex: 10 !important;
+  -webkit-box-ordinal-group: 11 !important;
+      -ms-flex-order: 10 !important;
+          order: 10 !important;
 }
 
 .ms-flex-item-11 {
-  -webkit-box-flex: 11 !important;
-      -ms-flex: 11 !important;
-          flex: 11 !important;
+  -webkit-box-ordinal-group: 12 !important;
+      -ms-flex-order: 11 !important;
+          order: 11 !important;
 }
 
 .ms-flex-item-12 {
-  -webkit-box-flex: 12 !important;
-      -ms-flex: 12 !important;
-          flex: 12 !important;
+  -webkit-box-ordinal-group: 13 !important;
+      -ms-flex-order: 12 !important;
+          order: 12 !important;
 }
 
 .ms-flex-grow-0 {
@@ -7151,6 +7153,12 @@ select option {
           flex-grow: 11 !important;
 }
 
+.ms-flex-grow-12 {
+  -webkit-box-flex: 12 !important;
+      -ms-flex-positive: 12 !important;
+          flex-grow: 12 !important;
+}
+
 .ms-flex-shrink-0 {
   -ms-flex-negative: 0 !important;
       flex-shrink: 0 !important;
@@ -7214,6 +7222,66 @@ select option {
 .ms-flex-shrink-12 {
   -ms-flex-negative: 12 !important;
       flex-shrink: 12 !important;
+}
+
+.ms-flex-shrink-min-1 {
+  -ms-flex-negative: -1 !important;
+      flex-shrink: -1 !important;
+}
+
+.ms-flex-shrink-min-2 {
+  -ms-flex-negative: -2 !important;
+      flex-shrink: -2 !important;
+}
+
+.ms-flex-shrink-min-3 {
+  -ms-flex-negative: -3 !important;
+      flex-shrink: -3 !important;
+}
+
+.ms-flex-shrink-min-4 {
+  -ms-flex-negative: -4 !important;
+      flex-shrink: -4 !important;
+}
+
+.ms-flex-shrink-min-5 {
+  -ms-flex-negative: -5 !important;
+      flex-shrink: -5 !important;
+}
+
+.ms-flex-shrink-min-6 {
+  -ms-flex-negative: -6 !important;
+      flex-shrink: -6 !important;
+}
+
+.ms-flex-shrink-min-7 {
+  -ms-flex-negative: -7 !important;
+      flex-shrink: -7 !important;
+}
+
+.ms-flex-shrink-min-8 {
+  -ms-flex-negative: -8 !important;
+      flex-shrink: -8 !important;
+}
+
+.ms-flex-shrink-min-9 {
+  -ms-flex-negative: -9 !important;
+      flex-shrink: -9 !important;
+}
+
+.ms-flex-shrink-min-10 {
+  -ms-flex-negative: -10 !important;
+      flex-shrink: -10 !important;
+}
+
+.ms-flex-shrink-min-11 {
+  -ms-flex-negative: -11 !important;
+      flex-shrink: -11 !important;
+}
+
+.ms-flex-shrink-min-12 {
+  -ms-flex-negative: -12 !important;
+      flex-shrink: -12 !important;
 }
 
 .ms-flex-basis-auto {
