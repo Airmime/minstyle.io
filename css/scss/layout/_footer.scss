@@ -1,0 +1,11 @@
+.ms-footer {
+	width: 100%;
+	background-color: rgba(var(--ligth-bg-color), 1);
+	text-align: center;
+	margin: 0;
+	padding: 3rem 0 4rem 0;
+
+	&.ms-small {
+		padding: 1.5rem 0;
+	}
+}

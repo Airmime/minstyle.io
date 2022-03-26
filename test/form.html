@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../dist/css/minstyle.io.min.css" />
+
+		<title>Form</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<form>
+						<div class="row">
+							<div class="col-sm">
+								<div class="ms-form-group">
+									<label for="Login">Login</label>
+									<input type="text" placeholder="Login" id="Login" />
+								</div>
+								<div class="ms-form-group">
+									<label for="Mail">Mail</label>
+									<input type="text" placeholder="Mail" id="Mail" />
+								</div>
+							</div>
+							<div class="col-sm">
+								<div class="ms-form-group">
+									<label for="Password">Password</label>
+									<input type="password" placeholder="Password" id="Password" />
+								</div>
+								<div class="ms-form-group">
+									<label for="Password">Retype password</label>
+									<input type="password" placeholder="Password" id="Password" />
+								</div>
+							</div>
+							<div>
+								<button class="ms-btn ms-primary ms-fullwidth">Register</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="ms-form-group">
+					<label for="Email">Email</label>
+					<input
+						type="email"
+						placeholder="email"
+						id="Email"
+						class="ms-fullwidth"
+					/>
+				</div>
+
+				<div class="ms-form-group">
+					<label for="Email"><i class="far fa-envelope-open"></i> Email</label>
+					<input
+						type="email"
+						class="ms-primary"
+						id="Email"
+						value="mail@minstyle.io"
+					/>
+				</div>
+
+				<div class="ms-form-group">
+					<label for="Email"><i class="far fa-envelope-open"></i> Email</label>
+					<input
+						type="email"
+						class="ms-secondary"
+						id="Email"
+						value="mail@minstyle.io"
+					/>
+					<span class="ms-under-input ms-text-green">The email is valid.</span>
+				</div>
+
+				<div class="ms-form-group">
+					<label for="Email"><i class="far fa-envelope-open"></i> Email</label>
+					<input
+						type="email"
+						class="ms-action"
+						id="Email"
+						value="mail@minstyle.io"
+					/>
+					<span class="ms-under-input ms-text-red">The email is invalid.</span>
+				</div>
+
+				<div class="ms-form-group">
+					<label for="Email"><i class="far fa-envelope-open"></i> Email</label>
+					<input
+						type="email"
+						class="ms-action2"
+						id="Email"
+						value="mail@minstyle.io"
+					/>
+					<span class="ms-under-input ms-text-action2"
+						>Email already used.</span
+					>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="ms-form-group">
+					<label for="select">Select</label>
+					<select id="select">
+						<option value="0">Paris</option>
+						<option value="1">New York</option>
+						<option value="2">London</option>
+						<option value="3">San fransico</option>
+						<option value="4">L.A</option>
+						<option value="5">Miami</option>
+					</select>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="ms-form-group">
+					<label for="textarea">Message</label>
+					<textarea id="textarea" placeholder="Textarea" rows="5"></textarea>
+				</div>
+
+				<div class="ms-form-group">
+					<label for="Checkbox">Remember</label>
+					<input type="checkbox" id="Checkbox" />Remember my decision.
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-2">
+					<div class="ms-form-group-inline">
+						<label for="Login">Login</label>
+						<input
+							type="text"
+							placeholder="small..."
+							id="Login"
+							class="ms-small"
+						/>
+					</div>
+
+					<div class="ms-form-group-inline">
+						<label for="Login">Login</label>
+						<input type="text" placeholder="default..." id="Login" />
+					</div>
+
+					<div class="ms-form-group-inline">
+						<label for="Login">Login</label>
+						<input
+							type="text"
+							placeholder="medium..."
+							id="Login"
+							class="ms-medium"
+						/>
+					</div>
+
+					<div class="ms-form-group-inline">
+						<label for="Login">Login</label>
+						<input
+							type="text"
+							placeholder="large..."
+							id="Login"
+							class="ms-large"
+						/>
+					</div>
+				</div>
+
+				<div class="md-col-10">
+					<div class="ms-form-group">
+						<label for="Login">Login</label>
+						<input
+							type="text"
+							placeholder="default..."
+							id="Login"
+							class="ms-rounded"
+						/>
+					</div>
+
+					<div class="ms-form-group">
+						<label for="select">Select</label>
+						<select id="select" class="ms-rounded">
+							<option value="0">Paris</option>
+							<option value="1">New York</option>
+							<option value="2">London</option>
+							<option value="3">San fransico</option>
+							<option value="4">L.A</option>
+							<option value="5">Miami</option>
+						</select>
+					</div>
+
+					<div class="ms-form-group">
+						<label for="avatar">Avatar</label>
+						<input
+							type="file"
+							id="avatar"
+							name="avatar"
+							accept="image/png, image/jpeg"
+						/>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/dark-mode-switcher@0.0.1/dist/dark.min.js"></script>
+		<script
+			type="text/javascript"
+			src="https://kit.fontawesome.com/d35975edad.js"
+		></script>
+	</body>
+</html>

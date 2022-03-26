@@ -1,0 +1,66 @@
+.ms-progress {
+	width: 100%;
+	height: 1.1rem;
+	display: flex;
+	background-color: rgba(var(--ligth-bg-color), 1);
+	text-align: center;
+	overflow: hidden;
+	margin: 10px 0;
+	border-radius: var(--default-border-radius);
+
+	.ms-progress-fill {
+		height: 1.1rem;
+		background-color: rgba(var(--default-bg-color), 0.2);
+		font-size: 0.75rem;
+		text-align: center;
+		font-weight: bold;
+		line-height: 1.2rem;
+		color: #fff;
+
+		&.ms-primary {
+			background-color: rgba(var(--primary-bg-color), 1);
+		}
+
+		&.ms-secondary {
+			background-color: rgba(var(--secondary-bg-color), 1);
+		}
+
+		&.ms-action {
+			background-color: rgba(var(--action-bg-color), 1);
+		}
+
+		&.ms-action2 {
+			background-color: rgba(var(--action2-bg-color), 1);
+		}
+	}
+
+	&.ms-medium {
+		height: 1.7rem;
+
+		.ms-progress-fill {
+			height: 1.7rem;
+			line-height: 1.7rem;
+		}
+	}
+
+	&.ms-large {
+		height: 2rem;
+
+		.ms-progress-fill {
+			height: 2rem;
+			line-height: 2rem;
+		}
+	}
+
+	&.ms-rounded {
+		border-radius: 50px;
+
+		.ms-rounded {
+			border-radius: 50px;
+		}
+	}
+
+	&.ms-light {
+		height: 0.3rem;
+	}
+}

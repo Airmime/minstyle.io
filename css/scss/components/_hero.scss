@@ -1,0 +1,122 @@
+@mixin hero-color($color) {
+	background-color: $color;
+
+	.ms-hero-title {
+		color: #fff;
+	}
+
+	.ms-hero-subtitle {
+		color: #fff;
+	}
+
+	.ms-hero-content {
+		color: #fff;
+	}
+}
+
+.ms-hero {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(var(--ligth-bg-color), 0.5);
+
+	.ms-hero-background {
+		z-index: 1;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		overflow: hidden;
+
+		.ms-hero-cover {
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			position: absolute;
+			overflow: hidden;
+			background: rgb(2, 0, 36);
+			background: linear-gradient(
+				0deg,
+				rgba(2, 0, 36, 1) 0%,
+				rgba(0, 0, 0, 0.7) 0%,
+				rgba(0, 0, 0, 0) 100%
+			);
+		}
+
+		img {
+			object-fit: fill;
+		}
+	}
+
+	.ms-hero-body {
+		z-index: 2;
+		flex-grow: 1;
+		padding: 4rem 1.5rem;
+
+		&.ms-center {
+			flex-grow: 0;
+			text-align: center;
+		}
+
+		.ms-hero-title {
+			color: rgba(var(--main-text-color), 1);
+			margin: 0;
+			padding: 0;
+		}
+
+		.ms-hero-subtitle {
+			color: rgba(var(--main-text-color), 1);
+			margin: 0.5rem 0;
+			padding: 0;
+		}
+
+		.ms-hero-content {
+			color: rgba(var(--main-text-color), 1);
+			margin: 0.5rem 0;
+			padding: 0;
+		}
+	}
+
+	&.ms-primary {
+		@include hero-color(rgba(var(--primary-bg-color), 1));
+	}
+
+	&.ms-secondary {
+		@include hero-color(rgba(var(--secondary-bg-color), 1));
+	}
+
+	&.ms-action {
+		@include hero-color(rgba(var(--action-bg-color), 1));
+	}
+
+	&.ms-action2 {
+		@include hero-color(rgba(var(--action2-bg-color), 1));
+	}
+
+	&.ms-small {
+		.ms-hero-body {
+			padding: 2rem 1.5rem;
+		}
+	}
+
+	&.ms-medium {
+		.ms-hero-body {
+			padding: 8rem 1.5rem;
+		}
+	}
+
+	&.ms-large {
+		.ms-hero-body {
+			padding: 15rem 1.5rem;
+		}
+	}
+
+	&.ms-half-screen {
+		min-height: 50vh;
+	}
+
+	&.ms-full-screen {
+		min-height: 100vh;
+	}
+}

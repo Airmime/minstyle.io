@@ -1,0 +1,136 @@
+.ms-card {
+	/* General */
+	width: 100%;
+	height: auto;
+	box-sizing: border-box;
+
+	/* Margin */
+	margin: 1rem 0;
+	padding: 0;
+
+	.ms-card-pic {
+		margin-bottom: 1rem;
+		position: relative;
+
+		img {
+			width: 100%;
+			border-radius: var(--default-border-radius);
+		}
+
+		.ms-card-pic-stick {
+			/* Position */
+			position: absolute;
+			top: 10px;
+			right: 10px;
+
+			/* Text */
+			text-align: right;
+		}
+	}
+
+	.ms-card-title {
+		margin: 0;
+		padding-bottom: 1rem;
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6,
+		a {
+			/* Text */
+			font-size: 2rem;
+			text-decoration: none;
+			color: rgba(var(--main-text-color), 1);
+
+			/* Margin */
+			margin: 0;
+			padding: 0;
+		}
+
+		span {
+			font-style: italic;
+			color: rgba(var(--light-text-color), 1);
+		}
+	}
+
+	.ms-card-content {
+		margin: 0;
+		padding-bottom: 1rem;
+
+		p {
+			color: rgba(var(--main-text-color), 1);
+			margin: 0;
+		}
+	}
+
+	.ms-card-btn {
+		position: relative;
+		margin: 0;
+		padding: 0;
+	}
+
+	.ms-section {
+		.ms-section-bloc {
+			border-bottom: 2px solid rgba(var(--default-border-color), 1);
+			padding: 1rem;
+
+			p {
+				color: rgba(var(--main-text-color), 1);
+				margin: 0;
+			}
+
+			&:first-child {
+				border-top: 2px solid rgba(var(--default-border-color), 1);
+			}
+
+			&:last-child {
+				border-bottom: 2px solid rgba(var(--default-border-color), 1);
+				margin-bottom: 1rem;
+			}
+		}
+	}
+
+	/* Options */
+	&.ms-border {
+		/* Border */
+		border: 2px solid rgba(var(--default-border-color), 1);
+		border-radius: var(--default-border-radius);
+
+		/* Margin */
+		padding: 1rem;
+	}
+
+	&.ms-fill {
+		/* Color */
+		background-color: rgba(var(--ligth-bg-color), 1);
+
+		/* Border */
+		border-radius: var(--default-border-radius);
+
+		/* Margin */
+		padding: 1rem;
+	}
+
+	&.ms-inline {
+		display: inline-block;
+
+		.ms-card-pic {
+			margin: 0;
+		}
+
+		.ms-card-btn {
+			padding: 0 1rem;
+
+			.ms-btn {
+				/* Position */
+				position: relative;
+				top: 50%;
+
+				/* Transform */
+				transform: translateY(-50%);
+			}
+		}
+	}
+}

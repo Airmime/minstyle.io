@@ -1,0 +1,64 @@
+.ms-loading {
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	border: 5px solid rgba(var(--ligth-bg-color), 1);
+	border-top: 5px solid rgba(var(--default-bg-color), 1);
+	-webkit-animation: spin 0.5s linear infinite;
+	animation: spin 0.5s linear infinite;
+
+	&.ms-small {
+		width: 10px;
+		height: 10px;
+		border: 3px solid rgba(var(--ligth-bg-color), 1);
+		border-top: 3px solid rgba(var(--default-bg-color), 1);
+	}
+
+	&.ms-medium {
+		width: 45px;
+		height: 45px;
+		border: 8px solid rgba(var(--ligth-bg-color), 1);
+		border-top: 8px solid rgba(var(--default-bg-color), 1);
+	}
+
+	&.ms-large {
+		width: 70px;
+		height: 70px;
+		border: 10px solid rgba(var(--ligth-bg-color), 1);
+		border-top: 10px solid rgba(var(--default-bg-color), 1);
+	}
+
+	&.ms-primary {
+		border-top-color: rgba(var(--primary-bg-color), 1);
+	}
+
+	&.ms-secondary {
+		border-top-color: rgba(var(--secondary-bg-color), 1);
+	}
+
+	&.ms-action {
+		border-top-color: rgba(var(--action-bg-color), 1);
+	}
+
+	&.ms-action2 {
+		border-top-color: rgba(var(--action2-bg-color), 1);
+	}
+}
+
+@-webkit-keyframes spin {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}

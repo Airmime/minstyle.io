@@ -1,0 +1,51 @@
+.ms-browser {
+	background-color: rgba(var(--ligth-bg-color), 1);
+	border: 4px solid rgba(var(--ligth-bg-color), 1);
+	border-top-left-radius: var(--default-border-radius);
+	border-top-right-radius: var(--default-border-radius);
+
+	.ms-tab-browser {
+		padding: 0.6rem 0.6rem;
+
+		.ms-dots {
+			display: inline-block;
+
+			.ms-dot {
+				display: inline-block;
+				height: 12px;
+				width: 12px;
+				background-color: rgba(var(--primary-bg-color), 1);
+				border-radius: 50%;
+				margin-right: 2px;
+
+				&.red {
+					background-color: #e04540;
+				}
+
+				&.yellow {
+					background-color: #f9bf10;
+				}
+
+				&.green {
+					background-color: #3ab656;
+				}
+			}
+		}
+
+		.ms-uri {
+			width: 80%;
+			display: inline-block;
+			background-color: rgba(var(--main-bg), 1);
+			border-radius: 50rem;
+			margin: 0 0 0 0.5rem;
+			padding: 0.2rem 1rem;
+		}
+	}
+
+	.ms-content {
+		background-color: rgba(var(--main-bg), 1);
+		box-sizing: border-box;
+		overflow: hidden;
+		padding: 15px;
+	}
+}
