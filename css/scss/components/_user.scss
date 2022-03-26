@@ -1,0 +1,80 @@
+.ms-user {
+	/* General */
+	width: 100%;
+	overflow: auto;
+	position: relative;
+	box-sizing: border-box;
+
+	/* Colors */
+	background-color: transparent;
+	color: rgba(var(--main-text-color), 1);
+
+	/* Margins */
+	padding: 1rem;
+	border-radius: var(--default-border-radius);
+
+	.ms-avatar {
+		display: block;
+		margin: 0 auto;
+	}
+
+	.ms-user-info {
+		text-align: center;
+		margin: 0 auto;
+		margin-top: 1rem;
+
+		p {
+			color: rgba(var(--main-text-color), 1);
+			margin-block-start: 0;
+			margin-block-end: 0;
+			margin-inline-start: 0;
+			margin-inline-end: 0;
+		}
+	}
+
+	.ms-user-content {
+		color: rgba(var(--main-text-color), 1);
+		box-sizing: border-box;
+		margin: 0 auto;
+		margin-top: 1rem;
+	}
+
+	.ms-user-pined {
+		position: absolute;
+		top: 0.5rem;
+		right: 0.5rem;
+	}
+
+	&.ms-compact {
+		.ms-avatar {
+			float: left;
+			margin: 0;
+		}
+
+		.ms-user-info {
+			float: left;
+			text-align: left;
+			margin: 0;
+			margin-left: 1rem;
+		}
+
+		.ms-user-content {
+			float: left;
+			width: 100%;
+			margin-top: 1rem;
+		}
+	}
+
+	&.ms-borderless {
+		border: none;
+	}
+
+	&.ms-fill {
+		background-color: rgba(var(--ligth-bg-color), 1);
+		border: none;
+	}
+
+	&.ms-border {
+		border: 2px solid rgba(var(--default-border-color), 1);
+	}
+}

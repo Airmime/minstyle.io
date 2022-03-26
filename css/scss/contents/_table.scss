@@ -1,0 +1,41 @@
+.ms-table {
+	width: 100%;
+	display: table;
+	border-spacing: 0;
+	margin-bottom: 1rem;
+	color: rgba(var(--default-bg-color), 1);
+	padding: 0;
+
+	thead {
+		color: rgba(var(--default-bg-color), 1);
+		text-align: left;
+	}
+
+	td,
+	th {
+		color: rgba(var(--default-bg-color), 1);
+		padding: 0.8rem 0.4rem;
+		border-bottom: 2px solid rgba(var(--default-border-color), 1);
+	}
+
+	th {
+		font-weight: bold;
+	}
+
+	&.ms-striped {
+		td,
+		th {
+			border: none;
+		}
+
+		tbody {
+			tr:nth-of-type(odd) {
+				background: rgba(var(--ligth-bg-color), 1);
+			}
+		}
+	}
+
+	&.ms-border{
+		border: 2px solid rgba(var(--default-border-color), 1);
+	}
+}

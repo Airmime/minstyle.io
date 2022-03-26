@@ -1,33 +1,33 @@
 {
-  "name": "minstyle.io",
-  "version": "1.0.2",
-  "description": "A simple CSS Framework !",
-  "main": "css/minstyle.io.css",
-  "author": "Rémi MARION",
-  "homepage": "https://minstyle.io",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Airmime/minstyle.io.git"
-  },
-  "keywords": [
-    "minstyle",
-    "minstyle.io",
-    "css",
-    "framework",
-    "css",
-    "simple",
-    "design",
-    "html",
-    "interface",
-    "front-end",
-    "responsive",
-    "sass",
+	"name": "minstyle.io",
+	"version": "2.0.0",
+	"description": "A simple CSS Framework !",
+	"main": "dist/minstyle.io.css",
+	"author": "Rémi MARION",
+	"homepage": "https://minstyle.io",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Airmime/minstyle.io.git"
+	},
+	"keywords": [
+		"minstyle",
+		"minstyle.io",
+		"css",
+		"framework",
+		"css",
+		"simple",
+		"design",
+		"html",
+		"interface",
+		"front-end",
+		"responsive",
+		"sass",
 		"scss",
 		"html",
 		"html5"
-  ],
-  "bugs": {
-    "url": "https://github.com/Airmime/minstyle.io/issues"
-  }
+	],
+	"bugs": {
+		"url": "https://github.com/Airmime/minstyle.io/issues"
+	}
 }

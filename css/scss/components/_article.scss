@@ -1,0 +1,142 @@
+.ms-article {
+	/* General */
+	display: block;
+	width: 100%;
+	position: relative;
+
+	/* Border */
+	border-radius: var(--default-border-radius);
+
+	/* Margin */
+	margin: 1rem 0;
+	padding: 0;
+
+	.ms-article-picture {
+		position: relative;
+		overflow: hidden;
+		border-radius: var(--default-border-radius);
+
+		img {
+			display: block;
+			width: 100%;
+		}
+
+		.ms-article-picture-overlay {
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			background: rgb(2, 0, 36);
+			background: linear-gradient(
+				0deg,
+				rgba(2, 0, 36, 1) 0%,
+				rgba(0, 0, 0, 0.7) 0%,
+				rgba(0, 0, 0, 0) 100%
+			);
+		}
+
+		.ms-article-picture-title {
+			position: absolute;
+			bottom: 1.5rem;
+			left: 1rem;
+
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6,
+			a {
+				font-size: 2rem;
+				text-decoration: none;
+				font-weight: bold;
+				color: rgba(255, 255, 255, 0.95);
+				margin: 0;
+				padding: 0;
+			}
+		}
+	}
+
+	.ms-article-infos {
+		margin: 0;
+		padding: 0.4rem 0;
+
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+
+			li {
+				display: inline-block;
+				color: rgba(var(--default-bg-color), 1);
+				font-size: 14px;
+				margin: 0 1rem 0 0;
+				padding: 0;
+			}
+		}
+
+		i {
+			color: rgba(var(--main-text-color), 0.5);
+		}
+	}
+
+	.ms-article-title {
+		display: block;
+		margin: 0;
+		padding: 1rem 0;
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6,
+		a {
+			display: block;
+			font-size: 2rem;
+			text-decoration: none;
+			font-weight: bold;
+			color: rgba(var(--main-text-color), 1);
+			margin: 0;
+			padding: 0;
+		}
+	}
+
+	.ms-article-text {
+		color: rgba(var(--main-text-color), 0.9);
+		margin: 0;
+		padding: 1rem 0;
+
+		p {
+			margin: 0;
+			padding: 0;
+		}
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			display: block;
+			font-size: 1.7rem;
+			text-decoration: none;
+			font-weight: 600;
+			color: var(--main-text-color);
+			margin: 1rem 0;
+			padding: 0;
+		}
+	}
+
+	.ms-list-label {
+		margin: 0.5rem 0 0 0;
+		padding: 0;
+
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+	}
+}

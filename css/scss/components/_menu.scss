@@ -1,0 +1,141 @@
+.ms-menu {
+	/* General */
+	z-index: 999;
+	width: 100%;
+	height: 50px;
+
+	/* Colors */
+	line-height: 50px;
+	text-align: center;
+
+	/* Color */
+	background-color: rgba(var(--ligth-bg-color), 1);
+
+	.ms-menu-logo {
+		/* General */
+		width: auto;
+		height: 50px;
+		float: left;
+
+		/* Colors */
+		color: rgba(var(--main-text-color), 1);
+
+		/* Margin */
+		margin: 0 0 0 15px;
+		padding: 0;
+
+		p {
+			font-size: 1.2rem;
+			font-weight: 600;
+			margin: 0;
+			padding: 0;
+		}
+
+		img {
+			max-height: 50px;
+		}
+	}
+
+	.ms-menu-link {
+		width: auto;
+		height: 100%;
+		float: right;
+
+		ul {
+			height: inherit;
+			list-style: none;
+			text-align: right;
+			margin: 0 15px 0 0;
+			padding: 0;
+
+			li {
+				font-weight: 400;
+				height: inherit;
+				display: inline-block;
+				margin: 0;
+				padding: 0;
+
+				&:last-child {
+					padding-right: 0;
+				}
+
+				a {
+					/* Animation */
+					-webkit-transition: 0.2s all ease;
+					transition: 0.2s ease all;
+
+					color: rgba(var(--main-text-color), 1);
+					text-decoration: none;
+					font-weight: 600;
+					padding: 0 20px;
+
+					&:hover {
+						color: rgba(var(--main-text-color), 0.6);
+					}
+
+					&:active {
+						color: rgba(var(--main-text-color), 0.4);
+					}
+				}
+			}
+		}
+	}
+
+	#ms-menu-toggle {
+		display: none;
+	}
+
+	.ms-menu-icon {
+		display: none;
+		cursor: pointer;
+		color: rgba(var(--main-text-color), 1);
+	}
+}
+
+/* Screen < 768px */
+@media screen and (max-width: 768px) {
+	.ms-menu {
+		.ms-menu-link {
+			z-index: 999;
+			background-color: rgba(var(--ligth-bg-color), 1);
+			width: 100%;
+			height: auto;
+			margin: 0;
+			padding: 0;
+
+			ul {
+				display: block;
+				max-height: 0;
+				overflow: hidden;
+				transition: max-height 0.3s;
+				margin: 0;
+
+				li {
+					text-align: left;
+					width: 100%;
+					height: 50px;
+					margin: 0;
+					padding: 0;
+				}
+			}
+		}
+
+		.ms-menu-icon {
+			width: 100px;
+			height: inherit;
+			display: block;
+			position: absolute;
+			top: 0;
+			right: 0;
+			line-height: 60px;
+		}
+
+		#ms-menu-toggle:checked ~ ul {
+			max-height: 100%;
+		}
+
+		.ms-menu-icon i {
+			font-size: 1.7em;
+		}
+	}
+}

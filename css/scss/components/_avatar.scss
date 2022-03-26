@@ -1,0 +1,106 @@
+@mixin sizeAvatar($font-size, $line-height, $width, $height) {
+	width: $width;
+	height: $height;
+
+	.ms-text {
+		font-size: $font-size;
+		line-height: $line-height;
+	}
+}
+
+.ms-avatar {
+	/* General */
+	width: 55px;
+	height: 55px;
+	display: inline-block;
+	position: relative;
+
+	/* Colors */
+	background-color: rgba(var(--ligth-bg-color), 1);
+
+	/* Border */
+	border-radius: 50%;
+
+	/* Text */
+	vertical-align: middle;
+	text-align: center;
+
+	/* Margin */
+	margin: 0;
+	padding: 0;
+
+	&.ms-border {
+		border: 3px solid rgba(var(--default-border-color), 1);
+	}
+
+	img,
+	.ms-avatar-img {
+		/* General */
+		display: block;
+		max-width: 100%;
+		min-width: 100%;
+
+		/* Border */
+		border-radius: 50%;
+
+		/* Margin */
+		margin: 0 auto;
+	}
+
+	.ms-text {
+		font-size: 1.7rem;
+		line-height: 55px;
+		font-weight: 600;
+		color: rgba(var(--main-text-color), 1);
+	}
+
+	&.ms-small {
+		@include sizeAvatar(1.1rem, 35px, 35px, 35px);
+	}
+
+	&.ms-medium {
+		@include sizeAvatar(2.5rem, 75px, 75px, 75px);
+
+		.ms-status {
+			width: 15px;
+			height: 15px;
+			right: 4px;
+			bottom: 4px;
+		}
+	}
+
+	&.ms-large {
+		@include sizeAvatar(3.3rem, 95px, 95px, 95px);
+
+		.ms-status {
+			width: 20px;
+			height: 20px;
+			right: 2px;
+			bottom: 2px;
+		}
+	}
+
+	.ms-status {
+		width: 15px;
+		height: 15px;
+		position: absolute;
+		right: -5px;
+		bottom: -5px;
+		background-color: rgba(243, 243, 243, 1);
+		border: 3px solid rgba(var(--main-bg), 1);
+		overflow: hidden;
+		border-radius: 50%;
+
+		&.ms-on {
+			background-color: rgba(60, 168, 118, 1);
+		}
+
+		&.ms-off {
+			background-color: rgba(206, 65, 76, 1);
+		}
+
+		&.ms-out {
+			background-color: rgba(255, 183, 3, 1);
+		}
+	}
+}

@@ -1,0 +1,68 @@
+.ms-breadcrumb {
+	/* Margin */
+	padding: 1rem;
+
+	/* Border */
+	border-radius: var(--default-border-radius);
+
+	ul {
+		/* General */
+		list-style: none;
+
+		/* Margin */
+		margin: 0;
+		padding: 0;
+
+		li {
+			/* General */
+			list-style: none;
+			display: inline-block;
+
+			/* Color */
+			color: rgba(var(--main-text-color), 1);
+
+			/* Font */
+			font-weight: 500;
+
+			/* Margin */
+			margin: 0 0 0 0.5rem;
+			padding: 0;
+
+			a {
+				&:hover {
+					color: rgba(var(--primary-bg-color), 0.7);
+				}
+			}
+
+			&:after {
+				content: "/";
+				padding-left: 0.5rem;
+			}
+
+			&:last-child:after {
+				content: "";
+			}
+
+			&:first-child {
+				margin-left: 0;
+			}
+		}
+	}
+
+	&.ms-background {
+		/* General */
+		width: 100%;
+
+		/* Color */
+		background-color: rgba(var(--ligth-bg-color), 1);
+	}
+
+	&.ms-border {
+		/* Genral */
+		width: 100%;
+
+		/* Border */
+		border-bottom: 2px solid rgba(var(--default-border-color), 1);
+		border-radius: 0;
+	}
+}

@@ -1,0 +1,151 @@
+@mixin input($primaryColor) {
+	border: 2px solid $primaryColor;
+	background-color: var(--main-bg);
+}
+
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="url"],
+input[type="file"],
+input:not([type]),
+textarea,
+select {
+	/* General */
+	display: inline-block;
+	height: 40px;
+	width: 100%;
+	appearance: none;
+	box-sizing: border-box;
+	box-shadow: none;
+
+	/* Font */
+	font-family: Inter, sans-serif;
+	color: rgba(var(--main-text-color), 1);
+	font-size: 0.98rem;
+
+	/* Background */
+	background-color: rgba(var(--main-bg), 1);
+
+	/* Border */
+	border: 2px solid rgba(var(--default-border-color), 1);
+	border-radius: var(--default-border-radius);
+
+	/* Margin */
+	margin: 0;
+	padding: 0 0.8rem;
+
+	&::placeholder {
+		color: rgba(var(--light-text-color), 1);
+	}
+
+	/* Colors */
+	&.ms-primary {
+		@include input(rgba(var(--primary-bg-color), 1));
+	}
+
+	&.ms-secondary {
+		@include input(rgba(var(--secondary-bg-color), 1));
+	}
+
+	&.ms-action {
+		@include input(rgba(var(--action-bg-color), 1));
+	}
+
+	&.ms-action2 {
+		@include input(rgba(var(--action2-bg-color), 1));
+	}
+
+	/* Options */
+	&.ms-rounded {
+		border-radius: 50px;
+	}
+
+	&.ms-autowidth {
+		width: auto;
+	}
+
+	&.ms-disabled {
+		cursor: not-allowed;
+	}
+
+	/* Size */
+	&.ms-small {
+		height: 30px;
+	}
+
+	&.ms-medium {
+		height: 50px;
+	}
+
+	&.ms-large {
+		height: 60px;
+	}
+
+	/* Events */
+	&:focus {
+		outline: 0;
+	}
+}
+
+label,
+.ms-label {
+	font-weight: 500;
+	display: block;
+	margin-bottom: 0.6rem;
+}
+
+.ms-under-input {
+	display: block;
+	margin-top: 0.4rem;
+}
+
+/* Form group */
+.ms-form-group {
+	margin-bottom: 1rem;
+}
+
+.ms-form-group-inline {
+	display: flex;
+  	align-items: center;
+	margin-bottom: 1rem;
+
+	label,
+	.ms-label {
+		margin: 0 .5rem;
+	}
+
+	input, select, textarea{
+		width: auto;
+	}
+}
+
+/* Overide */
+select {
+	min-width: 100px;
+	cursor: pointer;
+	background: url("data:image/svg+xml,%3Csvg aria-hidden='true' focusable='false' data-prefix='fas' data-icon='sort-down' class='svg-inline--fa fa-sort-down fa-w-10' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'%3E%3Cpath fill='currentColor' d='M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41z'%3E%3C/path%3E%3C/svg%3E")
+		no-repeat right 0.5rem center/1rem 1rem;
+}
+
+textarea {
+	padding: 10px;
+	height: inherit;
+}
+
+input[disabled] {
+	cursor: not-allowed;
+}
+
+input[type="file"] {
+	border: none;
+	padding: 0 0.5rem;
+}
+
+select option {
+	background: rgba(var(--main-bg), 1);
+	color: rgba(var(--main-text-color), 1);
+}
