@@ -6455,7 +6455,7 @@ select option {
 }
 
 .ms-bg-light {
-  background-color: rgba(var(--light-text-color), 1);
+  background-color: rgba(var(--ligth-bg-color), 1);
 }
 
 .ms-bg-primary {
@@ -7378,6 +7378,7 @@ select option {
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
           flex-grow: 0;
+  text-align: center;
 }
 
 .ms-hero .ms-hero-body .ms-hero-title {
@@ -7498,7 +7499,7 @@ select option {
   line-height: 0.9rem;
   font-size: 0.9rem;
   /* Margins */
-  margin-right: 0.1rem;
+  margin: 0 0.1rem;
   padding: 0.1rem 0.4rem;
   /* Close */
 }
