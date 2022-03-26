@@ -30,16 +30,14 @@ minstyle.io V2.0.0
 
 The sources code are available for download in `dist/` folder. To integrate it in your project, you just need to add the following tag between your <head> tags, after downloading the .css file.
 
-You also have the possibility to use the CDN by integrating the tag below between the head tags of your HTML page or project :
-
 ```html
-<link rel="stylesheet" href="css/minstyle.io.min.css">
+<link rel="stylesheet" href="css/minstyle.io.css">
 ```
 
 > The `/dist/css/minstyle.io.min.css` file is a compressed version of the framework, it will be faster to load.
 
-
 The `/dist/css` folder contains all compiled CSS files. If you want to modify the framework sources, the `/css/scss` folder contains all the SASS files. The `/css/scss/minstyle.io.scss` file contains the variables (colors, shape, etc...) used on the whole framework.
+
 ## jsdelivr
 
 For greater simplicity, you could add the `link` tag, importing sources from a CDN.
