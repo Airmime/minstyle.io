@@ -13,7 +13,7 @@ minstyle.io is a simple and light open source CSS framework. It integrates a set
 
 > minstyle.io is entirely designed in CSS (SCSS), no javascript library is developed or required.
 
-The **architecture of the framework is based on the concatenation of classes**. For example, the `ms-btn` classe allows to get the default design of a button, the `ms-success` classe allows to color the button green, and the `ms-rounded` classe allows to round the button angles.
+The **architecture of the framework is based on the concatenation of classes**. For example, the `ms-btn` classe allows to get the default design of a button, the `ms-primary` classe allows to change background-color, and the `ms-rounded` classe allows to round the button angles.
 
 The framework is based on 4 colors: primary `.ms-primary` and secondary `ms-secondary` being the main colors of the design.
 The action colors, `.ms-action` and `.ms-action2`, allow you to highlight the elements calling for an action, or define a complementary color to the first two.
