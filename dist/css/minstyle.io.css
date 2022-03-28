@@ -1315,12 +1315,18 @@ button[disabled],
   width: 100%;
   background-color: rgba(var(--ligth-bg-color), 1);
   text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
-  padding: 3rem 0 4rem 0;
+  padding: 3rem 1rem 4rem 1rem;
+}
+
+.ms-footer p {
+  width: 100%;
 }
 
 .ms-footer.ms-small {
-  padding: 1.5rem 0;
+  padding: 1.5rem 1rem;
 }
 
 input[type="email"],
