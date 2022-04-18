@@ -2,10 +2,15 @@
 	width: 100%;
 	background-color: rgba(var(--ligth-bg-color), 1);
 	text-align: center;
+	box-sizing: border-box;
 	margin: 0;
-	padding: 3rem 0 4rem 0;
+	padding: 3rem 1rem 4rem 1rem;
+
+	p {
+		width: 100%;
+	}
 
 	&.ms-small {
-		padding: 1.5rem 0;
+		padding: 1.5rem 1rem;
 	}
 }

@@ -1,7 +1,7 @@
 /*
 * minstyle.io - A simple CSS Framework !
 * Repo : https://github.com/Airmime/minstyle.io
-* Version : v2.0.0
+* Version : v2.0.1
 * Website : https://minstyle.io/
 */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
@@ -28,14 +28,14 @@ html[data-theme="dark"] {
 }
 
 * {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 *:before,
 *:after {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html {
@@ -481,7 +481,7 @@ a {
   right: -5px;
   bottom: -5px;
   background-color: #f3f3f3;
-  border: 3px solid rgba(var(--main-bg), 1);
+  border: 3px solid rgba(var(--default-border-color), 1);
   overflow: hidden;
   border-radius: 50%;
 }
@@ -1315,12 +1315,18 @@ button[disabled],
   width: 100%;
   background-color: rgba(var(--ligth-bg-color), 1);
   text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
-  padding: 3rem 0 4rem 0;
+  padding: 3rem 1rem 4rem 1rem;
+}
+
+.ms-footer p {
+  width: 100%;
 }
 
 .ms-footer.ms-small {
-  padding: 1.5rem 0;
+  padding: 1.5rem 1rem;
 }
 
 input[type="email"],
