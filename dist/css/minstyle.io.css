@@ -28,14 +28,14 @@ html[data-theme="dark"] {
 }
 
 * {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 *:before,
 *:after {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html {

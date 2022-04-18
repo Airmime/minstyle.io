@@ -35,11 +35,11 @@ html[data-theme="dark"] {
 }
 
 * {
-	box-sizing: content-box;
+	box-sizing: border-box
 }
 *:before,
 *:after {
-	box-sizing: content-box;
+	box-sizing: border-box
 }
 
 html {
