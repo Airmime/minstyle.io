@@ -43,7 +43,7 @@ The `/dist/css` folder contains all compiled CSS files. If you want to modify th
 For greater simplicity, you could add the `link` tag, importing sources from a CDN.
 
 ```html
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/minstyle.io@2.0.0/dist/css/minstyle.io.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/minstyle.io@2.0.1/dist/css/minstyle.io.min.css">
 ```
 
 ## npm
