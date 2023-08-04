@@ -42,7 +42,7 @@ input[type="submit"] {
 	outline: none;
 
 	/* Color */
-	background-color: rgba(var(--ligth-bg-color), 1);
+	background-color: rgba(var(--light-bg-color), 1);
 	color: rgba(var(--main-text-color), 1);
 
 	/* Border */
@@ -186,7 +186,7 @@ input[type="submit"] {
 
 	/* Actions */
 	&:hover {
-		background-color: rgba(var(--ligth-bg-color), 0.8);
+		background-color: rgba(var(--light-bg-color), 0.8);
 	}
 
 	&:active {
