@@ -119,6 +119,7 @@ Full documentation is available on [minstyle.io](https://minstyle.io).
 - [Colors](https://minstyle.io/docs/helpers/colors)
 - [Display](https://minstyle.io/docs/helpers/display)
 - [Flexbox](https://minstyle.io/docs/helpers/flexbox)
+- [Margin / Padding](https://minstyle.io/docs/helpers/margin-padding)
 - [Position](https://minstyle.io/docs/helpers/position)
 - [Shadow](https://minstyle.io/docs/helpers/shadow)
 - [Shape](https://minstyle.io/docs/helpers/shape)
