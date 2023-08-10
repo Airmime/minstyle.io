@@ -41,24 +41,44 @@
 	margin: 0 0.1rem;
 	padding: 0.1rem 0.4rem;
 
+	&.ms-label-active{
+		box-shadow: 0 0 0 5px rgba(var(--light-bg-color), .3);
+	}
+
 	a {
 		color: var(--main-text-color);
 	}
 
 	&.ms-primary {
 		@include label(#ffffff, rgba(var(--primary-bg-color), 1));
+
+		&.ms-label-active{
+			box-shadow: 0 0 0 5px rgba(var(--primary-bg-color), .3);
+		}
 	}
 
 	&.ms-secondary {
 		@include label(#ffffff, rgba(var(--secondary-bg-color), 1));
+
+		&.ms-label-active{
+			box-shadow: 0 0 0 5px rgba(var(--secondary-bg-color), .2);
+		}
 	}
 
 	&.ms-action {
 		@include label(#ffffff, rgba(var(--action-bg-color), 1));
+
+		&.ms-label-active{
+			box-shadow: 0 0 0 5px rgba(var(--action-bg-color), .2);
+		}
 	}
 
 	&.ms-action2 {
 		@include label(#000000, rgba(var(--action2-bg-color), 1));
+
+		&.ms-label-active{
+			box-shadow: 0 0 0 5px rgba(var(--action2-bg-color), .2);
+		}
 	}
 
 	&.ms-border {

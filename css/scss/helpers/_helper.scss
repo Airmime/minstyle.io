@@ -314,7 +314,8 @@
 
 /* Box Shadow */
 .ms-box-shadow {
-	box-shadow: rgba(10, 10, 10, 0.2) 0px 8px 16px -2px, rgba(10, 10, 10, 0) 0px 0px 0px 1px !important;
+	box-shadow: rgba(10, 10, 10, 0.2) 0px 8px 16px -2px,
+		rgba(10, 10, 10, 0) 0px 0px 0px 1px !important;
 }
 .ms-box-shadow-none {
 	box-shadow: none !important;
@@ -584,4 +585,68 @@
 }
 .ms-flex-align-self-stretch {
 	align-self: stretch !important;
+}
+
+$base-margin: 1rem;
+
+/* Margin */
+@for $i from 1 through 20 {
+	.ms-m-#{$i} {
+		margin: $base-margin * $i $base-margin * $i $base-margin * $i $base-margin * $i;
+	}
+}
+
+@for $i from 1 through 20 {
+	.ms-mt-#{$i} {
+		margin-top: $base-margin * $i;
+	}
+}
+
+@for $i from 1 through 20 {
+	.ms-mr-#{$i} {
+		margin-right: $base-margin * $i;
+	}
+}
+
+@for $i from 1 through 20 {
+	.ms-mb-#{$i} {
+		margin-bottom: $base-margin * $i;
+	}
+}
+
+@for $i from 1 through 20 {
+	.ms-ml-#{$i} {
+		margin-left: $base-margin * $i;
+	}
+}
+
+/* Padding */
+@for $i from 1 through 20 {
+	.ms-p-#{$i} {
+		padding: $base-margin * $i $base-margin * $i $base-margin * $i $base-margin * $i;
+	}
+}
+
+@for $i from 1 through 20 {
+	.ms-pt-#{$i} {
+		padding-top: $base-margin * $i;
+	}
+}
+
+@for $i from 1 through 20 {
+	.ms-pr-#{$i} {
+		padding-right: $base-margin * $i;
+	}
+}
+
+@for $i from 1 through 20 {
+	.ms-pb-#{$i} {
+		padding-bottom: $base-margin * $i;
+	}
+}
+
+@for $i from 1 through 20 {
+	.ms-pl-#{$i} {
+		padding-left: $base-margin * $i;
+	}
 }
