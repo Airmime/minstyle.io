@@ -9,7 +9,7 @@
 	text-align: center;
 
 	/* Color */
-	background-color: rgba(var(--ligth-bg-color), 1);
+	background-color: rgba(var(--light-bg-color), 1);
 
 	.ms-menu-logo {
 		/* General */
@@ -97,7 +97,7 @@
 	.ms-menu {
 		.ms-menu-link {
 			z-index: 999;
-			background-color: rgba(var(--ligth-bg-color), 1);
+			background-color: rgba(var(--light-bg-color), 1);
 			width: 100%;
 			height: auto;
 			margin: 0;

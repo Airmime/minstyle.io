@@ -69,7 +69,7 @@
 
 	&.ms-light {
 		@include alert-light(
-			rgba(var(--ligth-bg-color), 1),
+			rgba(var(--light-bg-color), 1),
 			rgba(var(--alert-text-color), 1)
 		);
 
