@@ -24,7 +24,7 @@ Each component of the framework is compatible with the dark mode. A dedicated pa
 
 ## Version
 
-minstyle.io V2.0.1
+minstyle.io V2.0.2
 
 ## Get Started
 

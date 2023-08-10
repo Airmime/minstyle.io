@@ -42,7 +42,7 @@ input[type="submit"] {
 	outline: none;
 
 	/* Color */
-	background-color: rgba(var(--ligth-bg-color), 1);
+	background-color: rgba(var(--light-bg-color), 1);
 	color: rgba(var(--main-text-color), 1);
 
 	/* Border */
@@ -64,20 +64,40 @@ input[type="submit"] {
 	margin: 0rem 0.1rem;
 	padding: 0.5rem 1rem;
 
+	&.ms-btn-active{
+		box-shadow: 0 0 0 5px rgba(var(--light-bg-color), .5);
+	}
+
 	&.ms-primary {
 		@include btn-default(var(--primary-bg-color), #fff);
+
+		&.ms-btn-active{
+			box-shadow: 0 0 0 5px rgba(var(--primary-bg-color), .3);
+		}
 	}
 
 	&.ms-secondary {
 		@include btn-default(var(--secondary-bg-color), #fff);
+
+		&.ms-btn-active{
+			box-shadow: 0 0 0 5px rgba(var(--secondary-bg-color), .3);
+		}
 	}
 
 	&.ms-action {
 		@include btn-default(var(--action-bg-color), #fff);
+
+		&.ms-btn-active{
+			box-shadow: 0 0 0 5px rgba(var(--action-bg-color), .3);
+		}
 	}
 
 	&.ms-action2 {
 		@include btn-default(var(--action2-bg-color), #fff);
+
+		&.ms-btn-active{
+			box-shadow: 0 0 0 5px rgba(var(--action2-bg-color), .3);
+		}
 	}
 
 	&.ms-outline {
@@ -186,7 +206,7 @@ input[type="submit"] {
 
 	/* Actions */
 	&:hover {
-		background-color: rgba(var(--ligth-bg-color), 0.8);
+		background-color: rgba(var(--light-bg-color), 0.8);
 	}
 
 	&:active {
